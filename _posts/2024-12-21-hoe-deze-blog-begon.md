@@ -7,7 +7,7 @@ lang: nl
 
 Soms leiden de kleinste dingen tot onverwachte uitkomsten. Deze blog bestaat omdat ik een boek wilde lezen.
 
-Ik had eerder "Ethics For People Who Work In Tech" van Marc Steen geleend uit de HAN bibliotheek. Een goed boek over de ethische overwegingen die we tegenkomen als technologie professionals. Toen ik het opnieuw wilde lezen, bleek ik het moest downloaden via [Scribd](https://www.scribd.com/).
+Ik had eerder "Ethics For People Who Work In Tech" van Marc Steen geleend uit de HAN bibliotheek. Een goed boek over de ethische overwegingen die we tegenkomen als technologie professionals. Ik wilde het snel even herlezen en keek of er een PDF online stond - en vond het op [Scribd](https://www.scribd.com/).
 
 Scribd heeft een paywall, maar biedt een workaround: je kunt documenten downloaden als je eerst eigen content uploadt. Drie uploads is één download. Dus had ik drie eigen documenten nodig om te publiceren.
 
