@@ -1,0 +1,22 @@
+title: Bart van der Wal
+description: Personal website and blog
+url: "https://bartvanderwal.nl"
+baseurl: ""
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Author info
+author:
+  name: Bart van der Wal
+
+# Permalink style
+permalink: /:title/
+
+# Exclude from build
+exclude:
+  - README.md
+  - Gemfile.lock
