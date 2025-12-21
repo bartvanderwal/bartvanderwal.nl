@@ -1,5 +1,5 @@
 title: Bart van der Wal
-description: Personal website and blog
+description: Persoonlijke website en blog
 url: "https://bartvanderwal.nl"
 baseurl: ""
 
@@ -10,8 +10,7 @@ plugins:
   - jekyll-seo-tag
 
 # Author info
-author:
-  name: Bart van der Wal
+author: Bart van der Wal
 
 # Permalink style
 permalink: /:title/

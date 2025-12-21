@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "nl" }}">
+  {%- include head.html -%}
+  <body>
+    {%- include header.html -%}
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </main>
+    {%- include footer.html -%}
+
+    <!-- Print/PDF Button Script -->
+    <script>
+    (function() {
+      var btn = document.createElement('button');
+      btn.className = 'print-button';
+      btn.textContent = 'Print / PDF';
+      btn.title = 'Print of bewaar als PDF';
+      btn.onclick = function() { window.print(); };
+      document.body.appendChild(btn);
+    })();
+    </script>
+  </body>
+</html>
