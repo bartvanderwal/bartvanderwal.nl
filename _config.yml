@@ -1,21 +1,88 @@
+# Site settings
 title: Bart van der Wal
-description: Persoonlijke website en blog
-url: "https://bartvanderwal.nl"
-baseurl: ""
+description: 'Persoonlijke blog over technologie, softwareontwikkeling en duursport.'
+permalink: ':title/'
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://bartvanderwal.nl" # the base hostname & protocol for your site, e.g. http://example.com
+logo: "/assets/img/branding/logo.svg"
+logo-icon: "/assets/img/branding/logo-icon.svg"
+logo-icon-SEO: "/assets/img/branding/logo-icon.svg"
+
+# Night/Dark mode
+# Default mode is "auto", "auto" is for auto nightshift
+# (19:00 - 07:00), "manual" is for manual toggle, and
+# "on/off" is for default on/off.
+night_mode: "auto"
+
+logo-dark: "/assets/img/branding/logo-dark.svg"
+highlight_theme: syntax-base16.monokai.dark # select a dark theme for the code highlighter if needed
+
+# Author settings
+author: Bart van der Wal
+author-pic: bart-swimrun-leiderdorp-cutout.jpeg
+about-author: Docent aan de HAN University of Applied Sciences. Schrijft over technologie, softwareontwikkeling en duursport.
+
+# Contact links
+email: # Add your Email address
+phone: # Add your Phone number
+website: https://bartvanderwal.nl
+linkedin: bartvanderwal # Add your Linkedin handle
+github: bartvanderwal # Add your Github handle
+twitter: # Add your Twitter handle
+bandcamp: # Add your Bandcamp username
+stackoverflow: # Add your stackoverflow account
+
+# Newsletter
+mailchimp: ""
+
+# Tracker
+analytics: # Add your Google Analytics ID
+fbadmin:
+
+# Paginate
+paginate: 6
+paginate_path: 'page:num'
+words_per_minute: 200
+
+# Language
+lang: nl
+
+extensions:
+  mermaid_enable: true
+
+# Comments
+comments: # disabled for now
+comments_opts:
+  comments_curtain: yes
+  repo:
+  issue_term:
+  label:
+  theme:
+  discus_identifier:
 
 # Build settings
-theme: minima
+markdown: kramdown
+mathjax: true
+highlighter: rouge
+compress_html:
+  clippings: all
+  comments: all
+  startings: [html, head, body]
+
+# Outputting
+timezone: Europe/Amsterdam
+
+category_archive:
+  type: liquid
+  path: /categories/
+
+sass:
+  style: compressed
+
 plugins:
+  - jekyll-paginate
   - jekyll-feed
-  - jekyll-seo-tag
+  - jekyll-sitemap
 
-# Author info
-author: Bart van der Wal
-
-# Permalink style
-permalink: /:title/
-
-# Exclude from build
-exclude:
-  - README.md
-  - Gemfile.lock
+include: [_pages]
+exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock", "package-lock.json", "assets/css/sass/"]

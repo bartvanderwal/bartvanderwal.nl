@@ -24,6 +24,8 @@ De aanpak voorkomt verspilde moeite aan implementaties die later fundamentele wi
 
 ## Walking Skeleton vs. MVP
 
+![Walking Skeleton vs MVP](/assets/images/walking-skeleton/walking-skeleton-vs-mvp.png)
+
 Deze concepten dienen verschillende doelen:
 
 **Walking Skeleton:**

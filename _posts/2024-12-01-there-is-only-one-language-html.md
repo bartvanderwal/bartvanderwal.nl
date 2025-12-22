@@ -1,11 +1,14 @@
 ---
 layout: post
-title: "There is only one language: HTML"
+title: "Which language is good to make a website?"
 date: 2024-12-01
+lang: en
 canonical_url: "https://www.quora.com/Which-language-is-good-to-make-a-website"
 ---
 
 *Originally posted on [Quora](https://www.quora.com/Which-language-is-good-to-make-a-website)*
+
+> **Question:** For any website designing, which language is good?
 
 Well, actually there is only one language!
 
