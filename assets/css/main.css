@@ -1989,8 +1989,7 @@ a.read-more:hover {
     text-decoration:underline;
 }
 /* = = = = = = = = = = Animations  = = = = = = = = = = */
-.main-header,
-.page-image,
+/* Header/footer skeleton loads instantly, only content fades in */
 .page-content,
 .pagination,
 .about-container,
@@ -2011,9 +2010,7 @@ a.read-more:hover {
           animation-name: fadeInDown;
 }
 
-.main-header,
-.page-image
- {
+.page-image {
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
 }
