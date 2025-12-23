@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Hoe deze blog begon"
-date: 2024-12-21
+date: 2025-12-21
 lang: nl
 tags: [personal, blog]
 ---
