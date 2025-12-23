@@ -1989,7 +1989,17 @@ a.read-more:hover {
     text-decoration:underline;
 }
 /* = = = = = = = = = = Animations  = = = = = = = = = = */
-/* Fade-in animaties uitgeschakeld voor snellere page load */
+/* Alleen hoofdplaatje heeft fade-in animatie */
+.page-image {
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-name: fadeInDown;
+          animation-name: fadeInDown;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
 
 @-webkit-keyframes fadeInDown {
   from {

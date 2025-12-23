@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Bronvermelding in ICT: Niet tegen plagiaat, maar vóór geloofwaardigheid"
-date: 2024-12-22
+date: 2025-12-22
 lang: nl
 tags: [technisch-schrijven, onderwijs, apa]
 img: posts/apa-bronvermelding-in-ict.png

@@ -1,23 +1,25 @@
 ---
 layout: post
 title: "SwimRun Seizoen 2026"
-date: 2024-12-22
+date: 2025-12-22
 lang: nl
 tags: [swimrun, duursport, planning]
+img: posts/swimrun-seizoen-2026.png
+
 ---
 
-Ideeën voor evenementen in 2026:
+Bijna einde jaar, een vriend die ook into SwimRun geraakt lijkt te zijn, kwam met onderstaande lijstje. Dus ik zet het maar meteen in mijn nieuwe blog. En liet ChatGPT er een plaatje bij maken. Een enkele datums zijn nog 'to be determined', TBD, maar wel goed vast de kalender te pakken. Sowieso luk het niet om al deze events te doen. Maar hopelijk wel een paar. Ben je ook hierbij? Of Heb je nog meer ideeen voor SwimRuns?
 
 ## Mei
 
-- **8-10**: Koning van Spanje
-- **25**: Ecoswimrun Bütgenbach
-- **30**: Stuwwalloop
+- **8-10**: Koning van Spanje, Gulpen (Limburg), 43, 41 of evt. driedaagse
+- **25**: Ecoswimrun Bütgenbach (BE)
+- **30**: Stuwwalloop Oosterbeek
 
 ## Juni
 
 - **20**: Backyard SwimRun 't Twiske (10 uur)
-- **???**: Ecoswimrun Gileppe
+- **TBD**: Ecoswimrun Gileppe (BE)
 
 ## Juli
 
@@ -35,5 +37,4 @@ Ideeën voor evenementen in 2026:
 
 ## September
 
-- **26**: Lauwersmeer SwimRun (16km)
-
+- **26**: Lauwersmeer SwimRun (10, 16 of 25km)

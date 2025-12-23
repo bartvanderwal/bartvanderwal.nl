@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Weg van Facebook: Een jaar later"
-date: 2024-12-23
+date: 2025-12-23
 lang: nl
 tags: [privacy, social-media, big-tech]
 published: false

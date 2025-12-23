@@ -1,5 +1,7 @@
 {% assign document = post | default: page %}
-{% if document.read_time or document.show_date %}
+{% assign show_date = document.show_date | default: site.show_date %}
+{% assign read_time = document.read_time | default: site.read_time %}
+{% if read_time or show_date %}
   <span class = "{{ include.type }}">
   {% if include.type == "post-page-meta" %}
     <p class="page_meta">
@@ -8,10 +10,10 @@
     <span class="meta-pre"></span>
   {% endif %}
   {% unless include.date == "none" %}
-    {% if document.show_date and document.date %}
+    {% if show_date and document.date %}
       {% assign date = document.date %}
       <{% if include.type == "recent-item-meta" %}p{% else %}span{% endif %} class="page_meta-date">
-        <time datetime="{{ date | date_to_xmlschema }}">{{ date | date: "%B %-d, %Y" }}</time>
+        <time datetime="{{ date | date_to_xmlschema }}">{{ date | date: "%d %B %Y" }}</time>
       </{% if include.type == "recent-item-meta" %}p{% else %}span{% endif %}>
     {% endif %}
     {% unless include.type == "recent-item-meta" %}

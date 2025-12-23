@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "AI Coding Sucks - Of toch niet?"
-date: 2024-12-23
+date: 2025-12-23
 lang: nl
 tags: [ai, programmeren, tooling]
 published: false
