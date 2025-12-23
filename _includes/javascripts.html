@@ -115,6 +115,143 @@
 
 {% if page.layout == "post" %}
   <script>
+    function downloadPdf() {
+      var btn = document.getElementById('download-pdf');
+      btn.innerHTML = '<i class="fa fa-spinner fa-spin"></i> Generating...';
+      btn.disabled = true;
+
+      // Lazy load html2pdf.js
+      var script = document.createElement('script');
+      script.src = 'https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js';
+      script.onload = function() {
+        // Create a container for PDF content
+        var wrapper = document.createElement('div');
+        wrapper.id = 'pdf-wrapper';
+        wrapper.style.cssText = 'position: absolute; left: -9999px; top: 0; width: 800px; background: white; color: black; font-family: Georgia, "Times New Roman", serif; padding: 40px; line-height: 1.6;';
+
+        // Get the title
+        var title = document.querySelector('.page-title');
+        if (title) {
+          var titleEl = document.createElement('h1');
+          titleEl.textContent = title.textContent;
+          titleEl.style.cssText = 'font-size: 28px; margin-bottom: 10px; color: black;';
+          wrapper.appendChild(titleEl);
+        }
+
+        // Get the date
+        var dateMeta = document.querySelector('.page_meta-date time');
+        if (dateMeta) {
+          var dateEl = document.createElement('p');
+          dateEl.textContent = dateMeta.textContent;
+          dateEl.style.cssText = 'font-size: 14px; color: #666; margin-bottom: 30px;';
+          wrapper.appendChild(dateEl);
+        }
+
+        // Clone the page-content and remove unwanted elements
+        var articleContent = document.querySelector('.page-content');
+        if (articleContent) {
+          var contentClone = articleContent.cloneNode(true);
+
+          // Remove elements we don't want in the PDF
+          var removeSelectors = [
+            '.header-page', '.sidebar', '.post-nav', '.author-box',
+            '.recent-box', '.comments', '.separator', 'button',
+            '#comment-layout', '.post-image-float', '.pdf-button'
+          ];
+          removeSelectors.forEach(function(selector) {
+            contentClone.querySelectorAll(selector).forEach(function(el) {
+              el.remove();
+            });
+          });
+
+          // Style the content for PDF
+          contentClone.style.cssText = 'color: black; font-size: 16px;';
+
+          // Style all elements
+          contentClone.querySelectorAll('*').forEach(function(el) {
+            el.style.color = 'black';
+            el.style.backgroundColor = 'transparent';
+          });
+
+          // Style headings
+          contentClone.querySelectorAll('h1,h2,h3,h4,h5,h6').forEach(function(h) {
+            h.style.cssText = 'color: black; margin-top: 24px; margin-bottom: 12px; page-break-after: avoid;';
+          });
+
+          // Style paragraphs
+          contentClone.querySelectorAll('p').forEach(function(p) {
+            p.style.cssText = 'color: black; margin-bottom: 12px; line-height: 1.6;';
+          });
+
+          // Style lists
+          contentClone.querySelectorAll('li').forEach(function(li) {
+            li.style.cssText = 'color: black; margin-bottom: 6px;';
+          });
+
+          // Style code blocks
+          contentClone.querySelectorAll('pre, code').forEach(function(code) {
+            code.style.cssText = 'background: #f4f4f4; color: black; padding: 2px 6px; font-size: 14px; white-space: pre-wrap; word-wrap: break-word;';
+          });
+
+          // Style blockquotes
+          contentClone.querySelectorAll('blockquote').forEach(function(bq) {
+            bq.style.cssText = 'border-left: 4px solid #ccc; padding-left: 16px; margin: 16px 0; color: #333; font-style: italic;';
+          });
+
+          // Style tables
+          contentClone.querySelectorAll('table').forEach(function(table) {
+            table.style.cssText = 'border-collapse: collapse; width: 100%; margin: 16px 0;';
+          });
+          contentClone.querySelectorAll('th, td').forEach(function(cell) {
+            cell.style.cssText = 'border: 1px solid #ccc; padding: 8px; color: black;';
+          });
+
+          // Style links (show as regular text in PDF)
+          contentClone.querySelectorAll('a').forEach(function(a) {
+            a.style.cssText = 'color: #333; text-decoration: underline;';
+          });
+
+          wrapper.appendChild(contentClone);
+        } else {
+          console.error('PDF: Could not find .page-content element');
+        }
+
+        // Append to body for rendering
+        document.body.appendChild(wrapper);
+
+        // Debug: log what we're about to render
+        console.log('PDF wrapper content:', wrapper.innerHTML.substring(0, 500));
+
+        var opt = {
+          margin: [15, 15, 15, 15],
+          filename: document.title.replace(/[^a-z0-9]/gi, '-') + '.pdf',
+          image: { type: 'jpeg', quality: 0.98 },
+          html2canvas: {
+            scale: 2,
+            useCORS: true,
+            logging: true,
+            backgroundColor: '#ffffff',
+            windowWidth: 800
+          },
+          jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+          pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
+        };
+
+        html2pdf().set(opt).from(wrapper).save().then(function() {
+          document.body.removeChild(wrapper);
+          btn.innerHTML = '<i class="fa fa-file-pdf-o"></i> Download PDF';
+          btn.disabled = false;
+        }).catch(function(err) {
+          console.error('PDF generation failed:', err);
+          document.body.removeChild(wrapper);
+          btn.innerHTML = '<i class="fa fa-file-pdf-o"></i> Download PDF';
+          btn.disabled = false;
+          alert('PDF generation failed: ' + err.message);
+        });
+      };
+      document.head.appendChild(script);
+    }
+
     function toggle_comments(){
       var commentCurtain = document.getElementById('comment-curtain')
       if (commentCurtain) {
