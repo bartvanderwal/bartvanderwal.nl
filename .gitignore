@@ -1,0 +1,35 @@
+# Jekyll generated files
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Node modules (if using npm for build tools)
+node_modules/
+
+# Ruby/Bundler
+.bundle/
+vendor/bundle/
+Gemfile.lock
+
+# Editor/IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Temporary files
+*.log
+*.tmp
+*.temp
+
+# Environment files
+.env
+.env.local
