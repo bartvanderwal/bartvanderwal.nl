@@ -1989,47 +1989,7 @@ a.read-more:hover {
     text-decoration:underline;
 }
 /* = = = = = = = = = = Animations  = = = = = = = = = = */
-/* Header/footer skeleton loads instantly, only content fades in */
-.page-content,
-.pagination,
-.about-container,
-.post-card-box,
-.blog-tags,
-.github-button,
-.tag-master,
-.tag-cloud,
-.toc,
-.sidebar,
-.pnf-image,
-.page_meta {
-  -webkit-animation-duration: 0.7s;
-          animation-duration: 0.7s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-name: fadeInDown;
-          animation-name: fadeInDown;
-}
-
-.page-image {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-}
-
-.page-content,
-.pagination,
-.tag-master,
-.tag-cloud,
-.blog-tags,
-.page_meta,
-.toc,
-.github-button,
-.sidebar,
-.about-container,
-.pnf-image,
-.post-card-box {
-  -webkit-animation-delay: 0.75s;
-          animation-delay: 0.75s;
-}
+/* Fade-in animaties uitgeschakeld voor snellere page load */
 
 @-webkit-keyframes fadeInDown {
   from {
