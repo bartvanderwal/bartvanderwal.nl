@@ -865,6 +865,17 @@ svg.menu-icon-house {
   padding-left: 5px;
   width: 95%
 }
+
+.post-card-wrapper {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.post-card-wrapper:hover {
+  text-decoration: none;
+}
+
 .post-card-tags{
   font-size: 10px
 }
@@ -1432,23 +1443,25 @@ tweet a {
 }
 
 /* = = = = = = = = = = Post Page  = = = = = = = = = = */
-.page-image {
-  position: relative;
-  padding: 0;
-  margin: 0;
-  height: 500px;
-  background-color: var(--background);
-  overflow: hidden;
+.post-image-float {
+  float: right;
+  max-width: 300px;
+  margin: 0 0 1em 1.5em;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px var(--shadow);
 }
 
-.page-image .cover-image {
-  height: 100%;
-  width: 100%;
+@media only screen and (max-width: 768px) {
+  .post-image-float {
+    float: none;
+    max-width: 100%;
+    margin: 0 0 1em 0;
+  }
 }
 
 .page-content {
   margin: auto;
-  margin-top: -80px;
+  margin-top: 0;
   background-color: var(--background);
   padding: 20px;
   -webkit-border-top-left-radius: 20px;
@@ -1489,10 +1502,11 @@ img + small, img + br + small {
 }
 .header-page h1 {
   font-weight: var(--font2-regular);
-  font-size: 4.25rem;
+  font-size: 2.25rem;
   text-align: left;
   margin: 0 0 10px;
-  color: var(--text)
+  color: var(--text);
+  line-height: 1.2;
 }
 
 .header-page .page-date {
@@ -1504,6 +1518,85 @@ img + small, img + br + small {
 
 .post-page-meta {
     font-size: .8em;
+}
+
+.pdf-button {
+  display: inline-block;
+  margin-top: 0.5em;
+  padding: 8px 16px;
+  font-family: var(--font2);
+  font-size: 0.7em;
+  color: var(--main);
+  background: var(--background);
+  border: 1px solid var(--main);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.pdf-button:hover {
+  background: var(--main);
+  color: var(--background);
+}
+
+.pdf-button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+/* Post Navigation */
+.post-nav {
+  margin: 1.5em 0;
+  padding: 0.75em 0;
+  border-top: 1px solid var(--gray-light);
+  border-bottom: 1px solid var(--gray-light);
+}
+
+.post-nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+}
+
+.post-nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.5em 1em;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.9em;
+  border-radius: 4px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.post-nav-link:hover {
+  background-color: var(--gray-light);
+  color: var(--main);
+  text-decoration: none;
+}
+
+.post-nav-home {
+  font-size: 1.2em;
+}
+
+.post-nav-disabled {
+  visibility: hidden;
+  min-width: 100px;
+}
+
+.post-nav-label {
+  display: inline;
+}
+
+@media (max-width: 600px) {
+  .post-nav-label {
+    display: none;
+  }
+  .post-nav-link {
+    padding: 0.5em;
+  }
 }
 
 .page-footer {

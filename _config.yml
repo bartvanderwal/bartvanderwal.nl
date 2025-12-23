@@ -20,7 +20,13 @@ highlight_theme: syntax-base16.monokai.dark # select a dark theme for the code h
 # Author settings
 author: Bart van der Wal
 author-pic: bart-swimrun-leiderdorp-cutout.jpeg
-about-author: Docent aan de HAN University of Applied Sciences. Schrijft over technologie, softwareontwikkeling en duursport.
+about-author: Docent aan de HAN University of Applied Sciences en MAMIL met een passie voor SwimRun en andere avontuurlijke duursportavonturen. Schrijft over technologie, softwareontwikkeling en duursport.
+
+# Default post image (used when post has no img in front matter)
+default-post-img: default-plaatje.png
+
+# Show date on posts (for APA references)
+show_date: true
 
 # Contact links
 email: # Add your Email address

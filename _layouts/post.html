@@ -15,17 +15,24 @@ layout: default
 </section>
 <div class="flex-container transparent">
   {% include header.html %}
+  <main>
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     {% include schema-meta.html %}
-    <div class="page-image">
-      <div class="cover-image" style="background: url('{{ relativebase }}assets/img/{{ page.img }}') center no-repeat; background-size: cover;"></div>
-    </div>
     <div class="wrapper">
       <div class="page-content">
         <div class="header-page">
           <h1 class="page-title">{{ page.title }}</h1>
           {% include post_meta.html type="post-page-meta" %}
+          <button id="download-pdf" class="pdf-button" onclick="downloadPdf()">
+            <i class="fa fa-file-pdf-o"></i> Download PDF
+          </button>
         </div>
+        {% include post-nav.html %}
+        {% if page.img %}
+        <img class="post-image-float" src="{{ relativebase }}assets/img/{{ page.img }}" alt="{{ page.title }}">
+        {% elsif site.default-post-img %}
+        <img class="post-image-float" src="{{ relativebase }}assets/img/{{ site.default-post-img }}" alt="{{ page.title }}">
+        {% endif %}
         {% include sidebar.html context="post" class="side" id="sidebar" %}
         {% if page.toc %}{% include sidebar-toc.html %}{% endif %}
         {% include github-button.html %}
@@ -38,6 +45,7 @@ layout: default
       </div>
     </div> <!-- End Wrapper -->
   </article>
+  </main>
   {% include search.html %}
   {% include footer.html %}
 </div>

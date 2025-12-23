@@ -1,0 +1,30 @@
+{% include calculate_relative_base.html %}
+<nav class="post-nav" aria-label="Post navigatie">
+  <div class="post-nav-inner">
+    {% if page.previous.url %}
+      {% capture prev_url %}{{ relativebase }}{{ page.previous.url }}{% endcapture %}
+      {% assign prev_url = prev_url | replace: "//", "/" %}
+      <a href="{{ prev_url }}" class="post-nav-link post-nav-prev" title="{{ page.previous.title }}">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        <span class="post-nav-label">Vorige</span>
+      </a>
+    {% else %}
+      <span class="post-nav-link post-nav-disabled"></span>
+    {% endif %}
+
+    <a href="{{ relativebase }}" class="post-nav-link post-nav-home" title="Alle posts">
+      <i class="fa fa-th" aria-hidden="true"></i>
+    </a>
+
+    {% if page.next.url %}
+      {% capture next_url %}{{ relativebase }}{{ page.next.url }}{% endcapture %}
+      {% assign next_url = next_url | replace: "//", "/" %}
+      <a href="{{ next_url }}" class="post-nav-link post-nav-next" title="{{ page.next.title }}">
+        <span class="post-nav-label">Volgende</span>
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+    {% else %}
+      <span class="post-nav-link post-nav-disabled"></span>
+    {% endif %}
+  </div>
+</nav>
