@@ -3,9 +3,10 @@ layout: post
 title: "Hoe deze blog begon"
 date: 2024-12-21
 lang: nl
+tags: [personal, blog]
 ---
 
-Soms leiden de kleinste dingen tot onverwachte uitkomsten. Deze blog bestaat omdat ik een boek wilde lezen.
+Soms leiden de kleinste dingen tot onverwachte uitkomsten. Mijn blog website bestaat omdat ik even snel een boek wilde opzoeken.
 
 Ik had eerder "Ethics For People Who Work In Tech" van Marc Steen geleend uit de HAN bibliotheek. Een goed boek over de ethische overwegingen die we tegenkomen als technologie professionals. Ik wilde het snel even herlezen en keek of er een PDF online stond - en vond het op [Scribd](https://www.scribd.com/).
 

@@ -3,6 +3,8 @@ layout: post
 title: "Continuous Integration"
 date: 2024-12-19
 lang: nl
+tags: [devops, ci, software]
+img: posts/devops-infinity-loop.png
 canonical_url: "https://aim-cnp.github.io/pwac/workshops/integratie"
 ---
 

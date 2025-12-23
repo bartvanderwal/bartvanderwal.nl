@@ -11,24 +11,28 @@ De blog bevat zowel Nederlandstalige als Engelstalige content (Quora posts). Er 
 ## Decision
 
 Handmatige aanpak met `lang` attribuut in front matter:
+
 - Nederlandse posts: `lang: nl`
 - Engelse posts (Quora): `lang: en`
 
-Geen multi-language plugin. Browsers bieden tegenwoordig goede vertaalfunctionaliteit.
+Geen multi-language plugin. Browsers bieden tegenwoordig acceptabele vertaalfunctionaliteit.
 
 ## Alternatives
 
 ### 1. jekyll-multiple-languages-plugin
+
 - Aparte mappen per taal (`_i18n/nl/`, `_i18n/en/`)
 - Volledige vertalingen van alle content
 - **Nadeel**: Overhead voor kleine site, dubbel onderhoud
 
 ### 2. Polyglot
+
 - Automatische URL's (`/nl/post/`, `/en/post/`)
 - Makkelijkere setup dan optie 1
 - **Nadeel**: Nog steeds plugin dependency, complexiteit
 
-### 3. Handmatig met lang attribuut ✓
+### 3. Handmatig met 'lang' attribuut ✓
+
 - Simpelste oplossing
 - Geen plugin nodig
 - Per-post taalinstelling

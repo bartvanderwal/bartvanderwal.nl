@@ -7,7 +7,7 @@ tags: [ai, programmeren, tooling]
 published: false
 ---
 
-In oktober 2025 postte CJ van Coding Garden een 15-minuten durende rant genaamd "AI Coding Sucks". ThePrimeTime pikte het op, en de video ging viraal in de developer community. De frustratie resoneerde - maar is het hele verhaal?
+In oktober 2025 postte CJ van Coding Garden een 15-minuten durende rant genaamd "AI Coding Sucks". ThePrimeTime pikte het op, en de video ging viraal in de developer community. De frustratie resoneerde - maar is dit het hele verhaal?
 
 ## De kern van CJ's frustratie
 
@@ -71,7 +71,13 @@ Dan's succes vereist iets cruciaal: je moet al weten wat de oplossing zou moeten
 
 ## Mijn eigen ervaring
 
-TODO: Eigen ervaring toevoegen
+Ik merk ook dat de neigin van LLM's om je naar de mond te praten; e.g. te bullshitten, zich bij Code-gerichte. AI's maken dezelfde code smells als programmeurs. Logisch want ze zijn ook getraind op open source/online codebases waarin deze smells ook zitten. Let wel: smells is niet helemaal hetzelfde als een fout. Het is een stukje wat de code minder onderhoudbaar maakt.
+
+Ik heb zelf veel tools al gebruikt; begon met co-pilot, maar vooral veel ChatGPT. Die nu ook nog mijn plaatjes maakt. Maar je gaat dan wel HEEL VEEL heen en weer van je IDE/ontwikkelomgeving naar de browser. Dus nadat ik een podacat hoorde met de makers van Cursor, een Visual Studio Code fork, stapte ik over naar agentic AI. En toen deze op een gegeven moment heel snel begon te zeuren dat ik door mijn tokens heen was ben ik een keer overgestapt naar Anthropic's Claude waar een collega enthousiast was over hun CLI tool: Command Line Interface.
+
+Als ik de AI een docker compose file laat maken (`docker-compose.yaml`) voegt hij ook altijd een `version` toe, terwijl deze tag al lang 'deprecated is'. ALs ik de AI hierop wijs corrigeert hij het wel; of gewoon zelf verwijderen; dat scheelt weer tokens. Maar het merendeel van deze berstanden die de LLM tegenkwam in zijn trainingsmateriaal bevat dit nog wel.
+
+Het principe van 'later is beter', wat veel startende developers blind volgend; volgt de LLM dus niet. Heeft ook wel iets goeds.
 
 ## De nuance
 

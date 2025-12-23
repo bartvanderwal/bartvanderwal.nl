@@ -7,15 +7,17 @@ Persoonlijke blog van Bart van der Wal, gebouwd met Jekyll en het Adam Blog 2.0 
 ### Eenmalige setup
 
 1. Zorg dat Homebrew Ruby is geïnstalleerd:
-   ```bash
-   brew install ruby
-   ```
+
+```bash
+brew install ruby
+```
 
 2. Voeg Ruby aan je PATH toe in `~/.zshrc`:
-   ```bash
-   export PATH="/opt/homebrew/opt/ruby/bin:/opt/homebrew/lib/ruby/gems/3.4.0/bin:$PATH"
-   unset GEM_HOME GEM_PATH
-   ```
+
+```bash
+export PATH="/opt/homebrew/opt/ruby/bin:/opt/homebrew/lib/ruby/gems/3.4.0/bin:$PATH"
+unset GEM_HOME GEM_PATH
+```
 
 3. Herlaad je shell:
 
@@ -42,17 +44,17 @@ bundle install
 bundle exec jekyll serve
 ```
 
-De site draait dan op http://localhost:4000
+De site draait dan op `http://localhost:4000`.
 
 ## Deployment
 
 Push naar de `main` branch triggert automatisch een GitHub Actions workflow die de site bouwt en deployt naar GitHub Pages.
 
-Live site: https://bartvanderwal.nl
+Live site: `https://bartvanderwal.nl`
 
 ## Structuur
 
-```
+```console
 ├── _posts/           # Blog posts (format: YYYY-MM-DD-titel.md)
 ├── _pages/           # Statische pagina's
 ├── assets/images/    # Afbeeldingen
@@ -88,6 +90,7 @@ Je content hier in Markdown...
 Gebaseerd op [Adam Blog 2.0](https://github.com/the-mvm/the-mvm.github.io) door Armando Maynez.
 
 Features:
+
 - Dark mode (automatisch)
 - Responsive design
 - Zoekfunctie
@@ -104,3 +107,5 @@ Features:
 ## Infrastructuur
 
 - [CapRover Multi-Site Setup](docs/caprover-setup.md) - VPS configuratie voor Umami, Spring Boot apps, databases
+
+![Screenshot ADAM 2.0 style initieel](screenshot-adam2.0-initial.png)

@@ -3,6 +3,8 @@ layout: post
 title: "Prompt Engineering"
 date: 2024-12-20
 lang: nl
+tags: [ai, prompting]
+img: posts/chat-gpt-3hoog-comic.jpg
 ---
 
 In dit artikel verkennen we prompt engineering: de kunst van het effectief communiceren met AI-taalmodellen.

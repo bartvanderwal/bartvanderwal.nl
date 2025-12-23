@@ -6,7 +6,7 @@ lang: nl
 tags: [swimrun, duursport, planning]
 ---
 
-Het seizoen 2026 belooft een ambitieus jaar te worden met een mix van SwimRun wedstrijden, trailruns en ultralopen door heel Europa. Hier is de voorlopige planning:
+Ideeën voor evenementen in 2026:
 
 ## Mei
 
@@ -47,8 +47,3 @@ Het seizoen 2026 belooft een ambitieus jaar te worden met een mix van SwimRun we
 |-------|-----------|
 | 26 | Lauwersmeer SwimRun (16km) |
 
----
-
-Dit seizoen combineert Nederlandse, Belgische en Zwitserse evenementen. De hoogtepunten zijn de Zwitserse bergwedstrijden in juli en augustus - met name de SwimRun Engadin en de legendarische Sierre-Zinal.
-
-*Planning opgesteld samen met trainingsvriend.*

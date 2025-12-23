@@ -2,6 +2,8 @@
 layout: post
 title: "Can a .NET framework be created from scratch?"
 date: 2024-12-01
+lang: en
+tags: [dotnet, software, quora]
 canonical_url: "https://www.quora.com/Can-a-NET-framework-be-created-from-scratch"
 ---
 

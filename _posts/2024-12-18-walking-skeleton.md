@@ -3,6 +3,8 @@ layout: post
 title: "Walking Skeleton: End-to-End Validatie"
 date: 2024-12-18
 lang: nl
+tags: [software, agile, onderwijs]
+img: posts/walking-skeleton-vs-mvp.png
 canonical_url: "https://aim-ene.github.io/pexe/docs/Projectresultaat/WalkingSkeleton"
 ---
 

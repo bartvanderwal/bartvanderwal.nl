@@ -12,13 +12,24 @@ $(function() {
   // If a tag was passed as a url parameter then use it to filter the urls
   if (urlParams.has('tag')){
     const tag = urlParams.get('tag');
-    document.getElementById(tag).classList.toggle('hidden');
+    const tagElement = document.getElementById(tag);
+    if (tagElement) {
+      tagElement.classList.remove('hidden');
+    } else {
+      console.error('Tag element not found:', tag);
+    }
     $.getJSON('./posts-by-tag.json', function(data) {
         let tag_item = data.find(el => el.tag === tag);
-        postURLs = tag_item["posts"];
-        // If there aren't any more posts available to load than already visible, disable fetching
-        if (postURLs.length <= postsToLoad)
-        disableFetching();
+        if (tag_item) {
+          postURLs = tag_item["posts"];
+          // If there aren't any more posts available to load than already visible, disable fetching
+          if (postURLs.length <= postsToLoad)
+            disableFetching();
+        } else {
+          console.error('Tag not found in JSON:', tag);
+        }
+    }).fail(function(jqxhr, textStatus, error) {
+      console.error('Failed to load posts-by-tag.json:', textStatus, error);
     });
   } else {
       $.getJSON('./all-posts.json', function(data) {

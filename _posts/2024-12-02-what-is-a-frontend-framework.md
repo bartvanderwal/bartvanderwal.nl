@@ -2,6 +2,9 @@
 layout: post
 title: "What is a front-end framework?"
 date: 2024-12-02
+lang: en
+tags: [frontend, webdev, quora]
+img: posts/what-is-a-frontend-framework.png
 canonical_url: "https://www.quora.com/What-is-a-front-end-framework-And-does-the-definition-apply-to-Bootstrap-or-Angular"
 ---
 

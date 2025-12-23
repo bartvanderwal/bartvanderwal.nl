@@ -3,6 +3,7 @@ layout: post
 title: "Een wild plan: TV TAS SwimRun"
 date: 2021-02-15
 lang: nl
+tags: [swimrun, duursport]
 ---
 
 *Dit artikel verscheen ook op [From 0 till Ö till Ö](https://from0tillotillo.substack.com/p/o-3-de-tvtas-swimrun)*
