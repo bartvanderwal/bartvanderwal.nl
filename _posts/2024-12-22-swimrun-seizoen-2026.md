@@ -10,40 +10,30 @@ Ideeën voor evenementen in 2026:
 
 ## Mei
 
-| Datum | Evenement |
-|-------|-----------|
-| 8-10 | **Koning van Spanje** |
-| 25 | Ecoswimrun Bütgenbach |
-| 30 | Stuwwalloop |
+- **8-10**: Koning van Spanje
+- **25**: Ecoswimrun Bütgenbach
+- **30**: Stuwwalloop
 
 ## Juni
 
-| Datum | Evenement |
-|-------|-----------|
-| 20 | Backyard SwimRun 't Twiske (10 uur) |
-| ??? | Ecoswimrun Gileppe |
+- **20**: Backyard SwimRun 't Twiske (10 uur)
+- **???**: Ecoswimrun Gileppe
 
 ## Juli
 
-| Datum | Evenement |
-|-------|-----------|
-| 4 | **SwimRun Engadin** - Bernina Gletscher Marathon |
-| 17-19 | Rondje Eilanden |
-| 18 | Swissalpine K42 |
-| 25 | Barrhorn 3K (24km) |
-| 26 | Montreux Trail Fest 30K |
+- **4**: SwimRun Engadin - Bernina Gletscher Marathon
+- **17-19**: Rondje Eilanden
+- **18**: Swissalpine K42
+- **25**: Barrhorn 3K (24km)
+- **26**: Montreux Trail Fest 30K
 
 ## Augustus
 
-| Datum | Evenement |
-|-------|-----------|
-| 8 | **Sierre-Zinal** |
-| 22-23 | SwimRun Grands Lacs de Laffrey (VK) |
-| 30 | Ecoswimrun Robertville |
+- **8**: Sierre-Zinal
+- **22-23**: SwimRun Grands Lacs de Laffrey (VK)
+- **30**: Ecoswimrun Robertville
 
 ## September
 
-| Datum | Evenement |
-|-------|-----------|
-| 26 | Lauwersmeer SwimRun (16km) |
+- **26**: Lauwersmeer SwimRun (16km)
 
