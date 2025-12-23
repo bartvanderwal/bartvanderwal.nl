@@ -84,12 +84,14 @@ Het principe van 'later is beter', wat veel startende developers blind volgend; 
 Misschien is de vraag niet "werkt AI coding?" maar "voor wie en wanneer?"
 
 **AI werkt goed voor:**
+
 - Boilerplate code genereren
 - Bekende patronen implementeren
 - Syntax opzoeken in onbekende talen
 - Snelle prototypes
 
 **AI werkt slecht voor:**
+
 - Complexe, domein-specifieke problemen
 - Debuggen van subtiele bugs
 - Architectuurbeslissingen
