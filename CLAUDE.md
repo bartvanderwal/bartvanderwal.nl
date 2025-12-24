@@ -93,6 +93,7 @@ Voorbeelden:
 - Google. (september 2022). *Technical Writing*. Geraadpleegd van developers.google.com/tech-writing
 - Evans, E. (2003). *Domain-Driven Design: Tackling Complexity in the Heart of Software*. Addison-Wesley.
 - Merriam-Webster. (14 december 2025). *2025 Word of the Year: Slop*. Geraadpleegd van merriam-webster.com/wordplay/word-of-the-year
+- Doctorow, C. (29 april 2025). *Cory Doctorow at CF 25: How Enshittification Conquered the 21st Century* [Video]. CloudFest. Geraadpleegd van youtube.com/watch?v=_Ai-fC-2Bpo
 ```
 
 ### Belangrijke regels
