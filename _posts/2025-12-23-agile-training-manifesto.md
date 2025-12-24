@@ -4,7 +4,7 @@ title: "Agile Training Manifesto"
 date: 2025-12-23
 lang: nl
 tags: [agile, onderwijs, devops]
-published: false
+draft: true
 ---
 
 *Concept - ideeën voor uitwerking*

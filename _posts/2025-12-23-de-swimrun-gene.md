@@ -4,7 +4,7 @@ title: "De SwimRun Gene"
 date: 2025-12-23
 lang: nl
 tags: [duursport, swimrun, boeken]
-published: false
+draft: true
 ---
 
 *Concept - geïnspireerd door "The Explorer's Gene" van Alex Hutchinson*

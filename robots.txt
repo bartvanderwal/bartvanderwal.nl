@@ -1,2 +1,9 @@
+---
+layout: null
+---
 User-agent: *
 Disallow:
+{% for post in site.posts %}{% if post.draft %}
+Disallow: {{ post.url }}{% endif %}{% endfor %}
+
+Sitemap: {{ site.url }}/sitemap.xml

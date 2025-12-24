@@ -7,6 +7,7 @@
 	<link rel="canonical" href="{{ site.url }}{{ page.url }}">
 	<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	{% if page.draft %}<meta name="robots" content="noindex, nofollow">{% endif %}
 	{% include SEO.html %}
 	<!-- Windows Phone -->
 	<meta name="msapplication-navbutton-color" content="#311e3e">

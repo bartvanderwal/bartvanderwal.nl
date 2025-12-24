@@ -4,7 +4,7 @@ title: "Weg van Facebook: Een jaar later"
 date: 2025-12-23
 lang: nl
 tags: [privacy, social-media, big-tech]
-published: false
+draft: true
 ---
 
 Een jaar geleden besloot ik te stoppen met Facebook. De eerste poging strandde: ik wilde eerst mijn foto's downloaden, en Facebook beloofde een .zip-bestand klaar te zetten. Dat bestand kwam, maar de motivatie om door te zetten ebde weg. Facebook-links bleven een jaar lang onaangeroerd in mijn inbox liggen.

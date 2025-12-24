@@ -5,7 +5,7 @@ date: 2025-12-24
 lang: nl
 tags: [privacy, devops, self-hosted]
 img: posts/umami-dashboard.png
-published: false
+draft: true
 ---
 
 ![ChatGPT- Plaatje Eigen Analytics](ChatGPT-plaatje-eigen-analytics.png)
