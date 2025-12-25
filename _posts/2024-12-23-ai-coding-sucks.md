@@ -168,6 +168,20 @@ En soms is de AI het zelfs eens met CJ. Een gebruiker op het Cursor forum deelde
 
 De AI zegt letterlijk: leer zelf programmeren. Misschien heeft CJ toch een punt.
 
+## SOFA: Start Often, Fail Always
+
+Er is een beweging genaamd SOFA: "Start Often, Finish rArely." Het idee: vier het starten van projecten, zonder de druk om alles af te maken.
+
+Ik stel een alternatieve interpretatie voor: **Start Often, Fail Always**. Niet als cynisme, maar als DevOps-wijsheid: een product is nooit "af". Het Agile principe "Embrace change" erkent dat requirements veranderen, inzichten groeien, en verbetering continu is.
+
+Zelfs Newton had het niet helemaal correct. Zijn drie bewegingswetten - waaronder "actie = -reactie" - waren eeuwenlang de hoeksteen van de fysica. Ze werken perfect voor vallende appels en draaiende planeten. Maar op microscopisch niveau faalt Newton; daar nam quantum mechanica het over.
+
+Was Newton "fout"? Nee. Zijn wetten zijn *goed genoeg* voor 99,9% van de toepassingen. Ze zijn "klaar genoeg om te releasen."
+
+Dit is de kern: perfectie is een illusie. Wat telt is waardevol genoeg om te gebruiken, stabiel genoeg om op te bouwen, en flexibel genoeg om te verbeteren. Een MVP is niet "af" - het is het begin van een feedbackloop.
+
+En misschien geldt dat ook voor AI coding workflows. De perfecte prompt bestaat niet. De perfecte tool bestaat niet. Maar "goed genoeg om mee te werken"? Dat is haalbaar.
+
 ## Bronnen
 
 - CJ. (2025, 20 oktober). *AI Coding Sucks* [Video]. Coding Garden. YouTube.
@@ -176,4 +190,5 @@ De AI zegt letterlijk: leer zelf programmeren. Misschien heeft CJ toch een punt.
 - Karpathy, A. (6 februari 2025). *There's a new kind of coding I call "vibe coding"* [Tweet]. X. Geraadpleegd van x.com/karpathy/status/1886192184808149383
 - Leneway, K. (25 maart 2025). *The ULTIMATE Vibe Coding Playbook: 10 Tips to Level Up Your AI Coding Workflow* [Video]. YouTube. Geraadpleegd van youtube.com/watch?v=5Lu7k2SShNw
 - Matsuoka, R. (2025). *When AI Coding Feels Like Yelling at a Black Box: The Experienced Developer Divide*. HyperDev. Geraadpleegd van hyperdev.matsuoka.com/p/when-ai-coding-feels-like-yelling
+- Dozens. (z.d.). *SOFA: Start Often, Finish rArely*. Tilde Town. Geraadpleegd van tilde.town/~dozens/sofa
 - Willison, S. (6 februari 2025). *Andrej Karpathy on "vibe coding"*. Simon Willison's Weblog. Geraadpleegd van simonwillison.net/2025/Feb/6/andrej-karpathy
