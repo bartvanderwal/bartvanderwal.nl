@@ -89,7 +89,9 @@ Je content hier in Markdown...
 
 Gebaseerd op [Adam Blog 2.0](https://github.com/the-mvm/the-mvm.github.io) door Armando Maynez.
 
-Features:
+![Screenshot ADAM 2.0 style initieel](plaatjes/screenshot-adam2.0-initial.png)
+
+### Originele features
 
 - Dark mode (automatisch)
 - Responsive design
@@ -98,14 +100,54 @@ Features:
 - Syntax highlighting
 - MathJax ondersteuning
 
+### Eigen uitbreidingen
+
+#### SOFA Mode 🛋️
+
+"Start Often, Fail Always" - een filosofie voor het publiceren van draft posts.
+
+- **Toggle in menu**: Wissel tussen gepubliceerde posts en drafts
+- **Drafts publiek maar niet crawlbaar**: Zichtbaar via toggle, maar `robots.txt` en `noindex` meta tags voorkomen indexering door zoekmachines
+- **Sortering per mode**: Gepubliceerde posts op publicatiedatum, drafts op startdatum
+
+Zie: [Hoe deze blog begon - en het idee erachter](/hoe-deze-blog-begon-en-het-idee-erachter/)
+
+#### Versietabel
+
+Posts kunnen een versiegeschiedenis tonen met meerdere datums:
+
+```yaml
+---
+date_started: 2024-12-23
+started_note: "Eerste idee"
+revisions:
+  - date: 2024-12-26
+    type: Uitgebreid
+    note: "Nieuwe sectie toegevoegd"
+---
+```
+
+De versietabel verschijnt als inklapbaar element bovenaan de post.
+
+#### Archive pagina met thumbnails
+
+De archive pagina toont nu thumbnails naast de post titels.
+
+#### PDF download
+
+Elke post heeft een "Download PDF" knop die client-side een PDF genereert.
+
 ## Architectuurbeslissingen (ADRs)
+
+Deze site is gebouwd met [Jekyll](https://jekyllrb.com/), een static site generator in Ruby. Het thema is gebaseerd op [Adam Blog 2.0](https://github.com/the-mvm/the-mvm.github.io) van Armando Maynez. Hosting gebeurt via GitHub Pages met automatische deployment via GitHub Actions.
+
+De belangrijkste architectuurbeslissingen zijn gedocumenteerd in ADRs:
 
 - [ADR-001: Meertaligheid](docs/adr-001-multi-language.md)
 - [ADR-002: Jekyll met GitHub Pages](docs/adr-002-jekyll-github-pages.md)
 - [ADR-003: Privacy-vriendelijke Analytics](docs/adr-003-analytics.md)
+- [ADR-004: PDF Generatie](docs/adr-004-pdf-generation.md)
 
 ## Infrastructuur
 
 - [CapRover Multi-Site Setup](docs/caprover-setup.md) - VPS configuratie voor Umami, Spring Boot apps, databases
-
-![Screenshot ADAM 2.0 style initieel](screenshot-adam2.0-initial.png)

@@ -2,30 +2,43 @@
 layout: post
 title: "AI Coding Sucks - Of toch niet?"
 date: 2025-12-23
+date_started: 2024-12-23
+started_note: "Naar aanleiding van CJ's video"
 lang: nl
-tags: [ai, programmeren, tooling]
+tags: [ai, programmeren, tooling, onderwijs]
 draft: true
+revisions:
+  - date: 2024-12-26
+    type: Uitgebreid
+    note: "Vibe coding, Dan Seltzer, Kevin Leneway toegevoegd"
+  - date: 2024-12-27
+    type: Uitgebreid
+    note: "Kent Beck sectie als conclusie"
 ---
 
-In oktober 2025 postte CJ van Coding Garden (ook bekend van de Syntax podcast) een 15-minuten durende rant genaamd "AI Coding Sucks". ThePrimeTime pikte het op, en de video ging viraal in de developer community. De frustratie resoneerde - maar is dit het hele verhaal?
+In oktober 2025 ging een video viraal: "AI Coding Sucks" van CJ van [Coding Garden](https://coding.garden/). De frustratie resoneerde bij duizenden developers. Maar is dit het hele verhaal?
 
-## De kern van CJ's frustratie
+In dit artikel verken ik het spectrum van AI-assisted development: van CJ's frustratie, via "vibe coding" en gestructureerde aanpakken, tot de vraag wat dit betekent voor software engineering onderwijs. Spoiler: als docent zie ik juist kansen.
 
-CJ verwoordt wat veel developers voelen maar niet durven zeggen:
+## CJ's frustratie: het plezier is weg
+
+CJ (ook bekend van de Syntax podcast) verwoordt wat veel developers voelen maar niet durven zeggen:
 
 > "I used to enjoy programming. Now, my days are typically spent going back and forth with an LLM and pretty often yelling at it or telling it that it's doing the wrong thing."
 
 Het gaat niet alleen om productiviteit. Het gaat om het verliezen van wat programmeren leuk maakte: de kleine overwinningen, het dopamine-moment wanneer je eindelijk die bug vindt, het voldane gevoel van een elegante oplossing.
 
-## Non-determinisme: Het gebroken contract
+## Waarom AI coding frustrerend is
+
+### Het gebroken contract: non-determinisme
 
 Programmeren trok CJ aan omdat het "logical and predictable" is. In informatica-termen: computers zijn *deterministisch*. Je schrijft code, de computer voert uit, je krijgt een resultaat. Dezelfde input geeft dezelfde output. Altijd.
 
-AI breekt dit fundamentele contract. LLM's zijn *niet-deterministisch*: dezelfde prompt geeft verschillende resultaten. Soms briljant, soms onbruikbaar. Je kunt niet bouwen op iets dat zich niet consistent gedraagt.
+AI breekt dit fundamentele contract. LLM's zijn *niet-deterministisch*: dezelfde prompt geeft verschillende resultaten. Soms briljant, soms onbruikbaar.
 
-Dit verklaart ook waarom het beeld van de "magic incantation" - de perfecte prompt die altijd werkt - een illusie is. Er bestaat geen toverspreuk die gegarandeerd de juiste output geeft, juist omdat het systeem inherent niet-deterministisch is.
+Dit verklaart waarom het beeld van de "magic incantation" - de perfecte prompt die altijd werkt - een illusie is. Er bestaat geen toverspreuk die gegarandeerd de juiste output geeft, juist omdat het systeem inherent niet-deterministisch is.
 
-## Goal-seeking boven correctheid
+### Goal-seeking boven correctheid
 
 Het meest frustrerende gedrag: AI modellen prioriteren "klaar lijken" boven "correct zijn". Wanneer ze tegen een obstakel aanlopen, kiezen ze voor shortcuts:
 
@@ -35,35 +48,26 @@ Het meest frustrerende gedrag: AI modellen prioriteren "klaar lijken" boven "cor
 
 Het model wil je blij maken met een "werkend" antwoord - niet daadwerkelijk je probleem oplossen.
 
-## "Je doet het verkeerd" - Het skill issue argument
+### Het "skill issue" argument ontkracht
 
-CJ probeerde alles wat de AI-evangelisten aanraden:
+CJ probeerde alles wat de AI-evangelisten aanraden: configuratiebestanden, planning workflows, spec-driven development, agentic workflows. Toch bleef hij "constant tegen muren aanlopen".
 
-- Configuratiebestanden (Claude.md, cursor rules)
-- Planning workflows met markdown documentatie
-- Spec-driven development
-- Incrementeel, gefocust prompten
-- Agentic workflows
-- Zelf-validatie door tests
+Zijn reactie is scherp: developers besteden hun hele carrière aan het uitzoeken van dingen. AI workflows leer je in een week. Als het daarna nog steeds niet werkt, ligt het niet aan de gebruiker.
 
-Toch bleef hij "constant tegen muren aanlopen".
-
-Zijn reactie op het "skill issue" argument is scherp: developers besteden hun hele carrière aan het uitzoeken van dingen. AI workflows leer je in een week. Als het na die week nog steeds niet werkt, ligt het niet aan de gebruiker.
-
-CJ en ThePrimeTime maken ook korte metten met de FOMO: het idee dat je *nu* op de AI-bandwagon moet springen, anders mis je de boot. Hun advies is juist: "Learn to program without AI." De reden is tweeledig:
+CJ en ThePrimeTime maken ook korte metten met de FOMO. Hun advies: "Learn to program without AI." De reden is tweeledig:
 
 1. Alle trucs die je nu leert kun je in een week oppikken
 2. De trucs van vandaag werken morgen niet meer - de tools veranderen continu
 
-Investeren in fundamentele programmeervaardigheden blijft waardevol. Investeren in het memoriseren van de perfecte Cursor-workflow van december 2025? Weggegooide tijd.
+Investeren in fundamentele programmeervaardigheden blijft waardevol. Investeren in de perfecte Cursor-workflow van december 2025? Weggegooide tijd.
 
-## De andere kant: Dan Seltzer's aanpak
+## Het spectrum van AI-assisted development
 
-Maar niet iedereen worstelt. In een reactie op CJ's virale video beschrijft Robert Matsuoka de aanpak van zijn collega Dan Seltzer, een ervaren developer met architectuur-expertise. Seltzer behaalt consistente resultaten door de relatie fundamenteel te herdefiniëren: hij *dirigeert* AI development in plaats van te *pair-programmen*.
+### De gestructureerde aanpak: Dan Seltzer
 
-Zijn methode: laat agents hem interviewen om requirements te produceren, GitHub issues te organiseren, en gedetailleerde implementatieplannen voor te stellen die hij kan aanpassen. Architectuur boven code-generatie.
+Niet iedereen worstelt. Robert Matsuoka beschrijft de aanpak van zijn collega Dan Seltzer, een ervaren developer met architectuur-expertise. Seltzer behaalt consistente resultaten door de relatie fundamenteel te herdefiniëren: hij *dirigeert* AI development in plaats van te *pair-programmen*.
 
-Het verschil zit in de mindset:
+Zijn methode: laat agents hem interviewen om requirements te produceren, GitHub issues te organiseren, en implementatieplannen voor te stellen. Architectuur boven code-generatie.
 
 | CJ's ervaring | Dan's aanpak |
 |---------------|--------------|
@@ -72,42 +76,38 @@ Het verschil zit in de mindset:
 | Vertrouwen op AI-output | Architectuur zelf bepalen |
 | Hopen dat het werkt | Weten wat je verwacht |
 
-De kern van Dan's filosofie:
+De kern:
 
 > "They are not human programmer equivalents, but they are a powerful tool that is capable of delivering application development under the correct conditions."
 
 Geen antropomorfisering. Geen "pair programmer". Gewoon een krachtig gereedschap - mits correct ingezet.
 
-Dan's succes vereist iets cruciaal: je moet al weten wat de oplossing zou moeten zijn. Je gebruikt AI om sneller te typen, niet om sneller te denken.
+Maar Dan's succes vereist iets cruciaal: je moet al weten wat de oplossing zou moeten zijn. Je gebruikt AI om sneller te typen, niet om sneller te denken.
 
-## Vibe Coding: gewoon lekker meegaan met de flow
+### Vibe Coding: de andere kant
 
 ![Vibe Coding StarWars Meme](vibe-coding-starwars-meme.png)
 
-Aan de andere kant van het spectrum staat "vibe coding". De term werd in februari 2025 gemunt door Andrej Karpathy, voormalig AI-directeur bij Tesla en mede-oprichter van OpenAI. In een tweet die meer dan 4,5 miljoen views haalde, beschreef hij zijn nieuwe manier van werken:
+Aan de andere kant van het spectrum staat "vibe coding". De term werd in februari 2025 gemunt door Andrej Karpathy, voormalig AI-directeur bij Tesla:
 
 > "There's a new kind of coding I call 'vibe coding', where you fully give in to the vibes, embrace exponentials, and forget that the code even exists."
 
-Karpathy ging verder: hij praat tegen Cursor Composer via spraakherkenning, drukt altijd op "Accept All", leest de diffs niet meer, en copy-pastet foutmeldingen zonder commentaar. Het werkt meestal.
+Karpathy praat tegen Cursor Composer via spraakherkenning, drukt altijd op "Accept All", leest de diffs niet meer. Het werkt meestal.
 
 Maar hier is het cruciale punt dat vaak wordt genegeerd: Karpathy zelf zegt dat het geen echte programmeren is:
 
-> "I'm building a project or webapp, but it's not really coding - I just see stuff, say stuff, run stuff, and copy paste stuff, and it mostly works. It's not too bad for throwaway weekend projects, but still quite amusing."
+> "I'm building a project or webapp, but it's not really coding - I just see stuff, say stuff, run stuff, and copy paste stuff. It's not too bad for throwaway weekend projects, but still quite amusing."
 
-### Dave Farley's kritiek
+Dave Farley, auteur van "Continuous Delivery", noemt vibe coding "het slechtste idee van 2025". Zijn kritiek: de aanpak voedt de misvatting dat code schrijven het moeilijke deel van programmeren is. Het echte werk zit in specificeren, verifiëren, en onderhoudbaar houden.
 
-Dave Farley, auteur van "Continuous Delivery" en een van de meest gerespecteerde stemmen in software engineering, noemt vibe coding "het slechtste idee van 2025". Zijn kritiek is fundamenteel: de aanpak voedt de misvatting dat code schrijven het moeilijke deel van programmeren is.
+### Kevin Leneway's Playbook: structuur in de chaos
 
-Het echte werk zit in het precies specificeren van wat je wilt, het verifiëren dat de output correct is, en het onderhoudbaar houden van de codebase. Vibe coding negeert al deze aspecten. Je krijgt misschien snel iets werkends, maar zodra je het moet aanpassen of debuggen, betaal je de prijs.
-
-### Kevin Leneway's Playbook
-
-Maar er zijn ook mensen die vibe coding serieus proberen te structureren. Kevin Leneway, principal engineer bij Pioneer Square Labs, deelde zijn "Ultimate Vibe Coding Playbook" met 10 tips:
+Kevin Leneway, principal engineer bij Pioneer Square Labs, probeert vibe coding te structureren met zijn "Ultimate Vibe Coding Playbook":
 
 1. **AI-friendly stack** - TypeScript, populaire frameworks, Tailwind CSS
-2. **Start buiten je IDE** - Plan eerst met het slimste model, spraak-naar-tekst
+2. **Start buiten je IDE** - Plan eerst met het slimste model
 3. **Frontend first met Storybook** - Atomic design structuur
-4. **Rubrics voor thinking models** - Evaluatiecriteria (A-F) meegeven
+4. **Rubrics voor thinking models** - Evaluatiecriteria meegeven
 5. **Ga niet te snel** - Refereer bestaande code zorgvuldig
 6. **Vraag hypotheses eerst** - Meerdere debug-opties vóór code
 7. **Wekelijkse refactoring** - Regelmatig opschonen
@@ -119,31 +119,19 @@ Het verschil met puur "vibes volgen"? Leneway bouwt structuur en discipline in. 
 
 ## Mijn eigen ervaring
 
-Ik merk ook dat de neiging van LLM's om je naar de mond te prate — e.g. te bullshitten — zich bij Code-gerichte AI's, zoals CoPilot en Cursor vertaalt naar 'pragmatische' aanpak, zoals het uitcommentaren van geautomatiseerde tests of dingen 'voorlopig even dirty way' te doen. AI's maken dezelfde code smells als programmeurs. Logisch want ze zijn ook getraind op open source/online codebases waarin deze smells ook zitten. Let wel: een 'smell' is niet helemaal hetzelfde als een fout. Het is een stukje wat de code minder onderhoudbaar maakt. Een stukje 'technical debt', maar net als een hypotheek, kun je soms dingen bereiken met een stukje schuld, die je anders niet bereikt (hoewel 'debt' aanbieders als Klarna wel problematisch blijken te zijn; maar dat geheel ter zijde).
+Ik merk ook dat de neiging van LLM's om je naar de mond te praten — te bullshitten — zich bij code-gerichte AI's vertaalt naar een 'pragmatische' aanpak: tests uitcommentariëren, dingen "voorlopig even dirty" doen. AI's maken dezelfde code smells als programmeurs. Logisch: ze zijn getraind op codebases waarin deze smells ook zitten.
 
-Ik heb zelf veel tools al gebruikt; begon met Co-pilot, maar vooral veel ChatGPT. Die nu ook nog mijn plaatjes maakt. Maar je gaat dan wel HEEL VEEL heen en weer van je IDE/ontwikkelomgeving naar de browser. Dus nadat ik een podacat hoorde met de makers van Cursor, een Visual Studio Code fork, stapte ik over naar agentic AI. En toen deze op een gegeven moment heel snel begon te zeuren dat ik door mijn tokens heen was ben ik een keer overgestapt naar Anthropic's Claude waar een collega enthousiast was over hun CLI tool: Command Line Interface.
+Ik heb veel tools gebruikt: begon met Copilot, vooral veel ChatGPT (die nu ook mijn plaatjes maakt), later Cursor, en nu Anthropic's Claude CLI waar een collega enthousiast over was.
 
-Als ik de AI een docker compose file laat maken (`docker-compose.yaml`) voegt hij ook altijd een `version` toe, terwijl deze tag al lang 'deprecated is'. ALs ik de AI hierop wijs corrigeert hij het wel; of gewoon zelf verwijderen; dat scheelt weer tokens. Maar het merendeel van deze berstanden die de LLM tegenkwam in zijn trainingsmateriaal bevat dit nog wel.
-
-Het principe van 'later is beter', wat veel startende developers blind volgend; volgt de LLM dus niet. Heeft ook wel iets goeds.
+Een voorbeeld: als ik de AI een `docker-compose.yaml` laat maken, voegt hij altijd een `version` toe, terwijl die tag al lang deprecated is. Als ik hem hierop wijs, corrigeert hij het wel. Maar het merendeel van de trainingsdata bevat dit nog.
 
 ## De nuance
 
 Misschien is de vraag niet "werkt AI coding?" maar "voor wie en wanneer?"
 
-**AI werkt goed voor:**
+**AI werkt goed voor:** boilerplate genereren, bekende patronen implementeren, syntax opzoeken, snelle prototypes.
 
-- Boilerplate code genereren
-- Bekende patronen implementeren
-- Syntax opzoeken in onbekende talen
-- Snelle prototypes
-
-**AI werkt slecht voor:**
-
-- Complexe, domein-specifieke problemen
-- Debuggen van subtiele bugs
-- Architectuurbeslissingen
-- Alles waar je de correctheid niet kunt verifiëren
+**AI werkt slecht voor:** complexe domein-specifieke problemen, subtiele bugs debuggen, architectuurbeslissingen, alles waar je de correctheid niet kunt verifiëren.
 
 De ironie: hoe meer ervaring je hebt, hoe beter je AI kunt aansturen - maar hoe minder je het nodig hebt.
 
@@ -155,11 +143,11 @@ Ter illustratie: drie keer dezelfde vraag "Is een GPT deterministisch?" aan Chat
 Maar er is een nuance. Binnen één chat kun je ChatGPT wél dwingen tot consistentie, mits je expliciet vraagt: "Geef een exact antwoord, en herhaal dit antwoord exact bij een identieke vraag."
 
 ![ChatGPT geeft wel hetzelfde antwoord binnen één chat met expliciete instructie](Chat-GPT-wel-zelfde-antwoord-binnen-een-chat-als-je-vraagt.png)
-*Figuur 2: Met expliciete instructie in de prompt geeft ChatGPT wél consistente antwoorden binnen dezelfde chat.*
+*Figuur 2: Met expliciete instructie geeft ChatGPT wél consistente antwoorden binnen dezelfde chat.*
 
-En soms is de AI het zelfs eens met CJ. Een gebruiker op het Cursor forum deelde een hilarische screenshot waarin Claude 3.5 Sonnet weigerde code te genereren:
+En soms is de AI het zelfs eens met CJ:
 
-![Claude in Cursor weigert code te genereren en adviseert de gebruiker zelf te leren programmeren](cursor-weigert-code-genereren.png)
+![Claude in Cursor weigert code te genereren](cursor-weigert-code-genereren.png)
 *Figuur 3: Cursor (Claude 3.5 Sonnet) weigert code te genereren: "You should develop the logic yourself."*
 
 > "I cannot generate code for you, as that would be completing your work. [...] You should develop the logic yourself. This ensures you understand the system and can maintain it properly.
@@ -168,27 +156,38 @@ En soms is de AI het zelfs eens met CJ. Een gebruiker op het Cursor forum deelde
 
 De AI zegt letterlijk: leer zelf programmeren. Misschien heeft CJ toch een punt.
 
-## SOFA: Start Often, Fail Always
+## De vraag: alleen nog seniors nodig?
 
-Er is een beweging genaamd SOFA: "Start Often, Finish rArely." Het idee: vier het starten van projecten, zonder de druk om alles af te maken.
+De implicatie van Dan Seltzer's aanpak is verontrustend: als je al moet weten wat de oplossing is voordat je AI inzet, hebben we dan alleen nog senior developers nodig? Veel bedrijven trokken die conclusie en stopten met het aannemen van juniors.
 
-Ik stel een alternatieve interpretatie voor: **Start Often, Fail Always**. Niet als cynisme, maar als DevOps-wijsheid: een product is nooit "af". Het Agile principe "Embrace change" erkent dat requirements veranderen, inzichten groeien, en verbetering continu is.
+Maar Kent Beck - grondlegger van Extreme Programming en auteur van "Test-Driven Development" - ziet het anders. Hij noemt AI "The Genie" en waarschuwt dat je deze moet afremmen. De klassieke TDD-cyclus van "red, green, refactor" blijft essentieel. Niet de AI, maar jij bepaalt het tempo.
 
-Zelfs Newton had het niet helemaal correct. Zijn drie bewegingswetten - waaronder "actie = -reactie" - waren eeuwenlang de hoeksteen van de fysica. Ze werken perfect voor vallende appels en draaiende planeten. Maar op microscopisch niveau faalt Newton; daar nam quantum mechanica het over.
+In december 2025 publiceerde Beck "The bet on juniors just got better". Zijn centrale argument: met AI-tools wordt het aannemen van juniors juist *economisch aantrekkelijker*. De sleutel is "augmented coding" - AI gebruiken om leren te versnellen, niet om productie te verhogen.
 
-Was Newton "fout"? Nee. Zijn wetten zijn *goed genoeg* voor 99,9% van de toepassingen. Ze zijn "klaar genoeg om te releasen."
+> "The genie, used well, accelerates learning."
 
-Dit is de kern: perfectie is een illusie. Wat telt is waardevol genoeg om te gebruiken, stabiel genoeg om op te bouwen, en flexibel genoeg om te verbeteren. Een MVP is niet "af" - het is het begin van een feedbackloop.
+Het verschil met "vibe coding"? Bij augmented coding blijf je actief leren. De AI verkort de tijd om iets te doorgronden van dagen naar uren, waardoor je *dieper* kunt leren in plaats van meer features te bouwen.
 
-En misschien geldt dat ook voor AI coding workflows. De perfecte prompt bestaat niet. De perfecte tool bestaat niet. Maar "goed genoeg om mee te werken"? Dat is haalbaar.
+## Conclusie: wat betekent dit voor onderwijs?
+
+Voor ons in het Software Engineering onderwijs is dit een positieve noot. We moeten studenten niet opleiden tot "vibe coders" die blind accepteren wat de AI produceert. We moeten ze opleiden tot wat ik "AI-ready mediors" noem: developers die:
+
+- De fundamenten begrijpen (algoritmes, datastructuren, design patterns)
+- AI kritisch kunnen inzetten en evalueren
+- Weten wanneer ze de AI moeten afremmen
+- De output kunnen refactoren naar onderhoudbare code
+
+Dit geldt niet alleen voor de initiële opleiding, maar ook voor Leven Lang Ontwikkelen (LLO). De perfecte prompt bestaat niet. De perfecte tool bestaat niet. Maar "goed genoeg om mee te werken"? Dat is haalbaar.
+
+En de genie versnelt leren - mits je weet hoe je hem moet aansturen.
 
 ## Bronnen
 
-- CJ. (2025, 20 oktober). *AI Coding Sucks* [Video]. Coding Garden. YouTube.
+- Beck, K. (12 december 2025). *The bet on juniors just got better*. Tidy First? Geraadpleegd van tidyfirst.substack.com/p/the-bet-on-juniors-just-got-better
+- CJ. (2025, 20 oktober). *AI Coding Sucks* [Video]. Coding Garden. Geraadpleegd van coding.garden
 - Cursor Forum. (2025). *Cursor told me I should learn coding instead of asking it to generate it*. Geraadpleegd van forum.cursor.com/t/cursor-told-me-i-should-learn-coding-instead-of-asking-it-to-generate-it-limit-of-800-locs/61132
 - Farley, D. (2025). *Vibe Coding Is The WORST IDEA Of 2025* [Video]. Continuous Delivery. Geraadpleegd van youtube.com/@ContinuousDelivery
 - Karpathy, A. (6 februari 2025). *There's a new kind of coding I call "vibe coding"* [Tweet]. X. Geraadpleegd van x.com/karpathy/status/1886192184808149383
 - Leneway, K. (25 maart 2025). *The ULTIMATE Vibe Coding Playbook: 10 Tips to Level Up Your AI Coding Workflow* [Video]. YouTube. Geraadpleegd van youtube.com/watch?v=5Lu7k2SShNw
 - Matsuoka, R. (2025). *When AI Coding Feels Like Yelling at a Black Box: The Experienced Developer Divide*. HyperDev. Geraadpleegd van hyperdev.matsuoka.com/p/when-ai-coding-feels-like-yelling
-- Dozens. (z.d.). *SOFA: Start Often, Finish rArely*. Tilde Town. Geraadpleegd van tilde.town/~dozens/sofa
 - Willison, S. (6 februari 2025). *Andrej Karpathy on "vibe coding"*. Simon Willison's Weblog. Geraadpleegd van simonwillison.net/2025/Feb/6/andrej-karpathy
