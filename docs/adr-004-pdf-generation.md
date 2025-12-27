@@ -140,3 +140,25 @@ Playwright tests verifiëren:
 ```bash
 npm run test:pdf
 ```
+
+## Toekomstige Overweging: Build-time PDF Generatie
+
+Een betere aanpak zou zijn om PDFs te genereren tijdens build-time vanuit de Markdown bronbestanden:
+
+| Client-side (huidig) | Build-time (toekomstig) |
+|----------------------|-------------------------|
+| ~150 regels JS voor HTML→pdfmake | Directe .md → .pdf met Pandoc |
+| 1MB JavaScript lazy loaded | Geen client-side JS nodig |
+| Elke klik genereert opnieuw | Pre-generated, instant download |
+| Parsing van complexe HTML | Markdown is al gestructureerd |
+
+**Mogelijke implementatie:**
+
+```ruby
+# _plugins/pdf_generator.rb
+Jekyll::Hooks.register :posts, :post_write do |post|
+  system("pandoc #{post.path} -o #{pdf_path} --pdf-engine=xelatex")
+end
+```
+
+**Blocker:** GitHub Pages ondersteunt geen custom plugins. Zou een GitHub Actions workflow vereisen die Pandoc + LaTeX installeert en PDFs genereert als build artifact.
