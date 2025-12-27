@@ -107,7 +107,7 @@ Voorbeelden:
 
 - **Taal**: Nederlandse commit messages
 - **AI-attributie**: Alleen Co-Authored-By footer, GEEN "Generated with Claude Code" tag
-- **Model**: Vermeld het gebruikte model in de Co-Authored-By
+- **Model**: Vermeld het gebruikte model, GEEN email adres (noreply niet toegestaan in EU)
 
 Voorbeeld:
 
@@ -116,5 +116,5 @@ Korte beschrijving van de wijziging
 
 Optioneel langere uitleg.
 
-Co-Authored-By: Claude <model>/<noreply@anthropic.com>
+Co-Authored-By: Claude Opus 4.5
 ```
