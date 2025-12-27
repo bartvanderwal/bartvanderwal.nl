@@ -33,3 +33,8 @@ Gemfile.lock
 # Environment files
 .env
 .env.local
+
+# Playwright
+tests/downloads/
+playwright-report/
+test-results/

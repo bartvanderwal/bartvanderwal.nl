@@ -1,22 +1,16 @@
 {
-  "name": "Jekyll-Gulp-Sass-Autoprefixer-Imagemin-BrowserSync",
+  "name": "bartvanderwal-nl",
   "version": "1.0.0",
-  "description": "A starter project for Jekyll",
-  "main": "index.js",
-  "repository": "https://github.com/artemsheludko/Jekyll-Gulp-Sass-Autoprefixer-Imagemin-BrowserSync",
-  "author": "Artem Sheludko",
+  "description": "Personal blog of Bart van der Wal",
+  "repository": "https://github.com/bartvanderwal/bartvanderwal.nl",
+  "author": "Bart van der Wal",
   "license": "MIT",
-  "dependencies": {
-    "browser-sync": "^2.18.8",
-    "child_process": "^1.0.2",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.1",
-    "gulp-cache": "^0.4.6",
-    "gulp-imagemin": "^3.2.0",
-    "gulp-sass": "^3.1.0",
-    "imagemin-pngquant": "^5.0.0"
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "pdf-parse": "^1.1.1"
   },
   "scripts": {
-    "dev": "node_modules\\.bin\\gulp watch"
+    "test": "playwright test",
+    "test:pdf": "playwright test tests/pdf-generation.spec.js"
   }
 }

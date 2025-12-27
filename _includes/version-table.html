@@ -1,0 +1,42 @@
+{% if page.date_started or page.revisions %}
+<details class="version-history">
+  <summary>
+    <span class="version-toggle">Versiegeschiedenis</span>
+    {% if page.draft %}<span class="draft-status">DRAFT</span>{% endif %}
+  </summary>
+  <table class="version-table">
+    <thead>
+      <tr>
+        <th>Datum</th>
+        <th>Status</th>
+        <th>Toelichting</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% if page.date_started %}
+      <tr>
+        <td>{{ page.date_started | date: "%d %b %Y" }}</td>
+        <td>Gestart</td>
+        <td>{{ page.started_note | default: "Eerste idee" }}</td>
+      </tr>
+      {% endif %}
+      {% if page.revisions %}
+      {% for revision in page.revisions %}
+      <tr>
+        <td>{{ revision.date | date: "%d %b %Y" }}</td>
+        <td>{{ revision.type | default: "Gewijzigd" }}</td>
+        <td>{{ revision.note }}</td>
+      </tr>
+      {% endfor %}
+      {% endif %}
+      {% unless page.draft %}
+      <tr class="published-row">
+        <td>{{ page.date | date: "%d %b %Y" }}</td>
+        <td>Gepubliceerd</td>
+        <td>{{ page.published_note | default: "Definitieve versie" }}</td>
+      </tr>
+      {% endunless %}
+    </tbody>
+  </table>
+</details>
+{% endif %}

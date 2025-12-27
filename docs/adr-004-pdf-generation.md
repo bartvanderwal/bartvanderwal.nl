@@ -2,78 +2,141 @@
 
 ## Status
 
-Geaccepteerd
+Gewijzigd (december 2024)
 
 ## Context
 
-Bezoekers willen blogposts kunnen opslaan als PDF. De browser print-functie (`window.print()`) is traag en geeft inconsistente resultaten. Een snellere, betrouwbare client-side oplossing is gewenst.
+Bezoekers willen blogposts kunnen opslaan als PDF. Een snelle, betrouwbare client-side oplossing is gewenst zonder server-side dependencies.
 
 ## Decision
 
-**html2pdf.js** voor client-side PDF generatie.
+**pdfmake** voor client-side PDF generatie.
 
-## Alternatives
+Oorspronkelijk werd html2pdf.js gekozen, maar dit bleek fundamenteel onbetrouwbaar te zijn (zie "Afgewezen Alternatieven").
 
-### 1. Browser Print (window.print())
+## Rationale
+
+pdfmake genereert PDFs vanuit een declaratieve document definitie (JSON), niet door HTML te renderen. Dit vermijdt de rendering-problemen die html2canvas-gebaseerde oplossingen hebben.
+
+Voordelen:
+
+- Betrouwbare tekst rendering (geen canvas issues)
+- Goede typography en layout controle
+- Ingebouwde fonts (geen font-loading problemen)
+- Snelle generatie (~1 seconde)
+- ~1MB totaal (lazy loaded)
+
+Nadelen:
+
+- Vereist HTML-naar-pdfmake conversie
+- Complexe HTML structuren (nested lists, inline styling) vereisen extra parsing
+
+## Afgewezen Alternatieven
+
+### 1. html2pdf.js ❌
+
+**Oorspronkelijke keuze, nu afgewezen.**
+
+html2pdf.js combineert html2canvas + jsPDF. De belofte is simpel: geef een HTML element en krijg een PDF.
+
+**Waarom het faalde:**
+
+1. **Canvas hoogte 0**: Bij `position: absolute` berekent html2canvas geen element-hoogte
+2. **Tekst niet zichtbaar**: Zelfs met correcte hoogte rendert tekst niet naar canvas
+   - Alleen list bullets (`·`) verschenen in de PDF
+   - Tekst was wel aanwezig in DOM (`wrapper.innerText` toonde correcte content)
+3. **Font rendering issues**: html2canvas heeft bekende problemen met web fonts
+4. **Dark mode interference**: CSS variabelen en `!important` overrides werkten niet consistent
+
+**Geteste fixes die faalden:**
+
+- `position: fixed` i.p.v. `absolute` (canvas hoogte opgelost, tekst nog steeds onzichtbaar)
+- Explicit `height` en `windowHeight` in html2canvas opties
+- `!important` op alle style properties
+- `-webkit-text-fill-color` override
+- System fonts (Arial) i.p.v. web fonts
+- `setTimeout` voor render delay
+
+**Conclusie**: html2canvas is fundamenteel onbetrouwbaar voor tekst rendering. Het project heeft 500+ open issues op GitHub gerelateerd aan rendering problemen.
+
+### 2. Browser Print (window.print()) ❌
 
 - Geen extra dependencies
-- **Nadeel**: Traag, inconsistent tussen browsers, gebruiker moet zelf "Save as PDF" kiezen
+- **Nadeel**: Traag op macOS, vereist gebruikersactie om "Save as PDF" te kiezen
 
-### 2. jsPDF
+### 3. jsPDF ❌
 
 - Lightweight (~300KB)
-- Programmatisch PDFs bouwen
-- **Nadeel**: Vereist handmatig content opmaken, geen directe HTML-naar-PDF
+- **Nadeel**: Handmatig content positioneren, geen HTML conversie
 
-### 3. pdfmake
-
-- Declaratieve document definitie
-- Goede typography
-- **Nadeel**: Eigen markup syntax, niet direct HTML
-
-### 4. html2pdf.js ✓
-
-- Combineert html2canvas + jsPDF
-- Directe HTML element naar PDF conversie
-- Behoudt styling (CSS)
-- ~500KB totaal
-- Simpele API: `html2pdf().from(element).save()`
-
-### 5. pdf-lib
+### 4. pdf-lib ❌
 
 - Low-level PDF manipulatie
-- Kleine bundle
 - **Nadeel**: Te low-level voor HTML conversie
 
-### 6. Server-side (Puppeteer/wkhtmltopdf)
+### 5. Server-side (Puppeteer/wkhtmltopdf) ❌
 
 - Beste kwaliteit
-- **Nadeel**: Server nodig, niet mogelijk op static site
+- **Nadeel**: Server nodig, niet mogelijk op static Jekyll site
 
 ## Implementation
 
 ```javascript
-// Installatie via CDN
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+// Lazy load pdfmake van CDN
+var script1 = document.createElement('script');
+script1.src = 'https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js';
+script1.onload = function() {
+  var script2 = document.createElement('script');
+  script2.src = 'https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js';
+  script2.onload = generatePdf;
+  document.head.appendChild(script2);
+};
+document.head.appendChild(script1);
 
-// Gebruik
-document.getElementById('download-pdf').addEventListener('click', function() {
-  const element = document.querySelector('.page-content');
-  const opt = {
-    margin: 10,
-    filename: document.title + '.pdf',
-    image: { type: 'jpeg', quality: 0.98 },
-    html2canvas: { scale: 2 },
-    jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+function generatePdf() {
+  var docDefinition = {
+    content: [
+      { text: 'Titel', style: 'header' },
+      { text: 'Paragraaf tekst hier...' },
+      { ul: ['Item 1', 'Item 2'] }
+    ],
+    styles: {
+      header: { fontSize: 22, bold: true }
+    }
   };
-  html2pdf().set(opt).from(element).save();
-});
+  pdfMake.createPdf(docDefinition).download('document.pdf');
+}
 ```
+
+## HTML naar pdfmake Conversie
+
+De implementatie bevat een `htmlToPdfmake()` functie die DOM elementen converteert naar pdfmake format:
+
+| HTML Element | pdfmake Output |
+|--------------|----------------|
+| `<h1>`, `<h2>`, `<h3>` | `{ text: '...', style: 'h1' }` |
+| `<p>` | `{ text: '...' }` |
+| `<ul>`, `<ol>` | `{ ul: [...] }` |
+| `<blockquote>` | `{ text: '...', italics: true, margin: [...] }` |
+| `<table>` | `{ table: { body: [...] } }` |
+| `<a>` | `{ text: '...', link: 'url', color: '...' }` |
 
 ## Consequences
 
-- Snelle PDF generatie (1-3 seconden)
-- Consistente output in alle browsers
-- Extra ~500KB JavaScript (lazy loaded)
-- Styling wordt behouden
+- Betrouwbare PDF generatie met leesbare tekst
+- ~1MB JavaScript (lazy loaded, alleen bij klik)
+- Geen pixel-perfect HTML reproductie (maar wel correcte content)
 - Geen server-side dependency
+- Automatische tests mogelijk (PDF bevat extracteerbare tekst)
+
+## Test Coverage
+
+Playwright tests verifiëren:
+
+1. PDF wordt gegenereerd en gedownload
+2. PDF bevat extracteerbare tekst (niet alleen afbeeldingen)
+3. PDF button aanwezig op alle blog posts
+
+```bash
+npm run test:pdf
+```

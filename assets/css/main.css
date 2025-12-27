@@ -907,6 +907,100 @@ svg.menu-icon-house {
   color: var(--grey4);
 }
 
+/* = = = = = = = = = = SOFA Mode  = = = = = = = = = = */
+.sofa-section .section-title {
+  font-family: var(--font2), sans-serif;
+  font-size: 1.2rem;
+  color: var(--grey2);
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: var(--font2-regular);
+}
+.sofa-info {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  background: var(--grey3);
+  color: white;
+  font-size: 0.8rem;
+  text-decoration: none;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+.sofa-info:hover {
+  background: var(--main);
+}
+.draft-post .post-card-image {
+  opacity: 0.8;
+}
+.draft-badge {
+  display: inline-block;
+  background: var(--accent);
+  color: white;
+  font-size: 0.6rem;
+  padding: 2px 6px;
+  border-radius: 3px;
+  margin-left: 8px;
+  vertical-align: middle;
+  font-family: var(--font2), sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* = = = = = = = = = = Version Table  = = = = = = = = = = */
+.version-history {
+  margin: 1rem 0 1.5rem;
+  font-family: var(--font2), sans-serif;
+  font-size: 0.9rem;
+}
+.version-history summary {
+  cursor: pointer;
+  color: var(--grey2);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.version-history summary:hover {
+  color: var(--main);
+}
+.version-toggle {
+  text-decoration: underline;
+}
+.draft-status {
+  background: var(--accent);
+  color: white;
+  font-size: 0.65rem;
+  padding: 2px 6px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.version-table {
+  width: 100%;
+  margin-top: 0.75rem;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+.version-table th,
+.version-table td {
+  padding: 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid var(--grey4);
+}
+.version-table th {
+  color: var(--grey2);
+  font-weight: var(--font2-bold);
+}
+.version-table .published-row {
+  background: rgba(50, 98, 115, 0.1);
+}
+.version-table .published-row td {
+  font-weight: var(--font1-bold);
+}
+
 /* = = = = = = = = = = Pagination  = = = = = = = = = = */
 .pagination {
   margin-bottom: 30px;
