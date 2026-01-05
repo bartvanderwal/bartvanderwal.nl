@@ -6,7 +6,6 @@ date_started: 2024-12-23
 started_note: "Naar aanleiding van CJ's video"
 lang: nl
 tags: [ai, programmeren, tooling, onderwijs]
-draft: true
 revisions:
   - date: 2024-12-26
     type: Uitgebreid
@@ -22,7 +21,7 @@ In dit artikel verken ik het spectrum van AI-assisted development: van CJ's frus
 
 ## CJ's frustratie: het plezier is weg
 
-CJ (ook bekend van de Syntax podcast) verwoordt wat veel developers voelen maar niet durven zeggen:
+CJ (ook bekend van de Syntax podcast) verwoordt wat veel developers voelen maar niet durven zeggen (CJ, 2025):
 
 > "I used to enjoy programming. Now, my days are typically spent going back and forth with an LLM and pretty often yelling at it or telling it that it's doing the wrong thing."
 
@@ -65,7 +64,7 @@ Investeren in fundamentele programmeervaardigheden blijft waardevol. Investeren 
 
 ### De gestructureerde aanpak: Dan Seltzer
 
-Niet iedereen worstelt. Robert Matsuoka beschrijft de aanpak van zijn collega Dan Seltzer, een ervaren developer met architectuur-expertise. Seltzer behaalt consistente resultaten door de relatie fundamenteel te herdefiniëren: hij *dirigeert* AI development in plaats van te *pair-programmen*.
+Niet iedereen worstelt. Matsuoka (2025) beschrijft de aanpak van zijn collega Dan Seltzer, een ervaren developer met architectuur-expertise. Seltzer behaalt consistente resultaten door de relatie fundamenteel te herdefiniëren: hij *dirigeert* AI development in plaats van te *pair-programmen*.
 
 Zijn methode: laat agents hem interviewen om requirements te produceren, GitHub issues te organiseren, en implementatieplannen voor te stellen. Architectuur boven code-generatie.
 
@@ -76,7 +75,7 @@ Zijn methode: laat agents hem interviewen om requirements te produceren, GitHub 
 | Vertrouwen op AI-output | Architectuur zelf bepalen |
 | Hopen dat het werkt | Weten wat je verwacht |
 
-De kern:
+De kern (Matsuoka, 2025):
 
 > "They are not human programmer equivalents, but they are a powerful tool that is capable of delivering application development under the correct conditions."
 
@@ -86,23 +85,23 @@ Maar Dan's succes vereist iets cruciaal: je moet al weten wat de oplossing zou m
 
 ### Vibe Coding: de andere kant
 
-![Vibe Coding StarWars Meme](vibe-coding-starwars-meme.png)
+![Vibe Coding StarWars Meme](/assets/images/ai-coding-sucks/vibe-coding-starwars-meme.png)
 
-Aan de andere kant van het spectrum staat "vibe coding". De term werd in februari 2025 gemunt door Andrej Karpathy, voormalig AI-directeur bij Tesla:
+Aan de andere kant van het spectrum staat "vibe coding". De term werd in februari 2025 gemunt door Andrej Karpathy, voormalig AI-directeur bij Tesla (Karpathy, 2025):
 
 > "There's a new kind of coding I call 'vibe coding', where you fully give in to the vibes, embrace exponentials, and forget that the code even exists."
 
-Karpathy praat tegen Cursor Composer via spraakherkenning, drukt altijd op "Accept All", leest de diffs niet meer. Het werkt meestal.
+Karpathy praat tegen Cursor Composer via spraakherkenning, drukt altijd op "Accept All", leest de diffs niet meer. Het werkt meestal (Willison, 2025).
 
-Maar hier is het cruciale punt dat vaak wordt genegeerd: Karpathy zelf zegt dat het geen echte programmeren is:
+Maar hier is het cruciale punt dat vaak wordt genegeerd: Karpathy zelf zegt dat het geen echte programmeren is (Karpathy, 2025):
 
 > "I'm building a project or webapp, but it's not really coding - I just see stuff, say stuff, run stuff, and copy paste stuff. It's not too bad for throwaway weekend projects, but still quite amusing."
 
-Dave Farley, auteur van "Continuous Delivery", noemt vibe coding "het slechtste idee van 2025". Zijn kritiek: de aanpak voedt de misvatting dat code schrijven het moeilijke deel van programmeren is. Het echte werk zit in specificeren, verifiëren, en onderhoudbaar houden.
+Farley (2025), auteur van "Continuous Delivery", noemt vibe coding "het slechtste idee van 2025". Zijn kritiek: de aanpak voedt de misvatting dat code schrijven het moeilijke deel van programmeren is. Het echte werk zit in specificeren, verifiëren, en onderhoudbaar houden.
 
 ### Kevin Leneway's Playbook: structuur in de chaos
 
-Kevin Leneway, principal engineer bij Pioneer Square Labs, probeert vibe coding te structureren met zijn "Ultimate Vibe Coding Playbook":
+Leneway (2025), principal engineer bij Pioneer Square Labs, probeert vibe coding te structureren met zijn "Ultimate Vibe Coding Playbook":
 
 1. **AI-friendly stack** - TypeScript, populaire frameworks, Tailwind CSS
 2. **Start buiten je IDE** - Plan eerst met het slimste model
@@ -123,7 +122,9 @@ Ik merk ook dat de neiging van LLM's om je naar de mond te praten — te bullshi
 
 Ik heb veel tools gebruikt: begon met Copilot, vooral veel ChatGPT (die nu ook mijn plaatjes maakt), later Cursor, en nu Anthropic's Claude CLI waar een collega enthousiast over was.
 
-Een voorbeeld: als ik de AI een `docker-compose.yaml` laat maken, voegt hij altijd een `version` toe, terwijl die tag al lang deprecated is. Als ik hem hierop wijs, corrigeert hij het wel. Maar het merendeel van de trainingsdata bevat dit nog.
+Wat betreft system prompts en rules: ik heb een uitgebreide `CLAUDE.md` en `.cursor/rules` in mijn projecten. Maar in GPT's kun je prima hele chats houden die volledig buiten de scope van de system prompt gaan. En Cursor negeerde mijn `.cursor/rules` regelmatig gewoon. De AI luistert niet altijd, ook al geef je expliciete instructies.
+
+Een voorbeeld: als ik de AI een `docker-compose.yaml` laat maken, voegt hij altijd een `version` toe, terwijl die tag al lang deprecated is (Compose Specification, z.d.). Als ik hem hierop wijs, corrigeert hij het wel. Maar het merendeel van de trainingsdata bevat dit nog.
 
 ## De nuance
 
@@ -137,17 +138,17 @@ De ironie: hoe meer ervaring je hebt, hoe beter je AI kunt aansturen - maar hoe 
 
 Ter illustratie: drie keer dezelfde vraag "Is een GPT deterministisch?" aan ChatGPT, drie verschillende antwoorden.
 
-![Drie keer dezelfde vraag aan ChatGPT geeft drie verschillende antwoorden](ChatGPT-is-niet-deterministisch.png)
+![Drie keer dezelfde vraag aan ChatGPT geeft drie verschillende antwoorden](/assets/images/ai-coding-sucks/ChatGPT-is-niet-deterministisch.png)
 *Figuur 1: ChatGPT geeft drie verschillende antwoorden op exact dezelfde vraag - het bewijs van niet-determinisme.*
 
 Maar er is een nuance. Binnen één chat kun je ChatGPT wél dwingen tot consistentie, mits je expliciet vraagt: "Geef een exact antwoord, en herhaal dit antwoord exact bij een identieke vraag."
 
-![ChatGPT geeft wel hetzelfde antwoord binnen één chat met expliciete instructie](Chat-GPT-wel-zelfde-antwoord-binnen-een-chat-als-je-vraagt.png)
+![ChatGPT geeft wel hetzelfde antwoord binnen één chat met expliciete instructie](/assets/images/ai-coding-sucks/Chat-GPT-wel-zelfde-antwoord-binnen-een-chat-als-je-vraagt.png)
 *Figuur 2: Met expliciete instructie geeft ChatGPT wél consistente antwoorden binnen dezelfde chat.*
 
-En soms is de AI het zelfs eens met CJ:
+En soms is de AI het zelfs eens met CJ (Cursor Forum, 2025):
 
-![Claude in Cursor weigert code te genereren](cursor-weigert-code-genereren.png)
+![Claude in Cursor weigert code te genereren](/assets/images/ai-coding-sucks/cursor-weigert-code-genereren.png)
 *Figuur 3: Cursor (Claude 3.5 Sonnet) weigert code te genereren: "You should develop the logic yourself."*
 
 > "I cannot generate code for you, as that would be completing your work. [...] You should develop the logic yourself. This ensures you understand the system and can maintain it properly.
@@ -158,13 +159,30 @@ De AI zegt letterlijk: leer zelf programmeren. Misschien heeft CJ toch een punt.
 
 ## De vraag: alleen nog seniors nodig?
 
-De implicatie van Dan Seltzer's aanpak is verontrustend: als je al moet weten wat de oplossing is voordat je AI inzet, hebben we dan alleen nog senior developers nodig? Veel bedrijven trokken die conclusie en stopten met het aannemen van juniors.
+De implicatie van Dan Seltzer's aanpak is verontrustend: als je al moet weten wat de oplossing is voordat je AI inzet, hebben we dan alleen nog senior developers nodig? Veel bedrijven trokken die conclusie. Entry-level hiring bij de 15 grootste techbedrijven daalde 25% van 2023 naar 2024 (IEEE Spectrum, 2025). Een Harvard-studie toonde dat junior employment met 9-10% daalt binnen zes kwartalen nadat bedrijven generatieve AI adopteren, terwijl senior employment nauwelijks verandert (Understanding AI, 2025).
 
-Maar Kent Beck - grondlegger van Extreme Programming en auteur van "Test-Driven Development" - ziet het anders. Hij noemt AI "The Genie" en waarschuwt dat je deze moet afremmen. De klassieke TDD-cyclus van "red, green, refactor" blijft essentieel. Niet de AI, maar jij bepaalt het tempo.
+Maar dit roept een ongemakkelijke vraag op: waar komen over vijf jaar de seniors vandaan? Als juniors nu geen banen krijgen, worden ze nooit mid-level. Als mid-levels worden weggedrukt, groeien ze niet door naar senior. De pipeline breekt.
 
-In december 2025 publiceerde Beck "The bet on juniors just got better". Zijn centrale argument: met AI-tools wordt het aannemen van juniors juist *economisch aantrekkelijker*. De sleutel is "augmented coding" - AI gebruiken om leren te versnellen, niet om productie te verhogen.
+Kent Beck - grondlegger van Extreme Programming en auteur van "Test-Driven Development" - ziet het anders. Hij noemt AI de "Coding Genie" en waarschuwt dat je deze moet afremmen. De klassieke TDD-cyclus van "red, green, refactor" blijft essentieel. Niet de AI, maar jij bepaalt het tempo.
 
-> "The genie, used well, accelerates learning."
+![Coding Genie - Kent Beck](/assets/images/ai-coding-sucks/coding-genie-kent-beck.png)
+*Figuur 4: De "Coding Genie" volgens Kent Beck. Afbeelding overgenomen uit Orosz (2025).*
+
+<details>
+<summary>Kenmerken van de Coding Genie (klik om uit te klappen)</summary>
+
+Volgens Kent Beck heeft de "Coding Genie" drie problematische eigenschappen:
+
+- **Vrijwillig features toevoegen** - de AI suggereert uitbreidingen die je niet vroeg
+- **Geen oog voor design** - focus op werkende code, niet op onderhoudbare architectuur
+- **Bereid om te valsspelen** - tests uitcommentariëren, types negeren om "klaar" te lijken
+
+De genie wil je blij maken, niet je probleem oplossen.
+</details>
+
+In december 2025 publiceerde Beck (2025) "The bet on juniors just got better". Zijn centrale argument: met AI-tools wordt het aannemen van juniors juist *economisch aantrekkelijker*. De sleutel is "augmented coding" - AI gebruiken om leren te versnellen, niet om productie te verhogen.
+
+> "The genie, used well, accelerates learning." (Beck, 2025)
 
 Het verschil met "vibe coding"? Bij augmented coding blijf je actief leren. De AI verkort de tijd om iets te doorgronden van dagen naar uren, waardoor je *dieper* kunt leren in plaats van meer features te bouwen.
 
@@ -183,11 +201,16 @@ En de genie versnelt leren - mits je weet hoe je hem moet aansturen.
 
 ## Bronnen
 
-- Beck, K. (12 december 2025). *The bet on juniors just got better*. Tidy First? Geraadpleegd van tidyfirst.substack.com/p/the-bet-on-juniors-just-got-better
-- CJ. (2025, 20 oktober). *AI Coding Sucks* [Video]. Coding Garden. Geraadpleegd van coding.garden
-- Cursor Forum. (2025). *Cursor told me I should learn coding instead of asking it to generate it*. Geraadpleegd van forum.cursor.com/t/cursor-told-me-i-should-learn-coding-instead-of-asking-it-to-generate-it-limit-of-800-locs/61132
-- Farley, D. (2025). *Vibe Coding Is The WORST IDEA Of 2025* [Video]. Continuous Delivery. Geraadpleegd van youtube.com/@ContinuousDelivery
-- Karpathy, A. (6 februari 2025). *There's a new kind of coding I call "vibe coding"* [Tweet]. X. Geraadpleegd van x.com/karpathy/status/1886192184808149383
-- Leneway, K. (25 maart 2025). *The ULTIMATE Vibe Coding Playbook: 10 Tips to Level Up Your AI Coding Workflow* [Video]. YouTube. Geraadpleegd van youtube.com/watch?v=5Lu7k2SShNw
-- Matsuoka, R. (2025). *When AI Coding Feels Like Yelling at a Black Box: The Experienced Developer Divide*. HyperDev. Geraadpleegd van hyperdev.matsuoka.com/p/when-ai-coding-feels-like-yelling
-- Willison, S. (6 februari 2025). *Andrej Karpathy on "vibe coding"*. Simon Willison's Weblog. Geraadpleegd van simonwillison.net/2025/Feb/6/andrej-karpathy
+- Beck, K. (12 december 2025). *The bet on juniors just got better*. Tidy First? Geraadpleegd op 23 december 2025, van https://tidyfirst.substack.com/p/the-bet-on-juniors-just-got-better
+- CJ. (20 oktober 2025). *AI Coding Sucks* [Video]. Coding Garden. Geraadpleegd op 23 december 2025, van https://coding.garden/
+- CJ & ThePrimeTime. (2025). *AI Coding Sucks* [Video]. YouTube. Geraadpleegd op 5 januari 2026, van https://www.youtube.com/watch?v=rgiuaJbyUyU
+- Compose Specification. (27 maart 2023). *Compose Specification*. GitHub. Geraadpleegd op 23 december 2025, van https://github.com/compose-spec/compose-spec/blob/main/README.md
+- Cursor Forum. (2025). *Cursor told me I should learn coding instead of asking it to generate it*. Geraadpleegd op 23 december 2025, van https://forum.cursor.com/t/cursor-told-me-i-should-learn-coding-instead-of-asking-it-to-generate-it-limit-of-800-locs/61132
+- Farley, D. (2025). *Vibe Coding Is The WORST IDEA Of 2025* [Video]. Continuous Delivery. Geraadpleegd op 23 december 2025, van https://www.youtube.com/@ContinuousDelivery
+- IEEE Spectrum. (2025). *AI Shifts Expectations for Entry Level Jobs*. Geraadpleegd op 5 januari 2026, van https://spectrum.ieee.org/ai-effect-entry-level-jobs
+- Karpathy, A. (6 februari 2025). *There's a new kind of coding I call "vibe coding"* [Post]. X. Geraadpleegd op 23 december 2025, van https://x.com/karpathy/status/1886192184808149383
+- Leneway, K. (25 maart 2025). *The ULTIMATE Vibe Coding Playbook: 10 Tips to Level Up Your AI Coding Workflow* [Video]. YouTube. Geraadpleegd op 23 december 2025, van https://www.youtube.com/watch?v=5Lu7k2SShNw
+- Matsuoka, R. (2025). *When AI Coding Feels Like Yelling at a Black Box: The Experienced Developer Divide*. HyperDev. Geraadpleegd op 23 december 2025, van https://hyperdev.matsuoka.com/p/when-ai-coding-feels-like-yelling
+- Orosz, G. (2025). *TDD, AI Agents, and Coding with Kent Beck*. The Pragmatic Engineer. Geraadpleegd op 5 januari 2026, van https://newsletter.pragmaticengineer.com/p/tdd-ai-agents-and-coding-with-kent
+- Understanding AI. (2025). *New evidence strongly suggests AI is killing jobs for young programmers*. Geraadpleegd op 5 januari 2026, van https://www.understandingai.org/p/new-evidence-strongly-suggest-ai
+- Willison, S. (6 februari 2025). *Andrej Karpathy on "vibe coding"*. Simon Willison's Weblog. Geraadpleegd op 23 december 2025, van https://simonwillison.net/2025/Feb/6/andrej-karpathy

@@ -35,3 +35,22 @@
         </div>
     </div>
 </footer> <!-- End Footer -->
+
+<script>
+// Maak bare URLs in bronnenlijst automatisch klikbaar
+document.addEventListener('DOMContentLoaded', function() {
+  // Zoek de bronnen sectie (h2 met "Bronnen" gevolgd door ul)
+  const bronnenHeader = Array.from(document.querySelectorAll('h2')).find(h => h.textContent.trim() === 'Bronnen');
+  if (bronnenHeader) {
+    const bronnenList = bronnenHeader.nextElementSibling;
+    if (bronnenList && bronnenList.tagName === 'UL') {
+      bronnenList.querySelectorAll('li').forEach(li => {
+        li.innerHTML = li.innerHTML.replace(
+          /(https?:\/\/[^\s<]+)/g,
+          '<a href="$1" target="_blank" rel="noopener">$1</a>'
+        );
+      });
+    }
+  }
+});
+</script>

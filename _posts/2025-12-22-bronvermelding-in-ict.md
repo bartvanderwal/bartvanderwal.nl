@@ -1,19 +1,20 @@
 ---
 layout: post
-title: "Bronvermelding in ICT: Niet tegen plagiaat, maar vóór geloofwaardigheid"
+title: "Bronvermelding in ICT: Focus op ondersteuning uitspraken; NIET op plagiaat voorkomen"
 date: 2025-12-22
+date_started: 2025-12-22
 lang: nl
 tags: [technisch-schrijven, onderwijs, apa]
 img: posts/apa-bronvermelding-in-ict.png
 ---
 
-Als je de HAN-documentatie over bronvermelding leest, gaat het al snel over plagiaat. Logisch vanuit academisch perspectief: je moet kunnen aantonen dat je andermans ideeën niet als de jouwe presenteert. Maar voor ICT-studenten voelt dat vaak vreemd. Waarom zou je in een technisch document zo bezorgd zijn over het claimen van originaliteit?
+Als je de HAN-documentatie over bronvermelding leest, gaat het al snel over plagiaat. De APA-handleiding stelt: "Teksten en ideeën van anderen mogen niet zomaar in een eigen document overgenomen worden. Bronvermelding is verplicht" (SURF, 2021, p. 9). Logisch vanuit academisch perspectief: je moet kunnen aantonen dat je andermans ideeën niet als de jouwe presenteert.
 
-Het antwoord: dat hoeft ook niet. In de ICT is originaliteit van ideeën überhaupt niet zo waardevol.
+Maar voor ICT-studenten voelt die focus op plagiaat vaak vreemd. Waarom zou je in een technisch document zo bezorgd zijn over het claimen van originaliteit? Dit artikel pleit niet voor het negeren van plagiaat — bronvermelding blijft verplicht — maar voor een *focusverlegging*. Dezelfde handleiding noemt ook *controleerbaarheid* als doel. (SURF, 2021, p. 9). Dát is in de ICT het belangrijkere argument.
 
 ## Ideas are cheap
 
-George R.R. Martin, de auteur van Game of Thrones, verwoordt het treffend in een Rolling Stone interview:
+In de ICT is sowieso originaliteit meestal NIET het doel. Ideeen zijn makkelijk, het gaat om een goed product engineeren op basis van dit idee. George R.R. Martin, de auteur van Game of Thrones, verwoordt het treffend in een Rolling Stone interview:
 
 > "Ideas are cheap. I have more ideas now than I could ever write up. To my mind, it's the execution that is all-important. I'm proud of my work, but I don't know if I'd ever claim it's enormously original." (Martin, 2014)
 
@@ -30,7 +31,7 @@ Stel je schrijft een architectuurdocument waarin je pleit voor microservices. Zo
 - **Zonder bron**: "We kiezen voor microservices omdat dat schaalbaarder is."
 - **Met bron**: "We kiezen voor microservices vanwege de onafhankelijke deployability en schaalbaarheid (Fowler, 2014)."
 
-De tweede variant toont dat je je huiswerk hebt gedaan. Dat je weet wat de industrie zegt. Dat je beslissing niet uit de lucht komt vallen.
+De tweede variant toont dat je je huiswerk hebt gedaan. Dat je weet wat de industrie zegt. Dat je beslissing niet uit de lucht komt vallen. En dat je je in de documentatie ook richt op het toepassen van bestaande kennis en niet op ellenlange documentatie. Dus niet in de middelbare school stijl "Ik houd mijn spreekbeurt over microservices", maar enkel heel kort de juiste argumenten aanhalen, en NIET herhalen wat anderen al veel eerder en (meestal) beter hebben gezegd (in dit geval Fowler).
 
 ## Geloofwaardigheid opbouwen
 
@@ -126,7 +127,9 @@ Studenten gebruiken vaak de IEEE-stijl met genummerde haakjes [1] zoals op Wikip
 
 ### Voetnoten
 
-Voetnoten zijn voor academische boeken en juridische teksten, niet voor technische documentatie in APA-stijl. Houd referenties in de lopende tekst.
+Voetnoten zijn voor academische boeken en juridische teksten, niet voor technische documentatie in APA-stijl.[^1] Houd referenties dus in de lopende tekst.
+
+[^1]: "APA maakt geen gebruik van voet- of eindnoten voor bronvermelding. Het is wel toegestaan voor een korte toelichting op de tekst." (HAN-bibliotheek, z.d.). Let op de ironie: dit is precies zo'n korte toelichting waarvoor voetnoten wél toegestaan zijn. In dit geval dus ook met een bronvermelding IN de voetnoot, in plaats van de 'voetnoot ALS bronvermelding gebruiken' wat een veelvoorkomende fout/misvatting is bij studenten/schrijvers.
 
 ### Scribbr-valkuil
 
@@ -238,12 +241,14 @@ Dat is geen administratieve last. Dat is vakmanschap.
 
 ## Bronnen
 
-- AIM Professional Skills. (2016). *Controlekaart documenten ICA*. Geraadpleegd van factlearning.wordpress.com
-- De Correspondent. (z.d.). *De Correspondent heet je welkom! Zo werkt onze site*. Geraadpleegd op 22 december 2025, van decorrespondent.nl/1705/de-correspondent-heet-je-welkom-zo-werkt-onze-site
-- Fowler, M. (2014). *Microservices*. Geraadpleegd van martinfowler.com
+- AIM Professional Skills. (2016). *Controlekaart documenten ICA*. Geraadpleegd op 22 december 2025, van https://factlearning.wordpress.com
+- De Correspondent. (z.d.). *De Correspondent heet je welkom! Zo werkt onze site*. Geraadpleegd op 22 december 2025, van https://decorrespondent.nl/1705/de-correspondent-heet-je-welkom-zo-werkt-onze-site
+- Fowler, M. (2014). *Microservices*. Geraadpleegd op 22 december 2025, van https://martinfowler.com/articles/microservices.html
 - Gamma, E., Helm, R., Johnson, R., & Vlissides, J. (1995). *Design Patterns: Elements of Reusable Object-Oriented Software*. Addison-Wesley.
-- Google. (2022). *Technical Writing*. Geraadpleegd van developers.google.com/tech-writing
-- Martin, G.R.R. (2014, 23 april). *George R.R. Martin: The Rolling Stone Interview* [Interview]. Geraadpleegd op 22 december 2025, van rollingstone.com/tv/news/george-r-r-martin-the-rolling-stone-interview-20140423
-- Merriam-Webster. (14 december 2025). *2025 Word of the Year: Slop*. Geraadpleegd op 22 december 2025, van merriam-webster.com/wordplay/word-of-the-year
-- Scribbr. (z.d.). *Waar plaats je de bronvermelding in de tekst?*. Geraadpleegd op 22 december 2025, van scribbr.nl/veel-gestelde-vragen/plaatsing-verwijzing-in-tekst
+- Google. (2022). *Technical Writing*. Geraadpleegd op 22 december 2025, van https://developers.google.com/tech-writing
+- HAN-bibliotheek. (z.d.). *APA vraag en antwoord*. Geraadpleegd op 22 december 2025, van https://www.han.nl/artikelen/bibliotheek/apa-algemeen/apa-vraag-en-antwoord/
+- Martin, G.R.R. (2014, 23 april). *George R.R. Martin: The Rolling Stone Interview* [Interview]. Geraadpleegd op 22 december 2025, van https://rollingstone.com/tv/news/george-r-r-martin-the-rolling-stone-interview-20140423
+- Merriam-Webster. (14 december 2025). *2025 Word of the Year: Slop*. Geraadpleegd op 22 december 2025, van https://merriam-webster.com/wordplay/word-of-the-year
+- Scribbr. (z.d.). *Waar plaats je de bronvermelding in de tekst?*. Geraadpleegd op 22 december 2025, van https://scribbr.nl/veel-gestelde-vragen/plaatsing-verwijzing-in-tekst
+- SURF. (2021). *De APA-richtlijnen uitgelegd: Een praktische handleiding voor bronvermelding in het hoger onderwijs* (3e editie). Geraadpleegd op 22 december 2025, van https://www.auteursrechten.nl/wp-content/uploads/2023/03/De-APA-richtlijnen-uitgelegd-3e-editie.pdf
 - Voltaire. (1772). *La Bégueule*. Conte moral.
