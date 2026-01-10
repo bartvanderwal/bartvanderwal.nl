@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "What is a front-end framework?"
+subtitle: "And does the definition apply to Bootstrap or Angular?"
 date: 2024-12-02
+date_started: 2024-12-02
 lang: en
 tags: [frontend, webdev, quora]
 img: posts/what-is-a-frontend-framework.png

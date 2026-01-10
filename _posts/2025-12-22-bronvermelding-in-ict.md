@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "Bronvermelding in ICT: Focus op ondersteuning uitspraken; NIET op plagiaat voorkomen"
+title: "Bronvermelding in ICT"
+subtitle: "Focus op onderbouwen uitspraken; niet op plagiaat voorkomen"
 date: 2025-12-22
 date_started: 2025-12-22
 lang: nl
@@ -21,6 +22,12 @@ In de ICT is sowieso originaliteit meestal NIET het doel. Ideeen zijn makkelijk,
 Dit geldt minstens zo sterk in de ICT. Het draait niet om wie het eerste een idee had, maar om wie het daadwerkelijk bouwt en werkend krijgt. Originaliteit claimen is niet waar het om gaat.
 
 Dit staat haaks op de academische traditie waar APA vandaan komt. De American Psychological Association ontwikkelde het referentiesysteem voor onderzoekers die voortbouwen op elkaars theorieën. Daar is intellectueel eigendom van ideeën wél belangrijk. Maar **ICT is geen psychologie**.
+
+*Edit 8-1-'26: Deze stelling riep bij een lezer (zelf psycholoog) de nodige vragen op. Ter verduidelijking: ik geef les aan de HAN University of Applied Sciences — toegepaste wetenschap dus. Hoewel onderzoek hier belangrijk is, ligt de focus op toepassing: Design Science, onderzoek om iets te ontwerpen of verbeteren, met resultaten die binnen vijf jaar bruikbaar zijn, ook voor MKB-bedrijven zonder eigen R&D-afdeling.*
+
+*Daarbij: ICT zelf is geen wetenschap — dat is Computer Science of Informatica. In de informatica heb je wel grote theorieën, maar die zijn vrij wiskundig: de onvolledigheidsstelling van Gödel, Turing-volledigheid, NP-volledigheid, complexiteitsanalyse, bewijs uit volledige inductie. Op het HBO-ICT besteden we hier eigenlijk geen tijd aan. Voor wie dit populair-wetenschappelijk wil teruglezen: Rob Conery & Scott Hanselman's* The Impostor's Handbook *(Conery, 2020) is een aanrader.*
+
+*Software Development is bovendien een secundair vakgebied: wij als ontwikkelaars krijgen altijd de opdracht om andermans probleem op te lossen. We dienen andere domeinen. Psychologie bijvoorbeeld — denk aan software voor cognitieve experimenten of statistische analyse van beslissingsgedrag. Of HR-systemen, financiële administratie, identity management. In plaats van zelf origineel zijn, moeten we juist heel goed worden in het leren kennen van andere domeinen. Daar zijn meta-technieken voor, zoals User Story Mapping (Patton, 2014), maar die hoeven onze studenten niet te bedenken — ze gaan software schrijven.*
 
 ## Waarom bronvermelding in ICT anders werkt
 
@@ -242,6 +249,7 @@ Dat is geen administratieve last. Dat is vakmanschap.
 ## Bronnen
 
 - AIM Professional Skills. (2016). *Controlekaart documenten ICA*. Geraadpleegd op 22 december 2025, van https://factlearning.wordpress.com
+- Conery, R. (2020). *The Impostor's Handbook: A Primer for Self-Taught Programmers* (2nd ed.) [Video]. Big Machine. Geraadpleegd op 8 januari 2026, van https://www.youtube.com/watch?v=pAbVdKG7fzA
 - De Correspondent. (z.d.). *De Correspondent heet je welkom! Zo werkt onze site*. Geraadpleegd op 22 december 2025, van https://decorrespondent.nl/1705/de-correspondent-heet-je-welkom-zo-werkt-onze-site
 - Fowler, M. (2014). *Microservices*. Geraadpleegd op 22 december 2025, van https://martinfowler.com/articles/microservices.html
 - Gamma, E., Helm, R., Johnson, R., & Vlissides, J. (1995). *Design Patterns: Elements of Reusable Object-Oriented Software*. Addison-Wesley.
@@ -249,6 +257,7 @@ Dat is geen administratieve last. Dat is vakmanschap.
 - HAN-bibliotheek. (z.d.). *APA vraag en antwoord*. Geraadpleegd op 22 december 2025, van https://www.han.nl/artikelen/bibliotheek/apa-algemeen/apa-vraag-en-antwoord/
 - Martin, G.R.R. (2014, 23 april). *George R.R. Martin: The Rolling Stone Interview* [Interview]. Geraadpleegd op 22 december 2025, van https://rollingstone.com/tv/news/george-r-r-martin-the-rolling-stone-interview-20140423
 - Merriam-Webster. (14 december 2025). *2025 Word of the Year: Slop*. Geraadpleegd op 22 december 2025, van https://merriam-webster.com/wordplay/word-of-the-year
+- Patton, J. (2014). *User Story Mapping: Discover the Whole Story, Build the Right Product*. O'Reilly Media.
 - Scribbr. (z.d.). *Waar plaats je de bronvermelding in de tekst?*. Geraadpleegd op 22 december 2025, van https://scribbr.nl/veel-gestelde-vragen/plaatsing-verwijzing-in-tekst
 - SURF. (2021). *De APA-richtlijnen uitgelegd: Een praktische handleiding voor bronvermelding in het hoger onderwijs* (3e editie). Geraadpleegd op 22 december 2025, van https://www.auteursrechten.nl/wp-content/uploads/2023/03/De-APA-richtlijnen-uitgelegd-3e-editie.pdf
 - Voltaire. (1772). *La Bégueule*. Conte moral.

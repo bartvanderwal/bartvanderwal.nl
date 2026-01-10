@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "'Clean Code, Horrible Performance'? Context, didactiek en generalisatie"
+title: "Clean Code, Horrible Performance"
+subtitle: "Context, didactiek en generalisatie"
 date: 2026-01-05
 lang: nl
 tags: [clean-code, polymorfisme, performance, onderwijs]
@@ -8,58 +9,48 @@ tags: [clean-code, polymorfisme, performance, onderwijs]
 
 ## Inleiding
 
-In zijn video *“‘Clean’ Code, Horrible Performance”* stelt Casey Muratori dat een objectgeoriënteerde
-oplossing, zoals gepresenteerd door de auteurs van *Clean Code*, kan leiden tot een prestatienadeel
-van een factor tien of meer.
+In zijn video *"'Clean' Code, Horrible Performance"* stelt Casey Muratori dat een objectgeoriënteerde oplossing kan leiden tot een prestatienadeel van een factor tien of meer.
+
+Muratori maakt niet expliciet duidelijk wat hij precies met "Clean Code" bedoelt. Ik interpreteer dit als het boek *Clean Code* van Robert C. Martin (ook bekend als "Uncle Bob"), inclusief zijn blog posts op cleancoder.com.
 
 De video is technisch interessant en voor gevorderde ontwikkelaars zeker relevant.
-Zonder context kan de boodschap echter gemakkelijk worden opgevat als:
-*“Clean Code leidt per definitie tot slechte performance.”*
+Zonder context kan de boodschap echter gemakkelijk overkomen als:
+*"Clean Code leidt per definitie tot slechte performance."*
 
-In deze blog analyseer ik dat standpunt, plaats ik het in context, en bespreek ik waarom
-dit vooral voor studenten nuancering vereist.
+In deze blog analyseer ik dat standpunt, plaats het in context, en bespreek waarom dit vooral voor studenten nuancering vereist.
 
 ---
 
 ## Het voorbeeld uit *Clean Code*
 
 Muratori baseert zijn betoog op het bekende `calculateArea`-voorbeeld uit *Clean Code*.
-Robert C. Martin introduceert dit voorbeeld om polymorfisme en het Open/Closed Principle
-didactisch te illustreren.
+Robert C. Martin introduceerde dit voorbeeld om polymorfisme en het Open/Closed Principle didactisch te illustreren.
 
-Martin kiest dit voorbeeld omdat:
+Martin koos dit voorbeeld omdat:
 
 - het domein eenvoudig is,
 - de focus ligt op ontwerpstructuur,
 - en de verschillen tussen `switch` en polymorfisme duidelijk zichtbaar zijn.
 
-Het voorbeeld is nadrukkelijk **didactisch bedoeld**, niet als representatief voor
-realistische applicatiecode.
+Martin bedoelde het voorbeeld nadrukkelijk **didactisch**, niet als representatieve applicatiecode.
 
 ---
 
 ## Wat Muratori met dit voorbeeld doet
 
-In de video lijkt Muratori zich expliciet te distantiëren van de voorbeeldkeuze:
-hij stelt dat hij “slechts” een voorbeeld gebruikt van *de Clean Code-auteurs zelf*.
-Daarbij noemt hij echter geen specifieke bron.
+In de video distantieert Muratori zich van de voorbeeldkeuze: hij stelt dat hij "slechts" een voorbeeld gebruikt van de Clean Code-auteur zelf. Daarbij noemt hij echter geen specifieke bron.
 
-Gezien de inhoud ligt het voor de hand dat hij verwijst naar *Clean Code* van Robert C. Martin.
+Gezien de inhoud verwijst hij waarschijnlijk naar *Clean Code* van Robert C. Martin. In de tweede editie (2026, nu al beschikbaar als pre-release) verwerkt Martin ook input van critici zoals John Ousterhout, al is deze geen co-auteur.
 
-Belangrijker is dat Muratori het voorbeeld **inhoudelijk aanpast**:
-hij plaatst de berekening in een zeer strakke `for`-lus en voert deze miljoenen keren uit.
-Daarmee verandert hij het voorbeeld van een ontwerpoefening in een microbenchmark.
+Belangrijker: Muratori past het voorbeeld **inhoudelijk aan**. Hij plaatst de berekening in een zeer strakke `for`-lus en voert deze duizenden keren uit. Daarmee verandert hij het voorbeeld van een ontwerpoefening in een microbenchmark.
 
-Door deze contextverschuiving verandert ook de aard van het probleem:
-niet langer staat ontwerpbaarheid centraal, maar maximale rekensnelheid.
+Deze contextverschuiving verandert ook de aard van het probleem: niet langer staat ontwerpbaarheid centraal, maar maximale rekensnelheid.
 
 ---
 
 ## Wat *Clean Code* zelf zegt over performance
 
-In de tweede editie van *Clean Code* bespreekt Martin performance expliciet.
-Hij erkent dat objectgeoriënteerde ontwerpen een meetbare overhead kunnen introduceren
-in zeer specifieke situaties:
+In de tweede editie van *Clean Code* bespreekt Martin performance expliciet. Hij erkent dat objectgeoriënteerde ontwerpen in zeer specifieke situaties een meetbare overhead kunnen introduceren:
 
 > “If you are working on a project where a few nanoseconds here or there are critical, then it may be that you will have to abandon the OCP and the DIP and use switch statements instead of polymorphism.”
 
@@ -70,13 +61,13 @@ Martin verbindt hier twee belangrijke voorwaarden:
 1. het gaat om situaties waarin **enkele nanoseconden daadwerkelijk relevant zijn**;
 2. het afwijken van ontwerpprincipes gebeurt **lokaal**, niet systeemwijd.
 
-De video van Muratori laat deze nuancering grotendeels onbesproken.
+Muratori laat deze nuancering in zijn video grotendeels onbesproken.
 
 ---
 
 ## “Prefer polymorphism” is geen absolute regel
 
-In diverse samenvattingen van *Clean Code* verschijnt de richtlijn:
+Diverse samenvattingen van *Clean Code* bevatten de richtlijn:
 
 > “Prefer polymorphism to if/else or switch/case.”
 
@@ -90,7 +81,13 @@ niet altijd te vermijden zijn, bijvoorbeeld in factories of concrete modules.
 Alleen al dit gegeven maakt duidelijk dat hij geen absolute regel bedoelt,
 laat staan “always use polymorphism”.
 
-De video suggereert die absolute interpretatie wel, zonder dit expliciet te onderbouwen.
+Muratori suggereert in zijn video die absolute interpretatie, zonder dit expliciet te onderbouwen. Als ik diezelfde zwart-wit-benadering op zijn video zou toepassen, zou ik hem clickbait moeten noemen.
+
+---
+
+## Wat de video wél goed doet
+
+Dit gezegd hebbende: de video geeft op zich een redelijk correct beeld van hoe je code "clean" maakt. Muratori snapt duidelijk wat polymorfisme is, wat encapsulatie inhoudt, en waarom DRY waardevol is. Als studenten deze concepten ook kennen én begrijpen, maar valide redenen kunnen benoemen om ze niet toe te passen — zoals performance, of dat een extra interface of superklasse overengineering zou zijn — dan is dat prima.
 
 ---
 
@@ -109,7 +106,7 @@ Tegelijkertijd nuanceert Martin dit principe zelf uitgebreid:
 
 *Martin, R. C. (2025). Clean Code (2nd ed.), Chapter 8: Accidental versus Essential Duplication.*
 
-Deze nuance ontbreekt in de video, waardoor DRY als een absolute regel kan overkomen.
+Muratori laat deze nuance achterwege, waardoor DRY als een absolute regel kan overkomen.
 
 ---
 
@@ -126,7 +123,7 @@ Wanneer één zo’n stap tientallen milliseconden duurt, verdwijnt elk verschil
 polymorfisme en een `switch` volledig in de ruis.
 In zulke situaties zijn leesbaarheid, testbaarheid en onderhoudbaarheid doorslaggevend.
 
-Het voorbeeld uit de video representeert deze realiteit niet.
+Het voorbeeld uit Muratori's video representeert deze realiteit niet.
 
 ---
 
@@ -134,9 +131,9 @@ Het voorbeeld uit de video representeert deze realiteit niet.
 
 Samenvattend bevat de video enkele problematische stappen:
 
-- een didactisch ontwerpvoorbeeld wordt gebruikt als representatieve workload;
+- de video gebruikt een didactisch ontwerpvoorbeeld als representatieve workload;
 - de contextverschuiving naar een extreem herhaalde berekening blijft impliciet;
-- een ontwerpheuristiek wordt gepresenteerd alsof het een absolute regel betreft.
+- de video presenteert een ontwerpheuristiek alsof het een absolute regel betreft.
 
 Deze stappen maken de conclusie begrijpelijk voor experts,
 maar potentieel misleidend voor studenten.
@@ -145,8 +142,7 @@ maar potentieel misleidend voor studenten.
 
 ## Wat studenten hiervan moeten leren
 
-Voor studenten is de belangrijkste les niet dat polymorfisme “traag” is,
-maar dat ontwerpprincipes altijd **contextafhankelijk** zijn.
+Voor studenten is de belangrijkste les niet dat polymorfisme "traag" is, maar dat ontwerpprincipes altijd **contextafhankelijk** zijn.
 
 Zij moeten eerst leren:
 
@@ -156,7 +152,9 @@ Zij moeten eerst leren:
 
 Zoals het vaak geciteerde gezegde luidt:
 
-> “If the only tool you have is a hammer, it is tempting to treat everything as if it were a nail.”
+> "If the only tool you have is a hammer, it is tempting to treat everything as if it were a nail."
+
+In het onderwijs gebruiken we bewust simpelere gevallen en laten studenten "err on the side of over-engineering". Dit is een didactische keuze: we leren hen constructies aan waarmee ze later — in de veelal veel complexere code die ze na hun afstuderen in de beroepspraktijk tegenkomen, of idealiter al tijdens hun afstudeeropdracht of groepsprojecten — hun code kunnen structureren en uitbreidbaar maken.
 
 ---
 
@@ -166,6 +164,4 @@ Muratori toont overtuigend aan dat polymorfisme ongeschikt kan zijn in extreem
 performancekritische situaties.
 *Clean Code* ontkent dit niet — integendeel.
 
-Het probleem ontstaat wanneer deze specifieke observatie wordt veralgemeniseerd
-tot een algemene uitspraak over “clean code”.
-Juist voor studenten is het essentieel om dat onderscheid scherp te houden.
+Het probleem ontstaat wanneer kijkers deze specifieke observatie veralgemeniseren tot een algemene uitspraak over "clean code". Juist voor studenten is het essentieel om dat onderscheid scherp te houden.

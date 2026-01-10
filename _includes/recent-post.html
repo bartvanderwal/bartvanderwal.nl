@@ -3,8 +3,10 @@
 <div class="recent-box">
   <h2 class="page-subtitle">Recente posts</h2>
   <div class="recent-list">
-    {% for post in site.posts offset:0 limit:4 %}
-      {% if post.title %}
+    {% assign recent_count = 0 %}
+    {% for post in site.posts %}
+      {% if post.title and post.draft != true and recent_count < 4 %}
+        {% assign recent_count = recent_count | plus: 1 %}
         {% assign post_image = post.img | default: site.default-post-img %}
         <div class="recent-item">
           {% include escape-404.html %}

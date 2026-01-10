@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "Continuous Integration"
+subtitle: "Automatische integratie en testen in softwareontwikkeling"
 date: 2024-12-19
+date_started: 2024-12-19
 lang: nl
 tags: [devops, ci, software]
 img: posts/devops-infinity-loop.png

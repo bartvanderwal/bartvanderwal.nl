@@ -962,9 +962,20 @@ svg.menu-icon-house {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  list-style: none;
+}
+.version-history summary::-webkit-details-marker {
+  display: none;
 }
 .version-history summary:hover {
   color: var(--main);
+}
+.version-caret {
+  transition: transform 0.2s ease;
+  font-size: 0.7rem;
+}
+.version-history[open] .version-caret {
+  transform: rotate(90deg);
 }
 .version-toggle {
   text-decoration: underline;
@@ -1587,7 +1598,7 @@ img + small, img + br + small {
 
 .page-content img {
     display: block;
-    margin: auto;
+    margin: 20px;
 }
 
 .header-page {

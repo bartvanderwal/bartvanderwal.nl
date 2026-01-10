@@ -1,12 +1,14 @@
 # bartvanderwal.nl
 
-Persoonlijke blog van Bart van der Wal, gebouwd met Jekyll en het Adam Blog 2.0 thema.
+Persoonlijke blog van Bart van der Wal, gebouwd met Jekyll en het Adam Blog 2.0 thema met een aantal aanpassingen.
+
+Lees deze blog op de live website voor idee van dzee aanpassingen: 
 
 ## Lokaal draaien
 
-### Eenmalige setup
+### Eenmalige setup op de macOS
 
-1. Zorg dat Homebrew Ruby is geïnstalleerd:
+1. Zorg dat je met Homebrew Ruby is geïnstalleerd:
 
 ```bash
 brew install ruby
@@ -39,6 +41,10 @@ bundle install
 ```
 
 ### Development server starten
+
+Run `./serve` script om lokaal te starten.
+
+Dit voert achter de schermen het Jekyll start commando uit:
 
 ```bash
 bundle exec jekyll serve

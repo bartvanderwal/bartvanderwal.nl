@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "AI Coding Sucks - Of toch niet?"
+title: "AI Coding Sucks"
+subtitle: "Of toch niet?"
 date: 2025-12-23
 date_started: 2024-12-23
 started_note: "Naar aanleiding van CJ's video"
 lang: nl
 tags: [ai, programmeren, tooling, onderwijs]
+img: posts/ai-coding-sucks/ai-coding-sucks-header.png
 revisions:
   - date: 2024-12-26
     type: Uitgebreid
@@ -198,6 +200,14 @@ Voor ons in het Software Engineering onderwijs is dit een positieve noot. We moe
 Dit geldt niet alleen voor de initiële opleiding, maar ook voor Leven Lang Ontwikkelen (LLO). De perfecte prompt bestaat niet. De perfecte tool bestaat niet. Maar "goed genoeg om mee te werken"? Dat is haalbaar.
 
 En de genie versnelt leren - mits je weet hoe je hem moet aansturen.
+
+Tot slot: na zijn "AI Coding Sucks" video maakte CJ eerst "I stopped AI programming for one month", en daarna eind december een video van maar liefst twee uur waarin hij alle fundamentele concepten bespreekt die een developer moet kennen. In dit nieuwe AI-tijdperk - maar er is eigenlijk helemaal niks AI-specifieks aan. Zie het screenshot hieronder.
+
+Opvallend: nagenoeg al deze onderwerpen komen ook langs in de ICT-opleiding aan de HAN waar ik les geef. Enkele meer low-level zaken als "microcontrollers" nu eigenlijk ook voor het eerst, nu we naast reguliere Software Engineering ook onderwijs ontwikkelen voor het nieuwe *Software & Robotics* curriculum.
+
+Kun je dit dan ook zomaar van YouTube oppikken? Een heel gemotiveerde persoon wellicht wel. Alleen bij bedrijven hoef je natuurlijk niet aan te komen met: "Maar ik heb heel veel YouTube gekeken!" - ook wel met een reden. Het verschil? Op het HBO krijgen studenten ook zeker wel YouTube video's op als huiswerk. Of video's op onze eigen (leer)platform. Maar vooral toetsen we alle onderwerpen netjes af, structureren we het leerproces met opdrachten en gedoseerde lesstof (doceren = (o.a.) doseren). Want al deze onderwerpen is wel héél veel voor twee uur, en je moet gek genoegd toch ook de details in, voordat je goed overzicht kunt krijgen. Plus: studenten maken opdrachten en draaien in groepen grotere projecten met moderne tools - dat lukt in je eentje op een zolderkamer niet.
+
+![CJ's overzicht van fundamentele developer topics die je moet kennen](/assets/images/ai-coding-sucks/cj-fundamentals-overview.png)
 
 ## Bronnen
 

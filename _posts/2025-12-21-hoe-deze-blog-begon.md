@@ -1,13 +1,14 @@
 ---
 layout: post
-title: "Hoe deze blog begon - en het idee erachter"
+title: "Hoe deze blog begon"
+subtitle: "En het idee erachter"
 date: 2025-12-21
 date_started: 2024-12-21
 lang: nl
 tags: [personal, blog, meta]
 img: posts/boek-ethics-for-people-who-work-in-tech.png
 revisions:
-  - date: 2024-12-27
+  - date: 2025-12-27
     type: Uitgebreid
     note: "SOFA Mode filosofie toegevoegd"
 ---
@@ -16,11 +17,11 @@ Soms leiden de kleinste dingen tot onverwachte uitkomsten. Mijn blog website bes
 
 ## De oorsprong
 
-Ik had eerder "Ethics For People Who Work In Tech" van Marc Steen geleend uit de HAN bibliotheek. Een goed boek over de ethische overwegingen die we tegenkomen als technologie professionals. Ik wilde het snel even herlezen en keek of er een PDF online stond - en vond het op [Scribd](https://www.scribd.com/).
+Ik had eerder "Ethics For People Who Work In Tech" van Marc Steen geleend uit de HAN bibliotheek. Een goed boek over de ethische overwegingen die we tegenkomen als technologie professionals. Ik wilde het snel even herlezen en keek of er een PDF online stond - en vond het op [Scribd.com](https://www.scribd.com/).
 
 Scribd heeft een paywall, maar biedt een workaround: je kunt documenten downloaden als je eerst eigen content uploadt. Drie uploads is één download. Dus had ik drie eigen documenten nodig om te publiceren.
 
-Ik keek door mijn Quora antwoorden - door de jaren heen heb ik best wat geschreven over software development, frameworks en technologie in het algemeen. Dus daarom maar wat Quora antwoorden van lang geleden gesubmit naar Scribd.
+Ik keek door mijn Quora antwoorden - jren terug was ik daar een tijdje actief op, toen ik nog freelancer was. Ik had best wat posts geschreven rondom software development, en Java, .NET en NodeJS. Dus daarom maar wat Quora antwoorden van lang geleden gesubmit naar Scribd.
 
 Maar in plaats van alleen documenten naar Scribd te uploaden, dacht ik: waarom publiceer ik deze stukken niet ook gewoon netjes op mijn eigen site? Vandaar deze blog. Een simpele Jekyll site op GitHub Pages, eindelijk het domein bartvanderwal.nl gebruikend dat ik al jaren bezit.
 
@@ -75,4 +76,4 @@ De drafts zijn bewust *niet* indexeerbaar door zoekmachines. Je moet ze actief o
 
 ---
 
-*Deze blogpost is geschreven met behulp van [Claude Code CLI](https://claude.ai/claude-code). De broncode van deze site is te vinden op [GitHub](https://github.com/bartvanderwal/bartvanderwal.nl).*
+*Ik schrijf deze blogs samen met Claude Code of andere LLM's, maar altijd op basis van mijn eigen idee. Ik ben en blijf zelf verantwoordelijk voor de eindregie. Ik zit in [AI-gebruikstype 1, lees hier meer](/ai-gebruikstypes/).*

@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "Vuurwerk traditie is belachelijk om voort te zetten"
+title: "Vuurwerk traditie is belachelijk"
+subtitle: "Om voort te zetten"
 date: 2025-12-28
 date_started: 2025-12-28
 lang: nl

@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "Agile Training Manifesto"
+subtitle: "Principes voor effectieve agile training"
 date: 2025-12-23
+date_started: 2025-12-23
 lang: nl
 tags: [agile, onderwijs, devops]
 draft: true

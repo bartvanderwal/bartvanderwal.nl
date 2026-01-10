@@ -1,6 +1,7 @@
 {% if page.date_started or page.revisions %}
 <details class="version-history">
   <summary>
+    <span class="version-caret">▶</span>
     <span class="version-toggle">Versiegeschiedenis</span>
     {% if page.draft %}<span class="draft-status">DRAFT</span>{% endif %}
   </summary>
@@ -20,8 +21,16 @@
         <td>{{ page.started_note | default: "Eerste idee" }}</td>
       </tr>
       {% endif %}
+      {% unless page.draft %}
+      <tr class="published-row">
+        <td>{{ page.date | date: "%d %b %Y" }}</td>
+        <td>Gepubliceerd</td>
+        <td>{{ page.published_note | default: "Eerste publicatie" }}</td>
+      </tr>
+      {% endunless %}
       {% if page.revisions %}
-      {% for revision in page.revisions %}
+      {% assign sorted_revisions = page.revisions | sort: "date" %}
+      {% for revision in sorted_revisions %}
       <tr>
         <td>{{ revision.date | date: "%d %b %Y" }}</td>
         <td>{{ revision.type | default: "Gewijzigd" }}</td>
@@ -29,13 +38,6 @@
       </tr>
       {% endfor %}
       {% endif %}
-      {% unless page.draft %}
-      <tr class="published-row">
-        <td>{{ page.date | date: "%d %b %Y" }}</td>
-        <td>Gepubliceerd</td>
-        <td>{{ page.published_note | default: "Definitieve versie" }}</td>
-      </tr>
-      {% endunless %}
     </tbody>
   </table>
 </details>

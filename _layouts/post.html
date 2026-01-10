@@ -7,6 +7,9 @@ layout: default
 <section class="hidden">
   <div class="post">
       <a  class="post-list-title" href="{{ post_url }}">{{ page.title }}</a>
+      {% if page.subtitle %}
+      <p class="post-list-subtitle">{{ page.subtitle }}</p>
+      {% endif %}
       {% include post_meta.html type="post-card-meta" %}
         <div class="post-excerpt">
             {{ page.content | markdownify | strip_newlines | truncatewords: 100 }}<a class="read-more" href="{{ post_url }}"> read more</a>
@@ -22,6 +25,9 @@ layout: default
       <div class="page-content">
         <div class="header-page">
           <h1 class="page-title">{{ page.title }}</h1>
+          {% if page.subtitle %}
+          <h2 class="page-subtitle">{{ page.subtitle }}</h2>
+          {% endif %}
           {% include post_meta.html type="post-page-meta" %}
           <button id="download-pdf" class="pdf-button" onclick="downloadPdf()">
             <i class="fa fa-file-pdf-o"></i> Download PDF

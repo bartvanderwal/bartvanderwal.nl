@@ -1,7 +1,9 @@
 ---
 layout: post
-title: "Walking Skeleton: End-to-End Validatie"
+title: "Walking Skeleton"
+subtitle: "End-to-End Validatie in softwareontwikkeling"
 date: 2024-12-18
+date_started: 2024-12-18
 lang: nl
 tags: [software, agile, onderwijs]
 img: posts/walking-skeleton-vs-mvp.png

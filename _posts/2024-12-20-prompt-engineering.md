@@ -1,15 +1,20 @@
 ---
 layout: post
 title: "Prompt Engineering"
+subtitle: "De kunst van het vragen aan AI"
 date: 2024-12-20
+date_started: 2024-12-20
 lang: nl
 tags: [ai, prompting]
 img: posts/chat-gpt-3hoog-comic.jpg
+draft: true
 ---
 
 In dit artikel verkennen we prompt engineering: de kunst van het effectief communiceren met AI-taalmodellen.
 
 ![3HOOG comic over ChatGPT](/assets/images/prompt-engineering/chat-gpt-3hoog-comic.jpg)
+
+*Figuur 1: 3HOOG: ChatGPT. Benieuwd hoe het afloopt?... Zie: [sam.han.nl](https://sam.han.nl/achtergrond/strip/3hoog-chatgpt/)*
 
 ## Over onderzoek en Prompt Engineering
 
@@ -51,3 +56,7 @@ Alle outputs vereisen kritische review op accuraatheid, volledigheid en helderhe
 AI biedt significant potentieel maar presenteert echte risico's. Blanco verbod is contraproductief; ethische argumenten ondersteunen verantwoorde AI integratie.
 
 ![De toekomst van AI](/assets/images/prompt-engineering/ai-the-future.PNG)
+
+---
+
+*Dit artikel verscheen oorspronkelijk op [minordevops.nl](https://minordevops.nl/devops-overig/workshop-prompt-engineering.html).*

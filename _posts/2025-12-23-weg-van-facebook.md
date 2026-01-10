@@ -1,7 +1,9 @@
 ---
 layout: post
-title: "Weg van Facebook: Een jaar later"
+title: "Weg van Facebook"
+subtitle: "Een jaar later"
 date: 2025-12-23
+date_started: 2025-12-23
 lang: nl
 tags: [privacy, social-media, big-tech]
 draft: true
@@ -65,6 +67,6 @@ Soms is de enige manier om te winnen, niet mee te spelen.
 
 ## Bronnen
 
-- ACM. (2024). *Onderzoek naar dark patterns bij big tech*. Geraadpleegd van acm.nl/nl/publicaties/acm-roept-big-tech-op-gedrag-aan-te-passen
-- Doctorow, C. (2023, 21 januari). *Tiktok's enshittification*. Pluralistic. Geraadpleegd van pluralistic.net/2023/01/21/potemkin-ai
-- Merriam-Webster. (2025). *2025 Word of the Year: Slop*. Geraadpleegd van merriam-webster.com/wordplay/word-of-the-year
+- ACM. (2024). *Onderzoek naar dark patterns bij big tech*. Geraadpleegd van https://acm.nl/nl/publicaties/acm-roept-big-tech-op-gedrag-aan-te-passen
+- Doctorow, C. (2023, 21 januari). *Tiktok's enshittification*. Pluralistic. Geraadpleegd van https://pluralistic.net/2023/01/21/potemkin-ai
+- Merriam-Webster. (2025). *2025 Word of the Year: Slop*. Geraadpleegd van https://merriam-webster.com/wordplay/word-of-the-year

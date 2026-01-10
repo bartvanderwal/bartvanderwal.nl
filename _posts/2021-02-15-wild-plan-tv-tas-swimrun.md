@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "Een wild plan: TV TAS SwimRun"
+subtitle: "Zwemmend tussen en rennen over de mega afstanden van de Waddeneilanden; is het mogelijk?"
 date: 2021-02-15
+date_started: 2021-02-15
 lang: nl
 tags: [swimrun, duursport]
 ---

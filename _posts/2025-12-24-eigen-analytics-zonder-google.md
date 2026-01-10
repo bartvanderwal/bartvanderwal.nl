@@ -1,20 +1,26 @@
 ---
 layout: post
-title: "Je eigen analytics draaien (zonder Google)"
+title: "Je eigen analytics"
+subtitle: "Zonder Google"
 date: 2025-12-24
+date_started: 2025-12-24
 lang: nl
 tags: [privacy, devops, self-hosted]
 img: posts/umami-dashboard.png
 draft: true
+revisions:
+  - date: 2026-01-09
+    type: Uitgebreid
+    note: "Sectie over naamgeving uitgebreid"
 ---
 
 ![ChatGPT- Plaatje Eigen Analytics](ChatGPT-plaatje-eigen-analytics.png)
 
-"Wie schrijft die blijft," zei een collega ooit. Ik blog omdat ik graag schrijf over onderwerpen die me interesseren, niet om pageviews te optimaliseren. Maar toen ik deze site opzette, wilde ik toch enige vorm van analytics. Niet zozeer om te weten welke artikelen aanslaan, maar om te leren hoe je analytics privacyvriendelijk kunt implementeren.
+"Wie schrijft die blijft," zeg ik steeds vaker. Ik blog omdat ik graag schrijf over onderwerpen die me interesseren, niet om pageviews te optimaliseren. Maar toen ik deze site opzette, wilde ik toch enige vorm van analytics. Niet zozeer om te weten welke artikelen aanslaan, maar om te leren hoe je analytics privacyvriendelijk kunt implementeren.
 
 Als docent aan de HAN willen we studenten *privacy by design* principes bijbrengen. Het is makkelijk om te zeggen "respecteer de privacy van je gebruikers," maar lastiger om te laten zien hoe dat er in de praktijk uitziet. Deze blog is mijn eigen laboratorium: hoe bouw je een site die wél inzicht geeft in bezoekersgedrag, zonder je lezers uit te leveren aan big tech?
 
-Dit is niet mijn eerste ervaring met analytics. Jaren geleden, toen ik nog fulltime .NET developer was, deed ik aan de kant SEO-werk voor klanten. Google Analytics was toen vanzelfsprekend. Je plakte het script in je pagina en kreeg inzicht in je bezoekers. Over privacy dachten we nauwelijks na; het was gewoon hoe het web werkte.
+Dit is niet mijn eerste ervaring met analytics. Jaren geleden, toen ik nog fulltime .NET developer was, deed ik aan de kant SEO-werk voor een grote website. Google Analytics gebruiken was toen vanzelfsprekend. Je plakte het script in je pagina en kreeg inzicht in je bezoekers. Over privacy dachten we nauwelijks na; het was gewoon hoe het web werkte.
 
 Maar het web is veranderd, en mijn perspectief ook.
 
@@ -49,6 +55,24 @@ Dit is ook waarom ik [Facebook heb verlaten](/weg-van-facebook/). De waarde die 
 ## De zoektocht naar alternatieven
 
 Er zijn tegenwoordig gelukkig alternatieven. Plausible en Fathom zijn populaire hosted opties die privacy respecteren, maar kosten rond de tien euro per maand. Voor een hobbyblog is dat lastig te rechtvaardigen. Toen stuitte ik op Umami: een open source analytics platform dat je zelf kunt hosten. De belofte klonk goed: volledige analytics functionaliteit, zonder cookies, en volledig onder eigen beheer.
+
+### What's in a name?
+
+Phil Karlton, een legendarische Netscape-ontwikkelaar, zei ooit:
+
+> "There are only two hard things in Computer Science: cache invalidation and naming things."
+
+De grap werkt omdat het iets ogenschijnlijk triviaal (naamgeving) naast iets technisch complex (cache invalidation) plaatst — totdat je beseft dat naamgeving helemaal niet triviaal is (Fowler, z.d.). Een goede naam kiezen vereist dat je je domein écht begrijpt.
+
+Er zijn grofweg twee criteria voor een goede naam. Ten eerste: de naam moet *beschrijvend* zijn — semantisch duidelijk maken wat iets doet of is. Ten tweede: de naam moet *memorabel* zijn — uniek genoeg om te onthouden en vindbaar te zijn (denk aan SEO in dit tijdperk). Deze twee criteria staan soms op gespannen voet. Een perfecte beschrijving is vaak te generiek ("Privacy Analytics"), terwijl een memorabele naam niet altijd duidelijk maakt wat het product doet.
+
+De naam "Umami" is opvallend. De maker Mike Cao heeft nergens publiekelijk uitgelegd waarom hij deze naam koos, maar het lijkt geen toeval. Umami (うま味) is Japans voor "aangename hartige smaak" — de vijfde basissmaak naast zoet, zout, zuur en bitter. De Japanse chemicus Kikunae Ikeda identificeerde deze smaak in 1908 en muntte de term, afgeleid van *umai* ("heerlijk").
+
+In de Aziatische keuken is umami de smaakversterker die gerechten diepte geeft zonder te overheersen. Denk aan sojasaus, miso, of parmezaanse kaas. Het voegt iets essentieels toe, maar blijft zelf op de achtergrond.
+
+Die metafoor past perfect bij wat goede analytics zou moeten zijn: inzicht toevoegen zonder opdringerig te zijn. Geen zware tracking die je site vertraagt, geen cookiebanners die de ervaring verpesten, geen advertentienetwerk dat meekijkt. Gewoon een vleugje data die je helpt te begrijpen wat werkt — umami voor je website.
+
+Scoort de naam "Umami" op beide criteria? Memorabel: absoluut — het is uniek en makkelijk te onthouden. Beschrijvend: minder direct. Zonder de metafoor te kennen, verraadt de naam niet dat het om analytics gaat. Maar voor wie de betekenis eenmaal kent, is de associatie krachtig. Soms is een goede metafoor waardevoller dan een letterlijke beschrijving.
 
 De installatie bleek verrassend eenvoudig. Een Docker Compose bestand met twee containers, Umami zelf en een PostgreSQL database, en na tien minuten draaide alles op mijn VPS. De interface is modern en overzichtelijk, een verademing vergeleken met de complexiteit van Google Analytics. Je ziet pageviews, referrers, en browsers zonder te verdrinken in data die je toch nooit gebruikt.
 
@@ -106,12 +130,13 @@ De eerlijke boodschap is: privacy-vriendelijke analytics verminderen het problee
 
 ## Bronnen
 
-- Chodorow, K. (23 augustus 2010). *History of MongoDB*. Geraadpleegd op 24 december 2025 van kchodorow.com/2010/08/23/history-of-mongodb
+- Chodorow, K. (23 augustus 2010). *History of MongoDB*. Geraadpleegd op 24 december 2025 van https://kchodorow.com/2010/08/23/history-of-mongodb
 - Doctorow, C. (oktober 2025). *Enshittification: Why Everything Suddenly Got Worse and What to Do About It*. Farrar, Straus and Giroux.
-- Doctorow, C. (29 april 2025). *Cory Doctorow at CF 25: How Enshittification Conquered the 21st Century and How We Can Overthrow It* [Video]. CloudFest. Geraadpleegd op 24 december 2025 van youtube.com/watch?v=_Ai-fC-2Bpo
-- Europese Unie. (27 april 2016). *Verordening (EU) 2016/679 betreffende de bescherming van natuurlijke personen in verband met de verwerking van persoonsgegevens (Algemene Verordening Gegevensbescherming)*. Geraadpleegd op 24 december 2025 van eur-lex.europa.eu/eli/reg/2016/679/oj
-- GoAccess. (2025). *GoAccess - Visual Web Log Analyzer*. Geraadpleegd op 24 december 2025 van goaccess.io
-- Google. (2025). *Cookie information for Google's ad products*. Geraadpleegd op 24 december 2025 van business.safety.google/adscookies
-- Reddit r/gdpr. (september 2024). *Can you use Umami free analytics in a web app?*. Geraadpleegd op 24 december 2025 van reddit.com/r/gdpr/comments/1fejjqn
-- Umami. (2025). *Privacy*. Geraadpleegd op 24 december 2025 van umami.is/docs/guides/privacy
-- Wikipedia. (2025). *Enshittification*. Geraadpleegd op 24 december 2025 van en.wikipedia.org/wiki/Enshittification
+- Doctorow, C. (29 april 2025). *Cory Doctorow at CF 25: How Enshittification Conquered the 21st Century and How We Can Overthrow It* [Video]. CloudFest. Geraadpleegd op 24 december 2025 van https://youtube.com/watch?v=_Ai-fC-2Bpo
+- Europese Unie. (27 april 2016). *Verordening (EU) 2016/679 betreffende de bescherming van natuurlijke personen in verband met de verwerking van persoonsgegevens (Algemene Verordening Gegevensbescherming)*. Geraadpleegd op 24 december 2025 van https://eur-lex.europa.eu/eli/reg/2016/679/oj
+- Fowler, M. (z.d.). *bliki: TwoHardThings*. Geraadpleegd op 9 januari 2026 van https://martinfowler.com/bliki/TwoHardThings.html
+- GoAccess. (2025). *GoAccess - Visual Web Log Analyzer*. Geraadpleegd op 24 december 2025 van https://goaccess.io
+- Google. (2025). *Cookie information for Google's ad products*. Geraadpleegd op 24 december 2025 van https://business.safety.google/adscookies
+- Reddit r/gdpr. (september 2024). *Can you use Umami free analytics in a web app?*. Geraadpleegd op 24 december 2025 van https://reddit.com/r/gdpr/comments/1fejjqn
+- Umami. (2025). *Privacy*. Geraadpleegd op 24 december 2025 van https://umami.is/docs/guides/privacy
+- Wikipedia. (2025). *Enshittification*. Geraadpleegd op 24 december 2025 van https://en.wikipedia.org/wiki/Enshittification

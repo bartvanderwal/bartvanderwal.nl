@@ -1,10 +1,14 @@
 ---
 layout: post
 title: "Which language is good to make a website?"
+subtitle: "HTML is the only language you need"
 date: 2024-12-01
+date_started: 2024-12-01
 lang: en
 tags: [html, webdev, quora]
 canonical_url: "https://www.quora.com/Which-language-is-good-to-make-a-website"
+redirect_from:
+  - /there-is-only-one-language-html/
 ---
 
 *Originally posted on [Quora](https://www.quora.com/Which-language-is-good-to-make-a-website)*

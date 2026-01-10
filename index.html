@@ -20,6 +20,9 @@ layout: home-page
             <p class="post-card-title-and-meta">
               <span class="post-card-link">{{ post.title }}</span>
               <span class="draft-badge">SOFA</span>
+              {% if post.subtitle %}
+              <br><span class="post-card-subtitle">{{ post.subtitle }}</span>
+              {% endif %}
               {% include post_meta.html type="post-card-meta" %}
             </p>
           </div>
@@ -33,10 +36,10 @@ layout: home-page
 <!-- Published posts section (shown by default) -->
 <div id="published-section" class="published-section">
   <ol class="post-card-box clearfix">
-    {% assign shown_posts = 0 %}
-    {% for post in site.posts %}
-    {% unless post.draft %}
-    {% if shown_posts < 6 %}
+    {% assign published_posts = site.posts | where_exp: "post", "post.draft != true" %}
+    {% assign page_size = 6 %}
+    {% assign offset = paginator.page | minus: 1 | times: page_size %}
+    {% for post in published_posts limit: page_size offset: offset %}
     {% include remove_double_slash.html %}
     {% assign post_image = post.img | default: site.default-post-img %}
     <li>
@@ -47,15 +50,16 @@ layout: home-page
           <div class="post-card-body">
             <p class="post-card-title-and-meta">
               <span class="post-card-link">{{ post.title }}</span>
+              {% if post.subtitle %}
+              <br><span class="post-card-subtitle">{{ post.subtitle }}</span>
+              {% endif %}
               {% include post_meta.html type="post-card-meta" %}
             </p>
           </div>
         </div>
       </a>
     </li>
-    {% assign shown_posts = shown_posts | plus: 1 %}
-    {% endif %}
-    {% endunless %}
     {% endfor %}
   </ol>
+  {% include pagination.html %}
 </div>
