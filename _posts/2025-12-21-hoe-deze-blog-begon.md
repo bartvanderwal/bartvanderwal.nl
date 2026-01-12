@@ -11,6 +11,9 @@ revisions:
   - date: 2025-12-27
     type: Uitgebreid
     note: "SOFA Mode filosofie toegevoegd"
+  - date: 2026-01-11
+    type: Update
+    note: "Scribd upload voltooid; link naar Ethics keuzevak"
 ---
 
 Soms leiden de kleinste dingen tot onverwachte uitkomsten. Mijn blog website bestaat omdat ik even snel een boek wilde opzoeken.
@@ -26,6 +29,8 @@ Ik keek door mijn Quora antwoorden - jren terug was ik daar een tijdje actief op
 Maar in plaats van alleen documenten naar Scribd te uploaden, dacht ik: waarom publiceer ik deze stukken niet ook gewoon netjes op mijn eigen site? Vandaar deze blog. Een simpele Jekyll site op GitHub Pages, eindelijk het domein bartvanderwal.nl gebruikend dat ik al jaren bezit.
 
 Dus hier zijn we. Een blog die begon vanwege een boek over ethiek, een paywall, en wat oude Quora antwoorden die lagen te verstoffen. Soms werkt het zo.
+
+*Edit 11-1-'26: Inmiddels heb ik 5 eigen documenten naar Scribd geüpload - de 3 oude Quora posts plus 2 recentere Nederlandse blogposts - en kon ik eindelijk het Marc Steen boek downloaden als PDF. De cirkel is rond. En het boek inspireerde me tot een [opzet voor een keuzevak Ethics for Software Engineers](/ethics-for-software-engineers/).*
 
 Het boek trouwens is de moeite waard als je in tech werkt. Het preekt niet; het biedt frameworks om na te denken over de ethische implicaties van wat we bouwen.
 
