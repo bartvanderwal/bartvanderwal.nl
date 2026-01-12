@@ -178,7 +178,7 @@ Ja, maar niet te veel. Maak in ieder geval:
 - **Een agendaslide** met je leerdoelen in de volgorde waarin je ze gaat presenteren. Dit is meteen je overzicht. Zet bij elk leerdoel een status: *done*, *grotendeels done*, *volgende periode*, of *toch niet realistisch (want...)*. De `LEFT JOIN` in de pseudo-SQL eerder illustreert dit: je toont AL je leerdoelen, ook degene waar je niet aan gewerkt hebt.
 
 ![Voorbeeld van een agendaslide met leerdoelen en status](/assets/images/posts/show-tell-agenda-slide-voorbeeld.png)
-*Voorbeeld agendaslide: leerdoelen in presentatievolgorde (niet projectplan-volgorde), elk met status*
+*Voorbeeld agendaslide: leerdoelen in presentatievolgorde (niet projectplan-volgorde), elk met status. Let op: dit AI-gegenereerde voorbeeld bevat spelfouten ("beck-end") en mist de vereiste 2-3 Professional Skills leerdoelen binnen de zes te stellen leerdoelen.*
 
 ### Wat als je niet aan een leerdoel hebt kunnen werken?
 
