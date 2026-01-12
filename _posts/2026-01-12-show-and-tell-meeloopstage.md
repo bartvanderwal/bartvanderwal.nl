@@ -6,6 +6,7 @@ date: 2026-01-12
 lang: nl
 draft: true
 tags: [onderwijs, stage, hbo-ict]
+img: posts/show-tell-agenda-slide-voorbeeld.png
 ---
 
 Tijdens de meeloopstage in jaar 2 van HAN ICT opleiding *Software Engineering* en (nu in ontwikkeling zijnde profiel) *Software & Robotics* heb je drie Show & Tell sessies.[^1] De derde en laatste is tevens je eindbeoordeling. Dit artikel legt uit hoe je deze sessies effectief aanpakt.
@@ -90,7 +91,7 @@ GROUP BY SD.LeerdoelNr, SD.LeerdoelNaam, SD.Beschrijving
 ORDER BY MAX(FI.DatumLaatstAanGewerkt) DESC
 ```
 
-*Dit is natuurlijk geen echte database - de "data" zit in je hoofd en documenten. De pseudo-code illustreert alleen de denkwijze, en maakt het wat preciezier voor jou als de techhneut die je bent, of aan het worden bent.*
+*Dit is natuurlijk geen echte query, want er is ook geen echte database met de leerdoelen en je werk - deze  "data" zit in je hoofd en documenten. De pseudo-code illustreert alleen de denkwijze, en maakt het wat preciezier voor jou als de techhneut die je bent, of aan het worden bent.*
 
 ### Alle leerdoelen op de agenda
 
