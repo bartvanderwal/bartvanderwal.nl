@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Vier types van AI-gebruik"
-subtitle: "Een categorisering gebaseerd op ideeën en regie"
+subtitle: "Waarom 'Ik heb AI gebruikt' niets zegt"
 date: 2026-01-10
 date_started: 2026-01-10
 lang: nl
@@ -9,7 +9,20 @@ tags: [ai, llm, werkwijze, meta]
 draft: true
 ---
 
-In deze blog introduceer ik een categorisering van AI-gebruik. Waarom? Omdat de uitspraak "Ik heb AI gebruikt" bij de ene persoon alarmbellen doet rinkelen ("dat mag niet!") terwijl een ander zegt "heel goed!". De reactie hangt af van wat de luisteraar zich voorstelt bij "AI gebruiken" — en dat verschilt enorm.
+Stel: een student zegt in een gesprek "Ik heb AI gebruikt."
+
+**Scenario A: Stage bij een ICT-bedrijf.** De student zit tegenover zijn bedrijfsbegeleider. Elke developer én stagiair heeft een betaald Claude-abonnement. De begeleider knikt goedkeurend: "Mooi, daarom hebben we je die toegang gegeven. Domme code uittypen hoef je niet zelf te doen."
+
+**Scenario B: Essay voor school.** Dezelfde student zit tegenover een docent die AI heeft verboden. De docent fronst: "Dat mag niet. Je moet alles zelf schrijven." De student had kunnen liegen - niemand die het controleert.
+
+Twee gesprekken, dezelfde woorden, tegenovergestelde reacties.
+
+**Maar hier wordt het interessant.** Ook de bedrijfsbegeleider wil niet dat de stagiair klakkeloos output overneemt. AI-gegenereerde code die niemand begrijpt is een onderhoudsnachtmerrie. En ook de docent zou het prima vinden als de student AI alleen gebruikt om feedback te krijgen op zelf geschreven tekst, spelfouten te corrigeren, en bronnen te verifiëren - mits de student elk antwoord controleert, hallucinaties uitsluit, en in het proces ook daadwerkelijk iets leert.
+
+De reactie hangt niet af van *of* je AI gebruikt, maar *hoe*.
+
+![Overzicht van de vier types AI-gebruik](/assets/images/posts/ai-gebruikstypes-overzicht.png)
+*De vier types AI-gebruik: van menselijk idee met AI-generatie tot volledige AI-autonomie*
 
 In plaats van dat de reactie afhangt van de impliciete aannames van de luisteraar, zou het direct moeten afhangen van het *type* gebruik. En daar wringt meteen de schoen: het woord "type" gebruiken we voor zoveel zaken. We hebben "types of AI" (functionele classificaties), "thinking types" (Kahneman), en nu ook "types of AI use". Dit maakt het woord zelf problematisch.
 
