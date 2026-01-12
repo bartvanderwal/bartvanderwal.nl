@@ -29,6 +29,23 @@ Live site: https://bartvanderwal.nl
 
 Posts go in `_posts/` with format `YYYY-MM-DD-title.md`. Front matter requires `layout: post`, `title`, and `lang: nl` (or `lang: en` for English posts).
 
+**Structuur voor langere posts:**
+
+- **Genummerde secties**: Gebruik genummerde hoofdsecties (## 1. Titel, ## 2. Titel, etc.) voor posts met 4+ secties
+- **Leeswijzer**: Voeg een korte leeswijzer toe in de inleiding die aangeeft wat elke sectie behandelt
+
+Voorbeeld:
+
+```markdown
+**Leeswijzer:** Sectie 1-2 leggen de basis uit. Sectie 3 gaat dieper in op X. Sectie 4-5 zijn praktische tips.
+
+## 1. Eerste onderwerp
+
+...
+
+## 2. Tweede onderwerp
+```
+
 ### Assets
 
 Images stored in `assets/images/`.

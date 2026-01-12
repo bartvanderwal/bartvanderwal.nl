@@ -8,13 +8,17 @@ draft: true
 tags: [onderwijs, stage, hbo-ict]
 ---
 
-Tijdens de meeloopstage in jaar 2 van HAN ICT opleiding *Software Engineering* en (nu in ontwikkeling zijnde profiel) *Software & Robotics* heb je drie Show & Tell sessies. De derde en laatste is tevens je eindbeoordeling. Dit artikel legt uit hoe je deze sessies effectief aanpakt.
+Tijdens de meeloopstage in jaar 2 van HAN ICT opleiding *Software Engineering* en (nu in ontwikkeling zijnde profiel) *Software & Robotics* heb je drie Show & Tell sessies.[^1] De derde en laatste is tevens je eindbeoordeling. Dit artikel legt uit hoe je deze sessies effectief aanpakt.
+
+[^1]: De officiële naam is inmiddels gewijzigd naar "Showcase & Portfolio", om te benadrukken dat je tijdens je stage ook een portfolio opbouwt: een verzameling van je softwaredocumentatie, onderzoeken en overige documenten. In dit artikel blijf ik "Show & Tell" gebruiken - deze showcase-component blijft immers centraal staan.
 
 *Waarom deze blog?* Ik ben soms wat "verbose" in mijn antwoorden naar studenten. Een uitgebreid antwoord per e-mail of chat kan net zo goed een blog worden - dan kunnen meerdere studenten het lezen, en hoef ik niet telkens hetzelfde verhaal te typen. Deze post is mede ontstaan naar aanleiding van vragen van stagiairs en ik zal hem in de toekomst mogelijk ook bijwerken. [Feedback](mailto:bart.vanderwal@han.nl) is ook welkom, bij onduidelijkheden!
 
-## Wat is Show & Tell?
+**Leeswijzer:** Sectie 1-2 leggen de basis uit. Sectie 3 gaat specifiek over de eindpresentatie. Sectie 4 behandelt de HBO-i competenties waarop je leerdoelen baseert. Sectie 5-6 zijn praktische tips voor slides, demo's en notulen. Sectie 7 vat alles samen.
 
-De naam zegt het al: je **toont** iets en je **vertelt** erbij. Beide delen zijn essentieel.
+## 1. Wat is Show & Tell?
+
+De naam 'Show & Tell' zegt het al: je **toont** iets en je **vertelt** erbij. Beide delen zijn essentieel.
 
 ### Show: laat concreet werk zien
 
@@ -33,7 +37,7 @@ Je leest niet voor wat er op je slides staat. Je vertelt:
 - Welke keuzes je maakte
 - Wat je ervan geleerd hebt
 
-## De valkuil: vertellen DAT in plaats van LATEN ZIEN WAT
+## 2. De valkuil: vertellen DAT in plaats van LATEN ZIEN WAT
 
 Een veelgemaakte fout is om alleen te *vertellen* dat je iets goed gedaan hebt, zonder te *laten zien* wat je precies gemaakt hebt.
 
@@ -45,7 +49,7 @@ Een veelgemaakte fout is om alleen te *vertellen* dat je iets goed gedaan hebt, 
 
 Het oordeel of je het goed gedaan hebt, is aan mij als beoordelaar. Jouw taak is om mij het bewijs te laten zien zodat ik dat oordeel kan vellen. Je mag natuurlijk wel een aanzet zelf doen. "Daarmee toon ik aan dat ik de activiteit 'realiseren' goed invulling kan geven". Of je kan er mee begunnen: "In het kader van mijn leerdoel X over Realiseren toon ik nu de React front-end die ik heb gerealiseerd..."
 
-## Structuur van je eindpresentatie (Show & Tell 3)
+## 3. Structuur van je eindpresentatie (Show & Tell 3)
 
 Bij de eindpresentatie geef je een overzicht van je hele stage, niet alleen de laatste periode. Maar maak wel duidelijk wat je in de laatste periode nog gedaan of toegevoegd hebt.
 
@@ -92,7 +96,7 @@ ORDER BY MAX(FI.DatumLaatstAanGewerkt) DESC
 
 Zet al je leerdoelen op je agenda/structuur slide, ook als je er niet aan gewerkt hebt in de laatste periode. Zo is duidelijk dat je het overzicht hebt.
 
-## Leerdoelen opstellen
+## 4. Leerdoelen opstellen
 
 Aan het begin van je stage stel je zelf leerdoelen op in je **projectplan**. Deze sluiten aan bij de HBO-i competenties, gestructureerd in de "kubus" (HBO-i, 2024).
 
@@ -164,7 +168,7 @@ Een student loopt stage bij fictief bedrijf "SuperSharp" en werkt aan bugfixes i
 
 Dit patroon - automatiseren wat kan, maar wel kunnen uitleggen waarom - is precies wat we bij een Show & Tell willen zien.
 
-## Slides en demo's voorbereiden
+## 5. Slides en demo's voorbereiden
 
 ### Moet je slides maken?
 
@@ -215,7 +219,7 @@ Denk bij het delen van je scherm aan:
 
 De laatste Show & Tell is vaak fysiek op locatie in Arnhem - denk dan ook aan hoe je presenteert met een beamer.
 
-## Notulen bijhouden
+## 6. Notulen bijhouden
 
 Na elke Show & Tell houd je zelf notulen bij. Noteer:
 
@@ -223,7 +227,7 @@ Na elke Show & Tell houd je zelf notulen bij. Noteer:
 - Welke actiepunten je meeneemt
 - Hoe je deze oppakt voor de volgende sessie
 
-## Samenvatting
+## 7. Samenvatting
 
 1. **Show**: Laat concreet werk zien (applicatie demo, code, app config, documenten, test code, UML, C4 f andere diagrammen)
 2. **Tell**: Vertel er actief bij, lees niet voor
