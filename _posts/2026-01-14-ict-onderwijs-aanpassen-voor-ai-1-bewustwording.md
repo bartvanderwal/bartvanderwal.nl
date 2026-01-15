@@ -2,8 +2,8 @@
 layout: post
 title: "Nieuw ICT-onderwijs ivm AI (1/3)"
 subtitle: "Bewustwording: De evolutie van AI-interactiemodi"
-date_started: 2026-01-10
-date: 2026-01-10
+date_started: 2026-01-14
+date: 2026-01-14
 lang: nl
 tags: [ai, llm, onderwijs, interactie, bewustwording]
 img: posts/ai-interaction-modes.png
@@ -14,8 +14,8 @@ In dit geplande drieluik verken ik hoe ICT-onderwijs moet veranderen met de koms
 **Drieluik structuur (BOB-model):**
 
 - **Blog 1/3 (Bewustwording)**: Opkomst AI en de evolutie van AI-interactiemodi - deze blog
-- **Blog 2/3 (Oordeelsvorming)**: [Taxonomie van AI-gebruik: wie heeft de regie?](/ict-onderwijs-aanpassen-voor-ai-2-oordeelsvorming/)
-- **Blog 3/3 (Besluitvorming)**: [AI als leermiddel, niet als slaafje](/ict-onderwijs-aanpassen-voor-ai-3-besluitvorming/)
+- **Blog 2/3 (Oordeelsvorming)**: Taxonomie van AI-gebruik: wie heeft de regie?
+- **Blog 3/3 (Besluitvorming)**: AI als leermiddel, niet als slaafje
 
 ## Context: Waarom dit drieluik?
 
@@ -184,7 +184,7 @@ Nu we begrijpen hoe AI-interactiemodi zijn geëvolueerd en wat de trade-offs zij
 
 Bewustwording is de eerste stap. De volgende stap is oordeelsvorming: leren onderscheiden tussen verantwoord en onverantwoord AI-gebruik.
 
-**Lees verder:** [ICT-onderwijs aanpassen voor AI (2/3): Oordeelsvorming](/ict-onderwijs-aanpassen-voor-ai-2-oordeelsvorming/)
+**Volgt binnenkort:** ICT-onderwijs aanpassen voor AI (2/3): Oordeelsvorming
 
 ## Bronnen
 

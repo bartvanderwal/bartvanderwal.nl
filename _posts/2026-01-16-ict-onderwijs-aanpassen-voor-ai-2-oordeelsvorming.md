@@ -8,6 +8,7 @@ lang: nl
 tags: [ai, llm, onderwijs, taxonomie, oordeelsvorming]
 img: posts/types-van-ai-gebruik-overzicht.png
 draft: true
+published: false
 ---
 
 In dit  drieluik verken ik hoe ICT-onderwijs moet veranderen met de komst van AI. Dit tweede deel gaat over **oordeelsvorming**: een taxonomie van AI-gebruikstypes om te begrijpen wie de regie heeft.

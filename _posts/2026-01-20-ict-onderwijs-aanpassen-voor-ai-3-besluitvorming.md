@@ -8,6 +8,7 @@ lang: nl
 tags: [ai, llm, onderwijs, leren, toetsing, besluitvorming]
 img: posts/google-t-shaped-ai-enhanced-developer.png
 draft: true
+published: false
 ---
 
 In dit drieluik verken ik hoe ICT-onderwijs moet veranderen met de komst van AI. Dit derde deel gaat over **besluitvorming**: hoe zorgen we dat studenten AI gebruiken als leermiddel, niet als vervanging van leren?
