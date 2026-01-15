@@ -10,8 +10,11 @@ Personal blog and website for Bart van der Wal, built with Jekyll and hosted on 
 
 ```bash
 bundle install              # Install dependencies
-bundle exec jekyll serve    # Run local dev server at http://localhost:4000
+./serve.sh                  # Run local dev server at http://localhost:4000 (preferred)
+bundle exec jekyll serve    # Alternative: direct Jekyll command
 ```
+
+**Note**: Use `./serve.sh` instead of `bundle exec jekyll serve` directly - the shell script contains the full command and is the convenient way to start the Jekyll server.
 
 ## Deployment
 
@@ -27,17 +30,37 @@ Live site: https://bartvanderwal.nl
 
 ### Blog Posts
 
-Posts go in `_posts/` with format `YYYY-MM-DD-title.md`. Front matter requires `layout: post`, `title`, and `lang: nl` (or `lang: en` for English posts).
+Posts go in `_posts/` with format `YYYY-MM-DD-title.md`.
+
+**Verplichte front matter velden:**
+
+```yaml
+---
+layout: post
+title: "Post Titel"
+date_started: YYYY-MM-DD    # Datum waarop je begon met schrijven
+date: YYYY-MM-DD             # Publicatiedatum (wanneer uit SOFA mode)
+lang: nl                     # of "en" voor Quora posts
+draft: true                  # true = SOFA mode, false = gepubliceerd
+---
+```
+
+**Date-velden logica:**
+
+- `date_started`: Altijd verplicht - de datum waarop je begon met schrijven
+- `date`: Publicatiedatum wanneer blog uit SOFA mode (`draft: false`) komt
+- Beide velden worden gebruikt voor versietabel generatie
+- `revisions` array (optioneel) voor latere updates met `date`, `version`, en `note`
 
 **Structuur voor langere posts:**
 
 - **Genummerde secties**: Gebruik genummerde hoofdsecties (## 1. Titel, ## 2. Titel, etc.) voor posts met 4+ secties
-- **Leeswijzer**: Voeg een korte leeswijzer toe in de inleiding die aangeeft wat elke sectie behandelt
+- **Inleiding met overzicht**: Sluit de inleiding af met een alinea die aangeeft wat elke sectie behandelt. Gebruik NOOIT het woord "leeswijzer" of een apart kopje daarvoor — dit hoort gewoon in de laatste alinea('s) van de inleiding
 
 Voorbeeld:
 
 ```markdown
-**Leeswijzer:** Sectie 1-2 leggen de basis uit. Sectie 3 gaat dieper in op X. Sectie 4-5 zijn praktische tips.
+In dit artikel behandel ik hoe X werkt. Sectie 1 en 2 leggen de basis uit. Sectie 3 gaat dieper in op Y. Sectie 4 geeft praktische tips en sectie 4 de conclusie/samenvatting.
 
 ## 1. Eerste onderwerp
 
@@ -48,7 +71,7 @@ Voorbeeld:
 
 ### Assets
 
-Images stored in `assets/images/`.
+Images stored in `assets/img/`.
 
 ## Markdown Style (markdownlint)
 
@@ -132,6 +155,13 @@ Voorbeeld:
 Korte beschrijving van de wijziging
 
 Optioneel langere uitleg.
-
-Co-Authored-By: Claude Opus 4.5
 ```
+
+## Git File Operations
+
+- **Gebruik `git mv` in plaats van `mv`voor bestanden die al in Git repo ge-add zijn eerder**: Bestandsnamen aanpassen of verplaatsen altijd via `git mv` zodat de versiehistorie behouden blijft
+- **Gebruik `git rm` in plaats van `rm` voor bestanden die al in Git repo ge-commit zijn**: Bestanden verwijderen altijd via `git rm` zodat Git de verwijdering trackt
+
+## Important Reminders
+
+- **Pumsticbockle**: Every Friday at 3:00 PM

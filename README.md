@@ -63,12 +63,31 @@ Live site: `https://bartvanderwal.nl`
 ```console
 ├── _posts/           # Blog posts (format: YYYY-MM-DD-titel.md)
 ├── _pages/           # Statische pagina's
-├── assets/images/    # Afbeeldingen
+├── assets/img/posts/ # Post header images (voor front matter img:)
 ├── _config.yml       # Site configuratie
 ├── _layouts/         # HTML layouts
 ├── _includes/        # Herbruikbare HTML componenten
 └── .github/workflows/# GitHub Actions voor deployment
 ```
+
+### Header images voor posts
+
+Post header images worden geplaatst in `assets/img/posts/` en gekoppeld via de `img:` front matter:
+
+```yaml
+---
+layout: post
+title: "Je Post Titel"
+img: posts/mijn-plaatje.png    # Relatief pad vanaf assets/img/
+---
+```
+
+Het plaatje verschijnt als:
+
+- Header image bovenaan de post
+- Thumbnail op de archive/overzichtspagina
+
+**Let op**: Gebruik `assets/img/posts/`, niet `assets/images/posts/`. Het thema verwacht afbeeldingen in `assets/img/`.
 
 ## Blog post schrijven
 
@@ -78,13 +97,27 @@ Maak een nieuw bestand in `_posts/` met format `YYYY-MM-DD-titel.md`:
 ---
 layout: post
 title: "Je Post Titel"
-date: YYYY-MM-DD
+date_started: 2024-12-23    # Datum waarop je begon met schrijven (altijd verplicht)
+date: 2024-12-26            # Publicatiedatum wanneer uit SOFA mode (verplicht als draft: false)
 lang: nl
 tags: [tag1, tag2]
+img: posts/mijn-plaatje.png # Header image (optioneel)
+draft: true                 # true = SOFA mode, false = gepubliceerd
+revisions:                  # Optioneel: latere updates na publicatie
+  - date: 2024-12-28
+    version: "1.1"
+    note: "Nieuwe sectie toegevoegd"
 ---
 
 Je content hier in Markdown...
 ```
+
+**Date-velden uitleg:**
+
+- **`date_started`**: Datum waarop je begon met schrijven (altijd verplicht)
+- **`date`**: Publicatiedatum wanneer post uit SOFA mode komt (verplicht als `draft: false`)
+- **`draft`**: `true` voor SOFA mode (alleen zichtbaar met toggle), `false` voor gepubliceerd
+- **`revisions`**: Array met latere updates na publicatie (optioneel, voor versietabel)
 
 ## Taal
 
@@ -120,20 +153,7 @@ Zie: [Hoe deze blog begon - en het idee erachter](/hoe-deze-blog-begon-en-het-id
 
 #### Versietabel
 
-Posts kunnen een versiegeschiedenis tonen met meerdere datums:
-
-```yaml
----
-date_started: 2024-12-23
-started_note: "Eerste idee"
-revisions:
-  - date: 2024-12-26
-    type: Uitgebreid
-    note: "Nieuwe sectie toegevoegd"
----
-```
-
-De versietabel verschijnt als inklapbaar element bovenaan de post.
+Posts met `revisions` tonen automatisch een inklapbare versietabel bovenaan de post met alle datums in chronologische volgorde (`date_started` → `date` → `revisions`).
 
 #### Archive pagina met thumbnails
 

@@ -126,11 +126,80 @@ De bron kan niet het onderwerp van de zin zijn wanneer deze tussen haakjes staat
 
 Bronnen zonder datum zijn minder waardevol, vooral in een snel veranderend vakgebied als ICT. Een artikel over Kubernetes uit 2018 is wezenlijk anders dan een uit 2024. Zoek bronnen met duidelijke publicatiedatum en vermeld deze.
 
+## IEEE vs APA: twee systemen, zelfde doel
+
+Voor ICT-documenten zijn twee referentiesystemen gangbaar: APA en IEEE. Beide zijn prima bruikbaar. Het gaat erom dat je argumenten onderbouwt met controleerbare bronnen, niet om het exacte systeem.
+
+### IEEE: compacte nummers
+
+IEEE (Institute of Electrical and Electronics Engineers) gebruikt genummerde referenties: [1], [2], [3]. Je ziet dit op Wikipedia en in veel technische papers. De bronnen worden in volgorde van eerste vermelding genummerd, niet alfabetisch.
+
+**Voordelen:**
+
+- **Compact**: [1] neemt minder ruimte in dan (Fowler, 2014)
+- **Handig voor korte documenten**: Bij 5-10 bronnen is de volgorde snel te volgen
+- **Leesbaar**: Geen auteursnamen die de zin onderbreken
+
+**Nadeel:**
+
+- **Geen context**: De lezer ziet niet in één oogopslag wie de auteur is of hoe oud de bron is. Je moet naar de bronnenlijst scrollen om te ontdekken dat [3] een Fowler-artikel uit 2014 is.
+
+### APA: context in de tekst
+
+APA toont auteur en jaar direct in de tekst: (Fowler, 2014) of Fowler (2014). De bronnenlijst is alfabetisch op auteursnaam.
+
+**Voordelen:**
+
+- **Herkenbaarheid**: Je ziet meteen dat het om Fowler gaat. Voor technische lezers is dit waardevol — "Ah, dat is een recente post van Fowler" of "Die Evans zie ik nu alweer, dat moet wel een expert zijn"
+- **Tijdcontext**: Je ziet direct of een bron recent is (2024) of gedateerd (1995)
+- **Autoriteit**: Bekende namen als Uncle Bob, Kent Beck, of Margaret Hamilton (NASA's software engineering pionier) zijn herkenbaar zonder naar de bronnenlijst te kijken
+
+**Nadelen:**
+
+- **Langer**: (Fowler, 2014) neemt meer ruimte in dan [1]
+- **Probleem met anonieme bronnen**: Bronnen zonder auteur of datum worden onzichtbaar in de tekst: (z.d.) zegt niets
+- **Minder compact bij veel bronnen**: Als je 20+ bronnen aanhaalt, worden de haakjes irritant
+
+### Welk systeem kiezen?
+
+Voor **korte technische documenten** (5-10 pagina's, beperkt aantal bronnen): IEEE is handiger. De nummers zijn compact en storen de leesbaarheid niet.
+
+Voor **langere analyses of blogs** waar je veel bronnen aanhaalt en context belangrijk is: APA werkt beter. De lezer ziet direct of je verwijst naar recente industrie-experts of gedateerde bronnen.
+
+### Het belangrijkste: consistentie en onderbouwing
+
+Grotendeels geldt voor IEEE hetzelfde als voor APA:
+
+- Citeer liever dan parafraseer
+- Kies bronnen met duidelijke auteurs en datums
+- Elke claim moet verifieerbaar zijn
+- De bronnenlijst moet compleet zijn
+
+Het maakt niet uit of je [1] of (Fowler, 2014) schrijft. Het maakt wel uit of je überhaupt bronnen noemt.
+
+### APA als HAN-standaard (met mogelijkheid tot afwijken)
+
+Aan de HAN is **APA de standaard** voor bronvermelding. Dit geldt voor alle opleidingen, tenzij anders aangegeven.
+
+Maar als je een goede reden hebt om IEEE te gebruiken — bijvoorbeeld omdat je document korter en technischer is, of omdat je samenwerkt met een bedrijf dat IEEE hanteert — kun je dit als **gemotiveerd verzoek** indienen bij je begeleidend docent.
+
+**Voorwaarden bij afwijken van APA:**
+
+1. **Toestemming vooraf**: Vraag goedkeuring aan je docent voordat je begint
+2. **Vermeld de keuze**: Schrijf in je document waarom je IEEE gebruikt
+3. **Denk aan andere lezers**: Assessoren of accreditatie-auditors lezen je document mogelijk zonder context — zij moeten begrijpen waarom je afwijkt van de standaard
+
+**Voorbeeld van verantwoording in document:**
+
+> Dit document gebruikt IEEE-stijl voor bronvermelding in plaats van APA. Deze keuze is gemaakt vanwege de compactheid van genummerde referenties [1] in een kort technisch rapport. Goedgekeurd door [naam docent], [datum].
+
+De belangrijkste les: consistentie en transparantie. Kies een systeem, motiveer die keuze als je afwijkt van de standaard, en pas het consequent toe.
+
 ## Veelgemaakte fouten
 
-### IEEE-notatie verwarring
+### IEEE en APA door elkaar gebruiken
 
-Studenten gebruiken vaak de IEEE-stijl met genummerde haakjes [1] zoals op Wikipedia [2]. Dit is een ander systeem dan APA. Bij APA gebruik je auteur en jaar, niet nummers.
+Kies één systeem en blijf daarbij. Niet in één document [1] naast (Fowler, 2014) gebruiken.
 
 ### Voetnoten
 

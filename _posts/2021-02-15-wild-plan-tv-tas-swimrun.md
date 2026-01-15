@@ -8,7 +8,7 @@ lang: nl
 tags: [swimrun, duursport]
 ---
 
-*Dit artikel verscheen ook op [From 0 till Ö till Ö](https://from0tillotillo.substack.com/p/o-3-de-tvtas-swimrun)*
+*Dit stuk schreef ik in 2021 en verscheen voor het eerst in 20215 ook op mijn sport/SwimRun blog samen met mijn SwimRun buddy Sander Berk [From 0 till Ö till Ö](https://from0tillotillo.substack.com/p/o-3-de-tvtas-swimrun)*
 
 Okee, het staat zwart op wit:
 > Van der Wal ... weet het antwoord op de vraag wat **de ultieme swimrun in Nederland** is. "Ik heb al een naam: de TV-TAS Swimrun, van Den Helder tot Lauwersoog over alle Waddeneilanden. Dat betekent 130 kilometer hardlopen en 15 tot 20 kilometer zwemmen<sup>*</sup>. Wat mij betreft kan het. Ik doe mee in elk geval mee.

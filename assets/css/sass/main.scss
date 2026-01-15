@@ -1,8 +1,20 @@
 ---
 ---
-@import "variables";
-@import "syntax";
-@import "tools/normalize";
+@use "variables" as *;
+@use "syntax" as *;
+@use "tools/normalize" as *;
+@use "parts/header" as *;
+@use "parts/search" as *;
+@use "parts/post-card" as *;
+@use "parts/pagination" as *;
+@use "parts/footer" as *;
+@use "parts/post-page" as *;
+@use "parts/author-box" as *;
+@use "parts/about" as *;
+@use "parts/tags" as *;
+@use "parts/animate" as *;
+@use "media" as *;
+@use "parts/archive" as *;
 
 /* = = = = = = = = = = Main Styles = = = = = = = = = = */
 
@@ -114,40 +126,3 @@ pre {
 .clearfix::before {
   clear: both;
 }
-
-/* = = = = = = = = = = Header Styles = = = = = = = = = = */
-@import "parts/header";
-
-/* = = = = = = = = = = Search Styles = = = = = = = = = = */
-@import "parts/search";
-
-/* = = = = = = = = = = Post-Card Styles = = = = = = = = = = */
-@import "parts/post-card";
-
-/* = = = = = = = = = = Pagination Styles = = = = = = = = = = */
-@import "parts/pagination";
-
-
-/* = = = = = = = = = = Footer Styles = = = = = = = = = = */
-@import "parts/footer";
-
-/* = = = = = = = = = = Post-Page Styles = = = = = = = = = = */
-@import "parts/post-page";
-
-/* = = = = = = = = = = Author Box Styles = = = = = = = = = = */
-@import "parts/author-box";
-
-/* = = = = = = = = = = About Page Styles = = = = = = = = = = */
-@import "parts/about";
-
-/* = = = = = = = = = = Tags Styles = = = = = = = = = = */
-@import "parts/tags";
-
-/* = = = = = = = = = = Animate Styles = = = = = = = = = = */
-@import "parts/animate";
-
-/* = = = = = = = = = = Media = = = = = = = = = = */
-@import "media";
-
-/* = = = = = = = = = = Archive = = = = = = = = = = */
-@import "parts/archive";

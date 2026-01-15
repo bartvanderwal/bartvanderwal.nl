@@ -108,6 +108,27 @@ De derde optie is een risicoafweging maken. Voor een persoonlijke blog met besch
 
 Ik heb voor die laatste optie gekozen, met de kanttekening dat ik de situatie blijf volgen. Mocht de juridische consensus verschuiven, dan pas ik aan.
 
+## De andere kant: Google Search Console
+
+Terwijl Google Analytics problematisch is vanwege tracking en DoubleClick-integratie, heeft Google ook een tool die juist wél privacy-vriendelijk is: **Google Search Console**.
+
+Het is bijna ironisch. Hetzelfde bedrijf dat met Analytics en DoubleClick een massasurveillance-infrastructuur heeft gebouwd, biedt ook een tool die geen enkele cookie plaatst en geen gebruikersgedrag trackt. Search Console is geen analytics platform voor bezoekersgedrag, maar een **webmaster tool** voor SEO-optimalisatie. Het laat zien hoe je site presteert in Google's zoekmachine: welke zoekwoorden leiden naar je site, hoeveel impressies en clicks je krijgt, en welke technische problemen Google detecteert (activeMind.legal, 2025).
+
+Het cruciale verschil: Search Console verzamelt data **binnen Google's zoekinfrastructuur**, niet op jouw website. Er wordt geen JavaScript-tag op je pagina's geplaatst, er worden geen cookies gezet, en individuele bezoekers worden niet gevolgd (GDPR Local, 2025). Je krijgt alleen geaggregeerde statistieken over hoe je site in de zoekresultaten verschijnt.
+
+Dit betekent dat je **geen cookiebanner nodig hebt** voor Search Console. Het valt niet onder de GDPR-vereisten die wel gelden voor Analytics, omdat er simpelweg geen persoonlijke data wordt verzameld van je bezoekers (G2, 2025).
+
+Voor een blog is Search Console waardevol omdat het laat zien:
+
+- Welke zoekwoorden mensen gebruiken om je te vinden
+- Of je artikelen goed indexeren
+- Of er technische problemen zijn (broken links, mobile usability)
+- Hoe je ranking evolueert over tijd
+
+Het geeft je inzicht in **hoe bezoekers je vinden**, terwijl Umami laat zien **wat ze doen als ze er zijn**. Samen dekken ze de monitoring-behoefte af zonder privacy te schenden.
+
+Het is ook een mooi voorbeeld dat Google blijkbaar wél kan scheiden tussen surveillance (Analytics/DoubleClick) en nuttige tools (Search Console). De vraag is waarom ze dat niet consistent doen.
+
 ## Het alternatief: Nginx logs
 
 Voordat je een aparte analytics-applicatie installeert, is het goed om te beseffen dat je webserver al data verzamelt. Nginx, die ik gebruik als reverse proxy, logt standaard elke request. Met een tool als GoAccess kun je die logs omzetten naar visuele rapporten zonder enige JavaScript op je site te plaatsen (GoAccess, 2025).
@@ -130,11 +151,14 @@ De eerlijke boodschap is: privacy-vriendelijke analytics verminderen het problee
 
 ## Bronnen
 
+- activeMind.legal. (2025). *Google Search Console and the GDPR*. Geraadpleegd op 14 januari 2026 van https://www.activemind.legal/guides/google-search-console/
 - Chodorow, K. (23 augustus 2010). *History of MongoDB*. Geraadpleegd op 24 december 2025 van https://kchodorow.com/2010/08/23/history-of-mongodb
 - Doctorow, C. (oktober 2025). *Enshittification: Why Everything Suddenly Got Worse and What to Do About It*. Farrar, Straus and Giroux.
 - Doctorow, C. (29 april 2025). *Cory Doctorow at CF 25: How Enshittification Conquered the 21st Century and How We Can Overthrow It* [Video]. CloudFest. Geraadpleegd op 24 december 2025 van https://youtube.com/watch?v=_Ai-fC-2Bpo
 - Europese Unie. (27 april 2016). *Verordening (EU) 2016/679 betreffende de bescherming van natuurlijke personen in verband met de verwerking van persoonsgegevens (Algemene Verordening Gegevensbescherming)*. Geraadpleegd op 24 december 2025 van https://eur-lex.europa.eu/eli/reg/2016/679/oj
 - Fowler, M. (z.d.). *bliki: TwoHardThings*. Geraadpleegd op 9 januari 2026 van https://martinfowler.com/bliki/TwoHardThings.html
+- G2. (2025). *Does Google Search Console use cookies?* Geraadpleegd op 14 januari 2026 van https://www.g2.com/discussions/does-google-search-console-use-cookies
+- GDPR Local. (2025). *Google Search Console GDPR Compliance Explained*. Geraadpleegd op 14 januari 2026 van https://gdprlocal.com/google-search-console-gdpr/
 - GoAccess. (2025). *GoAccess - Visual Web Log Analyzer*. Geraadpleegd op 24 december 2025 van https://goaccess.io
 - Google. (2025). *Cookie information for Google's ad products*. Geraadpleegd op 24 december 2025 van https://business.safety.google/adscookies
 - Reddit r/gdpr. (september 2024). *Can you use Umami free analytics in a web app?*. Geraadpleegd op 24 december 2025 van https://reddit.com/r/gdpr/comments/1fejjqn

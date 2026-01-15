@@ -152,7 +152,7 @@ Een vraag waar ik nog mee worstel: moeten studenten het boek zelf aanschaffen?
 
 - HBO-studenten lezen te weinig. Een verplicht boek dwingt tot serieuze verdieping.
 - Papieren boeken werken anders dan schermen - minder afleiding, betere retentie.
-- De drie ethische stromingen (utilisme, deugdethiek, deontologie) staan er helder in.
+- We kiezen voor drie van de belangrijkste ethische stromingen (want we kunnen niet álles behandelen, en het moet NIET te droog worden), namelijk utilisme, deugdethiek en deontologie. Deze staan er helder in uitgelegd.
 - Steen schrijft vanuit tech-perspectief, niet vanuit abstracte filosofie.
 
 **Argumenten tegen:**

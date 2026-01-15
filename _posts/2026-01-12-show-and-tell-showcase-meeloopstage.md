@@ -1,12 +1,14 @@
 ---
 layout: post
-title: "Show & Tell tijdens je meeloopstage"
+title: "Show & Tell Showcase tijdens je meeloopstage"
 subtitle: "Hoe presenteer je je stagewerk effectief?"
 date: 2026-01-12
 lang: nl
 draft: true
 tags: [onderwijs, stage, hbo-ict]
 img: posts/show-tell-agenda-slide-voorbeeld.png
+redirect_from:
+  - /show-and-tell-meeloopstage/
 ---
 
 Tijdens de meeloopstage in jaar 2 van HAN ICT opleiding *Software Engineering* en (nu in ontwikkeling zijnde profiel) *Software & Robotics* heb je drie Show & Tell sessies.[^1] De derde en laatste is tevens je eindbeoordeling. Dit artikel legt uit hoe je deze sessies effectief aanpakt.
@@ -17,11 +19,18 @@ Tijdens de meeloopstage in jaar 2 van HAN ICT opleiding *Software Engineering* e
 
 **Leeswijzer:** Sectie 1-2 leggen de basis uit. Sectie 3 gaat specifiek over de eindpresentatie. Sectie 4 behandelt de HBO-i competenties waarop je leerdoelen baseert. Sectie 5-6 zijn praktische tips voor slides, demo's en notulen. Sectie 7 vat alles samen.
 
+## Versiegeschiedenis
+
+| Datum | Versie | Wijziging |
+| ----- | ------ | --------- |
+| 2026-01-12 | 1.0 | Eerste publicatie (non-SOFA mode: live beschikbaar voor studenten) |
+| 2026-01-13 | 1.1 | Subsectienummering toegevoegd (1.1, 1.2, 3.1-3.3, 4.1-4.4, 5.1-5.4) |
+
 ## 1. Wat is Show & Tell?
 
 De naam 'Show & Tell' zegt het al: je **toont** iets en je **vertelt** erbij. Beide delen zijn essentieel.
 
-### Show: laat concreet werk zien
+### 1.1 Show: laat concreet werk zien
 
 Bij elk leerdoel toon je tastbaar bewijs:
 
@@ -30,7 +39,7 @@ Bij elk leerdoel toon je tastbaar bewijs:
 - Een diagram dat je gemaakt hebt
 - Een onderzoeksdocument
 
-### Tell: vertel er actief bij
+### 1.2 Tell: vertel er actief bij
 
 Je leest niet voor wat er op je slides staat. Je vertelt:
 
@@ -54,7 +63,7 @@ Het oordeel of je het goed gedaan hebt, is aan mij als beoordelaar. Jouw taak is
 
 Bij de eindpresentatie geef je een overzicht van je hele stage, niet alleen de laatste periode. Maar maak wel duidelijk wat je in de laatste periode nog gedaan of toegevoegd hebt.
 
-### De assessor
+### 3.1 De assessor
 
 Bij Show & Tell 3 kan een assessor aanschuiven: een tweede beoordelaar die op meer afstand staat. Deze assessor was niet bij Show & Tell 1 en 2 aanwezig en kent alleen je notulen. Dat betekent:
 
@@ -64,7 +73,7 @@ Bij Show & Tell 3 kan een assessor aanschuiven: een tweede beoordelaar die op me
 
 Dit is ook waarom goede notulen belangrijk zijn: de assessor baseert zich mede daarop.
 
-### Volgorde: niet per se leerdoel 1 t/m 6
+### 3.2 Volgorde: niet per se leerdoel 1 t/m 6
 
 Je hoeft je leerdoelen niet in numerieke volgorde te presenteren. Een slimmere aanpak: begin met waar je het laatst aan gewerkt hebt. Zo is het meest verse werk het meest uitgebreid, en werk je terug naar eerdere zaken.
 
@@ -93,7 +102,7 @@ ORDER BY MAX(FI.DatumLaatstAanGewerkt) DESC
 
 *Dit is natuurlijk geen echte query, want er is ook geen echte database met de leerdoelen en je werk - deze  "data" zit in je hoofd en documenten. De pseudo-code illustreert alleen de denkwijze, en maakt het wat preciezier voor jou als de techhneut die je bent, of aan het worden bent.*
 
-### Alle leerdoelen op de agenda
+### 3.3 Alle leerdoelen op de agenda
 
 Zet al je leerdoelen op je agenda/structuur slide, ook als je er niet aan gewerkt hebt in de laatste periode. Zo is duidelijk dat je het overzicht hebt.
 
@@ -101,7 +110,7 @@ Zet al je leerdoelen op je agenda/structuur slide, ook als je er niet aan gewerk
 
 Aan het begin van je stage stel je zelf leerdoelen op in je **projectplan**. Deze sluiten aan bij de HBO-i competenties, gestructureerd in de "kubus" (HBO-i, 2024).
 
-### De vijf activiteiten
+### 4.1 De vijf activiteiten
 
 | Activiteit | Voorbeelden |
 | --- | --- |
@@ -115,7 +124,7 @@ Aan het begin van je stage stel je zelf leerdoelen op in je **projectplan**. Dez
 
 De laatste categorie (Manage & Control) sluit aan bij Professional Skills zoals je die kent van KOET en GEIN.
 
-### De vijf architectuurlagen
+### 4.2 De vijf architectuurlagen
 
 Naast activiteiten kent de HBO-i kubus ook vijf architectuurlagen:
 
@@ -127,7 +136,7 @@ Naast activiteiten kent de HBO-i kubus ook vijf architectuurlagen:
 | Software | Back-end, API's, databases |
 | Hardware interfacing | IoT, embedded systems, sensoren |
 
-### De vier niveaus
+### 4.3 De vier niveaus
 
 De derde dimensie van de kubus zijn de vier beheersingsniveaus. Deze geven aan hoeveel eigen inbreng en overzicht je hebt:
 
@@ -140,16 +149,16 @@ De derde dimensie van de kubus zijn de vier beheersingsniveaus. Deze geven aan h
 
 **Voor de meeloopstage:** Focus op niveau 2 (probleemgericht) en niveau 3 (situatiegericht). Niveau 4 is master niveau of hoger, niveau 3 is het eindniveau van de HBO bachelor. Deze niveaus komen ook terug in het beoordelingsformulier voor je bedrijfsbegeleider.
 
-![De HBO-i kubus met activiteiten, architectuurlagen en niveaus](/assets/images/posts/hbo-i-kubus.png)
+![De HBO-i kubus met activiteiten, architectuurlagen en niveaus](/assets/img/posts/hbo-i-kubus.png)
 *De HBO-i kubus: activiteiten × architectuurlagen × niveaus (HBO-i, 2024)*
 
-### Van onbewust onbekwaam naar bewust bekwaam
+### 4.4 Van onbewust onbekwaam naar bewust bekwaam
 
 De vier niveaus sluiten aan bij het model van "reflection in action" en "reflection on action" (Schön, 1983). Het idee: je groeit van *onbewust onbekwaam* (je weet niet wat je niet weet) via *bewust onbekwaam* en *bewust bekwaam* naar uiteindelijk *onbewust bekwaam* (je doet het goed zonder erbij na te denken). Maar voor een stage is het belangrijk om ook die laatste stap weer bewust te maken - zodat je kunt aantonen wat je geleerd hebt.
 
 **Voorbeeld: Code kwaliteit bij SuperSharp**
 
-Een student loopt stage bij fictief bedrijf "SuperSharp" en werkt aan bugfixes in een C# codebase.
+Een student loopt stage bij fictief bedrijf "SuperSharp" en werkt aan he begin van zijn bugfixes in een C# codebase.
 
 1. **Niveau 1 - Taakgericht**: De student pakt bugs op uit het bestaande issue systeem. Hij fixt ze binnen de afgebakende omgeving van de bestaande codebase, en probeert aan te sluiten bij de overige code. Er is een kort lijstje met code conventies ergens, verder volgt het bedrijf de standaard Microsoft C# richtlijnen. Dit is taakgericht werken: een afgebakende taak uitvoeren onder begeleiding.
 
@@ -157,7 +166,7 @@ Een student loopt stage bij fictief bedrijf "SuperSharp" en werkt aan bugfixes i
 
 3. **Bewust onbekwaam**: Na feedback in een code review realiseert hij zich dat hij de coding standards niet goed kent. Hij neemt "Accolades goed plaatsen" op in zijn Definition of Done bij issues.
 
-4. **Niveau 2 - Probleemgericht**: Hij neemt zelf initiatief en schrijft een "SuperSharp SuperCode Guide (SCG)" - een overzichtelijk document met alle coding conventions van het bedrijf. Hij breidt zijn DoD-checkpoint uit naar "SCG volgen". Dit is probleemgericht: hij ziet een probleem (onduidelijke standaarden) en lost het zelfstandig op binnen de kaders van het bedrijf.
+4. **Niveau 2 - Probleemgericht**: Hij neemt zelf initiatief en schrijft een "SuperSharp SuperCode Guide (S3CG)" - een overzichtelijk document met alle coding conventions van het bedrijf. Hij breidt zijn DoD-checkpoint uit naar "S3CG volgen". Dit is probleemgericht: hij ziet een probleem (onduidelijke standaarden) en lost het zelfstandig op binnen de kaders van het bedrijf.
 
 5. **Probleem**: Hij merkt dat het checkpoint "SCG volgen" niet van toepassing is op sommige issues (bijvoorbeeld pure documentatie-taken). Hierdoor gaat hij er minder naar kijken.
 
@@ -171,17 +180,19 @@ Dit patroon - automatiseren wat kan, maar wel kunnen uitleggen waarom - is preci
 
 ## 5. Slides en demo's voorbereiden
 
-### Moet je slides maken?
+### 5.1 Moet je slides maken?
 
 Ja, maar niet te veel. Maak in ieder geval:
 
 - **Een titelslide** met je naam, studentnummer, bedrijfsnaam/logo, en opdrachtnaam. Je begeleider heeft typisch 4 tot 8 andere studenten - een korte reminder van wie je bent en waar je werkt is nuttig.
 - **Een agendaslide** met je leerdoelen in de volgorde waarin je ze gaat presenteren. Dit is meteen je overzicht. Zet bij elk leerdoel een status: *done*, *grotendeels done*, *volgende periode*, of *toch niet realistisch (want...)*. De `LEFT JOIN` in de pseudo-SQL eerder illustreert dit: je toont AL je leerdoelen, ook degene waar je niet aan gewerkt hebt.
 
-![Voorbeeld van een agendaslide met leerdoelen en status](/assets/images/posts/show-tell-agenda-slide-voorbeeld.png)
-*Voorbeeld agendaslide: leerdoelen in presentatievolgorde (niet projectplan-volgorde), elk met status. Let op: dit AI-gegenereerde voorbeeld bevat spelfouten ("beck-end") en mist de vereiste 2-3 Professional Skills leerdoelen binnen de zes te stellen leerdoelen.*
+![Voorbeeld van een agendaslide met leerdoelen en status](/assets/img/posts/show-tell-agenda-slide-voorbeeld.png)
+*Figuur 2*: Voorbeeld agendaslide: leerdoelen in presentatievolgorde (niet projectplan-volgorde), elk met status.
 
-### Wat als je niet aan een leerdoel hebt kunnen werken?
+Let op Figuur 2 is met AI-gegenereerd en bevat spelfouten ("beck-end") en mist de vereiste twee a drie Professional Skills (PS) leerdoelen binnen de zes te stellen leerdoelen. Excuus, maar ik accepteer even de fouten in plaats van eindeloos door te prompten en energie te verspillen (zelf en van Cloud Center). Iedereen herkent zo ook mooi dat dit niet van mij is.
+
+### 5.2 Wat als je niet aan een leerdoel hebt kunnen werken?
 
 Het kan gebeuren dat je ergens tegenaan loopt waardoor je niet aan een leerdoel hebt kunnen werken. Misschien was er een blokkade (wachten op toegang, afhankelijkheid van anderen), of bleek het leerdoel niet realistisch gegeven de opdracht.
 
@@ -195,7 +206,7 @@ Dit is precies het verschil tussen niveau 1 (taakgericht) en niveau 2 (probleemg
 
 Of je daarnaast ook code voorbeelden, screenshots of stukjes documentatie in slides wilt zetten is aan jou. Het is relatief veel werk, en direct laten zien in context (in de IDE, in een Word document) werkt vaak beter.
 
-### Demo's: localhost vs. screenshots
+### 5.3 Demo's: localhost vs. screenshots
 
 Mijn voorkeur: een **live demo op localhost** of - nog beter - op een echte test- of productieomgeving als die er is. Dat is overtuigender dan screenshots.
 
@@ -210,7 +221,7 @@ Maak daarom vooraf:
 - **Screenshots** als absolute fallback
 - Of liever nog: een **screencast** (korte video-opname van je demo). Zo kun je altijd iets laten zien, ook als de live demo faalt.
 
-### Scherm delen
+### 5.4 Scherm delen
 
 Denk bij het delen van je scherm aan:
 
