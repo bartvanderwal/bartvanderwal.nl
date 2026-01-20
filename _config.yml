@@ -1,5 +1,6 @@
 # Site settings
 title: Bart van der Wal
+version: "1.1.0"
 description: 'Persoonlijke blog over technologie, softwareontwikkeling en duursport.'
 permalink: ':title/'
 baseurl: "/" # the subpath of your site, e.g. /blog
@@ -27,6 +28,9 @@ default-post-img: default-plaatje.png
 
 # Show date on posts (for APA references)
 show_date: true
+
+# Show reading time on posts
+read_time: true
 
 # Contact links
 email: # Add your Email address

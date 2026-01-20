@@ -593,6 +593,14 @@ svg {
   font-weight: var(--font2-light);
   color: var(--accent-dark);
 }
+.main-header .site-version {
+  font-size: 10px;
+  color: var(--grey2);
+  position: absolute;
+  bottom: 8px;
+  right: 50px;
+  font-family: var(--font2);
+}
 .main-nav {
   position: fixed;
   top: 0;
@@ -2334,4 +2342,53 @@ a.read-more:hover {
     .page__hero-caption{color:#000 !important;background:white !important;opacity:1}
     .page__hero-caption a{color:#000 !important}
     .masthead,.toc,.page__share,.page__related,.pagination,.ads,.page__footer,.page__comments-form,.author__avatar,.author__content,.author__urls-wrapper,.nav__list,.sidebar,.adsbygoogle{display:none !important;height:1px !important}}
+
+
+/* Custom blockquote styling - inspired by Substack */
+
+blockquote {
+  border-left: 4px solid var(--accent);
+  padding: 1rem 1.5rem;
+  margin: 2rem 0;
+  background: linear-gradient(90deg, rgba(219, 80, 74, 0.08) 0%, transparent 100%);
+  font-style: italic;
+  color: var(--text);
+  position: relative;
+}
+
+blockquote::before {
+  content: '"';
+  position: absolute;
+  left: -12px;
+  top: -10px;
+  font-size: 3rem;
+  color: var(--accent);
+  opacity: 0.15;
+}
+
+blockquote p {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+blockquote p:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+blockquote em {
+  font-style: normal;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+blockquote strong {
+  color: var(--accent-dark);
+  font-weight: 700;
+}
+
+html[data-theme="dark"] blockquote {
+  background: linear-gradient(90deg, rgba(209, 76, 71, 0.12) 0%, transparent 100%);
+  border-left-color: var(--accent);
+}
 
