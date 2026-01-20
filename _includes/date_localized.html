@@ -1,0 +1,41 @@
+{% comment %}
+  Gelokaliseerde datum formatting (NL of EN)
+  Gebruik: {% include date_localized.html date=page.date lang=page.lang %}
+{% endcomment %}
+{% assign d = include.date | date: "%d" %}
+{% assign m = include.date | date: "%m" %}
+{% assign y = include.date | date: "%Y" %}
+{% assign lang = include.lang | default: page.lang | default: site.lang | default: "nl" %}
+{% if lang == "en" %}
+  {% case m %}
+    {% when "01" %}{% assign month_name = "January" %}
+    {% when "02" %}{% assign month_name = "February" %}
+    {% when "03" %}{% assign month_name = "March" %}
+    {% when "04" %}{% assign month_name = "April" %}
+    {% when "05" %}{% assign month_name = "May" %}
+    {% when "06" %}{% assign month_name = "June" %}
+    {% when "07" %}{% assign month_name = "July" %}
+    {% when "08" %}{% assign month_name = "August" %}
+    {% when "09" %}{% assign month_name = "September" %}
+    {% when "10" %}{% assign month_name = "October" %}
+    {% when "11" %}{% assign month_name = "November" %}
+    {% when "12" %}{% assign month_name = "December" %}
+  {% endcase %}
+  {{ month_name }} {{ d }}, {{ y }}
+{% else %}
+  {% case m %}
+    {% when "01" %}{% assign month_name = "januari" %}
+    {% when "02" %}{% assign month_name = "februari" %}
+    {% when "03" %}{% assign month_name = "maart" %}
+    {% when "04" %}{% assign month_name = "april" %}
+    {% when "05" %}{% assign month_name = "mei" %}
+    {% when "06" %}{% assign month_name = "juni" %}
+    {% when "07" %}{% assign month_name = "juli" %}
+    {% when "08" %}{% assign month_name = "augustus" %}
+    {% when "09" %}{% assign month_name = "september" %}
+    {% when "10" %}{% assign month_name = "oktober" %}
+    {% when "11" %}{% assign month_name = "november" %}
+    {% when "12" %}{% assign month_name = "december" %}
+  {% endcase %}
+  {{ d }} {{ month_name }} {{ y }}
+{% endif %}
