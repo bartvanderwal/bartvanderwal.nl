@@ -634,6 +634,20 @@ svg {
   opacity: .8;
   color: var(--accent-dark);
 }
+.main-nav ul li.toggle-menu-item {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+}
+.main-nav ul li.toggle-menu-item .left {
+  text-transform: uppercase;
+  font-weight: var(--font2-regular);
+  font-size: 18px;
+  color: var(--main);
+}
+.main-nav ul li.toggle-menu-item .right {
+  margin-left: auto;
+}
 .menu-icon-container {
   width: 25%;
   text-align: left;

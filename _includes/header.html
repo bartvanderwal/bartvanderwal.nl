@@ -10,11 +10,13 @@
       <nav class="main-nav">
         <span class="menu-icon-close"><i class="fa fa-times" aria-hidden="true"></i></span>
         <ul>
-          <li>
-            {% include theme-toggle.html %}
+          <li class="toggle-menu-item">
+            <div class="left">Thema</div>
+            <div class="right">{% include theme-toggle.html %}</div>
           </li>
-          <li>
-            {% include sofa-toggle.html %}
+          <li class="toggle-menu-item">
+            <div class="left">Drafts</div>
+            <div class="right">{% include sofa-toggle.html %}</div>
           </li>
           <li>
             <a href="{{ relativebase }}">
