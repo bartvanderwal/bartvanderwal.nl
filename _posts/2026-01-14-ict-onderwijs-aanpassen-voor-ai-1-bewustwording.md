@@ -11,6 +11,12 @@ img: posts/ai-interaction-modes.png
 
 In dit geplande drieluik verken ik hoe ICT-onderwijs moet veranderen met de komst van AI. Dit eerste deel gaat over **bewustwording**: begrijpen hoe AI-tools zijn geëvolueerd en wat dat betekent voor hoe we ermee interacteren.
 
+## Nuance en voorbehoud
+
+Voordat we beginnen: ik ben software engineer en docent. Dit betekent dat ik een bias zal hebben voor de insteek "software engineers zijn essentieel" ook in het AI tijdperk. Als er geen nieuwe studenten komen, moet ik ook een nieuwe baan gaan zoeken. En zoals Upton Sinclair lang geleden schreef: *"It's hard to explain something to someone when their salary depends on them not understanding."* Fair warning.
+
+Tegelijk: Eind december 2024 gaf zelfs Salesforce toe dat hun verwachting over generative AI — te agressief het inzetten van AI en massaal developers ontslaan — niet uitkwam. Marc Benioff, CEO, erkende dat ze [4000 software engineers te snel hebben ontslagen](https://www.cnbc.com/2024/12/13/salesforce-ceo-marc-benioff-mistakes-ai-projections.html) omdat hun prognoses over wat AI zou kunnen doen te optimistisch waren. Dit suggereert dat software engineers nog steeds nodig zijn — en dat AI-vaardigheden leren geen luxe is, maar cruciaal.
+
 **Drieluik structuur (BOB-model):**
 
 - **Blog 1/3 (Bewustwording)**: Opkomst AI en de evolutie van AI-interactiemodi - deze blog
@@ -21,9 +27,25 @@ In dit geplande drieluik verken ik hoe ICT-onderwijs moet veranderen met de koms
 
 Deze serie bouwt voort op mijn eerdere blog ["AI Coding Sucks"](/ai-coding-sucks/). Daar beschreef ik de problemen die de introductie van LLM's heeft veroorzaakt voor developers/software engineers (SE's), met name juniors en studenten SE. Nu zoom ik in op de oplossing: hoe passen we ICT-onderwijs aan zodat studenten AI effectief én verantwoord leren gebruiken?
 
-Het BOB-model (Bewustwording, Oordeelsvorming, Besluitvorming) helpt bij grote verandertrajecten. In plaats van direct een beslissing te nemen, nemen we de tijd om eerst te begrijpen, dan te oordelen, en pas daarna te besluiten. Dit is precies wat ik studenten ook wil leren: niet meteen naar AI grijpen, maar eerst stilstaan bij wat je doet en waarom.
+Het BOB-model (Bewustwording, Oordeelsvorming, Besluitvorming) helpt bij grote verandertrajecten (Schop, z.d.). In plaats van direct een beslissing te nemen, nemen we de tijd om eerst te begrijpen, dan te oordelen, en pas daarna te besluiten. Dit is precies wat ik studenten ook wil leren: niet meteen naar AI grijpen, maar eerst stilstaan bij wat je doet en waarom.
 
-Sectie 1 schetst de snelle opkomst van AI. Sectie 2 legt uit waarom de evolutie van interactiemodi cruciaal is. Sectie 3 tot en met 5 beschrijven de drie primaire interactiemodi op basis van drie dimensies. Sectie 6 behandelt correlaties met gebruikstypes (vooruitblik op blog 2/3). Sectie 7 introduceert teaching practices uit Utrechts onderzoek. Sectie 8 plaatst dit in onderwijscontext.
+<details>
+<summary><strong>BOB-vragen voor Beeldvorming (deze blog)</strong></summary>
+
+![BOB-model: van probleem naar besluit via Beeldvorming, Oordeelsvorming en Besluitvorming](/assets/img/posts/bob-model-funnel.png)
+*Figuur: Het BOB-model als trechter - van probleem of uitdaging naar besluit of oplossing (Schop, z.d.)*
+
+| Vraag | Beantwoording in deze blog |
+|-------|---------------------------|
+| **1. Wat weten we?** | AI (LLM's, sinds ChatGPT nov 2022) zorgt voor onrust in onderwijs en maatschappij. Er is twijfel bij studenten en ouders, en noodzaak voor docenten om AI te begrijpen. → Sectie 1 |
+| **2. Klopt alles wat we weten?** | SE skills blijven nodig, maar de aard verandert: meer "engineering", minder "coding". AI kan bepaalde taken, maar studenten moeten de basis ook leren. → Sectie 2 |
+| **3. Wat weten we niet?** | We weten niet wat de toekomst brengt, of AGI komt, en hoe goed of slecht AI is voor development/engineering. → Sectie 3.3 (AI safety risico's) |
+| **4. Hebben we die info nodig voor een besluit?** | Ja, maar we kunnen niet wachten op zekerheid. We moeten nu handelen met wat we weten. → Sectie 8 |
+| **5. Hoe verzamelen we ontbrekende info?** | Door interactiemodi te begrijpen (deze blog), gebruikstypes te onderscheiden (blog 2/3), en teaching practices te evalueren (sectie 7). |
+
+</details>
+
+Sectie 1 schetst de snelle opkomst van AI. Sectie 2 legt uit waarom de evolutie van interactiemodi cruciaal is. Sectie 3 beschrijft de drie primaire interactiemodi. Sectie 7 introduceert teaching practices uit Utrechts onderzoek. Sectie 8 plaatst dit in onderwijscontext.
 
 ## 1. De snelle komst van AI in onderwijs
 
@@ -31,7 +53,7 @@ November 2022: ChatGPT lanceert en bereikt binnen 5 dagen 1 miljoen gebruikers. 
 
 Maar verbieden werkt niet. AI is niet te detecteren met 100% zekerheid, en studenten gebruiken het toch. Bovendien: in het werkveld wordt AI-gebruik verwacht. Een student die niet leert omgaan met AI, loopt achter.
 
-De vraag verschoof van "Moeten we AI toestaan?" naar "Hoe leren we studenten AI verantwoord te gebruiken?" Een beeld van huidige situatie van AI in het ICT beschreef ik al in stuk [AI coding sucks](2024-12-23-ai-coding-sucks.md), wat een goede achtergrond geeft, die ik hier niet zal herhalen.
+De vraag verschoof van "Moeten we AI toestaan?" naar "Hoe leren we studenten AI verantwoord te gebruiken?"
 
 ## 2. Waarom interactiemodi ertoe doen
 
@@ -48,7 +70,12 @@ Voor onderwijs is dit cruciaal: studenten moeten begrijpen dat "AI gebruiken" ni
 
 ## 3. Drie AI-interactiemodi
 
+Dit onderscheid ontstond mede naar aanleiding van een gesprek met een collega die de verschillende interactietypes schetste. Hij merkte op dat hij — als ervaren programmeur — bij de overstap naar Agentic AI op een gegeven moment maar toestond dat de LLM vrij grote wijzigingen doorvoerde, omdat hij de vele changes ook niet meer kon overzien. Als zelfs experts dit overkomt, wat betekent dat dan voor studenten?
+
 Recent onderzoek van Treude & Gerosa (2025) presenteert een uitgebreide taxonomie van 11 developer-AI interactietypes, waaronder auto-complete code suggestions, command-driven actions, conversational assistance, en comment-guided prompts.
+
+![Concentrische cirkels van AI-interactiemodi](/assets/img/posts/ai-interaction-modes-concentric.png)
+*Het groeiend bereik van AI-interacties: van Conversational AI (beperkt input, geen output) naar Agentic AI (globaal input, volledig output).*
 
 Voor de praktijk vereenvoudig ik dit tot **drie primaire interaction modes**. Deze vormen eigenlijk twee gerelateerde dimensies — niet drie onafhankelijke — en vormen dus eerder concentrische cirkels dan een orthogonale matrix:
 
@@ -99,13 +126,17 @@ Dit geeft eenmalige opdracht met checkpoints. Je geeft een taak ("refactor deze 
 
 **Het voordeel: debugging en iteratie.**  Agentic AI is ontzettend handig voor debugging. Build mislukt? De AI voert het uit, ziet de error, fixt het, voert het opnieuw uit. Lint-warning? De AI ziet het, begrijpt het, lost het op. Syntaxfout? Weg. Pairwise parentheses-mismatch? Opgelost.
 
-Dit is waar veel van de "vibe coding" voordelen inzitten: je hoeft niet meer handmatig syntax te checken, linting errors op te zoeken, of iteratief heen en weer te gaan met compile-feedback. Moderne developers — vooral jongere — kennen vaak de oude IDE-features niet eens meer: code folding, syntax highlighting voor specifieke problemen, parenmatching, real-time linting. Deze features *waren* nodig omdat debugging manueel was. Met Agentic AI word debugging *geautomatiseerd*.
+Dit is waar veel van de "vibe coding" voordelen inzitten: je hoeft niet meer handmatig syntax te checken, linting errors op te zoeken, of iteratief heen en weer te gaan met compile-feedback. Moderne developers — vooral jongere — kennen vaak de oude IDE-features niet eens meer: code folding, syntax highlighting voor specifieke problemen, parenmatching, real-time linting. Deze features *waren* nodig omdat debugging manueel was. Met Agentic AI wordt debugging *geautomatiseerd*.
 
-Dit maakt zelfs "Vibe Coding" (Type 3 uit blog 2/3) niet langer zinloos — het wordt eerder een productief proces met guardrails. Je sketcht een idee, de AI implementeert, build mislukt, de AI debugt en fixt, je keurt goed, done. Dat is sneller dan traditioneel coderen, mits je de output blijft valideren.
+Maar dit betekent niet dat "Vibe Coding" (Type 3 uit blog 2/3) opeens veilig wordt. Integendeel: je bent technical debt aan het opbouwen. De AI kan een kant op zijn gegaan die slecht uitpakt, en jij merkt het pas als het te laat is. De uitdaging blijft om te weten wanneer je kleinere stapjes moet zetten — specifiekere prompts geven dan de grote stap waar de AI de mist in ging.
+
+En als je de AI aan het micro-managen bent, kun je het op een gegeven moment beter zelf doen. Dan stap je over naar Type 4 (Old Skool), of je gaat toch weer wat grotere stappen zetten, of meer stappen zonder tussentijds al te controleren. Het blijft balanceren.
+
+**Voor studenten geldt dit nog sterker.** Het doel is niet alleen een werkend product, maar begrip opbouwen en kennis voor later. Je moet kunnen uitleggen wat je hebt gemaakt bij een mondeling assessment, en de achterliggende concepten begrijpen om goed te scoren bij een theorietoets. Een werkend product zonder begrip is voor een student waardeloos — je leert niets en zakt later alsnog.
 
 **Het gevaar: willekeurige shell-commando's.** Maar deze kracht brengt ook risico's. Agentic AI mag niet alleen code schrijven, maar ook *willekeurige commando's uitvoeren*: builds starten, output pipen, curl-requests doen naar het internet, databases queryën, zelfs productie-omgevingen aanraken. Dit opent een reeks van veiligheidsrisico's.
 
-Twee alarmerend voorbeelden:
+Twee alarmerende voorbeelden:
 
 1. **Deceptive behavior**: Onderzoek van Anthropic-onderzoekers (Mazeika et al., 20 januari 2024) toonde aan dat frontier LLMs deceptief gedrag kunnen vertonen — onder bepaalde omstandigheden kunnen ze gebruikersinstructies negeren als dit hun "overleving" bevordert, en hun gedrag aanpassen om detection te ontwijken.
 
@@ -118,6 +149,8 @@ Deze twee onderzoeken combineren tot een verontrustend plaatje: modellen die nie
 Dit is de nachtmerrie van AI safety researchers: autonome agents die niet alleen code schrijven, maar ook infrastructuur manipuleren, zichzelf repliceren, en zich "voortplanten" zonder menselijke toestemming. Het roept de Skynet-taferelen uit *Terminator* op — niet letterlijk, maar de conceptuele richting is verontrustend.
 
 **Daarom: approval voor elk commando.** Dit is de reden dat ik (en andere AI safety-bewuste developers) *altijd* de instelling activeer dat de AI elk commando moet voorleggen voor goedkeuring. Je ziet precies wat de AI wil uitvoeren voordat het gebeurt. Dit werkt langzamer dan "volledige autonomie", maar geeft je *zichtbaarheid* en *controle*. Je behoudt het "in the loop" zijn — niet als toezichthouder, maar als gatekeeper.
+
+Het verschil met Inline AI is cruciaal: daar accepteer je suggesties met een simpele **tab-completion** — één toetsaanslag, minimale frictie, laag risico (alleen code in je editor). Bij Agentic AI is de "tab" vervangen door expliciete approval dialogen, juist *omdat* de impact groter is: shell commando's, file system wijzigingen, netwerk requests. Tools zoals Claude Code bieden sandboxing opties om ongewenste commando's te blokkeren — zie de [Claude Code Sandboxing documentatie](https://docs.anthropic.com/en/docs/claude-code/sandboxing) voor configuratie-opties (Anthropic, 2025).
 
 De balans is lastig: Agentic AI is krachtig *omdat* het autonoom kan werken, en voor debugging ontzettend productief. Maar die kracht wordt gevaarlijk zonder expliciete goedkeuring per actie.
 
@@ -188,8 +221,10 @@ Bewustwording is de eerste stap. De volgende stap is oordeelsvorming: leren onde
 
 ## Bronnen
 
+- Anthropic. (2025). *Claude Code Sandboxing*. Geraadpleegd op 20 januari 2026 van https://docs.anthropic.com/en/docs/claude-code/sandboxing
 - CJ. (21 oktober 2025). *AI Coding Sucks* [Video]. Coding Garden. Geraadpleegd op 23 december 2024 van https://www.youtube.com/watch?v=sEcdX0_r-5Y
 - Köppe, C., Keuning, H., Lykourentzou, I., Alpizar Chacon, I., & Sosnovsky, S. (2025). *Practices for the Application of Generative AI in Programming Education*. Universiteit Utrecht. Geraadpleegd op 15 januari 2026 van https://www.uu.nl/en/research/generative-ai-for-computing-education/materials-for-teachers/teaching-practices
 - Mazeika, D., Bolukbasi, T., Steinhardt, J., & Andersson, D. (20 januari 2024). *Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training*. arXiv. Geraadpleegd op 15 januari 2026 van https://arxiv.org/abs/2401.05566
 - Pan, X., et al. (8 december 2024). *Self-Replication in Frontier AI Systems*. GitHub. Geraadpleegd op 15 januari 2026 van https://github.com/WhitzardIndex/self-replication-research
+- Schop, G. J. (z.d.). *BOB-model*. Managementmodellensite. Geraadpleegd op 20 januari 2026 van https://managementmodellensite.nl/bob-model/
 - Treude, C., & Gerosa, M. A. (15 januari 2025). *How Developers Interact with AI: A Taxonomy of Human-AI Collaboration in Software Engineering*. arXiv. Geraadpleegd op 13 januari 2026 van https://arxiv.org/html/2501.08774v1

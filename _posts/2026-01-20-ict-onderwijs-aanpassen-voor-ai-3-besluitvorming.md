@@ -1,14 +1,14 @@
 ---
 layout: post
 title: "Nieuw ICT-onderwijs ivm AI (3/3)"
-subtitle: "Besluitvorming: AI als leermiddel in plaats van slaafje"
+subtitle: "Besluitvorming: AI als leermiddel in plaats van butler"
 date_started: 2026-01-12
 date: 2026-01-20
 lang: nl
 tags: [ai, llm, onderwijs, leren, toetsing, besluitvorming]
 img: posts/google-t-shaped-ai-enhanced-developer.png
 draft: true
-published: false
+published: true
 ---
 
 In dit drieluik verken ik hoe ICT-onderwijs moet veranderen met de komst van AI. Dit derde deel gaat over **besluitvorming**: hoe zorgen we dat studenten AI gebruiken als leermiddel, niet als vervanging van leren?
@@ -17,11 +17,11 @@ In dit drieluik verken ik hoe ICT-onderwijs moet veranderen met de komst van AI.
 
 - **Blog 1/3 (Bewustwording)**: De komst van AI en evolutie van interactiemodi
 - **Blog 2/3 (Oordeelsvorming)**: Taxonomie van AI-gebruik: wie heeft de regie?
-- **Blog 3/3 (Besluitvorming)**: AI als leermiddel, niet als slaafje - deze blog
+- **Blog 3/3 (Besluitvorming)**: AI als leermiddel, niet als butler - deze blog
 
 ## Het verificatieprobleem voor begeleiders
 
-De vorige keer introduceerde ik verschillende types van AI gebruik, en het gewenste type, type 1: niet vibe-coden (type 3), maar type 1, en soms ook type 4: geen AI, of AI alleen als trainer, maar daarna 'zelf doen'.
+De vorige keer introduceerde ik verschillende types van *AI gebruik*, en welke (grofweg) gewenst was en welke niet gewenst: type 1: niet vibe-coden (type 3), soms ook type 4: geen AI, of AI alleen als trainer, maar daarna 'zelf doen'.
 
 Maar hoe weet je als docent of bedrijfsbegeleider hoe een student AI daadwerkelijk heeft gebruikt? Je kunt niet in iemands hoofd kijken of de chat history controleren. Een student kan beweren zelf na te denken en AI alleen als hulpmiddel te gebruiken, terwijl in werkelijkheid alles blind wordt overgenomen zonder begrip.
 
@@ -43,7 +43,7 @@ Ervaren ontwikkelaars zien in één oogopslag of gegenereerde code klopt. Zij he
 
 Studenten missen deze detector volledig. Het AI-model antwoordt met vertrouwen — maar dat betekent niet dat het klopt.
 
-![Is it safe to use ChatGPT for your task?](/assets/images/prompt-engineering/chat-gpt-comic-2.JPG)
+![Is it safe to use ChatGPT for your task?](/assets/img/prompt-engineering/chat-gpt-comic-2.JPG)
 *Flowchart: Wanneer is het veilig om ChatGPT te gebruiken? (Tiulkanov, 2023)*
 
 Aleksandr Tiulkanov's flowchart laat het kernprobleem zien. De beslissende vraag: **"Do you have expertise to verify that the output is accurate?"** Voor studenten is het antwoord meestal "NO" — wat leidt naar "Unsafe to use ChatGPT".
@@ -73,7 +73,7 @@ Pas als je deze concepten beheerst, kun je veilig naar Type 4c (Learned from AI)
 
 Type 4b (Rubber Duck AI) is wel veilig: daar gebruik je AI alleen als klankbord voor je eigen ideeën, zonder inhoudelijke input over te nemen. Geen hallucinatie-risico, omdat je de AI-feedback al als onbetrouwbaar hebt geclassificeerd.
 
-![Google's T-shaped model voor AI-enhanced developers](/assets/images/posts/google-t-shaped-ai-enhanced-developer.png)
+![Google's T-shaped model voor AI-enhanced developers](/assets/img/posts/google-t-shaped-ai-enhanced-developer.png)
 *Figuur 1: De AI-enhanced developer heeft brede kennis (GenAI Usage, Adjacent/Non-Engineering), maar Core Software Engineering blijft de kern (Kam et al., 2025)*
 
 Dit T-shaped model uit Google's onderzoek visualiseert wat studenten nodig hebben (Kam et al., 2025). De verticale balk ("Core Software Engineering") is je fundament. De horizontale balk bovenaan ("GenAI Usage") is een aanvulling die je later leert.
@@ -160,7 +160,7 @@ Dit verschuift de verantwoordelijkheid naar de student. Je mag AI gebruiken tijd
 
 ### Mondelinge assessments
 
-Halverwege en aan het eind van een project: zit de student tegenover een docent en licht het werk toe. Dit is geen "verdediging" zoals bij een eindscriptie, maar een gesprek over het proces:
+Tijdens het project zit de student tegenover een docent en licht het werk toe. Dit is geen "verdediging" zoals bij een eindscriptie, maar een gesprek over het proces:
 
 - "Hoe heb je deze bug gevonden?"
 - "Waarom heb je voor deze datastructuur gekozen?"
@@ -191,7 +191,7 @@ Dit maakt expliciet wat we verwachten. Een student die AI effectief heeft gebrui
 
 ## Besluit: AI als leermiddel, niet als vervanging
 
-De titel van deze blog spreekt van "AI als leermiddel in plaats van slaafje". Dat woord is bewust gekozen. Een slaafje doet wat je zegt zonder dat je hoeft na te denken. Dat is precies wat Type 3 (AI in the Lead / Vibe Coding) is: de AI doet het werk, jij accepteert, niemand leert iets.
+De titel van deze blog spreekt van "AI als leermiddel in plaats van butler". Dat woord is bewust gekozen. Een butler doet wat je zegt zonder dat je hoeft na te denken. Dat is precies wat Type 3 (AI in the Lead / Vibe Coding) is: de AI doet het werk, jij accepteert, niemand leert iets.
 
 **AI als leermiddel** betekent iets anders:
 
@@ -199,7 +199,7 @@ De titel van deze blog spreekt van "AI als leermiddel in plaats van slaafje". Da
 - **Type 4b (Rubber Duck AI)**: Je gebruikt AI als klankbord om je eigen gedachten te ordenen
 - **Type 1 (Human in the Lead)**: Je geeft gedetailleerde opdrachten, controleert alles, en leert van het proces
 
-Het verschil: bij AI als leermiddel blijft de student actief betrokken. Bij AI als slaafje verschuift het denken naar de AI.
+Het verschil: bij AI als leermiddel blijft de student actief betrokken. Bij AI als butler verschuift het denken naar de AI.
 
 De paradox die we eerder zagen blijft staan: AI maakt programmeren toegankelijker, maar verlaagt tegelijk de lat voor mensen die nog niet kunnen beoordelen of de output klopt. De oplossing is niet AI verbieden, maar studenten leren het verantwoord te gebruiken.
 
@@ -215,8 +215,30 @@ Dit drieluik sluit af met een oproep: pas ICT-onderwijs aan zodat studenten AI e
 - [Blog 2/3: Oordeelsvorming](/ict-onderwijs-aanpassen-voor-ai-2-oordeelsvorming/)
 - [AI Coding Sucks](/ai-coding-sucks/) - de blog die aan dit drieluik voorafging
 
+---
+
+<details>
+<summary><strong>BOB-vragen voor Besluitvorming (deze blog)</strong></summary>
+
+![BOB-model: van probleem naar besluit via Beeldvorming, Oordeelsvorming en Besluitvorming](/assets/img/posts/bob-model-funnel.png)
+*Figuur: Het BOB-model als trechter - van probleem of uitdaging naar besluit of oplossing (Schop, z.d.)*
+
+In de Besluitvormingsfase van het BOB-model worden vier vragen beantwoord:
+
+| Vraag | Beantwoording in deze blog |
+| ----- | -------------------------- |
+| **1. Wat besluiten we?** | Toetsvormen aanpassen: criteriumgericht interview (CGI) en theorietoets in safe browser. Daarnaast brownfield development voor een complexere leeromgeving, met nadruk op domeinkennis en analyse van bestaande code. → Sectie "Toetsvormen in het nieuwe onderwijs" |
+| **2. Wat gaan we doen?** | Samen met docenten het onderwijs doorontwikkelen. Studenten leren eerst Type 4a/4b/4c (zonder of met AI als leraar) voordat ze Type 1-3 (AI genereert code) mogen gebruiken. → Sectie "Start zonder AI: Bouw eerst je fundament" |
+| **3. Weet iedereen welk besluit is genomen?** | Communiceren via studiedag, Teams-omgeving en eventueel nieuwsbericht. → Sectie "Tot slot: Implementatie" |
+| **4. Is iedereen het met het besluit eens?** | Afstemmen met Curriculumcommissie (CuCo), stuurgroepen en opleidingscommissie. Studenten informeren en polsen. → Dit vraagt om vervolgacties buiten deze blog. |
+
+</details>
+
+---
+
 ## Bronnen
 
 - Kam, M., Miller, C., Wang, M., Tidwell, A., Lee, I. A., Malyn-Smith, J., Perez, B., Tiwari, V., Kenitzer, J., Macvean, A., & Barrar, E. (23 juni 2025). *What do professional software developers need to know to succeed in an age of Artificial Intelligence?* arXiv. Geraadpleegd op 13 januari 2026 van https://arxiv.org/abs/2506.00202
+- Schop, G. J. (z.d.). *BOB-model*. Managementmodellensite. Geraadpleegd op 20 januari 2026 van https://managementmodellensite.nl/bob-model/
 - Tiulkanov, A. (19 januari 2023). *Is it safe to use ChatGPT for your task?* [Flowchart]. Geraadpleegd op 13 januari 2026 van https://tiulkanov.info
 - UNESCO IESALC. (2023). *ChatGPT and Artificial Intelligence in Higher Education: Quick Start Guide* (Report no. ED/HE/IESALC/IP/2023/12). Geraadpleegd op 13 januari 2026 van https://www.iesalc.unesco.org/wp-content/uploads/2023/04/ChatGPT-and-Artificial-Intelligence-in-higher-education-Quick-Start-guide_EN_FINAL.pdf
