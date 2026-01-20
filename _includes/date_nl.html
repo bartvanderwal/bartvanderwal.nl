@@ -1,0 +1,22 @@
+{% comment %}
+  Nederlandse datum formatting
+  Gebruik: {% include date_nl.html date=page.date %}
+{% endcomment %}
+{% assign d = include.date | date: "%d" %}
+{% assign m = include.date | date: "%m" %}
+{% assign y = include.date | date: "%Y" %}
+{% case m %}
+  {% when "01" %}{% assign month_nl = "januari" %}
+  {% when "02" %}{% assign month_nl = "februari" %}
+  {% when "03" %}{% assign month_nl = "maart" %}
+  {% when "04" %}{% assign month_nl = "april" %}
+  {% when "05" %}{% assign month_nl = "mei" %}
+  {% when "06" %}{% assign month_nl = "juni" %}
+  {% when "07" %}{% assign month_nl = "juli" %}
+  {% when "08" %}{% assign month_nl = "augustus" %}
+  {% when "09" %}{% assign month_nl = "september" %}
+  {% when "10" %}{% assign month_nl = "oktober" %}
+  {% when "11" %}{% assign month_nl = "november" %}
+  {% when "12" %}{% assign month_nl = "december" %}
+{% endcase %}
+{{ d }} {{ month_nl }} {{ y }}
