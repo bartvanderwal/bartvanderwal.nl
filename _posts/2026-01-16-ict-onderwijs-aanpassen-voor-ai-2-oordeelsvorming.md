@@ -270,7 +270,7 @@ Michael Feathers (een van de grondleggers van [Agile/XP](https://agilealliance.o
 
 Beide strategieën dienen hetzelfde doel: **minimizing moving parts** — minder plekken waar fouten kunnen ontstaan. OO doet het door wijzigingen centraal te maken; FP door ze uit te sluiten.
 
-![Michael Feathers over OO vs FP en begrijpelijkheid](image.png)
+![Michael Feathers over OO vs FP en begrijpelijkheid](/assets/img/posts/feathers-oo-vs-fp.png)
 *Figuur 3:* OO en FP geven andere manieren om code begrijpelijk te maken (Feathers, z.d.). {#fig3-feathers}
 
 Voor AI-gegenereerde code is dit cruciaal: hoe meer je de ruimte voor "moving parts" inperkt, hoe gerichtere output je van de AI kunt verwachten, en hoe minder handmatig reviewwerk je hebt.
