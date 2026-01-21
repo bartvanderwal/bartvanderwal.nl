@@ -146,7 +146,16 @@ Phil Karlton's beroemde uitspraak luidt: "There are only two hard things in Comp
 
 De volgende vier subsecties (4.1-4.4) behandelen hoe deze naamgeving tot stand kwam, wat "in the Lead" betekent voor eindverantwoordelijkheid, de spanning tussen upskilling en deskilling, en hoe constraints als vangnet werken.
 
-Daniel Kahneman introduceerde in *Thinking, Fast and Slow* de termen "System 1" en "System 2" voor twee vormen van menselijk denken (Kahneman, 2011). Dit is een indrukwekkend stukje theorie en achtergrond, maar zijn namen zijn om te huilen! Enkel op de kracht van de theorie zijn deze — van zichzelf nietszeggende nummers — gemeengoed geworden, en weten velen wat *type 1* en *type 2* thinking is. Zulke getallen onthouden schaar ik zelf onder het kopje 'accidental complexity'. Andere voorbeelden zijn het onhandige 'Imperial system' dat Engeland en de VS hanteren (met willekeurige eenheden), of numerieke systemen zonder duidelijke mnemonic (denk aan de meme "5 tomatoes" om 5280 feet in a mile te onthouden) (Reddit, 2022). Termen zonder intrinsieke betekenis zoals "System 1" of "Type X" — terwijl "Fast Thinking" en "Slow Thinking" — of beter nog "Intuitive" en "Deliberate" — zoveel begrijpelijker waren geweest. De ondertitel van Kahneman's boek was letterlijk beschrijvender dan de termen zelf. Barbara Minto hamert in *The Pyramid Principle* op top-down helderheid: begin met de kern en gebruik namen die meteen duidelijk maken wat je bedoelt (Minto, 1987).
+Daniel Kahneman introduceerde in *Thinking, Fast and Slow* de termen "System 1" en "System 2" voor twee vormen van menselijk denken (Kahneman, 2011). Dit is een indrukwekkend stukje theorie en achtergrond, maar zijn namen zijn om te huilen! Enkel op de kracht van de theorie zijn deze — van zichzelf nietszeggende nummers — gemeengoed geworden, en weten velen wat *type 1* en *type 2* thinking is.
+
+In de naamgeving Type X, type Y is wellicht een voordeel dat je laat zien dat het echt verschillende types zijn, en bv. niet een schaal van langzaam naar snel denken.
+
+![5 tomatoes meme: Imperial vs metrisch stelsel](/assets/img/posts/5-tomatoes-imperial-vs-metric.png)
+*"5 tomatoes" (five-two-eight-oh) om 5280 feet in a mile te onthouden vs. 1 km = 1000 m*
+
+Maar zulke getallen noemen we in software code 'magic numbers'. En het onthouden van mapping (1=traag, onbewust en 2=snel, bewust) schaar ik zelf onder het kopje 'accidental complexity'. Andere voorbeelden hiervan is het onhandige 'Imperial system' dat Engeland en de VS hanteren (met willekeurige eenheden), of numerieke systemen zonder duidelijke mnemonic (denk aan de meme "5 tomatoes" om 5280 feet in a mile te onthouden (Reddit, 2022) ).
+
+Termen zonder intrinsieke betekenis zoals "System 1" of "Type X" — terwijl "Fast Thinking" en "Slow Thinking" — of beter nog "Intuitive" en "Deliberate" — zoveel begrijpelijker waren geweest. De ondertitel van Kahneman's boek was letterlijk beschrijvender dan de termen zelf. Barbara Minto hamert in *The Pyramid Principle* op top-down helderheid: begin met de kern en gebruik namen die meteen duidelijk maken wat je bedoelt (Minto, 1987).
 
 Roland Barthes introduceerde het concept "death of the author": de betekenis van een tekst moet niet afhangen van kennis over de auteur of diens intenties (Barthes, 1967). Toegepast op naamgeving: een goede term moet zichzelf uitleggen. Je zou niet de originele bron moeten raadplegen om te begrijpen wat "System 1" betekent.
 

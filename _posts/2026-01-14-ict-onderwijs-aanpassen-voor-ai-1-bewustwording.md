@@ -199,24 +199,23 @@ Nu we begrijpen hoe AI-interactiemodi zijn geëvolueerd en wat de trade-offs zij
 
 Bewustwording is de eerste stap. De volgende stap is oordeelsvorming: leren onderscheiden tussen verantwoord en onverantwoord AI-gebruik.
 
-**Volgt binnenkort:** ICT-onderwijs aanpassen voor AI (2/3): Oordeelsvorming
+**Volgt:** ICT-onderwijs aanpassen voor AI (2/3): Oordeelsvorming — Taxonomie van AI-gebruik: wie heeft de regie?
 
 <details>
 
-   <summary markdown="span">Samenvatting als antwoorden op BOB-vragen 'Bewustwording'
-   </summary>
+<summary markdown="span">Samenvatting als antwoorden op BOB-vragen 'Bewustwording'
+</summary>
 
 ![BOB-model: van probleem naar besluit via Beeldvorming, Oordeelsvorming en Besluitvorming](/assets/img/posts/bob-model-funnel.png)
-
-*Figuur 1:* BOB-model als trechter (Schop, z.d.).*
+*BOB-model als trechter (Schop, z.d.).*
 
 | Vraag | Beantwoording in deze blog |
 | ----- | -------------------------- |
-| **1. Wat weten we?** | - AI (LLM's, sinds ChatGPT nov 2022) zorgt voor onrust in onderwijs en maatschappij<br>- Er is twijfel bij studenten en ouders<br>- Noodzaak voor docenten om AI te begrijpen<br>→ Sectie 1 |
-| **2. Klopt alles wat we weten?** | - SE skills blijven nodig, maar de aard verandert: meer "engineering", minder "coding"<br>- AI kan bepaalde taken, maar studenten moeten de basis ook leren<br>→ Sectie 2 |
-| **3. Wat weten we niet?** | - We weten niet wat de langere termijn toekomst brengt<br>- Of AGI komt<br>- Hoe goed of slecht AI is voor development/engineering<br>→ Sectie 5.3 (AI safety risico's) |
-| **4. Hebben we die info nodig voor een besluit?** | - Nee, met AGI is er potentieel sowieso een heel andere wereld (irrelevant scenario)<br>- Huidige tendens: AI is wat overhyped n.a.v. ChatGPT/LLM's (maar toch krachtig)<br>- We moeten nu handelen met wat we weten<br>→ Sectie 8 |
-| **5. Hoe verzamelen we ontbrekende info?** | - Door interactiemodi te begrijpen (deze blog)<br>- Gebruikstypes te onderscheiden (blog 2/3)<br>- Teaching practices te evalueren (sectie 6) |
+| **1. Wat weten we?** | AI (LLM's, sinds ChatGPT nov 2022) zorgt voor onrust in onderwijs en maatschappij. Er is twijfel bij studenten en ouders, en noodzaak voor docenten om AI te begrijpen. → Sectie 1 |
+| **2. Klopt alles wat we weten?** | SE skills blijven nodig, maar de aard verandert: meer "engineering", minder "coding". AI kan bepaalde taken, maar studenten moeten de basis ook leren. → Sectie 2 |
+| **3. Wat weten we niet?** | We weten niet wat de langere termijn toekomst brengt, of AGI komt, en hoe goed of slecht AI is voor development/engineering. → Sectie 3.3 (AI safety risico's) |
+| **4. Hebben we die info nodig voor een besluit?** | Nee, met AGI is er potentieel sowieso een heel andere wereld. Huidige tendens: AI is wat overhyped n.a.v. ChatGPT/LLM's (maar toch krachtig). We moeten nu handelen met wat we weten. → Sectie 8 |
+| **5. Hoe verzamelen we ontbrekende info?** | Door interactiemodi te begrijpen (deze blog), gebruikstypes te onderscheiden (blog 2/3), en teaching practices te evalueren (sectie 6). |
 
 </details>
 

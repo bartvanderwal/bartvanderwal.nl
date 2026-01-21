@@ -31,15 +31,7 @@ De vorige keer introduceerde ik verschillende types van *AI gebruik*, en welke (
 
 Maar hoe weet je als docent of bedrijfsbegeleider hoe een student AI daadwerkelijk heeft gebruikt? Je kunt niet in iemands hoofd kijken of de chat history controleren. Een student kan beweren zelf na te denken en AI alleen als hulpmiddel te gebruiken, terwijl in werkelijkheid alles blind wordt overgenomen zonder begrip.
 
-Het geven van schriftelijke essay opdrachten is met de komst van LLM's en gebruik door studenten sowieso geen werkende toetsmethode meer in mijn ogen. Dit hebben we in ons ICT onderwijs al eerder geschrapt. Maar ter accomodatie van AI-werkelijkheid werken we met onderwijsherziening in de Propeduse met de volgende combinatie van toetsvormen:
-
-1. **Mondelinge assessments** halverwege en aan het eind, waarin je je eigen werk toelicht en begrip aantoont.
-
-2. **Theorietoets zonder hulpmiddelen** over conceptbegrip - in een safe browser, zonder AI of internet.
-
-Deze aanpak verschuift de verantwoordelijkheid naar de student: gebruik AI zoals je wilt tijdens het maken, maar realiseer dat je later zonder hulpmiddelen moet kunnen uitleggen wat je hebt gedaan.
-
-Het dwingt studenten om werk te maken met begrip. AI mag ondersteunen, maar niet vervangen.
+Dit vraagt om andere toetsvormen — zie sectie 3 voor de concrete aanpak met mondelinge assessments en theorietoetsen.
 
 ## 2. Waarschuwing voor studenten: De expertise-valkuil
 
@@ -69,9 +61,7 @@ Mijn advies voor studenten: **begin met Type 4a (Old Skool)** totdat je de basis
 - Wat scope betekent
 - Hoe je debugt zonder AI
 
-Pas als je deze concepten beheerst, kun je veilig naar Type 4c (Learned from AI): gebruik AI om nieuwe concepten te leren, maar bouw eerst een fundament. En als je code laat genereren (Type 1-3), realiseer dan: **je bent verantwoordelijk voor code die je niet volledig begrijpt**.
-
-Type 4b (Rubber Duck AI) is wel veilig: daar gebruik je AI alleen als klankbord voor je eigen ideeën, zonder inhoudelijke input over te nemen. Geen hallucinatie-risico, omdat je de AI-feedback al als onbetrouwbaar hebt geclassificeerd.
+Pas als je deze concepten beheerst, kun je veilig naar Type 4c (Learned from AI) of Type 1-3 (AI genereert code). Maar realiseer: **je bent verantwoordelijk voor code die je niet volledig begrijpt**.
 
 ![Google's T-shaped model voor AI-enhanced developers](/assets/img/posts/google-t-shaped-ai-enhanced-developer.png)
 *Figuur 1:* T-shaped AI-enhanced developer skills (Kam et al., 2025).
@@ -82,9 +72,19 @@ Als student moet je eerst de verticale balk opbouwen voordat je de horizontale b
 
 ### 2.3 Multi-criteria evaluatie voor studenten
 
-Om de verschillende AI-gebruikstypes objectief te vergelijken voor lerende ICT-studenten, gebruik ik een multi-criteria beslissingstabel. Deze methode komt uit de ICT Research Methods workshop over besliskunde en helpt om subjectieve oordelen expliciet te maken.
+Om de verschillende AI-gebruikstypes objectief te vergelijken voor lerende ICT-studenten, gebruik ik een multi-criteria beslissingstabel. Deze methode komt uit de ICT Research Methods (HBO-i, 2018), categorie Workshop: "to explore opportunities and gain insights in what is possible."
 
-Ik evalueer acht criteria op een schaal van `--` (zeer negatief) tot `++` (zeer positief):
+**Legenda scores:**
+
+| Score | Betekenis | Voorbeeld |
+|:-----:|-----------|-----------|
+| `++` | Zeer positief | Maximaal leerpotentieel, geen risico |
+| `+` | Positief | Goed, met kleine kanttekening |
+| `0` | Neutraal | Niet van toepassing of geen effect |
+| `-` | Negatief | Risico of nadeel aanwezig |
+| `--` | Zeer negatief | Groot risico, niet geschikt voor studenten |
+
+Ik evalueer acht criteria:
 
 | Criterium                     | Human Leads | Human Curates | Vibe Coding | Old Skool | Rubber Duck | Learned from AI |
 |-------------------------------|:-----------:|:-------------:|:-----------:|:---------:|:-----------:|:---------------:|
@@ -278,6 +278,7 @@ In de Besluitvormingsfase van het BOB-model worden vier vragen beantwoord:
 
 ## Bronnen
 
+- HBO-i. (2018). *ICT Research Methods — Methods Pack for Research in ICT*. Geraadpleegd op 21 januari 2026 van https://ictresearchmethods.nl/
 - Kam, M., Miller, C., Wang, M., Tidwell, A., Lee, I. A., Malyn-Smith, J., Perez, B., Tiwari, V., Kenitzer, J., Macvean, A., & Barrar, E. (23 juni 2025). *What do professional software developers need to know to succeed in an age of Artificial Intelligence?* arXiv. Geraadpleegd op 13 januari 2026 van https://arxiv.org/abs/2506.00202
 - Schop, G. J. (z.d.). *BOB-model*. Managementmodellensite. Geraadpleegd op 20 januari 2026 van https://managementmodellensite.nl/bob-model/
 - UNESCO IESALC. (2023). *ChatGPT and Artificial Intelligence in Higher Education: Quick Start Guide* (Report no. ED/HE/IESALC/IP/2023/12). Geraadpleegd op 13 januari 2026 van https://unesdoc.unesco.org/ark:/48223/pf0000394935
