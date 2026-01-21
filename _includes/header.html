@@ -83,20 +83,17 @@
           </li>
         </ul>
       </nav>
-      {% capture logo_url %}{{ relativebase }}{{ site.logo  }}{% endcapture %}
-      {% assign logo_url = logo_url | replace: "//", "/" %}
       <div class="logo">
-        <a href="{{ relativebase }}"><img class="logo" id="logo" src="{{ logo_url }}" alt="{{ site.title }}"></a>
         <div class="logo-name">
-          <span class="logo-name-main">Bart van der Wal</span>
-          <span class="logo-name-sub">Persoonlijke website</span>
+          <span class="logo-name-main">Bart van der Wal</span><span class="logo-name-sub"> – Persoonlijke website</span>
         </div>
         <div class="logo-credo">
           <em>"Wie schrijft, die blijft!"</em>
         </div>
         <div class="logo-tagline">
-          <a href="{{ relativebase }}tags.html#software-engineering">Full Stack</a> |
-          <a href="{{ relativebase }}tags.html#ddd">DDD</a> |
+          <a href="{{ relativebase }}tags.html#software-engineering">Software Engineering</a> |
+          <a href="{{ relativebase }}tags.html#full-stack">Full Stack</a> |
+          <a href="{{ relativebase }}tags.html#ddd">Domain Driven Design</a> |
           <a href="{{ relativebase }}tags.html#swimrun">SwimRun</a> |
           <a href="{{ relativebase }}tags.html#mamil">MAMIL</a>
         </div>

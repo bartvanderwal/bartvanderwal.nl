@@ -589,7 +589,7 @@ svg {
 .main-header .logo a {
   text-decoration: none;
   
-  font-size: 27px;
+  font-size: 15px;
   font-weight: var(--font2-light);
   color: var(--accent-dark);
 }
@@ -598,22 +598,25 @@ svg {
   text-align: center;
   font-family: var(--font1);
   color: var(--accent-dark);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
 }
 .main-header .logo-name-main {
   display: block;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 600;
   line-height: 1.2;
 }
 .main-header .logo-name-sub {
-  display: block;
-  font-size: 12px;
-  color: var(--grey2);
-  margin-top: 2px;
+  font-size: 14px;
+  color: var(--accent-dark);
+  margin-left: 4px;
 }
 .main-header .logo-credo {
   font-family: var(--font1);
-  font-size: 16px;
+  font-size: 18px;
   font-style: italic;
   color: var(--grey1);
   margin-top: 8px;
@@ -622,8 +625,8 @@ svg {
 }
 .main-header .logo-tagline {
   font-family: var(--font2);
-  font-size: 13px;
-  letter-spacing: 0.5px;
+  font-size: 8px;
+  letter-spacing: 0.3px;
   
   color: var(--grey2);
   margin-top: 2px;
