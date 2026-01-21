@@ -1,5 +1,5 @@
 # Site settings
-title: Bart van der Wal
+title: Bart van der Wal - Persoonlijke Blog
 version: "1.1.0"
 description: 'Persoonlijke blog over technologie, softwareontwikkeling en duursport.'
 permalink: ':title/'

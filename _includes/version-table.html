@@ -16,14 +16,14 @@
     <tbody>
       {% if page.date_started %}
       <tr>
-        <td>{{ page.date_started | date: "%d %b %Y" }}</td>
+        <td>{% include date_localized_short.html date=page.date_started %}</td>
         <td>Gestart</td>
         <td>{{ page.started_note | default: "Eerste idee" }}</td>
       </tr>
       {% endif %}
       {% unless page.draft %}
       <tr class="published-row">
-        <td>{{ page.date | date: "%d %b %Y" }}</td>
+        <td>{% include date_localized_short.html date=page.date %}</td>
         <td>Gepubliceerd</td>
         <td>{{ page.published_note | default: "Eerste publicatie" }}</td>
       </tr>
@@ -32,7 +32,7 @@
       {% assign sorted_revisions = page.revisions | sort: "date" %}
       {% for revision in sorted_revisions %}
       <tr>
-        <td>{{ revision.date | date: "%d %b %Y" }}</td>
+        <td>{% include date_localized_short.html date=revision.date %}</td>
         <td>{{ revision.type | default: "Gewijzigd" }}</td>
         <td>{{ revision.note }}</td>
       </tr>

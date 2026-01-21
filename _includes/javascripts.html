@@ -424,15 +424,23 @@
 
 <script src="{{ relativebase }}assets/js/main.js"></script>
 <script>
-  SimpleJekyllSearch({
-      searchInput: document.getElementById('search-input'),
-      resultsContainer: document.getElementById('results-container'),
-      json: '{{ relativebase }}search.json',
-      searchResultTemplate: '<li><a href="{url}" title="{description}">{title}</a><p>{description}</p></li>',
-      noResultsText: 'No results found',
-      fuzzy: false,
-      exclude: ['Welcome']
-    });
+  // Delay search initialization to ensure DOM is ready and search.json is accessible
+  window.addEventListener('load', function() {
+    var searchInput = document.getElementById('search-input');
+    var resultsContainer = document.getElementById('results-container');
+    
+    if (searchInput && resultsContainer) {
+      SimpleJekyllSearch({
+          searchInput: searchInput,
+          resultsContainer: resultsContainer,
+          json: '/search.json',
+          searchResultTemplate: '<li><a href="{url}" title="{description}">{title}</a><p>{description}</p></li>',
+          noResultsText: 'No results found',
+          fuzzy: false,
+          exclude: ['Welcome']
+        });
+    }
+  });
 </script>
 
 {% if page.infinite %}
