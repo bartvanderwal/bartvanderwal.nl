@@ -69,7 +69,7 @@ Het woord 'leeswijzer' zou je ook kunnen opvatten op HOE je dingen moet lezen of
 - **Genummerde secties**: Gebruik genummerde hoofdsecties (## 1. Titel, ## 2. Titel, etc.) voor posts met 4+ secties
 - **Aantal secties**: Streef naar 5-9 secties (Miller's Law: 7 ± 2 is optimaal voor menselijke aandachtspan/mentale ruimte)
 - **Subsecties**: Gebruik maximaal twee niveaus (## 1. en ### 1.1). GEEN ### 1.1.1 of dieper
-- **Figuren**: Genummerde figuren met caption-formaat: `*Figuur X:* Caption tekst.` (alleen Figuur cursief)
+- **Figuren**: Genummerde figuren met caption-formaat: `*Figuur X:* Caption tekst.` (ALLEEN "Figuur X" cursief, de dubbele punt erachter en caption zelf normaal; houd caption kort - verdere uitleg hoort in lopende tekst met verwijzing naar figuurnummer)
 - **Inleiding met overzicht**: Sluit de inleiding af met een of meer alinea's die aangeven wat elke sectie behandelt
   - Gebruik NOOIT het woord "leeswijzer" of een apart kopje daarvoor — dit hoort gewoon in de laatste alinea('s) van de inleiding
   - Houd het **abstract en kort**: geef de _essentie_ van wat komt, niet alle details/termen
@@ -202,23 +202,29 @@ Kijk naar de WAAROM/intentie achter wijzigingen:
 
 ### Commit message format
 
+**Golden rule**: Subject line max **50 karakters** (Chris Beams). Daarna optioneel lege regel + body. Maar laat de body liever leeg, als daar veel bullets komen, kun je de commit ook opsplitsen in meerdere kleine commits.
+
 ```text
-Korte titel (max 50 char, imperatief mood)
+Korte titel (max 50 chars, imperatief mood)
 
 Optioneel langere uitleg met WAAROM context.
 - Bullet points voor deels wijzigingen
 - Duidelijk maken welke bestanden waarom wijzigen
 ```
 
+**Waarom 50 chars?** Korte titles zijn beter leesbaar in `git log --oneline`, GitHub PR summaries, en commit history tools.
+
 Voorbeeld:
 
 ```text
-Update Node en jQuery voor security
+Add header branding with credo
 
-Upgrade jQuery van 3.5.0 naar 3.7.1 en Node van 18 naar 20 voor
-veiligheidspatches. Wijzigt package.json, Gemfile, _includes/javascripts.html,
-en verwijdert verouderde polyfills uit serve.sh.
+Added 'Wie schrijft, die blijft!' credo to header with
+personal name/subtitle and GitHub fork link. Updated CSS
+for logo styling (font sizes, letter-spacing, ALLCAPS removal).
 ```
+
+**SLECHTS onderwerpregel?** Dat mag! Als het één duidelijke wijziging is. Body is optioneel.
 
 ## Git File Operations
 
