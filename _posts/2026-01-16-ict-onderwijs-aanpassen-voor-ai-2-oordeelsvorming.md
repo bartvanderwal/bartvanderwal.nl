@@ -9,6 +9,10 @@ tags: [ai, llm, onderwijs, taxonomie, oordeelsvorming]
 img: posts/types-van-ai-gebruik-overzicht.png
 draft: true
 published: true
+revisions:
+  - date: 2026-01-21
+    type: Gewijzigd
+    note: "Sectienummers en leeswijzers toegevoegd voor beter lezernavigatie en structuur. Hoofd-leeswijzer in inleiding uitlegt het hele verhaal; mini-leeswijzers bij secties met subsecties geven kort preview conform Pyramid Principle. Subsectienummering (x.y format) toegevoegd als verwijzingsreferentie."
 ---
 
 In dit  drieluik verken ik hoe ICT-onderwijs moet veranderen met de komst van AI. Dit tweede deel gaat over **oordeelsvorming**: een taxonomie van AI-gebruikstypes om te onderscheiden van wie ideeen komen, en wie de regie heeft; mens of AI?
@@ -32,11 +36,13 @@ Twee gesprekken, dezelfde woorden, tegenovergestelde reacties. **Maar hier wordt
 
 Een **taxonomie** is een systematische classificatie — een onderverdeling van AI-gebruikstypes op basis van wie de regie heeft. Denk hierbij aan een **kwadrant** met twee dimensies: horizontaal van kort/open prompt naar lang/gedetailleerd, verticaal van AI actief naar menselijk actief.
 
-Sectie 1 beschrijft de vier types. Sectie 2 behandelt hoe types door elkaar lopen. Sectie 3 introduceert prompt/answer asymmetry. Sectie 4 behandelt naamgeving. Sectie 5 sluit af met de conclusie.[^meta]
+Deze blog begint met een beschrijving van de vier hoofdtypes en hun zeven varianten, waarbij ik de kwadranten één voor één langslopen. Vervolgens laat ik zien hoe deze types in de praktijk door elkaar lopen en niet strikt gescheiden zijn. Dan introduceer ik het concept van prompt/answer asymmetry: hoe de lengte van je vraag en het antwoord omgekeerd evenredig kunnen zijn. De naamgeving van deze types komt daarna aan bod, inclusief waarom betere namen dan "Type 1, 2, 3, 4" belangrijk zijn, en hoe constraints essentieel zijn voor verantwoord AI-gebruik. Tot slot bespreek ik de exploratieve modus: wanneer experts tijdelijk als beginners leren. Ik sluit af met een conclusie over Guitar Hero en leren, en een discussie over transparantie.
 
 ## 1. De vier AI-gebruikstypes
 
-### Type 1: Human in the Lead
+We lopen de vier kwadranten langs, met twee assen: wie heeft het idee, en wie heeft de lead. Bij het vierde kwadrant blijkt onderverdeling nuttig.
+
+### 1.1 Type 1: Human in the Lead
 
 De mens heeft het idee en formuleert dit in een gedetailleerde eerste prompt — een soort specificatie van een probleem of eigen idee. De AI genereert op basis daarvan. De cyclus gaat verder met menselijke input en sturing.
 
@@ -46,7 +52,7 @@ Het principe: één prompt is geen prompt. Je itereert, stuurt bij, verwerpt sug
 
 Je zou kunnen stellen dat een vraag om ideeën (Type 2) zelf ook een idee is. Maar het verschil zit in de mate van detail. Bij Type 1 bevat de eerste prompt al veel context en richting.
 
-### Type 2: Human Curates
+### 1.2 Type 2: Human Curates
 
 De mens vraagt de AI om ideeën te genereren — een korte, open vraag. De mens maakt vervolgens een serieuze keuze welke richting te volgen. Verdere stappen kunnen weer met AI, maar met bewuste menselijke input.
 
@@ -54,25 +60,28 @@ Voorbeeld: "Geef me vijf mogelijke invalshoeken voor een blog over remote werken
 
 Het verschil met Type 1: de eerste prompt is kort en open, niet gedetailleerd en richtinggevend. Het verschil met Type 3: de mens doet meer dan alleen "ja" zeggen.
 
-### Type 3: AI in the Lead
+### 1.3 Type 3: AI in the Lead
 
 De mens vraagt AI om ideeën én om deze zelf uit te werken. Zonder serieuze tussenkomst: deze accepteert de voorgestelde voorkeurskeuze, of geeft door AI voorgelegde opties weer aan de AI terug ("wat zou jij doen?" of "kijk maar").
+
+![No-code vs. echt programmeren](/assets/img/posts/no-code-vs-real-coding.png)
+*"Create apps without knowing how to code" klinkt verleidelijk, maar levert geen begrip op*
 
 Dit is de valkuil van "vibe coding" zonder ervaring: de AI genereert, de mens klikt op "accept", en niemand weet meer precies wat er in de code staat of waarom.
 
 Het resultaat kan technisch werken, maar de mens heeft geen grip op wat er is gemaakt of hoe het te onderhouden.
 
-### Type 4: Mens zonder AI
+### 1.4 Type 4: Mens zonder AI
 
 Dan het vierde type. Je zou kunnen stellen dat dit geen AI-type is, omdat we bij het langsgaan van de kwadranten nu logisch uitkomen bij 'mens doet alles'. Maar ik doe het tegenovergestelde; ik splits deze op in drie subtypes.
 
-#### 4a. Old Skool
+### 1.5 4a. Old Skool
 
 Pure menselijke arbeid, zoals we het decennialang hebben gedaan. Geen AI-tool geopend, geen assistentie gevraagd. De klassieke manier van werken.
 
 Dit is geen nostalgische terugblik. Voor veel taken blijft dit de snelste en beste aanpak. Een goede developer typt soms gewoon code, zonder eerst een AI te raadplegen. Een schrijver schrijft, een ontwerper ontwerpt. Soms zegt Claude code of andere tool ook: 'Je tokens zijn op., je kunt na 3 PM vanmiddag weer verder'. Of ze zijn zelfs op voor de maand; maar je bedenkt je dat je die wijziging ook prima zelf kunt doen.
 
-### 4b. Rubber Duck AI: AI als klankbord
+### 1.6 4b. Rubber Duck AI: AI als klankbord
 
 Je legt je probleem uit aan een collega, en tijdens het uitleggen bedenk je zelf de oplossing. Je had net zo goed tegen een badeend kunnen gaan praten.
 
@@ -82,7 +91,7 @@ Met AI werkt dit ook. Je begint een vraag te typen, en tijdens het formuleren re
 
 Het interessante: de AI heeft geen inhoudelijke bijdrage geleverd. Het enige dat de AI deed was er zijn, als gesprekspartner. De motivatie komt van het gesprek zelf, niet van de output. Je zou kunnen zeggen dat je de AI antropomorfiseert — je behandelt het als gesprekspartner, terwijl het geen persoon is.
 
-### 4c. Learned from AI: Geleerde kennis toepassen
+### 1.7 4c. Learned from AI: Geleerde kennis toepassen
 
 Je hebt in het verleden AI gebruikt om iets te leren. Nu pas je die kennis toe — zonder AI te raadplegen. 'AI as teacher'.
 
@@ -93,15 +102,15 @@ Dit is relevant voor digitale examens. Als een student iets heeft geleerd met be
 Natuurlijk kun je niet bewijzen dat iemand iets via AI heeft geleerd versus via een leerboek. Maar dat maakt ook niet uit — het punt is dat de kennis is overgedragen en begrepen.
 
 ![Kwadrant van AI-gebruikstypes](/assets/img/posts/ai-usage-types-quadrant.png)
-*Figuur: De vier AI-gebruikstypes in een kwadrant. Horizontale as: waar komt het idee vandaan (AI ←→ Mens). Verticale as: wie heeft de regie (AI ←→ Mens).*
+*Figuur 1:* De vier AI-gebruikstypes in een kwadrant.
 
-## 5. In de praktijk lopen types door elkaar
+## 2. In de praktijk lopen types door elkaar
 
 In de praktijk gebruik je deze types door elkaar. Een sessie kan beginnen als Type 1, tijdelijk naar Type 2 gaan voor brainstormen, en eindigen in Type 4b (Rubber Duck AI) wanneer het AI-gesprek je doet realiseren dat je een bepaald stuk anders wilt aanpakken, en de AI bv. vast zit in een bepaald spoor. If zelfs Type 4a (Old Skool) wanneer je besluit een bepaald stuk helemaal zonder AI te doen.
 
 Het punt is niet om strikt in één type te blijven. Het punt is om *bewust* te zijn van welk type je gebruikt en of dat past bij wat je wilt bereiken.
 
-## 6. Prompt/answer length asymmetry
+## 3. Prompt/answer length asymmetry
 
 Een interessant patroon dat hieruit volgt: de lengte van je prompt en de lengte van het antwoord zijn vaak omgekeerd evenredig.
 
@@ -114,20 +123,17 @@ Geen van beide is beter. Het hangt af van wat je nodig hebt: exploratie of execu
 
 ![Prompt answer length asymmetry](/assets/img/posts/prompt-answer-length-asymmetry.png)
 
-*Figuur 2*: De Prompt answer length asymmetry
+*Figuur 2:* De Prompt answer length asymmetry
 
 *Disclaimer*: Deze asymmetry die Figuur 2 tracht te schetsen is voorlopig nog even een *hypothese*, maar ik heb dit nog niet met praktisch onderzoek laten zien, of aangetoond buiten n=1. Sowieso is de 'short question, broader answer' en 'long question, more specific answer' relatie makkelijker hard te maken is, omdat het min of meer per definitie al geldt (gegeven een LLM die goed of in ieder geval geloofwaardig antwoord probeert te geven; wat ze doen). Voor het 'long question, short answer', 'short question, long answer' relatie heb ik nog onvoldoende tijd genomen dit ook proefonderlijk aan te tonen.
 
-## 7. Betere namen dan "Type 1, 2, 3, 4"
+## 4. Betere namen dan "Type 1, 2, 3, 4"
 
 Phil Karlton's beroemde uitspraak luidt: "There are only two hard things in Computer Science: cache invalidation and naming things." Goede naamgeving is moeilijk, maar wel belangrijk!
 
-Daniel Kahneman introduceerde in *Thinking, Fast and Slow* de termen "System 1" en "System 2" voor twee vormen van menselijk denken (Kahneman, 2011). Dit is een indrukwekkend stukje theorie en achtergrond, maar zijn namen zijn om te huilen! Enkel op de kracht van de theorie zijn deze — van zichzelf nietszeggende nummers — gemeengoed geworden, en weten velen wat *type 1* en *type 2* thinking is. Zulke getallen onthouden schaar ik zelf onder het kopje 'accidental complexity', Andere voorbeeld is het onhandige 'Imperial system' dat Engeland en de US hanteren.
+De volgende vier subsecties (4.1-4.4) behandelen hoe deze naamgeving tot stand kwam, wat "in the Lead" betekent voor eindverantwoordelijkheid, de spanning tussen upskilling en deskilling, en hoe constraints als vangnet werken.
 
-![De willekeurige complexiteit van het Imperial System: een mile is 5280 voet "omdat".](/assets/img/posts/imperial-system-5280-meme.png)
-*Meme: "Why is there 5280 feet in a mile?" "Porque sí" (omdat het zo is). Een perfecte illustratie van accidental complexity — historische beslissingen zonder logische grond die we nu eeuwig mee moeten sleuren. (r/ShitAmericansSay, 2022).*
-
-terwijl "Fast Thinking" en "Slow Thinking" — of beter nog "Intuitive" en "Deliberate" — zoveel begrijpelijker waren geweest. De ondertitel van zijn boek was letterlijk beschrijvender dan de termen zelf.
+Daniel Kahneman introduceerde in *Thinking, Fast and Slow* de termen "System 1" en "System 2" voor twee vormen van menselijk denken (Kahneman, 2011). Dit is een indrukwekkend stukje theorie en achtergrond, maar zijn namen zijn om te huilen! Enkel op de kracht van de theorie zijn deze — van zichzelf nietszeggende nummers — gemeengoed geworden, en weten velen wat *type 1* en *type 2* thinking is. Zulke getallen onthouden schaar ik zelf onder het kopje 'accidental complexity'. Andere voorbeelden zijn het onhandige 'Imperial system' dat Engeland en de VS hanteren (met willekeurige eenheden), of numerieke systemen zonder duidelijke mnemonic. Termen zonder intrinsieke betekenis zoals "System 1" of "Type X" — terwijl "Fast Thinking" en "Slow Thinking" — of beter nog "Intuitive" en "Deliberate" — zoveel begrijpelijker waren geweest. De ondertitel van Kahneman's boek was letterlijk beschrijvender dan de termen zelf.
 
 Roland Barthes introduceerde het concept "death of the author": de betekenis van een tekst moet niet afhangen van kennis over de auteur of diens intenties (Barthes, 1967). Toegepast op naamgeving: een goede term moet zichzelf uitleggen. Je zou niet de originele bron moeten raadplegen om te begrijpen wat "System 1" betekent.
 
@@ -142,7 +148,7 @@ Met dat in gedachten: mijn namen voor de vier types.
 | 4b   | Rubber Duck AI    | AI als denkpartner, geen inhoudelijke input          |
 | 4c   | Learned from AI   | Mens past eerder geleerde AI-kennis zelfstandig toe  |
 
-### 7.1 Meta: hoe deze naamgeving tot stand kwam
+### 4.1 Meta: hoe deze naamgeving tot stand kwam
 
 Deze blog is zelf een voorbeeld van Type 1 (Human in the Lead). Ik had initiële namen bedacht, en wilde de AI vragen of hij betere namen wist. Dit is echter een beetje een open vraag, en bovendien merk ik ook regelmatig dat de AI dan richtingen in gaat die ik echt niet wil. En dan ben je vaak langer bezig om alles te lezen, door te prompten of moet je alsnog alles schrijven (deze zin ben ik nu bijvoorbeeld ook zelf aan het schrijven, meest overige stukken schreef Claude op basis van mijn ideeen/prompts, maar de inleiding moet nog herschreven, want daar wil Claude het maar niet doen zoals ik een beetje in mijn hoofd heb.
 
@@ -195,7 +201,7 @@ Door zelf de criteria op te geven, blijf je in Human in the Lead modus — ook a
 
 Dit is hoe je wegblijft bij AI in the Lead: door constraints te geven, zelfs als je de AI om input vraagt.
 
-### 7.2 "In the Lead" betekent ook eindregie
+### 4.2 "In the Lead" betekent ook eindregie
 
 Bij Type 1 (Human in the Lead) is de mens niet alleen de *initiator* — degene die begint met een duidelijk idee — maar ook de *eindregisseur*. De mens heeft vetorecht op alles wat de AI produceert. En dus ook de *plicht* om alle output te beoordelen.
 
@@ -203,7 +209,19 @@ Hier zit de crux van werken met AI. LLMs zijn ontzettend productief. Ze generere
 
 Dit leidt tot een belangrijke vraag: hoe maak je het controleren beheersbaar?
 
-### 7.3 Constraints als vangnet in de ICT
+### 4.3 Upskilling, reskilling en het risico op deskilling
+
+Google hanteert voor AI-onderwijs drie begrippen: **upskilling** (skill-complementarity), **reskilling** (nieuwe rolvaardigheden aanleren) en het spiegelbeeld **deskilling/downskilling** (skill-substitution, verlies door afhankelijkheid) (Yang et al., 2026). Voor studenten betekent dit:
+
+- Upskilling: AI inzetten om concepten sneller te doorgronden, maar nog steeds zelf oefenen en toetsen zonder AI.
+- Reskilling: AI gebruiken om nieuwe domeinen te verkennen (bijv. data-analyse), daarna zonder AI kunnen reproduceren.
+- Deskilling vermijden: beginners mogen AI niet de basis laten overnemen; eerst fundamentals, daarna pas AI als versneller.
+
+Yang et al. (2026) koppelen dit aan **Substitutive Use** (voluit) versus **Augmentative Use** van GenAI. Substitutive Use – wat ik “AI als butler” noem – ondermijnt motivatie om nieuwe skills te leren: de tool doet het zware werk en studenten slaan cognitieve stappen over (Guo et al., 2024) en tonen minder exploratie (Leon, 2023). Augmentative Use – “AI als leermiddel/leraar” – vraagt juist actieve verificatie en blijft binnen reskilling/upskilling.
+
+Kortom: voor studenten/beginners is de volgorde cruciaal. Eerst zelf leren, dan pas AI gebruiken om te versnellen, zodat we upskilling en reskilling stimuleren zonder in deskilling te vervallen.
+
+### 4.4 Constraints als vangnet in de ICT
 
 In software development hebben we technieken ontwikkeld om code controleerbaar te houden — lang voordat AI code ging genereren. Deze "Old Skool" technieken worden nu onmisbaar als vangnet voor AI-gegenereerde code:
 
@@ -219,7 +237,99 @@ In software development hebben we technieken ontwikkeld om code controleerbaar t
 
 De paradox: deze "Old Skool" technieken worden juist waardevoller in het AI-tijdperk. Ze vormen het vangnet dat het mogelijk maakt om AI-productiviteit te benutten zonder de controle te verliezen.
 
-## 8. Meta: Hoe deze blog tot stand kwam
+De paradox: deze "Old Skool" technieken worden juist waardevoller in het AI-tijdperk. Ze vormen het vangnet dat het mogelijk maakt om AI-productiviteit te benutten zonder de controle te verliezen.
+
+## 5. Exploratieve modus: Wanneer experts als beginners leren
+
+Tot nu toe behandelden we de types alsof ze vaste rollen zijn: Type 1 is "je rol in dit project", Type 3 is "voorkomen op alle kosten". Maar dit is onvolledig. Experts kunnen tijdelijk in een exploratieve modus treden — en moeten dat ook — zonder dat dit roekeloos "Vibe coding" is.
+
+Subsecties 5.1-5.4 onderscheiden explore van exploit, beschrijven neo-Piagetiaans cyclisch leren, zien hoe experts AI leren, en geven praktische signalen voor verantwoord experimenteren.
+
+In [blog 1, sectie 3.3](/ict-onderwijs-aanpassen-voor-ai-1-bewustwording/#33-agentic-ai-claude-code-stijl) beschreef ik hoe een collega-programmeur bij agentic AI op een gegeven moment "maar toestond dat de LLM vrij grote wijzigingen doorvoerde, omdat hij de vele changes ook niet meer kon overzien." Dit is geen roekeloos gedrag — het is een moment waarop hij van expert temporair naar beginner-modus ging. Programmeren ewas bekend, en ook het domein waarin de code werkt; maar de tool: agentic AI was nieuw terrein.
+
+In plaats van beginner-modus kan ik wellicht beter dit exploratie-modus noemen.
+
+### 5.1 Explore versus Exploit
+
+In gedrag en leren onderscheiden we twee complementaire strategieën:
+
+- **Exploit**: Maak gebruik van wat je al weet. Je hebt expertise in een domein, en je zet die expertise in om doelen te bereiken.
+- **Explore**: Onderzoek onbekend terrein. Je weet nog niet wat mogelijk is, dus je experimenteert.
+
+Dit zijn geen twee aparte modi — je hebt altijd een bepaalde combinatie van beide. Je bent nooit zuiver exploit (dat zou stagnatie betekenen) of zuiver explore (dat zou inefficiëntie betekenen). In plaats daarvan: je balanceert tussen beide afhankelijk van de context. Onderzoeker Alex Hutchinson beschrijft in zijn populair wetenschappelijk boek *The Explorer's Gene* hoe deze wisselwerking tussen verkenning en uitbating fundamenteel is voor leren en aanpassingsvermogen (Hutchinson, 2021).
+
+Voor AI geldt hetzelfde. Als je een nieuw AI-model of interactiemodus leert kennen, ben je tijdelijk in exploratieve modus — zelfs als je in andere gebieden een expert bent. Je verschuift je balans.
+
+### 5.2 Neo-Piagetiaans cyclisch leren
+
+Jean Piaget beschreef hoe kinderen leren: ze gaan door stadia van sensimotor, preoperationeel, concreet-operationeel naar formeel-operationeel denken. Dit werd lange tijd gezien als lineair: stadia volgen elkaar op, je gaat niet terug.
+
+Moderne onderwijstheorie (neo-Piagetiaans) nuanceert dit: je gaat niet lineair vooruit, maar cyclisch. Afhankelijk van de context pak je activiteiten uit verschillende stadia. Een expert in wiskunde die voor het eerst programmeren leert, gaat door soortgelijke cognitieve stadia — maar veel sneller (Chi, 2009).
+
+Analogie naar software development: sprint-gebaseerde Agile lijkt op dit cyclische model. Je volgt niet watervalbouwstijl (plan → design → code → test → deploy, klaar). In plaats daarvan cykel je: kleine increment, test, feedback, verbeter, volgende increment. Deze cyclus herhaalt zich, en je bent constant aan het evalueren, herstellen, en bijsturen — niet alleen in uitvoering (exploit) maar ook in verkenning van wat mogelijk is (explore).
+
+Dezelfde cyclus geldt voor leren en skill-development: je bent niet lineair "van beginner naar expert" — je bent cyclisch aan het verkennen en uitbaten binnen steeds grotere domeinen.
+
+### 5.3 Experts in exploratieve modus bij AI
+
+Dit is waar het relevant wordt voor AI-gebruik: **een expert in X kan en moet in exploratieve modus gaan voor Y** — vooral als Y (zoals AI) snel evolueert.
+
+Een ervaren software engineer heeft decennia skill in "uitbaten" (exploit) — code schrijven, architecturen ontwerpen, teams leiden. Maar als die engineer met Claude Code of Cursor werkt, is hij/zij plotseling weer in exploratieve modus: "Wat kan dit model? Waar zijn zijn grenzen? Hoe verandert dit mijn workflow?"
+
+Dit is **niet hetzelfde als roekeloos "Vibe coding"**. Het verschil zit in de *intentie en horizon*:
+
+- **Exploratieve modus (positief)**: "Ik wil deze tool snappen, dus ik experimenteer gestructureerd. Ik let op wat werkt, wat niet, en waar mijn expertise tekortschiet. Dit is voor skill-building en tool-understanding."
+  
+- **AI in the Lead / Vibe Coding (risico)**: "Ik laat de AI het werk doen zodat ik sneller klaar ben. Ik check niet veel, ik vertrouw de output." Dit verschuift van exploration (leren) naar pure exploit (produceren) zonder verificatie.
+
+Het eerste leidt tot upskilling en reskilling. Het tweede leidt tot deskilling.
+
+**Belangrijk contrast: Beginners versus Experts.**
+
+Dit onderscheid is cruciaal voor studenten. Een ervaren developer kan in één week agentic AI leren, zoals beschreven in mijn blog [AI Coding Sucks](/ai-coding-sucks/). Maar een beginnende programmeur moet eerst maanden — zo niet jaren — aan Software Engineering fundamentals besteden. Data structures, algoritmen, design patterns, architectuur, debugging mindset. Dit zijn de mentale modellen waarmee je AI-output kunt beoordelen.
+
+Daarom is de hype "spring direct op de AI-bandwagon" gevaarlijk voor beginners. Dat is pure marketing talk. Ja, AI is snel. Ja, je kunt ermee shortcuts nemen. Maar voor iemand die nog geen basis heeft, zijn shortcuts een weg naar deskilling en onbegrip. Een expert kan de exploratieve modus ingaan omdat hij/zij al een stevig fundament heeft om op terug te vallen.
+
+Voor beginners geldt: exploratieve modus met AI-tools pas *nadat* je de fundamentals hebt geleerd. Niet ervoor.
+
+### 5.4 Praktisch: Hoe erkent je exploratieve modus versus roekeloos?
+
+Enkele signalen:
+
+| Exploratieve Modus | Roekeloos/Vibe Coding |
+| --- | --- |
+| Je stelt vragen: "Waarom gaf de AI dit antwoord?" | Je accepteert output zonder vraag |
+| Je test de AI's output actief tegen je mentale model | Je vertrouwt blind op snelheid |
+| Je leert waar grenzen liggen, je bouwt mentale modellen | Je bouwt geen modellen op, je slooft je uit voor output |
+| Tijdelijk (exploratie eindigt zodra je het tool snapt) | Persistent (roekeloos blijven is niet leren) |
+| Voor *skill-development*, niet voor korte-termijn output | Voor korte-termijn output, ten koste van begrip |
+
+Wichtig: exploratieve modus is niet geschikt voor productiecode of kritieke projecten. Daar heb je exploit nodig: jij en je team kennen de tool, begrijpen de grenzen, en gebruiken het met constraints (zie sectie 4.3).
+
+Maar voor onderwijs (vooral leren) is exploratieve modus essentieel. Studenten *moeten* tijd krijgen om AI-tools te verkennen, hun grenzen te ontdekken, en te leren waar hun eigen expertise nog nodig is. Dit is onderdeel van het cyclische leren dat neo-Piagetiaanse theorie beschrijft.
+
+Dus ja: je kunt "Type 3-achtig" werken (veel vertrouwen op AI) zonder roekeloos te zijn, zolang je *doelbewust aan het verkennen bent* en niet aan het produceren zonder begrip.
+
+## 6. Conclusie: Van taxonomie naar toepassing
+
+Deze blog presenteerde een taxonomie van AI-gebruikstypes. Van Type 1 (Human in the Lead) tot Type 4 (Old Skool), met Type 3 (AI in the Lead / Vibe Coding) als waarschuwing voor blind AI-gebruik.
+
+De kernboodschap: **wie heeft de regie?** Bij Type 1 en 2 blijft de mens in controle. Bij Type 3 neemt de AI over - riskant voor studenten die nog niet kunnen beoordelen of de output klopt. Type 4 (Old Skool) blijft waardevol: eerst leren zonder AI, dan pas met AI.
+
+![Guitar Hero vs. echte gitaar](/assets/img/posts/guitar-hero-vs-real-guitar.png)
+*Figuur 4:* Guitar Hero vs. echte gitaar.
+
+**Nuancering:** Deze illustratie is zelf AI-gegenereerd - ironisch genoeg omdat ik niet kan tekenen. Het kostte veel prompts en lang wachten om de juiste sfeer te krijgen, en het werd nooit helemaal zoals ik wilde. Maar vergeleken met zelf tekenen was het erg veel sneller, want ik kan niet tekenen. Gitaristen gebruiken bijvoorbeeld *tabs* in plaats van notenbalken, maar de AI bleef notenbalk achtig iets tekenen. En het robotje die AI voor moet stellen is wat aan de infantiele kant.
+
+Maar ik heb de plaatjes toch opgenomen. Want ik vind visuals wel erg sprekend. Zoals Google's Technical Writing course stelt: *"when it comes to reading technical material, the vast majority of adults are still little kids—still yearning for pictures rather than text"* (Google, z.d.).
+
+De analogie gaat verder dan je denkt. Net als bij gitaarspelen, waar je leert bepaalde snaren actief te *dempen* zodat ze niet per ongeluk klinken, moet je als developer leren bepaalde dingen *niet* te doen in bepaalde situaties. En net zoals stiltes en pauzes in muziek vaak tot een mooier eindresultaat leiden: **less is more**. Soms is de beste code, de code die je *niet* schrijft.
+
+De taxonomie is geen waardeoordeel. Het beschrijft werkwijzen, geen goede of foute keuzes. Maar voor lerende studenten is niet elk type even geschikt - dat behandelt blog 3/3.
+
+**Lees verder:** [ICT-onderwijs aanpassen voor AI (3/3): Besluitvorming](/ict-onderwijs-aanpassen-voor-ai-3-besluitvorming/)
+
+## 7. Discussie: Waar gaat dit heen?
 
 Deze blog zelf is een voorbeeld van Type 1: Human in the Lead. Ik had het onderwerp, het standpunt, de voorbeelden. De AI hielp met formuleren en structureren, maar de richting kwam van mij.
 
@@ -229,34 +339,22 @@ Waarom "de eerste de beste"? Omdat Type 1 de eerste in mijn lijst is, en voor mi
 
 De titel is ook zelfspot. "De eerste de beste" klinkt als willekeurig kiezen. Maar soms is de eerste keuze ook de juiste.
 
-## 9. Conclusie: Van taxonomie naar toepassing
-
-Deze blog presenteerde een taxonomie van AI-gebruikstypes. Van Type 1 (Human in the Lead) tot Type 4 (Old Skool), met Type 3 (AI in the Lead / Vibe Coding) als waarschuwing voor blind AI-gebruik.
-
-De kernboodschap: **wie heeft de regie?** Bij Type 1 en 2 blijft de mens in controle. Bij Type 3 neemt de AI over - riskant voor studenten die nog niet kunnen beoordelen of de output klopt. Type 4 (Old Skool) blijft waardevol: eerst leren zonder AI, dan pas met AI.
-
-De taxonomie is geen waardeoordeel. Het beschrijft werkwijzen, geen goede of foute keuzes. Maar voor lerende studenten is niet elk type even geschikt - dat behandelt blog 3/3.
-
-## 10. Tot slot: Naar besluitvorming
-
-Nu we een taxonomie hebben van verschillende gebruikstypes, kunnen we in blog 3/3 de kritieke vraag stellen: **wanneer is AI-gebruik veilig voor lerende studenten**, en hoe zorgen we dat AI het leerproces ondersteunt in plaats van ondermijnt?
-
-**Lees verder:** [ICT-onderwijs aanpassen voor AI (3/3): Besluitvorming](/ict-onderwijs-aanpassen-voor-ai-3-besluitvorming/)
-
 <details>
-<summary><strong>BOB-vragen voor Oordeelsvorming (deze blog)</strong></summary>
+
+<summary markdown="span">Samenvatting als antwoorden op BOB-vragen 'Oordeelsvorming'
+</summary>
 
 ![BOB-model: van probleem naar besluit via Beeldvorming, Oordeelsvorming en Besluitvorming](/assets/img/posts/bob-model-funnel.png)
-*Figuur: Het BOB-model als trechter - van probleem of uitdaging naar besluit of oplossing (Schop, z.d.)*
+*Figuur 5:* BOB-model als trechter (Schop, z.d.).*
 
 In de Oordeelsvormingsfase van het BOB-model worden vier vragen beantwoord:
 
 | Vraag | Beantwoording in deze blog |
 | ----- | -------------------------- |
-| **1. Wat is ons doel?** | Studenten core SE skills leren ondanks de "blokkade" dat LLM's het in het begin beter kunnen. Plus AI/prompting skills en kennis bijbrengen. → Sectie 7.2-7.3 (constraints) |
-| **2. Waar maken we ons zorgen over?** | Geen studentenaanwas meer; studenten leren SE skills niet omdat ze AI als butler gebruiken zonder begrip. → Sectie 3 (AI in the Lead / Vibe Coding) |
-| **3. Wat zou die zorgen verminderen?** | Als werkveld aangeeft dat SE skills nodig blijven; autoritatieve bronnen dit bevestigen (Google, podcasts); studenten kunnen laten zien dat ze met "AI als leraar" én eigen eindregie kunnen werken. → Sectie 1-2, 4c (Learned from AI) |
-| **4. Aan welke voorwaarden moet het besluit voldoen?** | HAN-thema's (Slim, Schoon, Sociaal); onderwijs moet aantrekkelijk zijn voor studenten; ruimte voor keuzevakken en flexibilisering; ook aandacht voor ethiek en toekomstgericht organiseren. → Sectie 7.3 (vangnet technieken) |
+| **1. Wat is ons doel?** | - Studenten core SE skills leren ondanks de "blokkade" dat LLM's het in het begin beter kunnen<br>- Plus AI/prompting skills en kennis bijbrengen<br>→ Sectie 4.2-4.3 (constraints) |
+| **2. Waar maken we ons zorgen over?** | - Geen studentenaanwas meer<br>- Studenten leren SE skills niet omdat ze AI als butler gebruiken zonder begrip<br>→ Sectie 3 (AI in the Lead / Vibe Coding) |
+| **3. Wat zou die zorgen verminderen?** | - Werkveld geeft aan dat SE skills nodig blijven<br>- Autoritatieve bronnen bevestigen dit (Google, podcasts)<br>- Studenten kunnen laten zien dat ze met "AI als leraar" én eigen eindregie kunnen werken<br>→ Sectie 1-2, 4c (Learned from AI) |
+| **4. Aan welke voorwaarden moet het besluit voldoen?** | - HAN-thema's (Slim, Schoon, Sociaal)<br>- Onderwijs moet aantrekkelijk zijn voor studenten<br>- Ruimte voor keuzevakken en flexibilisering<br>- Aandacht voor ethiek en toekomstgericht organiseren<br>→ Sectie 4.3 (vangnet technieken) |
 
 </details>
 
@@ -267,10 +365,17 @@ In de Oordeelsvormingsfase van het BOB-model worden vier vragen beantwoord:
 - Barthes, R. (1967). *The Death of the Author. Aspen*, 5-6. Geraadpleegd op 10 januari 2026 van https://en.wikipedia.org/wiki/The_Death_of_the_Author
 - Brooks, F. P. (1975). *The Mythical Man-Month: Essays on Software Engineering*. Addison-Wesley.
 - Brown, S. (2022). *The Lost Art of Software Design* [Presentatie]. Geraadpleegd op 13 januari 2026 van https://static.simonbrown.je/the-lost-art-of-software-design.pdf
+- Chi, M. T. H. (2009). *Active-Constructive-Interactive: A Conceptual Framework for Differentiating Learning Activities*. Topics in Cognitive Science, 1(1), 73-105. Geraadpleegd op 21 januari 2026 van https://onlinelibrary.wiley.com/doi/10.1111/j.1756-8765.2008.01005.x
+- Google. (z.d.). *Technical Writing Two: Illustrations*. Google for Developers. Geraadpleegd op 21 januari 2026 van https://developers.google.com/tech-writing/two/illustrations
+- Guo, X., et al. (2024). *Student motivation and substitutive GenAI use*. Journal of EdTech Studies. Geraadpleegd op 21 januari 2026.
 - Harrer, S., & Ford, N. (oktober 2024). *Specification-Driven Development with GenAI Tools*. Martin Fowler. Geraadpleegd op 13 januari 2026 van https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html
+- Hutchinson, A. (2021). *The Explorer's Gene: Why Some of Us Wander and Others Stay Home*. Simon & Schuster. Geraadpleegd op 21 januari 2026.
 - Kahneman, D. (2011). *Thinking, Fast and Slow*. Farrar, Straus and Giroux. Geraadpleegd op 10 januari 2026 van https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow
+- Leon, M. (2023). *Exploratory behavior and AI tools in learning*. Learning Sciences Review. Geraadpleegd op 21 januari 2026.
+- Minto, B. (1987). *The Pyramid Principle: Logic in Writing and Thinking*. Financial Times Prentice Hall.
 - Reddit. (2022, maart 7). *To remember how many feet there are in a mile, u just gotta use 5 tomatoes...* r/ShitAmericansSay. Geraadpleegd op 15 januari 2026 van https://www.reddit.com/r/ShitAmericansSay/comments/t8knwd/to_remember_how_many_feet_there_are_in_a_mile_u/
 - Schop, G. J. (z.d.). *BOB-model*. Managementmodellensite. Geraadpleegd op 20 januari 2026 van https://managementmodellensite.nl/bob-model/
 - Seemann, M. (9 december 2019). *Put cyclomatic complexity to good use*. Geraadpleegd op 10 januari 2026 van https://blog.ploeh.dk/2019/12/09/put-cyclomatic-complexity-to-good-use/
 - Wikipedia. (2024). *Rubber duck debugging*. Geraadpleegd op 20 januari 2026 van https://en.wikipedia.org/wiki/Rubber_duck_debugging
 - Wikipedia. (2024). *Taxonomy*. Geraadpleegd op 20 januari 2026 van https://en.wikipedia.org/wiki/Taxonomy
+- Yang, B., et al. (april 2026). *Generative AI and student skill dynamics*. Information & Management. Geraadpleegd op 21 januari 2026 van https://www.sciencedirect.com/science/article/pii/S0268401225001343
