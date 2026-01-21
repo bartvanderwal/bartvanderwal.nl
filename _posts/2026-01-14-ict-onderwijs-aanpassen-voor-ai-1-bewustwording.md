@@ -7,45 +7,31 @@ date: 2026-01-14
 lang: nl
 tags: [ai, llm, onderwijs, interactie, bewustwording]
 img: posts/ai-interaction-modes.png
+revisions:
+  - date: 2026-01-21
+    type: Gewijzigd
+    note: "Plaatjes verplaatst naar blog 1 (Tiulkanov-flowchart als sectie 9) voor evenwichtige verdeling over drieluik en betere afstemming met BOB-model (Bewustwording-Oordeelsvorming-Besluitvorming)"
 ---
 
 In dit geplande drieluik verken ik hoe ICT-onderwijs moet veranderen met de komst van AI. Dit eerste deel gaat over **bewustwording**: begrijpen hoe AI-tools zijn geëvolueerd en wat dat betekent voor hoe we ermee interacteren.
 
-## Nuance en voorbehoud
+**Opmerking over bias:** Ik ben software engineer en docent. Dit betekent dat ik een bias zal hebben voor de insteek "software engineers zijn essentieel" ook in het AI tijdperk. Als er geen nieuwe studenten komen, moet ik ook een nieuwe baan gaan zoeken. En zoals Upton Sinclair lang geleden schreef: *"It's hard to explain something to someone when their salary depends on them not understanding."* Fair warning.
 
-Voordat we beginnen: ik ben software engineer en docent. Dit betekent dat ik een bias zal hebben voor de insteek "software engineers zijn essentieel" ook in het AI tijdperk. Als er geen nieuwe studenten komen, moet ik ook een nieuwe baan gaan zoeken. En zoals Upton Sinclair lang geleden schreef: *"It's hard to explain something to someone when their salary depends on them not understanding."* Fair warning.
+Tegelijk: Eind december 2025 bleek dat zelfs Salesforce hun verwachtingen over generative AI moest bijstellen. Volgens een analyse van The Information (Efrati, 2025):
 
-Tegelijk: Eind december 2024 gaf zelfs Salesforce toe dat hun verwachting over generative AI — te agressief het inzetten van AI en massaal developers ontslaan — niet uitkwam. Marc Benioff, CEO, erkende dat ze [4000 software engineers te snel hebben ontslagen](https://www.cnbc.com/2024/12/13/salesforce-ceo-marc-benioff-mistakes-ai-projections.html) omdat hun prognoses over wat AI zou kunnen doen te optimistisch waren. Dit suggereert dat software engineers nog steeds nodig zijn — en dat AI-vaardigheden leren geen luxe is, maar cruciaal.
+> "Salesforce in recent months appears to have pulled back on how much its Agentforce-powered customer service agent uses LLMs."
 
-**Drieluik structuur (BOB-model):**
+Marc Benioff, CEO, erkende dat ze 4000 software engineers te snel hebben ontslagen omdat hun prognoses over wat AI zou kunnen doen te optimistisch waren. Dit suggereert dat software engineers nog steeds nodig zijn — en dat AI-vaardigheden leren geen luxe is, maar cruciaal.
 
-- **Blog 1/3 (Bewustwording)**: Opkomst AI en de evolutie van AI-interactiemodi - deze blog
+**Drieluik structuur:** Dit artikel volgt het BOB-model (Bewustwording, Oordeelsvorming, Besluitvorming) — een model voor grote verandertrajecten (Schop, z.d.).
+
+- **Blog 1/3 (Bewustwording)**: Opkomst AI en de evolutie van AI-interactiemodi (dit artikel)
 - **Blog 2/3 (Oordeelsvorming)**: Taxonomie van AI-gebruik: wie heeft de regie?
-- **Blog 3/3 (Besluitvorming)**: AI als leermiddel, niet als slaafje
+- **Blog 3/3 (Besluitvorming)**: AI als leermiddel, niet als butler
 
-## Context: Waarom dit drieluik?
+In plaats van direct een beslissing te nemen, nemen we de tijd om eerst te begrijpen, dan te oordelen, en pas daarna te besluiten. Dit is precies wat ik studenten ook wil leren: niet meteen naar AI grijpen, maar eerst stilstaan bij wat je doet en waarom.
 
 Deze serie bouwt voort op mijn eerdere blog ["AI Coding Sucks"](/ai-coding-sucks/). Daar beschreef ik de problemen die de introductie van LLM's heeft veroorzaakt voor developers/software engineers (SE's), met name juniors en studenten SE. Nu zoom ik in op de oplossing: hoe passen we ICT-onderwijs aan zodat studenten AI effectief én verantwoord leren gebruiken?
-
-Het BOB-model (Bewustwording, Oordeelsvorming, Besluitvorming) helpt bij grote verandertrajecten (Schop, z.d.). In plaats van direct een beslissing te nemen, nemen we de tijd om eerst te begrijpen, dan te oordelen, en pas daarna te besluiten. Dit is precies wat ik studenten ook wil leren: niet meteen naar AI grijpen, maar eerst stilstaan bij wat je doet en waarom.
-
-<details>
-<summary><strong>BOB-vragen voor Beeldvorming (deze blog)</strong></summary>
-
-![BOB-model: van probleem naar besluit via Beeldvorming, Oordeelsvorming en Besluitvorming](/assets/img/posts/bob-model-funnel.png)
-*Figuur: Het BOB-model als trechter - van probleem of uitdaging naar besluit of oplossing (Schop, z.d.)*
-
-| Vraag | Beantwoording in deze blog |
-|-------|---------------------------|
-| **1. Wat weten we?** | AI (LLM's, sinds ChatGPT nov 2022) zorgt voor onrust in onderwijs en maatschappij. Er is twijfel bij studenten en ouders, en noodzaak voor docenten om AI te begrijpen. → Sectie 1 |
-| **2. Klopt alles wat we weten?** | SE skills blijven nodig, maar de aard verandert: meer "engineering", minder "coding". AI kan bepaalde taken, maar studenten moeten de basis ook leren. → Sectie 2 |
-| **3. Wat weten we niet?** | We weten niet wat de toekomst brengt, of AGI komt, en hoe goed of slecht AI is voor development/engineering. → Sectie 3.3 (AI safety risico's) |
-| **4. Hebben we die info nodig voor een besluit?** | Ja, maar we kunnen niet wachten op zekerheid. We moeten nu handelen met wat we weten. → Sectie 8 |
-| **5. Hoe verzamelen we ontbrekende info?** | Door interactiemodi te begrijpen (deze blog), gebruikstypes te onderscheiden (blog 2/3), en teaching practices te evalueren (sectie 7). |
-
-</details>
-
-Sectie 1 schetst de snelle opkomst van AI. Sectie 2 legt uit waarom de evolutie van interactiemodi cruciaal is. Sectie 3 beschrijft de drie primaire interactiemodi. Sectie 7 introduceert teaching practices uit Utrechts onderzoek. Sectie 8 plaatst dit in onderwijscontext.
 
 ## 1. De snelle komst van AI in onderwijs
 
@@ -182,7 +168,7 @@ De interactiemodi (deze blog) gaan over *interface en workflow*. Maar er zijn co
 
 Het verschil: interactiemodi beschrijven de technische interface, gebruikstypes beschrijven de *intentie* en *werkwijze*. Maar hoe meer context en schrijfrechten de AI heeft, en hoe minder bewuste inspanning de mens levert, hoe groter het risico om onbewust in "AI in the Lead" te belanden.
 
-## 7. Teaching practices voor GenAI (vooruitblik)
+## 6. Teaching practices voor GenAI (vooruitblik)
 
 Onderzoekers van de Universiteit Utrecht hebben een systematische review gedaan naar hoe GenAI in computing-onderwijs wordt ingezet (Köppe et al., 2025). Zij onderscheiden vier categorieën van *teaching practices*:
 
@@ -193,7 +179,7 @@ Onderzoekers van de Universiteit Utrecht hebben een systematische review gedaan 
 
 Dit sluit aan bij de interactiemodi uit deze blog, maar voegt een didactische laag toe: *wat leren studenten* bij elke vorm van AI-gebruik? In blog 3/3 kom ik hierop terug met concrete richtlijnen voor wanneer welke practice geschikt is voor verschillende niveaus studenten.
 
-## 8. Implicaties voor onderwijs
+## 7. Implicaties voor onderwijs
 
 Voor studenten is deze evolutie zowel kans als risico:
 
@@ -211,7 +197,7 @@ In blog 3/3 ga ik dieper in op wanneer het veilig is voor studenten om welke mod
 
 *Praktisch voorbeeld*: In mijn blog [„Testing the AI"](/testing-the-llm/) beschrijf ik op n=1 manier een fascinerend verschijnsel: ik leek iets van "Theory of Mind" bij AI waar te nemen — op humoristische wijze, maar toch interessant. Het illustreert hoe Agentic AI kan "redeneren" over wat jij wilt op basis van context, wat zowel handig als onverwacht kan zijn.
 
-## 9. Tot slot: Naar oordeelsvorming
+## 8. Tot slot: Naar oordeelsvorming
 
 Nu we begrijpen hoe AI-interactiemodi zijn geëvolueerd en wat de trade-offs zijn, kunnen we in blog 2/3 een taxonomie opbouwen van verschillende **gebruikstypes**: wie heeft de regie, en waarom maakt dat uit?
 
@@ -219,12 +205,53 @@ Bewustwording is de eerste stap. De volgende stap is oordeelsvorming: leren onde
 
 **Volgt binnenkort:** ICT-onderwijs aanpassen voor AI (2/3): Oordeelsvorming
 
+<details>
+
+   <summary markdown="span">Samenvatting als antwoorden op BOB-vragen 'Bewustwording'
+   </summary>
+
+![BOB-model: van probleem naar besluit via Beeldvorming, Oordeelsvorming en Besluitvorming](/assets/img/posts/bob-model-funnel.png)
+
+*Figuur 1:* BOB-model als trechter (Schop, z.d.).*
+
+| Vraag | Beantwoording in deze blog |
+| ----- | -------------------------- |
+| **1. Wat weten we?** | - AI (LLM's, sinds ChatGPT nov 2022) zorgt voor onrust in onderwijs en maatschappij<br>- Er is twijfel bij studenten en ouders<br>- Noodzaak voor docenten om AI te begrijpen<br>→ Sectie 1 |
+| **2. Klopt alles wat we weten?** | - SE skills blijven nodig, maar de aard verandert: meer "engineering", minder "coding"<br>- AI kan bepaalde taken, maar studenten moeten de basis ook leren<br>→ Sectie 2 |
+| **3. Wat weten we niet?** | - We weten niet wat de langere termijn toekomst brengt<br>- Of AGI komt<br>- Hoe goed of slecht AI is voor development/engineering<br>→ Sectie 5.3 (AI safety risico's) |
+| **4. Hebben we die info nodig voor een besluit?** | - Nee, met AGI is er potentieel sowieso een heel andere wereld (irrelevant scenario)<br>- Huidige tendens: AI is wat overhyped n.a.v. ChatGPT/LLM's (maar toch krachtig)<br>- We moeten nu handelen met wat we weten<br>→ Sectie 8 |
+| **5. Hoe verzamelen we ontbrekende info?** | - Door interactiemodi te begrijpen (deze blog)<br>- Gebruikstypes te onderscheiden (blog 2/3)<br>- Teaching practices te evalueren (sectie 6) |
+
+</details>
+
+## 9. De expertise-verificatieprobleem: Tiulkanov's flowchart
+
+In sectie 3.3 zagen we dat agentic AI zonder expliciete goedkeuring per actie gevaarlijk kan zijn. Maar dit probleem begint al veel eerder: wanneer een student überhaupt mag beslissen om AI te gebruiken.
+
+De kern is dit: **hoe weet je of AI-output correct is?** Dit vereist expertise om te verifiëren. En daar zit het probleem voor studenten — zij missen deze expertise nog.
+
+Ervaren ontwikkelaars zien in één oogopslag of gegenereerde code klopt. Zij hebben hun "bullshit detector" aangescherpt door jaren van fouten maken, debuggen, en code reviews. Een junior accepteert misschien een verouderd pattern; een senior herkent het direct als tech debt.
+
+Studenten missen deze detector volledig. Het AI-model antwoordt met vertrouwen — maar dat betekent niet dat het klopt.
+
+![Is it safe to use ChatGPT for your task?](/assets/img/prompt-engineering/chat-gpt-comic-2.JPG)
+*Figuur 2:* Flowchart: Wanneer is het veilig om ChatGPT te gebruiken? (Tiulkanov, 2023)*
+
+Aleksandr Tiulkanov maakte in 2023 al deze flowchart, die op social veelal als humor/meme werd gedeeld. Maar eigenlijk laat dit heel effectief het kernprobleem zien. De beslissende vraag: **"Do you have expertise to verify that the output is accurate?"** Voor studenten is het antwoord meestal "NO" — wat leidt naar "Unsafe to use ChatGPT".
+
+Dit illustreert waarom bewustwording essentieel is. Je moet niet alleen begrijpen hoe interactiemodi werken (sectie 3), maar ook realistisch inschatten: *heb ik genoeg expertise om dit zelf te beoordelen?* 
+
+UNESCO erkent dat AI-geletterdheid steeds belangrijker wordt als competentie voor de toekomst (UNESCO IESALC, 2023). Maar hun competency frameworks richten zich breed op alle vakgebieden. Voor ICT/software engineering hebben we specifieker onderzoek nodig. Kent Beck vat de uitdaging samen: *"90% of my skills are now worth 10%, but 10% of my skills are now worth 10 times as much."* De hamvraag voor educatie: **welke 10% moeten we aanleren aan studenten zodat zij AI veilig én productief kunnen gebruiken?**
+
 ## Bronnen
 
 - Anthropic. (2025). *Claude Code Sandboxing*. Geraadpleegd op 20 januari 2026 van https://docs.anthropic.com/en/docs/claude-code/sandboxing
 - CJ. (21 oktober 2025). *AI Coding Sucks* [Video]. Coding Garden. Geraadpleegd op 23 december 2024 van https://www.youtube.com/watch?v=sEcdX0_r-5Y
+- Efrati, A. (december 2025). *Salesforce Pulls Back on Agentforce LLM Usage*. The Information. Geraadpleegd op 21 januari 2026 van https://archive.is/oi302
 - Köppe, C., Keuning, H., Lykourentzou, I., Alpizar Chacon, I., & Sosnovsky, S. (2025). *Practices for the Application of Generative AI in Programming Education*. Universiteit Utrecht. Geraadpleegd op 15 januari 2026 van https://www.uu.nl/en/research/generative-ai-for-computing-education/materials-for-teachers/teaching-practices
 - Mazeika, D., Bolukbasi, T., Steinhardt, J., & Andersson, D. (20 januari 2024). *Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training*. arXiv. Geraadpleegd op 15 januari 2026 van https://arxiv.org/abs/2401.05566
 - Pan, X., et al. (8 december 2024). *Self-Replication in Frontier AI Systems*. GitHub. Geraadpleegd op 15 januari 2026 van https://github.com/WhitzardIndex/self-replication-research
 - Schop, G. J. (z.d.). *BOB-model*. Managementmodellensite. Geraadpleegd op 20 januari 2026 van https://managementmodellensite.nl/bob-model/
+- Tiulkanov, A. (19 januari 2023). *Is it safe to use ChatGPT for your task?* [Flowchart]. Geraadpleegd op 21 januari 2026 van https://tiulkanov.info
 - Treude, C., & Gerosa, M. A. (15 januari 2025). *How Developers Interact with AI: A Taxonomy of Human-AI Collaboration in Software Engineering*. arXiv. Geraadpleegd op 13 januari 2026 van https://arxiv.org/html/2501.08774v1
+- UNESCO IESALC. (2023). *Guidelines for UNESCO's work on Artificial Intelligence in Education*. Geraadpleegd op 21 januari 2026 van https://www.unesco.org/en/articles/ai-guidelines-education
