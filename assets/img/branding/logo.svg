@@ -1,8 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 50">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 30">
   <style>
     .logo-name { font-family: 'Georgia', serif; font-size: 22px; fill: currentColor; font-weight: bold; }
-    .logo-tagline { font-family: 'Arial', sans-serif; font-size: 11px; fill: currentColor; opacity: 0.7; letter-spacing: 1px; }
   </style>
   <text x="210" y="22" class="logo-name" text-anchor="middle">Bart van der Wal</text>
-  <text x="210" y="40" class="logo-tagline" text-anchor="middle">FULL STACK ENGINEERING | DDD | SWIMRUN | MAMIL</text>
 </svg>

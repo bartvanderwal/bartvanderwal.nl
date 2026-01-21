@@ -593,6 +593,23 @@ svg {
   font-weight: var(--font2-light);
   color: var(--accent-dark);
 }
+.main-header .logo-tagline {
+  font-family: var(--font2);
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--grey2);
+  margin-top: 2px;
+}
+.main-header .logo-tagline a {
+  color: var(--grey1);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.main-header .logo-tagline a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
 .main-header .site-version {
   font-size: 10px;
   color: var(--grey2);
@@ -649,8 +666,20 @@ svg {
   margin-left: auto;
 }
 .menu-icon-container {
-  width: 25%;
+  width: auto;
   text-align: left;
+}
+.home-icon {
+  display: inline-block;
+  font-size: 22px;
+  color: var(--main);
+  padding: 10px;
+  margin-left: 5px;
+  transition: all .4s;
+}
+.home-icon:hover {
+  opacity: .8;
+  color: var(--accent);
 }
 .search-icon-container {
   width: 25%;
@@ -2404,5 +2433,36 @@ blockquote strong {
 html[data-theme="dark"] blockquote {
   background: linear-gradient(90deg, rgba(209, 76, 71, 0.12) 0%, transparent 100%);
   border-left-color: var(--accent);
+}
+
+/* Collapsible details styling and summary paragraph normalization */
+details {
+  background-color: var(--grey5);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+}
+
+summary > p {
+  display: inline;
+  margin: 0;
+}
+
+/* Table styling: visible borders and top alignment */
+details table,
+details th,
+details td {
+  border: 1px solid var(--grey3);
+}
+
+details th,
+details td {
+  vertical-align: top;
+  padding: 0.75rem;
+}
+
+details th {
+  background-color: var(--grey4);
+  font-weight: bold;
 }
 
