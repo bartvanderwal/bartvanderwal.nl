@@ -565,6 +565,7 @@ svg {
   background-color: var(--background);
   -webkit-box-shadow: 0px -5px 15px var(--shadow);
           box-shadow: 0px -5px 15px var(--shadow);
+  border-bottom: 1px solid var(--grey4);
 }
 .main-header .header-flex {
   display: -webkit-box;
@@ -1703,9 +1704,10 @@ img + small, img + br + small {
   margin-bottom: 1em;
 }
 .header-page h1 {
+  font-family: var(--font2);
   font-weight: var(--font2-regular);
   font-size: 2.25rem;
-  text-align: left;
+  text-align: center;
   margin: 0 0 10px;
   color: var(--text);
   line-height: 1.2;
