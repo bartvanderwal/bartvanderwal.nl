@@ -152,8 +152,10 @@ De twee dimensies (input scope, output scope) bepalen samen waar een tool op het
 | Type | Input Scope | Output Scope | Typische Tools |
 | --- | --- | --- | --- |
 | **Conversational** | Wat je kopieert | Geen (output only) | ChatGPT, Claude via Web |
-| **Inline** | Huidig bestand + nabij | Inline (waar cursor) | GitHub Copilot, VS Code Copilot |
-| **Agentic** | Hele repo + context | Volledige project | Claude Code, IDE agents |
+| **Inline** | Huidig bestand + nabij | Context rondom cursor gebruiker | GitHub Copilot, VS Code Copilot |
+| **Agentic** | Hele repo + context | Volledige project | Claude Code, Cursor, IDE agents |
+
+**Opmerking over naamgeving:** In de Inline rij staat "cursor gebruiker" — dit verwijst naar de *tekstcursor* (waar je typt), niet naar de AI-tool Cursor. Die tool staat in de Agentic rij, omdat Cursor een volledige IDE met agentic capabilities is. Deze name clash is verwarrend, maar helaas realiteit. Ook GitHub Copilot heeft sinds 2025 agentic features (Copilot Workspace), dus de grenzen vervagen.
 
 Deze categorisering helpt studenten begrijpen dat "AI gebruiken" niet één ding is — de interactiemodus bepaalt de workflow, de nodige context, en hoe veel autonomie je de AI geeft.
 
