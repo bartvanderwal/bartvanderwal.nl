@@ -588,16 +588,43 @@ svg {
 }
 .main-header .logo a {
   text-decoration: none;
-  text-transform: uppercase;
+  
   font-size: 27px;
   font-weight: var(--font2-light);
   color: var(--accent-dark);
 }
+.main-header .logo-name {
+  margin-top: 8px;
+  text-align: center;
+  font-family: var(--font1);
+  color: var(--accent-dark);
+}
+.main-header .logo-name-main {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.main-header .logo-name-sub {
+  display: block;
+  font-size: 12px;
+  color: var(--grey2);
+  margin-top: 2px;
+}
+.main-header .logo-credo {
+  font-family: var(--font1);
+  font-size: 16px;
+  font-style: italic;
+  color: var(--grey1);
+  margin-top: 8px;
+  margin-bottom: 12px;
+  text-align: center;
+}
 .main-header .logo-tagline {
   font-family: var(--font2);
-  font-size: 11px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  
   color: var(--grey2);
   margin-top: 2px;
 }
@@ -617,6 +644,21 @@ svg {
   bottom: 8px;
   right: 50px;
   font-family: var(--font2);
+}
+.main-header .github-fork-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  color: var(--grey1);
+  transition: color 0.3s, transform 0.2s;
+  border-radius: 4px;
+  padding: 4px;
+}
+.main-header .github-fork-link:hover {
+  color: var(--accent);
+  transform: scale(1.1);
 }
 .main-nav {
   position: fixed;
@@ -642,7 +684,7 @@ svg {
   display: block;
   padding: 15px 0;
   text-decoration: none;
-  text-transform: uppercase;
+  
   font-weight: var(--font2-regular);
   font-size: 18px;
   color: var(--main);
@@ -657,7 +699,7 @@ svg {
   padding: 15px 0;
 }
 .main-nav ul li.toggle-menu-item .left {
-  text-transform: uppercase;
+  
   font-weight: var(--font2-regular);
   font-size: 18px;
   color: var(--main);
@@ -933,7 +975,7 @@ svg.menu-icon-house {
 
 .tag {
   text-decoration: none;
-  text-transform: uppercase;
+  
   color: white;
   white-space: nowrap
 }
@@ -950,7 +992,7 @@ svg.menu-icon-house {
   text-decoration: none;
   font-family: var(--font2), sans-serif;
   font-weight: var(--font2-bold);
-  text-transform: uppercase;
+  
   color: white;
 }
 .post-card-link:hover {
@@ -997,7 +1039,7 @@ svg.menu-icon-house {
   margin-left: 8px;
   vertical-align: middle;
   font-family: var(--font2), sans-serif;
-  text-transform: uppercase;
+  
   letter-spacing: 0.5px;
 }
 
@@ -1037,7 +1079,7 @@ svg.menu-icon-house {
   font-size: 0.65rem;
   padding: 2px 6px;
   border-radius: 3px;
-  text-transform: uppercase;
+  
   letter-spacing: 0.5px;
 }
 .version-table {
@@ -1079,7 +1121,7 @@ svg.menu-icon-house {
 .pagination .previous, .pagination .next {
   font-family: var(--font2);
   text-decoration: none;
-  text-transform: uppercase;
+  
   font-size: 16px;
   color: var(--grey1);
 }
@@ -1584,7 +1626,7 @@ tweet a {
   padding: 3px 5px 3px 3px;
   position: relative;
   text-decoration: none;
-  text-transform: uppercase;
+  
 }
 
 .tweetIcon i {
@@ -1668,7 +1710,7 @@ img + small, img + br + small {
 .header-page .page-date {
   text-align: center;
   font-size: 14px;
-  text-transform: uppercase;
+  
   font-weight: var(--font1-light);
 }
 
@@ -1764,7 +1806,7 @@ img + small, img + br + small {
 
 .page-footer .page-tag,
 .page-footer .page-share {
-  text-transform: uppercase;
+  
   font-size: 12px;
   color: var(--accent-dark);
 }
@@ -1842,7 +1884,7 @@ img + small, img + br + small {
   font-family: var(--font2), sans-serif;
   font-weight: var(--font2-bold);
   text-decoration: none;
-  text-transform: uppercase;
+  
   color: white;
   background-color: #00000099;
   padding-left: 5px;
@@ -2464,5 +2506,30 @@ details td {
 details th {
   background-color: var(--grey4);
   font-weight: bold;
+}
+
+/* = = = = = = = = = = Sources/References Section = = = = = = = = = = */
+/* Style content following the "Bronnen" / "Sources" h2 headings. These sections
+   are typically the last block in a post, so we can safely target all following
+   siblings. */
+h2#bronnen,
+h2#sources {
+  scroll-margin-top: 80px; /* nicer anchor scroll offset */
+
+  & ~ p,
+  & ~ ul,
+  & ~ ol,
+  & ~ blockquote,
+  & ~ table {
+    font-size: 0.9em;
+    background: var(--grey5);
+    border-left: 4px solid var(--grey4);
+    padding-left: 0.75em;
+  }
+
+  & ~ ul li,
+  & ~ ol li {
+    margin-bottom: 0.25em;
+  }
 }
 
