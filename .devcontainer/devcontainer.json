@@ -1,0 +1,38 @@
+{
+  "name": "bartvanderwal.nl",
+  "image": "mcr.microsoft.com/devcontainers/ruby:3.3",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "lts"
+    },
+    "ghcr.io/devcontainers/features/git:1": {}
+  },
+  "postCreateCommand": "bundle install && npm install && npx playwright install --with-deps",
+  "forwardPorts": [4000],
+  "portsAttributes": {
+    "4000": {
+      "label": "Jekyll"
+    }
+  },
+  "remoteEnv": {
+    "JEKYLL_ENV": "development"
+  },
+  "runArgs": ["--init"],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "Shopify.ruby-lsp",
+        "rebornix.Ruby",
+        "ms-playwright.playwright",
+        "GitHub.copilot",
+        "GitHub.vscode-pull-request-github"
+      ],
+      "settings": {
+        "files.watcherExclude": {
+          "**/_site/**": true,
+          "**/.jekyll-cache/**": true
+        }
+      }
+    }
+  }
+}

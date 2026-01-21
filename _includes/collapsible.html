@@ -1,0 +1,15 @@
+{% comment %}
+  Collapsible section include for markdown content
+  Usage: {% include collapsible.html title="Section title" content=my_content %}
+  Or capture content first:
+  {% capture bob_content %}
+  Your markdown here...
+  {% endcapture %}
+  {% include collapsible.html title="BOB-vragen" content=bob_content %}
+{% endcomment %}
+<details class="collapsible" markdown="1">
+<summary markdown="1">{{ include.title }}</summary>
+<div class="collapsible-content" markdown="1">
+{{ include.content | markdownify }}
+</div>
+</details>
