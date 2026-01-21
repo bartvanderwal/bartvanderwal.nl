@@ -1,5 +1,9 @@
 {
   "permissions": {
-    "allow": []
+    "allow": [],
+    "sandbox": true
+  },
+  "sandbox": {
+    "allowUnsandboxedCommands": false
   }
 }
