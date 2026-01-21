@@ -14,6 +14,9 @@ revisions:
   - date: 2026-01-14
     type: Herstructurering
     note: "Meer tussenkopjes en leeswijzer toegevoegd"
+  - date: 2026-01-21
+    type: Uitgebreid
+    note: "Credo-uitlegparagraaf 'Wie schrijft, die blijft!' (sectie 3) uitgewerkt; filosofie en SOFA-connectie verduidelijkt"
 ---
 
 Soms leiden de kleinste dingen tot onverwachte uitkomsten. Mijn blog website bestaat omdat ik even snel een boek wilde opzoeken.
@@ -32,19 +35,37 @@ Maar in plaats van alleen documenten te verzamelen, dacht ik: waarom publiceer i
 
 Dus hier zijn we. Een blog die begon vanwege een boek over ethiek en wat oude Quora antwoorden die lagen te verstoffen. Het boek inspireerde me later ook tot een [opzet voor een keuzevak Ethics for Software Engineers](/ethics-for-software-engineers/). Soms werkt het zo.
 
-## 3. De PDF-knop
+## 3. Waarom dit blog? Nou: "Wie schrijft, die blijft!"
+
+Dit is het credo van deze blog. Een stelling, niet bewezen, maar gemeend.
+
+**De stelling:** De beste manier om iets echt te gaan *snappen*, is het aan anderen uit te leggen. Of het opschrijven. Beide werken.
+
+Iets wat in je hoofd helemaal lijkt te kloppen, verdampt opeens als je het probeert te formuleren. De woorden willen maar niet komen. En dan realiseer je je: je snapt het eigenlijk niet zo goed als je dacht. Papier is geduldig. Een scherm ook, in tegenstelling tot de luisteraar op kantoor die voorzichtig wegloopt omdat je niks uit je woorden krijgt.
+
+Goed schrijven betekent herschrijven. Je eerste draft is altijd rommelig. Dat is normaal. Vandaar ook de SOFA mode op deze website — het idee dat publiceren een proces is, niet een eindresultaat. Maar als je dat schrijfproces doorloopt, wordt je kennis uiteindelijk sterker. En daardoor word *jij* ook sterker. Je wordt sterker.
+
+**En dan het tweede deel van het credo:** De woorden blijven er, zelfs als jij ze zelf al weer beetje vergeten bent. Je diept ze dan makkelijker op uit je lange termijn geheugen. Want lezen is veel efficiënter dan alles opnieuw bedenken. En voor een deel is wat je geschreven hebt ook je *geëxternaliseerde lange termijn geheugen* — je uitgebreide hersenen buiten je schedel.
+
+Dit heet soms *thinkism* — het idee dat je alles in een keer uit kunt denken. Dat werkt niet. Maar als je het opschrijft staat het. En kan iemand anders er ook kritische vragen bij stellen. En kunnen jullie — samen — verder komen. Dat is veel krachtiger dan alleen nadenken.
+
+**Tot slot:** Schrijven blijft er zelfs nadat jij er zelf niet meer bent. Dat is vervreemdend. Ja, wie betaalt de domeinnaam? En hosting? Nou goed, er is altijd nog de [Wayback Machine](https://web.archive.org/). En een versiebeheer repository ('repo') met broncode en teksten op GitHub. Hopelijk blijft die nog wat langer staan. En jij — als lezer — kun de code zelf forken. En je eigen weblog maken op basis hiervan als je dat wilt. En niet bang bent je een beetje in code te verdiepen. Open source betekent ook dat.
+
+*"If it was easy, everyone would do it!"* Schrijven is niet makkelijk. Goed schrijven nog minder. Maar daarom: "Wie schrijft, die blijft!"
+
+## 4. De PDF-knop
 
 Elke blogpost heeft een "Download PDF" knop. Handig voor offline lezen of archiveren.
 
 De PDF wordt client-side gegenereerd met [html2pdf.js](https://github.com/eKoopmans/html2pdf.js) - een JavaScript library die html2canvas en jsPDF combineert om HTML naar PDF te converteren, direct in de browser zonder server-side processing.
 
-## 4. SOFA Mode: Start Often, Fail Always
+## 5. SOFA Mode: Start Often, Fail Always
 
 Een collega deelde onlangs een link naar [SOFA](https://tilde.town/~dozens/sofa/) 🛋️: "Start Often, Finish rArely." De anonieme auteur, die alleen de naam "dozens" gebruikt, beschrijft het idee zo (Dozens, z.d.): vier het starten van projecten, zonder de druk om alles af te maken.
 
 Ik stel een alternatieve interpretatie voor: **Start Often, Fail Always**. Niet als cynisme, maar als DevOps-wijsheid: strikt genomen is een product is nooit "af". Als je af beschouwt als helemaal perfect; hoeven niks meer aan te doen. Het [Agile principe van "Embrace change"](https://agilemanifesto.org/principles.html) erkent dat requirements veranderen, inzichten groeien, en verbetering continu is.
 
-### 4.1 Perfectie is een illusie
+### 5.1 Perfectie is een illusie
 
 ![Agile Manifesto screenshot: "Responding to change over following a plan"](/assets/images/posts/agile-manifesto-embrace-change.png)
 *Agile manifesto: Value responding to change over following a plan, dus 'Embrace change'*
@@ -53,17 +74,17 @@ Een extreem voorbeeld: zelfs Newton had het niet helemaal correct. Neil deGrasse
 
 Dit is de kern: perfectie is een illusie. Wat telt is waardevol genoeg om te gebruiken, stabiel genoeg om op te bouwen, en flexibel genoeg om te verbeteren.
 
-## 5. SOFA Mode op deze blog
+## 6. SOFA Mode op deze blog
 
 Dit principe pas ik toe op deze blog. Via de SOFA-toggle in het menu kun je wisselen tussen gepubliceerde posts en "draft" posts - ideeën die nog in ontwikkeling zijn.
 
-### 5.1 Waarom drafts publiek maken?
+### 6.1 Waarom drafts publiek maken?
 
 - **Goed schrijven is herschrijven.** Een tekst is nooit af bij de eerste versie. Door drafts te delen, maak ik het schrijfproces transparant.
 - **Feedback vroeg ophalen.** Net als bij software development: "release early, release often."
 - **Verantwoording afleggen.** Elke post heeft een versiegeschiedenis met meerdere datums en wijzigingsnotities, vergelijkbaar met correcties op nieuwssites.
 
-### 5.2 De drie datums
+### 6.2 De drie datums
 
 | Datum | Betekenis |
 |-------|-----------|
@@ -71,17 +92,17 @@ Dit principe pas ik toe op deze blog. Via de SOFA-toggle in het menu kun je wiss
 | Laatst gewijzigd | De meest recente inhoudelijke aanpassing |
 | Gepubliceerd | Wanneer de post "af genoeg" was om te delen |
 
-### 5.3 Niet indexeerbaar door zoekmachines
+### 6.3 Niet indexeerbaar door zoekmachines
 
 Drafts kunnen veranderen. De versietabel bovenaan geeft transparantie over de status. In "normale modus" zie je alleen gepubliceerde posts, gesorteerd op publicatiedatum. In SOFA-modus zie je drafts, gesorteerd op startdatum - de nieuwste ideeën eerst.
 
 De drafts zijn bewust *niet* indexeerbaar door zoekmachines. Je moet ze actief opzoeken via de toggle. Zo houd ik de "officiële" blog schoon, maar deel ik wel mijn denkproces met nieuwsgierige lezers.
 
-## 6. Open source
+## 7. Open source
 
 Deze blog is volledig open source. De code staat op [GitHub](https://github.com/bartvanderwal/bartvanderwal.nl) en is gebouwd met Jekyll en het Adam Blog 2.0 theme. Voor technische details over de setup, customizations, en deployment, zie de README.md in de repository.
 
-## 7. Het experiment: CLAUDE.md als "systeem prompt"
+## 8. Het experiment: CLAUDE.md als "systeem prompt"
 
 Wie met mij aan deze blog werkt, ontdekt in de repository een bestand [CLAUDE.md](https://github.com/bartvanderwal/bartvanderwal.nl/blob/main/CLAUDE.md). Dit is niet documentatie, maar een instructieset voor AI-assistenten die in dit project werken.
 
