@@ -19,9 +19,11 @@ In dit  drieluik verken ik hoe ICT-onderwijs moet veranderen met de komst van AI
 
 **Drieluik structuur (BOB-model):**
 
-- **[Blog 1/3 (Bewustwording)](/ict-onderwijs-aanpassen-voor-ai-1-bewustwording/)**: De komst van AI en evolutie van interactiemodi
+- **[Blog 1/3 (Bewustwording)](/ict-onderwijs-aanpassen-voor-ai-1-bewustwording/)**: De komst van AI en evolutie van interactiemodi (Conversational, Inline, Agentic)
 - **Blog 2/3 (Oordeelsvorming)**: Taxonomie van AI-gebruik: wie heeft de regie? - deze blog
 - **Blog 3/3 (Besluitvorming)**: AI als leermiddel, niet als butler
+
+**Over interactiemodi en gebruikstypes:** In blog 1/3 introduceerde ik drie interactiemodi: Conversational, Inline, en Agentic. Die beschrijven de *technische interface* en workflow. Deze blog gaat over *gebruikstypes*: Human in the Lead, Human Curates, AI in the Lead, en Old Skool. Die beschrijven de *intentie* en *werkwijze*. Dit zijn dus verschillende dingen, maar er zijn wel correlaties tussen beide (zie sectie 2.1).
 
 Stel je voor: ICT-student Amad zegt in een gesprek "Ik heb AI gebruikt."
 
@@ -109,6 +111,17 @@ Natuurlijk kun je niet bewijzen dat iemand iets via AI heeft geleerd versus via 
 In de praktijk gebruik je deze types door elkaar. Een sessie kan beginnen als Type 1, tijdelijk naar Type 2 gaan voor brainstormen, en eindigen in Type 4b (Rubber Duck AI) wanneer het AI-gesprek je doet realiseren dat je een bepaald stuk anders wilt aanpakken, en de AI bv. vast zit in een bepaald spoor. If zelfs Type 4a (Old Skool) wanneer je besluit een bepaald stuk helemaal zonder AI te doen.
 
 Het punt is niet om strikt in één type te blijven. Het punt is om *bewust* te zijn van welk type je gebruikt en of dat past bij wat je wilt bereiken.
+
+### 2.1 Correlatie met interactiemodi uit blog 1/3
+
+De gebruikstypes in deze blog correleren met de interactiemodi (Conversational, Inline, Agentic) uit [blog 1/3](/ict-onderwijs-aanpassen-voor-ai-1-bewustwording/):
+
+- **Human in the Lead** werkt met *alle drie* de interactiemodi, maar vereist altijd constraints — ongeacht de modus
+- **Human Curates** gebruikt vaak **Conversational AI** om opties te brainstormen
+- **AI in the Lead (Vibe Coding)** — het risico is het grootst bij **Agentic AI**: volledige context + schrijfrechten + minimale inspanning = maximaal gevaar om controle te verliezen
+- **Old Skool** gebruikt *geen* van de drie interactiemodi
+
+Het verschil: interactiemodi beschrijven de technische interface, gebruikstypes beschrijven de *intentie* en *werkwijze*. Maar hoe meer context en schrijfrechten de AI heeft, en hoe minder bewuste inspanning de mens levert, hoe groter het risico om onbewust in "AI in the Lead" te belanden.
 
 ## 3. Prompt/answer length asymmetry
 

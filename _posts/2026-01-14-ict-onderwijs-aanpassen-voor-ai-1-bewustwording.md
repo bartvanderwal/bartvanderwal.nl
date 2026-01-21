@@ -11,13 +11,16 @@ revisions:
   - date: 2026-01-21
     type: Gewijzigd
     note: "Plaatjes verplaatst naar blog 1 (Tiulkanov-flowchart als sectie 9) voor evenwichtige verdeling over drieluik en betere afstemming met BOB-model (Bewustwording-Oordeelsvorming-Besluitvorming)"
+  - date: 2026-01-21
+    type: Gewijzigd
+    note: "Disambiguatie cursor gebruiker en Cursor gebruiker"
 ---
 
 In dit geplande drieluik verken ik hoe ICT-onderwijs moet veranderen met de komst van AI. Dit eerste deel gaat over **bewustwording**: begrijpen hoe AI-tools zijn geëvolueerd en wat dat betekent voor hoe we ermee interacteren.
 
 **Opmerking over bias:** Ik ben software engineer en docent. Dit betekent dat ik een bias zal hebben voor de insteek "software engineers zijn essentieel" ook in het AI tijdperk. Als er geen nieuwe studenten komen, moet ik ook een nieuwe baan gaan zoeken. En zoals Upton Sinclair lang geleden schreef: *"It's hard to explain something to someone when their salary depends on them not understanding."* Fair warning.
 
-Tegelijk: Eind december 2025 bleek dat zelfs Salesforce hun verwachtingen over generative AI moest bijstellen. Volgens een analyse van The Information (Efrati, 2025):
+Tegelijk: Eind december 2025 bleek dat zelfs Salesforce hun verwachtingen over generative AI moest bijstellen. Volgens een analyse van The Information (Holmes & McLaughlin, 2025):
 
 > "Salesforce in recent months appears to have pulled back on how much its Agentforce-powered customer service agent uses LLMs."
 
@@ -152,23 +155,14 @@ De twee dimensies (input scope, output scope) bepalen samen waar een tool op het
 | Type | Input Scope | Output Scope | Typische Tools |
 | --- | --- | --- | --- |
 | **Conversational** | Wat je kopieert | Geen (output only) | ChatGPT, Claude via Web |
-| **Inline** | Huidig bestand + nabij | Context rondom cursor gebruiker | GitHub Copilot, VS Code Copilot |
+| **Inline** | Huidig bestand + nabij | Context rondom cursor van gebruiker | GitHub Copilot, VS Code Copilot |
 | **Agentic** | Hele repo + context | Volledige project | Claude Code, Cursor, IDE agents |
 
-**Opmerking over naamgeving:** In de Inline rij staat "cursor gebruiker" — dit verwijst naar de *tekstcursor* (waar je typt), niet naar de AI-tool Cursor. Die tool staat in de Agentic rij, omdat Cursor een volledige IDE met agentic capabilities is. Deze name clash is verwarrend, maar helaas realiteit. Ook GitHub Copilot heeft sinds 2025 agentic features (Copilot Workspace), dus de grenzen vervagen.
+**Opmerking over naamgeving:** In de Inline rij staat "cursor van gebruiker" — dit verwijst naar de *tekstcursor* (waar je typt), niet naar de AI-tool Cursor. Die tool staat in de Agentic rij. De 'cursor gebruiker' is iets anders dan een 'Cursor gebruiker' als je begrijpt wat ik bedoel. Programmeurs zijn al gewend aan dat hoofdletter gebruik uitmaakt in betekenis/correctheid. VerOok GitHub Copilot heeft sinds 2025 agentic features (Copilot Workspace), dus de grenzen vervagen.
 
-Deze categorisering helpt studenten begrijpen dat "AI gebruiken" niet één ding is — de interactiemodus bepaalt de workflow, de nodige context, en hoe veel autonomie je de AI geeft.
+Deze categorisering helpt developers (en docenten en studenten) begrijpen dat er verschillende soorten AI-tools zijn. De UI en workflow van deze tools is weer iets anders dan hoe een developer AI precies *gebruikt* — daarover gaat de volgende blog.
 
-In blog 2/3 introduceer ik een taxonomie van AI-**gebruikstypes**: Human in the Lead, Human Curates, AI in the Lead, en Old Skool. Deze gaan over *wie* de regie heeft.
-
-De interactiemodi (deze blog) gaan over *interface en workflow*. Maar er zijn correlaties:
-
-- **Human in the Lead** werkt met *alle drie* de modi, maar vereist altijd constraints — ongeacht de modus
-- **Human Curates** gebruikt vaak **Conversational AI** om opties te brainstormen
-- **AI in the Lead (Vibe Coding)** — het risico is het grootst bij **Agentic AI**: volledige context + schrijfrechten + minimale inspanning = maximaal gevaar om controle te verliezen
-- **Old Skool** gebruikt *geen* van de drie modi
-
-Het verschil: interactiemodi beschrijven de technische interface, gebruikstypes beschrijven de *intentie* en *werkwijze*. Maar hoe meer context en schrijfrechten de AI heeft, en hoe minder bewuste inspanning de mens levert, hoe groter het risico om onbewust in "AI in the Lead" te belanden.
+In blog 2/3 introduceer ik een taxonomie van AI-**gebruikstypes**: Human in the Lead, Human Curates, AI in the Lead, en Old Skool. Deze gaan over *wie* de regie heeft en hoe deze gebruikstypes correleren met de interactiemodi uit deze blog.
 
 ## 6. Teaching practices voor GenAI (vooruitblik)
 
@@ -249,7 +243,7 @@ UNESCO erkent dat AI-geletterdheid steeds belangrijker wordt als competentie voo
 
 - Anthropic. (2025). *Claude Code Sandboxing*. Geraadpleegd op 20 januari 2026 van https://docs.anthropic.com/en/docs/claude-code/sandboxing
 - CJ. (21 oktober 2025). *AI Coding Sucks* [Video]. Coding Garden. Geraadpleegd op 23 december 2024 van https://www.youtube.com/watch?v=sEcdX0_r-5Y
-- Efrati, A. (december 2025). *Salesforce Pulls Back on Agentforce LLM Usage*. The Information. Geraadpleegd op 21 januari 2026 van https://archive.is/oi302
+- Holmes, A., & McLaughlin, K. (19 december 2025). *Salesforce Pulls Back on Agentforce LLM Usage*. The Information. Geraadpleegd op 21 januari 2026 van https://archive.is/oi302
 - Köppe, C., Keuning, H., Lykourentzou, I., Alpizar Chacon, I., & Sosnovsky, S. (2025). *Practices for the Application of Generative AI in Programming Education*. Universiteit Utrecht. Geraadpleegd op 15 januari 2026 van https://www.uu.nl/en/research/generative-ai-for-computing-education/materials-for-teachers/teaching-practices
 - Mazeika, D., Bolukbasi, T., Steinhardt, J., & Andersson, D. (20 januari 2024). *Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training*. arXiv. Geraadpleegd op 15 januari 2026 van https://arxiv.org/abs/2401.05566
 - Pan, X., et al. (8 december 2024). *Self-Replication in Frontier AI Systems*. GitHub. Geraadpleegd op 15 januari 2026 van https://github.com/WhitzardIndex/self-replication-research
