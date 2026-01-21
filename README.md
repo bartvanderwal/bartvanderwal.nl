@@ -2,7 +2,7 @@
 
 Persoonlijke blog van Bart van der Wal, gebouwd met Jekyll en het Adam Blog 2.0 thema met een aantal aanpassingen.
 
-Lees [deze blog op de live website bargvanderwal.nl](htps://bartvanderwal.nl). Dit zijn de aanpassingen: 
+Lees [deze blog op de live website bargvanderwal.nl](htps://bartvanderwal.nl).
 
 ## Lokaal draaien
 
@@ -150,6 +150,8 @@ Gebaseerd op [Adam Blog 2.0](https://github.com/the-mvm/the-mvm.github.io) door 
 - MathJax ondersteuning
 
 ### Eigen uitbreidingen
+
+Dit zijn de aanpassingen op het Adam 2.0 thema:
 
 #### SOFA Mode 🛋️
 

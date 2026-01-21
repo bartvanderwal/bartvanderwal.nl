@@ -27,7 +27,7 @@ In dit geplande drieluik verken ik hoe ICT-onderwijs moet veranderen met de koms
 - **Blog 2/3 (Oordeelsvorming)**: Taxonomie van AI-gebruik: wie heeft de regie?
 - **Blog 3/3 (Besluitvorming)**: AI als leermiddel, niet als butler
 
-In plaats van direct een beslissing te nemen, nemen we de tijd om eerst te begrijpen, dan te oordelen, en pas daarna te besluiten. Eenzelfde iets is overigens ook precies wat we studenten willen leren: niet meteen gaan coderen en een oplossing maken, maar eerst goed het probleem verkennen, omdat je anders wellicht een oplossing voor een ander probleem maakt dan je opdrachtgever heeft. Of een probleem dat alleen in JOUW hoofd bestaat. You are not your user.
+In plaats van direct een beslissing te nemen, nemen we de tijd om eerst te begrijpen, dan te oordelen, en pas daarna te besluiten. Eenzelfde iets is overigens ook precies wat we studenten willen leren: niet meteen gaan coderen en een oplossing maken, maar eerst goed het probleem verkennen. Omdat je anders wellicht een oplossing voor een ander probleem maakt dan je opdrachtgever heeft. Of een probleem dat alleen in JOUW hoofd bestaat. You are not your user.
 
 Want **do the right things**' is belangrijker dan '**doing things right**' (en je totale einddoel is natuurlijk: **Do the right things right**, als ICT-er, maar dat terzijde).
 
