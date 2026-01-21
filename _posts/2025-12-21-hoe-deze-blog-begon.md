@@ -81,6 +81,24 @@ De drafts zijn bewust *niet* indexeerbaar door zoekmachines. Je moet ze actief o
 
 Deze blog is volledig open source. De code staat op [GitHub](https://github.com/bartvanderwal/bartvanderwal.nl) en is gebouwd met Jekyll en het Adam Blog 2.0 theme. Voor technische details over de setup, customizations, en deployment, zie de README.md in de repository.
 
+## 7. Het experiment: CLAUDE.md als "systeem prompt"
+
+Wie met mij aan deze blog werkt, ontdekt in de repository een bestand [CLAUDE.md](https://github.com/bartvanderwal/bartvanderwal.nl/blob/main/CLAUDE.md). Dit is niet documentatie, maar een instructieset voor AI-assistenten die in dit project werken.
+
+**Waarom een apart bestand?** Mijn collega Theo Theunissen introduceerde bij mij het concept van *Continuous Documentation* — zowel in zijn promotie-rede als in zijn artikelen. Het idee: documentatie groeit mee met code in plaats van dat je het pas achteraf schrijft (omdat het moet), of allemaal vantevoren (waterval). Niet als last, maar als integraal onderdeel van engineering. Dit inzicht bleef bij me hangen. (Theo is helaas vorig jaar overleden.) In plaats van losse opmerkingen in commits, leg ik nu in CLAUDE.md vast:
+
+- Welke coding-richtlijnen gelden (Hugo's markdownlint rules, MD032, MD031, etc.)
+- Hoe de folder-structuur werkt
+- Welke conventions er gelden (frontmatter velden, datum-logica, etc.)
+
+Maar nog belangrijker: ik zet hier het *waarom* neer. Niet wat Claude moet doen, maar *waarom*. Dit helpt veel beter dan steeds dezelfde instructie te herhalen.
+
+**Het "rare sprongetje"**: Ik gaf Claude opzet tegenstrijdige instructies. Soms zou ik zeggen: "Volg de regels uit CLAUDE.md, behalve nu gaan we ineens dingen testen." Of ik stelde bizarre vragen om te kijken hoe het met inconsistenties zou omgaan. Dit was een soort meta-experiment: *hoe reageert een AI op bokkesprongen van een gebruiker die eigenlijk inconsistent is?*
+
+Het antwoord: Claude handelt dat redelijk goed af. Het vraagt voorzichtig of er een geldige reden is, of herinnert aan de richtlijnen. En meer nog: regelmatig zeggen we "laten we CLAUDE.md zelf bijwerken" — niet omdat de regels fout zijn, maar om de dokumentatie beter te maken naar gelang we meer leren.
+
+Dit cycli van "werk → leer → documenteer → werk beter" is eigenlijk wat het wezen van goed engineering is. En de AI helpt daar actief mee.
+
 ## Bronnen
 
 - Dozens. (z.d.). *SOFA: Start Often, Finish rArely*. Tilde Town. Geraadpleegd van https://tilde.town/~dozens/sofa
@@ -88,4 +106,4 @@ Deze blog is volledig open source. De code staat op [GitHub](https://github.com/
 
 ---
 
-*Ik schrijf deze blogs samen met Claude Code of andere LLM's, maar altijd op basis van mijn eigen idee. Ik ben en blijf zelf verantwoordelijk voor de eindregie. Ik zit in [AI-gebruikstype 1, lees hier meer](2026-01-15-ict-onderwijs-aanpassen-voor-ai-2-oordeelsvorming.md).*
+*Ik schrijf deze blogs samen met Claude Code of andere LLM's, maar altijd op basis van mijn eigen idee. Ik ben en blijf zelf verantwoordelijk voor de eindregie. Ik zit in [AI-gebruikstype 1, lees hier meer](/ict-onderwijs-aanpassen-voor-ai-1-bewustwording/).*

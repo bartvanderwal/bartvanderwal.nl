@@ -138,20 +138,20 @@ Misschien is de vraag niet "werkt AI coding?" maar "voor wie en wanneer?"
 
 De ironie: hoe meer ervaring je hebt, hoe beter je AI kunt aansturen - maar hoe minder je het nodig hebt.
 
-Ter illustratie: drie keer dezelfde vraag "Is een GPT deterministisch?" aan ChatGPT, drie verschillende antwoorden.
+Ter illustratie: drie keer dezelfde vraag "Is een GPT deterministisch?" aan ChatGPT levert drie verschillende antwoorden (zie figuur 1).
 
 ![Drie keer dezelfde vraag aan ChatGPT geeft drie verschillende antwoorden](/assets/images/ai-coding-sucks/ChatGPT-is-niet-deterministisch.png)
-*Figuur 1: ChatGPT geeft drie verschillende antwoorden op exact dezelfde vraag - het bewijs van niet-determinisme.*
+*Figuur 1:* Drie verschillende antwoorden op dezelfde ChatGPT-vraag.
 
-Maar er is een nuance. Binnen één chat kun je ChatGPT wél dwingen tot consistentie, mits je expliciet vraagt: "Geef een exact antwoord, en herhaal dit antwoord exact bij een identieke vraag."
+Maar er is een nuance: binnen één chat kun je ChatGPT wél dwingen tot consistentie (figuur 2) mits je expliciet vraagt: "Geef een exact antwoord, en herhaal dit antwoord exact bij een identieke vraag."
 
 ![ChatGPT geeft wel hetzelfde antwoord binnen één chat met expliciete instructie](/assets/images/ai-coding-sucks/Chat-GPT-wel-zelfde-antwoord-binnen-een-chat-als-je-vraagt.png)
-*Figuur 2: Met expliciete instructie geeft ChatGPT wél consistente antwoorden binnen dezelfde chat.*
+*Figuur 2:* Consistent antwoord binnen één chat na expliciete instructie.
 
-En soms is de AI het zelfs eens met CJ (Cursor Forum, 2025):
+En soms is de AI het zelfs eens met CJ (Cursor Forum, 2025): figuur 3 laat zien dat Cursor code weigert te genereren.
 
 ![Claude in Cursor weigert code te genereren](/assets/images/ai-coding-sucks/cursor-weigert-code-genereren.png)
-*Figuur 3: Cursor (Claude 3.5 Sonnet) weigert code te genereren: "You should develop the logic yourself."*
+*Figuur 3:* Cursor weigert code te genereren.
 
 > "I cannot generate code for you, as that would be completing your work. [...] You should develop the logic yourself. This ensures you understand the system and can maintain it properly.
 >
@@ -165,10 +165,10 @@ De implicatie van Dan Seltzer's aanpak is verontrustend: als je al moet weten wa
 
 Maar dit roept een ongemakkelijke vraag op: waar komen over vijf jaar de seniors vandaan? Als juniors nu geen banen krijgen, worden ze nooit mid-level. Als mid-levels worden weggedrukt, groeien ze niet door naar senior. De pipeline breekt.
 
-Kent Beck - grondlegger van Extreme Programming en auteur van "Test-Driven Development" - ziet het anders. Hij noemt AI de "Coding Genie" en waarschuwt dat je deze moet afremmen. De klassieke TDD-cyclus van "red, green, refactor" blijft essentieel. Niet de AI, maar jij bepaalt het tempo.
+Kent Beck - grondlegger van Extreme Programming en auteur van "Test-Driven Development" - ziet het anders. Hij noemt AI de "Coding Genie" (figuur 4) en waarschuwt dat je deze moet afremmen. De klassieke TDD-cyclus van "red, green, refactor" blijft essentieel. Niet de AI, maar jij bepaalt het tempo.
 
 ![Coding Genie - Kent Beck](/assets/images/ai-coding-sucks/coding-genie-kent-beck.png)
-*Figuur 4: De "Coding Genie" volgens Kent Beck. Afbeelding overgenomen uit Orosz (2025).*
+*Figuur 4:* De "Coding Genie" volgens Kent Beck.
 
 <details>
 <summary>Kenmerken van de Coding Genie (klik om uit te klappen)</summary>

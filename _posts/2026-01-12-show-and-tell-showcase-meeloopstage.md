@@ -150,7 +150,7 @@ De derde dimensie van de kubus zijn de vier beheersingsniveaus. Deze geven aan h
 **Voor de meeloopstage:** Focus op niveau 2 (probleemgericht) en niveau 3 (situatiegericht). Niveau 4 is master niveau of hoger, niveau 3 is het eindniveau van de HBO bachelor. Deze niveaus komen ook terug in het beoordelingsformulier voor je bedrijfsbegeleider.
 
 ![De HBO-i kubus met activiteiten, architectuurlagen en niveaus](/assets/img/posts/hbo-i-kubus.png)
-*De HBO-i kubus: activiteiten × architectuurlagen × niveaus (HBO-i, 2024)*
+*Figuur 1:* HBO-i kubus: activiteiten × lagen × niveaus.
 
 ### 4.4 Van onbewust onbekwaam naar bewust bekwaam
 
@@ -188,7 +188,7 @@ Ja, maar niet te veel. Maak in ieder geval:
 - **Een agendaslide** met je leerdoelen in de volgorde waarin je ze gaat presenteren. Dit is meteen je overzicht. Zet bij elk leerdoel een status: *done*, *grotendeels done*, *volgende periode*, of *toch niet realistisch (want...)*. De `LEFT JOIN` in de pseudo-SQL eerder illustreert dit: je toont AL je leerdoelen, ook degene waar je niet aan gewerkt hebt.
 
 ![Voorbeeld van een agendaslide met leerdoelen en status](/assets/img/posts/show-tell-agenda-slide-voorbeeld.png)
-*Figuur 2*: Voorbeeld agendaslide: leerdoelen in presentatievolgorde (niet projectplan-volgorde), elk met status.
+*Figuur 2:* Agendaslide met leerdoelen en status.
 
 Let op Figuur 2 is met AI-gegenereerd en bevat spelfouten ("beck-end") en mist de vereiste twee a drie Professional Skills (PS) leerdoelen binnen de zes te stellen leerdoelen. Excuus, maar ik accepteer even de fouten in plaats van eindeloos door te prompten en energie te verspillen (zelf en van Cloud Center). Iedereen herkent zo ook mooi dat dit niet van mij is.
 
