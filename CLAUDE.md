@@ -176,17 +176,48 @@ Voorbeelden:
 
 ## Git Commit Conventies
 
+### Basisregels
+
 - **Taal**: Nederlandse commit messages
 - **AI-attributie**: Alleen Co-Authored-By footer, GEEN "Generated with Claude Code" tag
 - **Model**: Vermeld het gebruikte model, GEEN email adres (noreply niet toegestaan in EU)
-- **Strategie**: Maak thematische, kleine commits (bijv. content, templates/assets, config/docs). Vermijd monolithische commits.
+
+### Commit-strategie: Thematische groepering, niet per bestand
+
+**NIET per file/map committen**, maar **per onderwerp/feature/wijziging** — ongeacht hoe veel bestanden raken.
+
+**Voorbeelden thematische commits:**
+
+1. **"Voeg sitemap generatie toe"**: wijzigt `_config.yml`, `_plugins/`, `serve.sh`, `README.md` — alles omdat het om sitemap gaat
+2. **"Update jQuery versie in dependencies"**: wijzigt `package.json`, `Gemfile`, `Gemfile.lock`, `_includes/javascripts.html` — alles omdat het om dezelfde upgrade gaat
+3. **"Herstructureer blog 1 secties"**: wijzigt `_posts/2026-01-14-...md`, eventueel `_includes/toc.html` — alles omdat het om blog 1's structuur gaat
+4. **"Fix markdownlint warnings in old posts"**: wijzigt `_posts/2024-12-*`, `_posts/2025-12-*` — alles style/linting, geen content
+
+**Hoe groeperen?**
+
+Kijk naar de WAAROM/intentie achter wijzigingen:
+
+- Wijzigingen met **dezelfde intentie** (bijv. upgraden, style-fixes, content-toevoeging) → 1 commit
+- Wijzigingen met **verschillende intenties** (bijv. nieuw blog + config-fix + dependency-upgrade) → meerdere commits
+
+### Commit message format
+
+```text
+Korte titel (max 50 char, imperatief mood)
+
+Optioneel langere uitleg met WAAROM context.
+- Bullet points voor deels wijzigingen
+- Duidelijk maken welke bestanden waarom wijzigen
+```
 
 Voorbeeld:
 
 ```text
-Korte beschrijving van de wijziging
+Update Node en jQuery voor security
 
-Optioneel langere uitleg.
+Upgrade jQuery van 3.5.0 naar 3.7.1 en Node van 18 naar 20 voor
+veiligheidspatches. Wijzigt package.json, Gemfile, _includes/javascripts.html,
+en verwijdert verouderde polyfills uit serve.sh.
 ```
 
 ## Git File Operations
