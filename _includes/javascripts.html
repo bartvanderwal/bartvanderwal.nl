@@ -151,156 +151,140 @@
   <script>
     function downloadPdf() {
       var btn = document.getElementById('download-pdf');
-      btn.innerHTML = '<i class="fa fa-spinner fa-spin"></i> Generating...';
+      btn.innerHTML = '<i class="fa fa-spinner fa-spin"></i> Laden...';
       btn.disabled = true;
 
-      // Load pdfmake (more reliable than html2pdf which has rendering issues)
+      // Load html2canvas and jspdf for proper image support
       var script1 = document.createElement('script');
-      script1.src = 'https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js';
+      script1.src = 'https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js';
       script1.onload = function() {
         var script2 = document.createElement('script');
-        script2.src = 'https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js';
+        script2.src = 'https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js';
         script2.onload = function() {
-          generatePdfWithPdfmake();
+          generatePdfWithImages();
         };
         document.head.appendChild(script2);
       };
       document.head.appendChild(script1);
 
-      function generatePdfWithPdfmake() {
-        var content = [];
+      function generatePdfWithImages() {
+        // Create a container for PDF content
+        var pdfContainer = document.createElement('div');
+        pdfContainer.style.cssText = 'position:absolute;left:-9999px;width:800px;padding:40px;background:white;font-family:Georgia,serif;color:#333;';
 
-        // Title
-        var title = document.querySelector('.page-title');
-        if (title) {
-          content.push({ text: title.textContent, style: 'header', margin: [0, 0, 0, 10] });
-        }
-
-        // Date
-        var dateMeta = document.querySelector('.page_meta-date time');
-        if (dateMeta) {
-          content.push({ text: dateMeta.textContent, style: 'date', margin: [0, 0, 0, 20] });
-        }
-
-        // Get article content and convert to pdfmake format
+        // Clone page content
         var pageContent = document.querySelector('.page-content');
-        if (pageContent) {
-          var clone = pageContent.cloneNode(true);
-
-          // Remove unwanted elements
-          var removeSelectors = [
-            '.header-page', '.sidebar', '.post-nav', '.author-box',
-            '.recent-box', '.comments', '.separator', 'button',
-            '#comment-layout', '.post-image-float', '.pdf-button',
-            '.version-history', '.github-button', 'script', 'style'
-          ];
-          removeSelectors.forEach(function(sel) {
-            clone.querySelectorAll(sel).forEach(function(el) { el.remove(); });
-          });
-
-          // Convert HTML to pdfmake content
-          function htmlToPdfmake(element) {
-            var result = [];
-            element.childNodes.forEach(function(node) {
-              if (node.nodeType === 3) { // Text node
-                var text = node.textContent.trim();
-                if (text) result.push(text);
-              } else if (node.nodeType === 1) { // Element node
-                var tag = node.tagName.toLowerCase();
-                if (tag === 'h1') {
-                  result.push({ text: node.textContent, style: 'h1', margin: [0, 15, 0, 5] });
-                } else if (tag === 'h2') {
-                  result.push({ text: node.textContent, style: 'h2', margin: [0, 15, 0, 5] });
-                } else if (tag === 'h3') {
-                  result.push({ text: node.textContent, style: 'h3', margin: [0, 10, 0, 5] });
-                } else if (tag === 'p') {
-                  result.push({ text: node.textContent, margin: [0, 0, 0, 10] });
-                } else if (tag === 'ul' || tag === 'ol') {
-                  var items = [];
-                  node.querySelectorAll(':scope > li').forEach(function(li) {
-                    items.push(li.textContent);
-                  });
-                  if (items.length) {
-                    result.push({ ul: items, margin: [0, 0, 0, 10] });
-                  }
-                } else if (tag === 'blockquote') {
-                  result.push({
-                    text: node.textContent,
-                    italics: true,
-                    margin: [20, 5, 20, 5],
-                    color: '#666'
-                  });
-                } else if (tag === 'pre' || tag === 'code') {
-                  result.push({
-                    text: node.textContent,
-                    font: 'Courier',
-                    fontSize: 10,
-                    background: '#f4f4f4',
-                    margin: [0, 5, 0, 5]
-                  });
-                } else if (tag === 'table') {
-                  var tableBody = [];
-                  node.querySelectorAll('tr').forEach(function(tr) {
-                    var row = [];
-                    tr.querySelectorAll('th, td').forEach(function(cell) {
-                      row.push(cell.textContent);
-                    });
-                    if (row.length) tableBody.push(row);
-                  });
-                  if (tableBody.length) {
-                    result.push({
-                      table: { body: tableBody },
-                      margin: [0, 5, 0, 10]
-                    });
-                  }
-                } else if (tag === 'a') {
-                  result.push({ text: node.textContent, link: node.href, color: '#326273' });
-                } else if (tag === 'strong' || tag === 'b') {
-                  result.push({ text: node.textContent, bold: true });
-                } else if (tag === 'em' || tag === 'i') {
-                  result.push({ text: node.textContent, italics: true });
-                } else if (tag === 'hr') {
-                  result.push({ canvas: [{ type: 'line', x1: 0, y1: 0, x2: 515, y2: 0, lineWidth: 1 }], margin: [0, 10, 0, 10] });
-                } else {
-                  // Recursively process other elements
-                  var children = htmlToPdfmake(node);
-                  if (children.length) result = result.concat(children);
-                }
-              }
-            });
-            return result;
-          }
-
-          var articleContent = htmlToPdfmake(clone);
-          content = content.concat(articleContent);
+        if (!pageContent) {
+          alert('Geen content gevonden');
+          btn.innerHTML = '<i class="fa fa-file-pdf-o"></i> PDF';
+          btn.disabled = false;
+          return;
         }
 
-        // Footer
-        content.push({ canvas: [{ type: 'line', x1: 0, y1: 0, x2: 515, y2: 0, lineWidth: 0.5 }], margin: [0, 20, 0, 10] });
-        content.push({ text: 'Bron: ' + window.location.href, fontSize: 9, color: '#999' });
+        var clone = pageContent.cloneNode(true);
 
-        var docDefinition = {
-          content: content,
-          styles: {
-            header: { fontSize: 22, bold: true },
-            date: { fontSize: 11, color: '#666' },
-            h1: { fontSize: 18, bold: true },
-            h2: { fontSize: 16, bold: true },
-            h3: { fontSize: 14, bold: true }
-          },
-          defaultStyle: {
-            fontSize: 11,
-            lineHeight: 1.4
-          },
-          pageMargins: [40, 40, 40, 40]
-        };
+        // Remove unwanted elements
+        var removeSelectors = [
+          '.sidebar', '.post-nav', '.author-box', '.recent-box',
+          '.comments', '.separator', 'button', '#comment-layout',
+          '.pdf-button', '.version-history', '.github-button',
+          'script', 'style', '.post-meta-row'
+        ];
+        removeSelectors.forEach(function(sel) {
+          clone.querySelectorAll(sel).forEach(function(el) { el.remove(); });
+        });
 
-        pdfMake.createPdf(docDefinition).download(
-          document.title.replace(/[^a-z0-9]/gi, '-') + '.pdf'
-        );
+        // Style images for PDF
+        clone.querySelectorAll('img').forEach(function(img) {
+          img.style.cssText = 'max-width:100%;height:auto;display:block;margin:15px auto;';
+          // Force load by setting crossOrigin (helps with some images)
+          img.crossOrigin = 'anonymous';
+        });
 
-        btn.innerHTML = '<i class="fa fa-file-pdf-o"></i> Download PDF';
-        btn.disabled = false;
+        // Style the content - print-friendly: white background, black text
+        clone.style.cssText = 'font-size:14px;line-height:1.6;color:#000;background:#fff;';
+        clone.querySelectorAll('h1').forEach(function(h) { h.style.cssText = 'font-size:24px;margin:20px 0 10px;color:#000;background:transparent;'; });
+        clone.querySelectorAll('h2').forEach(function(h) { h.style.cssText = 'font-size:20px;margin:18px 0 8px;border-bottom:1px solid #ccc;padding-bottom:5px;color:#000;background:transparent;'; });
+        clone.querySelectorAll('h3').forEach(function(h) { h.style.cssText = 'font-size:16px;margin:15px 0 5px;color:#000;background:transparent;'; });
+        clone.querySelectorAll('p').forEach(function(p) { p.style.cssText = 'margin:0 0 12px;color:#000;background:transparent;'; });
+        clone.querySelectorAll('pre, code').forEach(function(c) { c.style.cssText = 'background:#f5f5f5;padding:10px;font-size:12px;overflow-x:auto;color:#000;border:1px solid #ddd;'; });
+        clone.querySelectorAll('blockquote').forEach(function(bq) { bq.style.cssText = 'border-left:3px solid #326273;padding-left:15px;margin:15px 0;color:#333;background:transparent;font-style:italic;'; });
+        clone.querySelectorAll('table').forEach(function(t) { t.style.cssText = 'width:100%;border-collapse:collapse;margin:15px 0;font-size:12px;background:#fff;'; });
+        clone.querySelectorAll('th, td').forEach(function(c) { c.style.cssText = 'border:1px solid #ccc;padding:8px;text-align:left;color:#000;background:#fff;'; });
+        clone.querySelectorAll('a').forEach(function(a) { a.style.cssText = 'color:#326273;background:transparent;'; });
+        clone.querySelectorAll('li').forEach(function(li) { li.style.cssText = 'color:#000;background:transparent;'; });
+        clone.querySelectorAll('ul, ol').forEach(function(list) { list.style.cssText = 'color:#000;background:transparent;'; });
+        clone.querySelectorAll('span, em, strong, b, i').forEach(function(el) { el.style.cssText = 'color:inherit;background:transparent;'; });
+
+        // Add footer
+        var footer = document.createElement('div');
+        footer.style.cssText = 'margin-top:30px;padding-top:15px;border-top:1px solid #ccc;font-size:11px;color:#666;background:transparent;';
+        footer.innerHTML = 'Bron: ' + window.location.href + '<br>Gegenereerd: ' + new Date().toLocaleDateString('nl-NL');
+        clone.appendChild(footer);
+
+        pdfContainer.appendChild(clone);
+        document.body.appendChild(pdfContainer);
+
+        // Wait for images to load
+        var images = pdfContainer.querySelectorAll('img');
+        var loadPromises = Array.from(images).map(function(img) {
+          return new Promise(function(resolve) {
+            if (img.complete) {
+              resolve();
+            } else {
+              img.onload = resolve;
+              img.onerror = resolve; // Continue even if image fails
+            }
+          });
+        });
+
+        Promise.all(loadPromises).then(function() {
+          // Small delay to ensure rendering
+          setTimeout(function() {
+            html2canvas(pdfContainer, {
+              scale: 2,
+              useCORS: true,
+              allowTaint: true,
+              logging: false,
+              backgroundColor: '#ffffff'
+            }).then(function(canvas) {
+              var imgData = canvas.toDataURL('image/jpeg', 0.95);
+              var pdf = new jspdf.jsPDF('p', 'mm', 'a4');
+              var pageWidth = pdf.internal.pageSize.getWidth();
+              var pageHeight = pdf.internal.pageSize.getHeight();
+              var imgWidth = pageWidth - 20; // 10mm margins
+              var imgHeight = (canvas.height * imgWidth) / canvas.width;
+
+              var heightLeft = imgHeight;
+              var position = 10; // top margin
+
+              // First page
+              pdf.addImage(imgData, 'JPEG', 10, position, imgWidth, imgHeight);
+              heightLeft -= (pageHeight - 20);
+
+              // Additional pages if needed
+              while (heightLeft > 0) {
+                position = heightLeft - imgHeight + 10;
+                pdf.addPage();
+                pdf.addImage(imgData, 'JPEG', 10, position, imgWidth, imgHeight);
+                heightLeft -= (pageHeight - 20);
+              }
+
+              pdf.save(document.title.replace(/[^a-z0-9]/gi, '-') + '.pdf');
+
+              // Cleanup
+              document.body.removeChild(pdfContainer);
+              btn.innerHTML = '<i class="fa fa-file-pdf-o"></i> PDF';
+              btn.disabled = false;
+            }).catch(function(err) {
+              console.error('PDF generation failed:', err);
+              alert('PDF generatie mislukt. Probeer Ctrl+P / Cmd+P voor print naar PDF.');
+              document.body.removeChild(pdfContainer);
+              btn.innerHTML = '<i class="fa fa-file-pdf-o"></i> PDF';
+              btn.disabled = false;
+            });
+          }, 500);
+        });
       }
     }
 

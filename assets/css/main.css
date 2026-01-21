@@ -561,11 +561,12 @@ svg {
 /* = = = = = = = = = = Header = = = = = = = = = = */
 .main-header {
   font-family: var(--font2), sans-serif;
-  padding: 15px 0;
+  padding: 10px 0 12px;
   background-color: var(--background);
   -webkit-box-shadow: 0px -5px 15px var(--shadow);
           box-shadow: 0px -5px 15px var(--shadow);
-  border-bottom: 1px solid var(--grey4);
+  border-bottom: 3px solid var(--main);
+  margin-bottom: 0;
 }
 .main-header .header-flex {
   display: -webkit-box;
@@ -595,7 +596,7 @@ svg {
   color: var(--accent-dark);
 }
 .main-header .logo-name {
-  margin-top: 8px;
+  margin-top: 4px;
   text-align: center;
   font-family: var(--font1);
   color: var(--accent-dark);
@@ -606,34 +607,34 @@ svg {
 }
 .main-header .logo-name-main {
   display: block;
-  font-size: 45px;
+  font-size: 38px;
   font-weight: 600;
   line-height: 1.2;
 }
 .main-header .logo-name-sub {
-  font-size: 25px;
+  font-size: 20px;
   color: var(--accent-dark);
   margin-left: 4px;
 }
 .main-header .logo-credo {
   font-family: var(--font1);
-  font-size: 25px;
+  font-size: 20px;
   font-style: italic;
   color: var(--grey1);
-  margin-top: 8px;
-  margin-bottom: 12px;
+  margin-top: 4px;
+  margin-bottom: 6px;
   text-align: center;
 }
 .main-header .logo-tagline {
   font-family: var(--font2);
-  font-size: 20px;
+  font-size: 16px;
   letter-spacing: 0.3px;
-  
+
   color: var(--grey2);
   margin-top: 2px;
 }
 .main-header .logo-tagline a {
-  font-size: 20px;
+  font-size: 16px;
   color: var(--grey1);
   text-decoration: none;
   transition: color 0.3s;
@@ -1048,54 +1049,73 @@ svg.menu-icon-house {
   letter-spacing: 0.5px;
 }
 
+/* = = = = = = = = = = Post Meta Row = = = = = = = = = = */
+.post-meta-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.post-meta-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
 /* = = = = = = = = = = Version Table  = = = = = = = = = = */
 .version-history {
-  margin: 1rem 0 1.5rem;
+  margin: 0;
   font-family: var(--font2), sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.75rem;
 }
 .version-history summary {
   cursor: pointer;
   color: var(--grey2);
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.3rem;
   list-style: none;
+  padding: 6px 12px;
+  border: 1px solid var(--grey3);
+  border-radius: 15px;
+  white-space: nowrap;
 }
 .version-history summary::-webkit-details-marker {
   display: none;
 }
 .version-history summary:hover {
   color: var(--main);
+  border-color: var(--main);
 }
 .version-caret {
   transition: transform 0.2s ease;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
 }
 .version-history[open] .version-caret {
   transform: rotate(90deg);
 }
 .version-toggle {
-  text-decoration: underline;
+  text-decoration: none;
 }
 .draft-status {
   background: var(--accent);
   color: white;
-  font-size: 0.65rem;
-  padding: 2px 6px;
+  font-size: 0.6rem;
+  padding: 2px 5px;
   border-radius: 3px;
-  
   letter-spacing: 0.5px;
 }
 .version-table {
   width: 100%;
   margin-top: 0.75rem;
   border-collapse: collapse;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
 }
 .version-table th,
 .version-table td {
-  padding: 0.5rem;
+  padding: 0.4rem;
   text-align: left;
   border-bottom: 1px solid var(--grey4);
 }
@@ -1648,7 +1668,7 @@ tweet a {
 /* = = = = = = = = = = Post Page  = = = = = = = = = = */
 .post-image-float {
   float: right;
-  max-width: 300px;
+  max-width: 400px;
   margin: 0 0 1.5em 2em;
   border-radius: 8px;
   box-shadow: 0 2px 8px var(--shadow);
@@ -1701,41 +1721,44 @@ img + small, img + br + small {
 
 .header-page {
   position: relative;
-  margin-bottom: 1em;
+  margin-top: 1rem;
+  margin-bottom: 0.75em;
+  padding-top: 0.75rem;
 }
 .header-page h1 {
   font-family: var(--font2);
-  font-weight: var(--font2-regular);
-  font-size: 2.25rem;
+  font-weight: var(--font2-bold);
+  font-size: 2rem;
   text-align: center;
-  margin: 0 0 10px;
+  margin: 0 0 8px;
   color: var(--text);
-  line-height: 1.2;
+  line-height: 1.15;
 }
 
 .header-page .page-date {
   text-align: center;
-  font-size: 14px;
-  
+  font-size: 13px;
+
   font-weight: var(--font1-light);
 }
 
 .post-page-meta {
-    font-size: .8em;
+    font-size: .75em;
 }
 
 .pdf-button {
   display: inline-block;
-  margin-top: 0.5em;
-  padding: 8px 16px;
+  margin: 0;
+  padding: 6px 12px;
   font-family: var(--font2);
-  font-size: 0.7em;
+  font-size: 0.75em;
   color: var(--main);
   background: var(--background);
   border: 1px solid var(--main);
-  border-radius: 20px;
+  border-radius: 15px;
   cursor: pointer;
   transition: all 0.3s ease;
+  white-space: nowrap;
 }
 
 .pdf-button:hover {
@@ -1750,10 +1773,10 @@ img + small, img + br + small {
 
 /* Post Navigation */
 .post-nav {
-  margin: 1.5em 0;
-  padding: 0.75em 0;
-  border-top: 1px solid var(--gray-light);
-  border-bottom: 1px solid var(--gray-light);
+  margin: 0.5em 0;
+  padding: 0.4em 0;
+  border-top: 1px solid var(--grey4);
+  border-bottom: 1px solid var(--grey4);
 }
 
 .post-nav-inner {
@@ -1766,11 +1789,11 @@ img + small, img + br + small {
 .post-nav-link {
   display: flex;
   align-items: center;
-  gap: 0.5em;
-  padding: 0.5em 1em;
+  gap: 0.4em;
+  padding: 0.3em 0.75em;
   color: var(--text);
   text-decoration: none;
-  font-size: 0.9em;
+  font-size: 0.85em;
   border-radius: 4px;
   transition: background-color 0.2s, color 0.2s;
 }
@@ -1905,9 +1928,13 @@ img + small, img + br + small {
 }
 
 .page-subtitle {
-  font-weight: var(--font2-regular);
+  font-family: var(--font1);
+  font-weight: var(--font1-regular);
+  font-style: italic;
+  font-size: 1.1rem;
   text-align: center;
-  margin: 0 0 30px;
+  margin: 0 0 15px;
+  color: var(--main);
 }
 
 .newsletter .form-container {
@@ -2323,10 +2350,12 @@ a.read-more:hover {
     padding: 15px;
   }
   .header-page {
+    margin-top: 1rem;
     margin-bottom: 10px;
+    padding-top: 1rem;
   }
   .header-page h1 {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     margin: 0 0 10px;
   }
   .header-page .page-date {
