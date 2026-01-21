@@ -9,12 +9,14 @@ Personal blog and website for Bart van der Wal, built with Jekyll and hosted on 
 ## Development Commands
 
 ```bash
-bundle install              # Install dependencies
-./serve.sh                  # Run local dev server at http://localhost:4000 (preferred)
-bundle exec jekyll serve    # Alternative: direct Jekyll command
+bundle install                              # Install dependencies
+./serve.sh                                  # Run local dev server at http://localhost:4000
+./serve.sh check                            # Build & check for broken internal links
 ```
 
-**Note**: Use `./serve.sh` instead of `bundle exec jekyll serve` directly - the shell script contains the full command and is the convenient way to start the Jekyll server.
+**Note**: Use `./serve.sh` instead of `bundle exec jekyll serve` directly - the shell script contains environment setup for Homebrew Ruby.
+
+**Link Validation**: Use `./serve.sh check` to validate internal links before pushing (via html-proofer, disables external link checking). See README.md for details.
 
 ## Deployment
 
@@ -54,8 +56,28 @@ draft: true                  # true = SOFA mode, false = gepubliceerd
 
 **Structuur voor langere posts:**
 
+We nummeren secties en subsecties zoals in wetenschappelijk artikelen. Dit voor makkelijkere referentie, voor eigen leeswijzers of evt. externen bij feedback op de stukken. Het concept 'leeswijzer' hoort op meta niveau voor goed technische schrijven, maar gebruiken we NIET in artikelen zelf, die hun eigen onderwerp hebben, en niet over goed schrijven gaan.
+
+De indeling sluit aan bij het idee van The Pyramid Principle van Barbara Minto. De lengte van de leeswijzer moet ook samenhangen met de grootte van de tekst die je beschrijft. Hoofd leeswijzer is langer en met iets meer termen al noemen, en hier en daar een detail, dan de minileeswijzers BINNEN een sectie. Vandaar ook het woord 'mini' :).
+
+De focus is op structuur duidelijke krijgen, niet op volledigheid of inhoud duidelijk krijgen. En eventuele verbanden tussen secties duidelijk krijgen. Voor structuur is een inhoudsopgave meer geschikt, en voor inhoud dienen de subsecties zelf al. Als uitgebreide beschouwing op samenhang tussen twee secties nodig is, kan hier een aparte sectie of subscectie over komen. Maar anders kan dit mooi in de leeswijzer.
+
+Met de leeswijzer kan een lezer eventueel snel direct naar een sectie doorgaan, die hem/haar het meest interesseert. Het vermindert de inspanning van de lezer, ten koste van meer inspanning benodigd bij de schrijver.
+
+Het woord 'leeswijzer' zou je ook kunnen opvatten op HOE je dingen moet lezen of andere verwarrende interpretaties. Het doel is een snelle verwijzer voor de lezer. Maar dit uitleggen kun je niet bij stilstaan in een blog, dus daarom dit concept impliciet houden.
+
 - **Genummerde secties**: Gebruik genummerde hoofdsecties (## 1. Titel, ## 2. Titel, etc.) voor posts met 4+ secties
-- **Inleiding met overzicht**: Sluit de inleiding af met een alinea die aangeeft wat elke sectie behandelt. Gebruik NOOIT het woord "leeswijzer" of een apart kopje daarvoor — dit hoort gewoon in de laatste alinea('s) van de inleiding
+- **Aantal secties**: Streef naar 5-9 secties (Miller's Law: 7 ± 2 is optimaal voor menselijke aandachtspan/mentale ruimte)
+- **Subsecties**: Gebruik maximaal twee niveaus (## 1. en ### 1.1). GEEN ### 1.1.1 of dieper
+- **Figuren**: Genummerde figuren met caption-formaat: `*Figuur X:* Caption tekst.` (alleen Figuur cursief)
+- **Inleiding met overzicht**: Sluit de inleiding af met een of meer alinea's die aangeven wat elke sectie behandelt
+  - Gebruik NOOIT het woord "leeswijzer" of een apart kopje daarvoor — dit hoort gewoon in de laatste alinea('s) van de inleiding
+  - Houd het **abstract en kort**: geef de _essentie_ van wat komt, niet alle details/termen
+  - **Voorbeeld kort**: "We lopen de vier kwadranten langs, met de twee assen: komt het idee van mens of AI, en wie heeft de lead."
+  - **Voorbeeld te lang**: "We lopen Type 1, Type 2, Type 3, en Type 4 langs, waarbij Type 4 bestaat uit Old Skool, Rubber Duck AI, en Learned from AI."
+- **Mini-leeswijzers bij secties met subsecties**: Als een sectie subsecties heeft (bijv. 4.1-4.4), begin dan met een korte alinea die aangeeft wat er komt
+  - Ook hier: abstract en kort, niet alle termen opsommen
+- **Pyramid principle** (Barbara Minto): vertel wat er komt voordat je erin duikt. Geef de eindconclusie eerst, dan pas de uitleg, je schrijft geen fictie of spannende detective: je begint met wie het gedaan heeft, met welk wapen en waar, en maakt GEEN spanningsboog in technische of zakelijke teksten.
 
 Voorbeeld:
 
@@ -120,6 +142,11 @@ Google (2022) benadrukt dat actieve vorm korter is dan passieve vorm.
 (Google, 2022) benadrukt dat actieve vorm korter is dan passieve vorm.
 ```
 
+**Jaartal in tekst vs. volledige datum in bronnenlijst:**
+
+- In de lopende tekst: gebruik alleen het jaartal, bijv. `(Wikipedia, 2026)`
+- In de bronnenlijst: gebruik de volledige datum, bijv. `Wikipedia. (12 januari 2026). *Titel*...`
+
 ### Bronnenlijst
 
 Formaat: Auteur. (datum). *Titel*. Geraadpleegd van url
@@ -143,11 +170,16 @@ Voorbeelden:
 - **Kies erkende bronnen** - Martin Fowler, Uncle Bob, Kent Beck, officiële documentatie
 - **Tekst moet op zichzelf staan** - lezer hoeft bronnen niet te raadplegen om te begrijpen
 
+## Stijlregels
+
+- **Vermijd "Niet om..., maar om..."**: Gebruik deze constructie niet of zeer spaarzaam. Formuleer positief wat iets *wel* is, in plaats van eerst te zeggen wat het niet is
+
 ## Git Commit Conventies
 
 - **Taal**: Nederlandse commit messages
 - **AI-attributie**: Alleen Co-Authored-By footer, GEEN "Generated with Claude Code" tag
 - **Model**: Vermeld het gebruikte model, GEEN email adres (noreply niet toegestaan in EU)
+- **Strategie**: Maak thematische, kleine commits (bijv. content, templates/assets, config/docs). Vermijd monolithische commits.
 
 Voorbeeld:
 
