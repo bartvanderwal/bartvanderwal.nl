@@ -23,7 +23,7 @@ In dit drieluik verken ik hoe ICT-onderwijs moet veranderen met de komst van AI.
 - **Blog 2/3 (Oordeelsvorming)**: Taxonomie van AI-gebruik: wie heeft de regie?
 - **Blog 3/3 (Besluitvorming)**: AI als leermiddel, niet als butler - deze blog
 
-Deze blog begint met het verificatieprobleem: hoe weten begeleiders of studenten AI verantwoord gebruiken? Vervolgens waarschuw ik studenten voor de expertise-valkuil: zonder basiskennis kun je AI-output niet beoordelen. Dan bespreek ik drie concrete toetsvormen die passen bij het AI-tijdperk: toetsen op begrip in plaats van alleen op product, criteriumgericht mondeling assessment, en theorietoetsen zonder hulpmiddelen. Ik sluit af met het besluit dat AI een leermiddel moet zijn, geen butler.
+Deze blog begint met het verificatieprobleem: hoe weten begeleiders of studenten AI verantwoord gebruiken? Vervolgens waarschuw ik studenten voor de expertise-valkuil: zonder basiskennis kun je AI-output niet beoordelen. Dan bespreek ik drie concrete toetsvormen die passen bij het AI-tijdperk. Sectie 4 introduceert "student in regie": hoe studenten flexibel moeten schakelen tussen types, met een concreet advies voor jaar 2. Ik sluit af met het besluit dat AI een leermiddel moet zijn, geen butler.
 
 ## 1. Het verificatieprobleem voor begeleiders
 
@@ -191,7 +191,38 @@ Een toets in een safe browser, zonder AI of internet. Geen code schrijven, maar 
 
 Dit toetst of de student de concepten begrijpt, los van de mogelijkheid om AI te gebruiken. Een student die heeft geleerd met AI (Type 4c) kan deze vragen beantwoorden. Een student die alleen heeft ge-vibe-coded (Type 3) kan dat niet.
 
-## 4. Besluit: AI als leermiddel, niet als vervanging
+## 4. Student in regie: flexibel schakelen tussen types
+
+De taxonomie uit blog 2/3 beschrijft wat er gebeurt, maar niet wat studenten zouden *moeten* doen. Het antwoord is niet lineair per leerjaar — het hangt af van de individuele student, de context, en het leerdoel.
+
+### 4.1 Geen lineaire progressie, maar cyclisch schakelen
+
+De klassieke Piaget-fout is denken dat studenten lineair van beginner naar expert gaan. In werkelijkheid moeten studenten — net als Agile teams — constant kunnen schakelen. Een derdejaarsstudent die een nieuw framework leert, gaat tijdelijk terug naar Type 4c (Learned from AI). Een tweedejaars die zijn eigen code niet meer snapt, moet terug naar Type 4a (Old Skool) om de Big Ball of Mud te ontrafelen.
+
+**De kernvraag is niet "welk leerjaar ben ik?" maar "heb ik voldoende expertise om deze specifieke AI-output te verifiëren?"** Als het antwoord "nee" is, stap je terug naar Type 4 (AI als leraar of geen AI).
+
+### 4.2 Besluit voor jaar 2: wat adviseren we?
+
+Voor tweedejaars Software Engineering studenten is het advies:
+
+| Context | Geadviseerde types | Rationale |
+| ------- | ------------------ | --------- |
+| **Nieuw concept leren** | 4c (Learned from AI), 4b (Rubber Duck) | AI als leraar, niet als butler |
+| **Brainstormen voor opdracht** | 2 (Human Curates) | Laat AI opties genereren, maak zelf de keuze |
+| **Code implementeren** | 1 (Human in the Lead) met constraints, of 4a (Old Skool) | Gedetailleerde prompt + verificatie, of volledig zelf |
+| **Vastgelopen / Big Ball of Mud** | 4a (Old Skool), 4b (Rubber Duck) | Terug naar basics, zelf debuggen |
+
+**Type 3 (Vibe Coding) is geen advies** — dit is wat je vermijdt. Het verschil met Type 1: bij Human in the Lead controleer je actief, bij Vibe Coding accepteer je blind.
+
+### 4.3 Student bepaalt, niet de AI
+
+"Student in regie" betekent: de student maakt bewuste keuzes over welk type te gebruiken. Niet de AI, niet de tijdsdruk, niet de verleiding van snelheid.
+
+Dit vereist metacognitie: kunnen reflecteren op je eigen leerproces. Een student die zegt "Ik gebruik Type 2 voor brainstormen, daarna Type 4a voor implementeren omdat ik dit patroon nog niet ken" toont meer begrip dan een student die zegt "Ik gebruik gewoon ChatGPT."
+
+De toetsvormen uit sectie 3 zijn ontworpen om dit te toetsen. Bij het criteriumgericht interview vraag je: "Welk type AI-gebruik paste je hier toe, en waarom was dat de juiste keuze voor deze situatie?"
+
+## 5. Besluit: AI als leermiddel, niet als vervanging
 
 De titel van deze blog spreekt van "AI als leermiddel in plaats van butler". Dat woord is bewust gekozen. Een butler doet wat je zegt zonder dat je hoeft na te denken. Dat is precies wat Type 3 (AI in the Lead / Vibe Coding) is: de AI doet het werk, jij accepteert, niemand leert iets.
 
@@ -210,9 +241,11 @@ De paradox die we eerder zagen blijft staan: AI maakt programmeren toegankelijke
 
 **Begin met begrip, niet met generatie.** Pas als je de basis beheerst, kun je veilig AI gebruiken om sneller te werken. Maar die basis moet er eerst zijn.
 
-## Tot slot: Implementatie
+## 6. Tot slot: Implementatie
 
 Dit drieluik sluit af met een oproep: pas ICT-onderwijs aan zodat studenten AI effectief én verantwoord leren gebruiken. Begin met bewustwording (blog 1/3), bouw oordeelsvorming op met een taxonomie (blog 2/3), en neem beslissingen over toetsvormen en leertrajecten (deze blog).
+
+UNESCO IESALC (2023) adviseert in haar quick start guide om AI-gebruik in het hoger onderwijs expliciet te kaderen en didactisch te begeleiden. Deze blog operationaliseert dat voor ICT: eerst fundament, dan AI, met passende toetsvormen.
 
 **Lees ook:**
 
