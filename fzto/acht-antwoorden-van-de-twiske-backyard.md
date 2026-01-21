@@ -6,6 +6,8 @@ In het vervolg op de interview serie hebben de vorige geïnterviewden (inclusief
 
 ![BYU organisatoren Alfred (rechts) en Niels (midden) bij hun deelname aan Isles of Scilly SwimRun met organisator Wez Swain](byu-organisatoren-scilly.jpg)
 
+*Figuur 1:* Alfred en Niels bij Isles of Scilly SwimRun.
+
 ## Hoe zijn jullie in swimrun gerold?
 
 Beide hebben een achtergrond in hardlopen en traineerden samen. Ze startten de loopgroep "Twiske runners" in Landsmeer. Niels deed marathontrainingen met soms meer dan 100 km per week. Zijn coach suggereerde zwemmen toe te voegen. Andere leden, waaronder Alfred (een levenslange zwemmer), volgden dit voorbeeld. Toen zij ontdekten dat deze combinatie al als sport bestond, maakten zij snel de keuze. De groep transformeerde van Twiske runners naar Twiske SwimRunners.
@@ -52,6 +54,8 @@ Alternatief: iemand als Wez Swain (Scilly60-organisator) of Andreas Sachs (MySwi
 
 ![Foto van Scilly60 organisator Wez Swain](wez-swain-scilly60.jpg)
 
+*Figuur 2:* Wez Swain, organisator van Scilly60.
+
 ## Tot slot
 
 Aan het eind wisselen Bart en Niels ideeën uit over een Nederlands SwimRun Series/Circuit. Bart wil hier later aparte inhoud over schrijven. Niels dacht hierover al na. Hij oppert veel ideeën voor City SwimRuns—bijvoorbeeld in Hoorn waar al social SwimRuns waren, en mogelijk Amsterdam. Trainingsrondes voerden langs typische, voor swimrunners "exotische" locaties: Artis, Vondelpark, Olympisch Stadion.
@@ -61,6 +65,8 @@ Aan het eind wisselen Bart en Niels ideeën uit over een Nederlands SwimRun Seri
 Ze hebben ambitie en diepe wens om meer hiermee te doen. De uitdaging zit in "handjes"—mensen die willen helpen. Ze willen graag terugkomen naar trainingsrondes in Gelderland. Alfred: "Lex, we komen ook graag langs bij jou in Limburg!"
 
 ![Twiske SwimRunners groepsfoto](twiske-swimrunners-groep.jpg)
+
+*Figuur 3:* Twiske SwimRunners groepsfoto.
 
 Niels en Alfred nodigen alle swimrunners (en niet-swimrunners) uit voor de koudste swimrun van Nederland op 4 januari, georganiseerd door het Twiske in Landsmeer. Zie hun Facebook of Raf Ariëns' oproep in de SwimRun Huiskamer WhatsApp/Signal groep (https://swimrun.group voor info/lidmaatschap).
 

@@ -9,8 +9,8 @@ layout: null
       "tags"        : "{{ post.tags | join: ', ' }}",
       "url"         : ".{{ post.url }}",
       "date"        : "{{ post.date }}",
-      "description" : "{% if post.description and post.description != '' %}{{ post.description | escape }}{% else %}{{ post.content | strip_html | truncate: 50 | escape }}{% endif %}",
-      "content"     : {{ post.content | strip_html | strip_newlines | normalize_whitespace | jsonify }}
+      "description" : {{ post.description | default: post.content | strip_html | truncatewords: 50 | json_escape }},
+      "content"     : {{ post.content | strip_html | json_escape }}
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]

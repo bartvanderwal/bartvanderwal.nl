@@ -52,6 +52,16 @@ bundle exec jekyll serve
 
 De site draait dan op `http://localhost:4000`.
 
+### Link validatie
+
+Valideer interne links voordat je pusht:
+
+```bash
+./serve check
+```
+
+Dit bouwt de site en checkt alle interne links voor broken references (negeert externe URLs).
+
 ## Deployment
 
 Push naar de `main` branch triggert automatisch een GitHub Actions workflow die de site bouwt en deployt naar GitHub Pages.
@@ -162,6 +172,25 @@ De archive pagina toont nu thumbnails naast de post titels.
 #### PDF download
 
 Elke post heeft een "Download PDF" knop die client-side een PDF genereert.
+
+#### Inklapbare details/summary blokken
+
+Voor inklapbare stukken tekst gebruiken we native HTML `details` met een `summary` die inline Markdown ondersteunt:
+
+```html
+<details>
+  <summary markdown="span"><strong>BOB-vragen voor …</strong></summary>
+
+  <!-- Inhoud hier in Markdown -->
+  | Vraag | Antwoord |
+  | ----- | -------- |
+  | …     | …        |
+</details>
+```
+
+- Waarom `markdown="span"`: Jekyll/Kramdown behandelt Markdown binnen `<summary>` anders. Met `markdown="span"` wordt Markdown inline gerenderd zonder ongewenste `<p>`-wrapping. Zie Jekyll issue: https://github.com/jekyll/jekyll/issues/9297
+- CSS fix: om extra marge/wrapping tegen te gaan is in [assets/css/main.css](assets/css/main.css) de regel toegevoegd: `summary > p { display: inline; margin: 0; }`. Daarnaast krijgt `<details>` een grijze achtergrond en padding voor betere leesbaarheid.
+- Plaatsing: in deze blogreeks staan de `details`-blokken onderaan de post (na de hoofdinhoud), consistent in deel 1, 2 en 3.
 
 ## Architectuurbeslissingen (ADRs)
 
