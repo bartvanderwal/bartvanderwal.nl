@@ -24,13 +24,13 @@ Ik ben tevens vriend van de show van de Slimmer Presteren podcast. En toen zij i
 
 ## De wetenschap achter explore-exploit
 
-Het explore-exploit dilemma is niet alleen filosofisch interessant, maar ook wetenschappelijk onderzocht. Psycholoog Robert Wilson en collega's ontwikkelden de "Horizon Task" om te meten hoe mensen dit dilemma oplossen (Wilson et al., 2014).
+Het explore-exploit dilemma is niet alleen filosofisch interessant, maar ook wetenschappelijk onderzocht. Psycholoog Robert Wilson en collega's ontwikkelden de "Horizon Task" om te meten hoe mensen dit dilemma oplossen (Wilson, 2014).
 
 In het experiment kiezen proefpersonen herhaaldelijk tussen twee opties die verschillende beloningen geven. De sleutel: sommige rondes zijn kort (horizon 1: je mag maar één keer kiezen), andere lang (horizon 6: je mag zes keer kiezen). Bij een langere horizon loont het om te exploreren — je hebt immers meer kansen om je ontdekking te benutten.
 
-Wilson et al. (2014) ontdekten dat mensen twee strategieën combineren: we zoeken bewust naar informatie (*directed exploration*), maar laten ook ruimte voor toeval (*random exploration*).
+Wilson (2014) ontdekte dat mensen twee strategieën combineren: we zoeken bewust naar informatie (*directed exploration*), maar laten ook ruimte voor toeval (*random exploration*).
 
-In een vervolgonderzoek publiceerden Feng et al. (2021) in *Nature Scientific Reports* hoe dit mechanisme in de hersenen werkt. Ze ontdekten dat random exploration vooral gedreven wordt door de signaal-ruisverhouding waarmee beloningsinformatie wordt verwerkt:
+In een vervolgonderzoek publiceerden Feng (2021) in *Nature Scientific Reports* hoe dit mechanisme in de hersenen werkt. Ze ontdekten dat random exploration vooral gedreven wordt door de signaal-ruisverhouding waarmee beloningsinformatie wordt verwerkt:
 
 > "This suggests that random exploration is primarily driven by changes in the signal-to-noise ratio with which reward information is represented in the brain."
 

@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Nieuw ICT-onderwijs ivm AI (2/3)"
+title: "Nieuw ICT-onderwijs door AI (2/3)"
 subtitle: "Oordeelsvorming: Taxonomie van AI-gebruik - wie heeft de regie?"
 date_started: 2026-01-12
 date: 2026-01-20
 lang: nl
-tags: [ai, llm, onderwijs, taxonomie, oordeelsvorming]
+tags: [ai, llm, onderwijs, taxonomie, oordeelsvorming, software engineering]
 img: posts/types-van-ai-gebruik-overzicht.png
 draft: true
 published: true
@@ -13,6 +13,9 @@ revisions:
   - date: 2026-01-21
     type: Gewijzigd
     note: "Sectienummers en leeswijzers toegevoegd voor beter lezernavigatie en structuur. Hoofd-leeswijzer in inleiding uitlegt het hele verhaal; mini-leeswijzers bij secties met subsecties geven kort preview conform Pyramid Principle. Subsectienummering (x.y format) toegevoegd als verwijzingsreferentie."
+  - date: 2026-01-21
+    type: Gewijzigd
+    note: "Citatienormalisatie (Yang et al.→Yang); Figuur 3 Michael Feathers quote caption; back-link naar blog 3 (Besluitvorming)"
 ---
 
 In dit  drieluik verken ik hoe ICT-onderwijs moet veranderen met de komst van AI. Dit tweede deel gaat over **oordeelsvorming**: een taxonomie van AI-gebruikstypes om te onderscheiden van wie ideeen komen, en wie de regie heeft; mens of AI?
@@ -233,29 +236,32 @@ Dit leidt tot een belangrijke vraag: hoe maak je het controleren beheersbaar?
 
 ### 4.3 Upskilling, reskilling en het risico op deskilling
 
-Google hanteert voor AI-onderwijs drie begrippen: **upskilling** (skill-complementarity), **reskilling** (nieuwe rolvaardigheden aanleren) en het spiegelbeeld **deskilling/downskilling** (skill-substitution, verlies door afhankelijkheid) (Yang et al., 2026). Voor studenten betekent dit:
+Google hanteert voor AI-onderwijs drie begrippen: **upskilling** (skill-complementarity), **reskilling** (nieuwe rolvaardigheden aanleren) en het spiegelbeeld **deskilling/downskilling** (skill-substitution, verlies door afhankelijkheid) (Yang, 2026). Voor studenten betekent dit:
 
 - Upskilling: AI inzetten om concepten sneller te doorgronden, maar nog steeds zelf oefenen en toetsen zonder AI.
 - Reskilling: AI gebruiken om nieuwe domeinen te verkennen (bijv. data-analyse), daarna zonder AI kunnen reproduceren.
 - Deskilling vermijden: beginners mogen AI niet de basis laten overnemen; eerst fundamentals, daarna pas AI als versneller.
 
-Yang et al. (2026) koppelen dit aan **Substitutive Use** (voluit) versus **Augmentative Use** van GenAI. Substitutive Use – wat ik “AI als butler” noem – ondermijnt motivatie om nieuwe skills te leren: de tool doet het zware werk en studenten slaan cognitieve stappen over (Guo et al., 2024) en tonen minder exploratie (Leon, 2023). Augmentative Use – “AI als leermiddel/leraar” – vraagt juist actieve verificatie en blijft binnen reskilling/upskilling.
+Yang (2026) koppelt dit aan **Substitutive Use** (voluit) versus **Augmentative Use** van GenAI. Substitutive Use – wat ik “AI als butler” noem – ondermijnt motivatie om nieuwe skills te leren: de tool doet het zware werk en studenten slaan cognitieve stappen over (Guo, 2024) en tonen minder exploratie (Leon, 2023). Augmentative Use – “AI als leermiddel/leraar” – vraagt juist actieve verificatie en blijft binnen reskilling/upskilling.
 
 Kortom: voor studenten/beginners is de volgorde cruciaal. Eerst zelf leren, dan pas AI gebruiken om te versnellen, zodat we upskilling en reskilling stimuleren zonder in deskilling te vervallen.
 
 ### 4.4 Constraints als vangnet in de ICT
 
-In software development hebben we technieken ontwikkeld om code controleerbaar te houden — lang voordat AI code ging genereren. Deze "Old Skool" technieken worden nu onmisbaar als vangnet voor AI-gegenereerde code:
+In software development hebben we technieken ontwikkeld om code controleerbaar te houden — lang voordat AI code ging genereren. Deze "Old Skool" technieken worden nu onmisbaar als vangnet voor door AI gegenereerde of te genereren code:
 
 **a) Getypeerde talen gebruiken.** Een compiler vangt fouten af voordat de code draait. TypeScript in plaats van JavaScript, C# in plaats van Python voor kritieke systemen.
 
-**b) Specifieke types maken.** Object-georiënteerde of getypeerde functionele talen dwingen je om het domein te modelleren. Hoe specifieker je types, hoe minder ruimte voor fouten.
+**b) Specifieke types maken.** Object-georiënteerde (OO) of getypeerde functionele talen kun je je eigen datatypes maken (of eigenlijk meer: samenstellen uit de basistypes). Gegevenstypes om je domein te modelleren, data format voor communicatie. Bij OO koppel (idealiter) je aan dataformat zelfs direct methoden (aanroepbare functies) die dan de enige zijn deze data mogen aanpassen (encapsulatie). Hoe specifieker je types (en hoe meer encapsulatie), hoe minder ruimte voor fouten.
 
 **c) Unit tests als vangnet.** Mark Seemann beschrijft in zijn blog dat unit tests zelf een cyclomatische complexiteit van 1 moeten hebben (Seemann, 2019). Simpele tests voor complexe code. Als de AI code genereert die de tests breekt, weet je dat er iets mis is — zonder elke regel te hoeven lezen.
 
-**d) Linters voor conventies.** Automatische controle op codeerstijl en patronen. Een linter is een "Old Skool" vorm van AI: deterministisch, voorspelbaar, en onvermoeibaar.
+**d) Linters voor conventies.** Automatische controle op codeerstijl en patronen. Een linter is een "Old Skool" vorm van AI: deterministisch, voorspelbaar, en onvermoeibaar (tokens raken niet op ;).
 
-**e) En vast nog veel meer.** Code reviews, static analysis, integration tests, contract testing... Dit is geen uitputtende lijst — er is geen kwadrant of checklist die compleetheid garandeert. Het punt is: hoe meer constraints je hebt, hoe minder je handmatig hoeft te controleren.
+**e) En vast nog veel meer.** *Immutable data* in functipnele talen zal de kenner als tegenhanger voor OO's encapsulatie bij wellicht meteen aan gedacht hebben (zie [Figuur 3](#fig3-feathers) met een bekende quote over OO vs. FP en begrijpelijkheid van Michael Feathers, een van de grondleggers van de [Agile/XP community](https://agilealliance.org/glossary/xp/))). Maar ook code reviews, static analysis, integration tests, contract testing... Dit is geen uitputtende lijst — er is geen kwadrant of checklist die compleetheid garandeert. Het algemende punt is: hoe meer constraints je hebt, hoe minder je handmatig hoeft te controleren, hoe meer context je geeft voor de AI om het juiste te doen. In ieder geval uiteindelijk...
+
+![Michael Feathers over OO vs FP en begrijpelijkheid](image.png)
+*Figuur 3:* OO en FP geven andere manieren om code begrijpelijk te maken (Feathers, z.d.). {#fig3-feathers}
 
 De paradox: deze "Old Skool" technieken worden juist waardevoller in het AI-tijdperk. Ze vormen het vangnet dat het mogelijk maakt om AI-productiviteit te benutten zonder de controle te verliezen.
 
@@ -367,7 +373,7 @@ De titel is ook zelfspot. "De eerste de beste" klinkt als willekeurig kiezen. Ma
 </summary>
 
 ![BOB-model: van probleem naar besluit via Beeldvorming, Oordeelsvorming en Besluitvorming](/assets/img/posts/bob-model-funnel.png)
-*Figuur 5:* BOB-model als trechter (Schop, z.d.).*
+*Figuur 5:* BOB-model als trechter (Schop, z.d.).
 
 In de Oordeelsvormingsfase van het BOB-model worden vier vragen beantwoord:
 

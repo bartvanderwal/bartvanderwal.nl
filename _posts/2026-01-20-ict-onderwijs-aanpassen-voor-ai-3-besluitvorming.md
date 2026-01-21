@@ -1,26 +1,31 @@
 ---
 layout: post
-title: "Nieuw ICT-onderwijs ivm AI (3/3)"
-subtitle: "Besluitvorming: AI als leermiddel in plaats van butler"
+title: "Nieuw ICT-onderwijs door AI (3/3)"
+subtitle: "Besluitvorming: AI als leermiddel in plaats van als butler"
 date_started: 2026-01-12
 date: 2026-01-20
 lang: nl
-tags: [ai, llm, onderwijs, leren, toetsing, besluitvorming]
+tags: [ai, llm, onderwijs, leren, toetsing, besluitvorming, software engineering]
 img: posts/google-t-shaped-ai-enhanced-developer.png
 draft: true
 published: true
 revisions:
   - date: 2026-01-21
     type: Gewijzigd
-    note: "Sectienummers, leeswijzers en structuur toegevoegd. Sectie 3.2 en 3.4 samengevoegd (beide criteriumgericht mondeling assessment). Mini-leeswijzers bij secties 2-3 geven preview van subsecties. Nummeringsstructuur aangescherpt: geen x.y.z, sectie 5 ingevoegd als brug tussen 4 en 6."
+    note: "Sectienummers, leeswijzers en structuur toegevoegd. Sectie 3.2 en 3.4 samengevoegd. Mini-leeswijzers bij secties 2-3, nummers gecorrigeerdm sectie 5 ingevoegd."
+  - date: 2026-01-21
+    type: Gewijzigd
+    note: "Citatienormalisatie (Kam et al.→Kam); back-links naar blog 1 en 2 toegevoegd; trilogy-interconnectie voltooid"
 ---
 
 In dit drieluik verken ik hoe ICT-onderwijs moet veranderen met de komst van AI. Dit derde deel gaat over **besluitvorming**: hoe zorgen we dat studenten AI gebruiken als leermiddel, niet als vervanging van leren?
 
+Terug naar: [Blog 1/3 (Bewustwording)](/ict-onderwijs-aanpassen-voor-ai-1-bewustwording/) | [Blog 2/3 (Oordeelsvorming)](/ict-onderwijs-aanpassen-voor-ai-2-oordeelsvorming/)
+
 **Drieluik structuur (BOB-model):**
 
 - **Blog 1/3 (Bewustwording)**: De komst van AI en evolutie van interactiemodi
-- **Blog 2/3 (Oordeelsvorming)**: Taxonomie van AI-gebruik: wie heeft de regie?
+- **[Blog 2/3 (Oordeelsvorming)](/ict-onderwijs-aanpassen-voor-ai-2-oordeelsvorming/)**: Taxonomie van AI-gebruik: wie heeft de regie?
 - **Blog 3/3 (Besluitvorming)**: AI als leermiddel, niet als butler - deze blog
 
 Deze blog begint met het verificatieprobleem: hoe weten begeleiders of studenten AI verantwoord gebruiken? Vervolgens waarschuw ik studenten voor de expertise-valkuil: zonder basiskennis kun je AI-output niet beoordelen. Dan bespreek ik drie concrete toetsvormen die passen bij het AI-tijdperk. Sectie 4 introduceert "student in regie": hoe studenten flexibel moeten schakelen tussen types, met een concreet advies voor jaar 2. Ik sluit af met het besluit dat AI een leermiddel moet zijn, geen butler.
@@ -39,8 +44,8 @@ Als je nog bezig bent met leren programmeren, is de taxonomie niet alleen een be
 
 Subsecties 2.1-2.5 beschrijven het verificatieprobleem, waarom je zonder AI moet beginnen, geven een multi-criteria evaluatie van AI-types, leggen de verificatie-inspanning paradox uit, en verklaren waarom codekwaliteit geen criterium is.
 
-![SDLC endless cycle (Kam et al., 2025, p.7)](/assets/img/posts/google-sdlc-endless-cycle.png)
-*Figuur 1:* Software Development lifecycle/loop: Plan → Design → Code → Test → Deploy → Operations → Feedback (Kam et al., 2025, p.7)
+![SDLC endless cycle (Kam, 2025)](/assets/img/posts/google-sdlc-endless-cycle.png)
+*Figuur 1:* Software Development lifecycle/loop: Plan → Design → Code → Test → Deploy → Operations → Feedback (Kam, 2025)
 
 ### 2.1 Het verificatieprobleem
 
@@ -64,9 +69,9 @@ Mijn advies voor studenten: **begin met Type 4a (Old Skool)** totdat je de basis
 Pas als je deze concepten beheerst, kun je veilig naar Type 4c (Learned from AI) of Type 1-3 (AI genereert code). Maar realiseer: **je bent verantwoordelijk voor code die je niet volledig begrijpt**.
 
 ![Google's T-shaped model voor AI-enhanced developers](/assets/img/posts/google-t-shaped-ai-enhanced-developer.png)
-*Figuur 1:* T-shaped AI-enhanced developer skills (Kam et al., 2025).
+*Figuur 1:* T-shaped AI-enhanced developer skills (Kam, 2025).
 
-Dit T-shaped model uit Google's onderzoek visualiseert wat studenten nodig hebben (Kam et al., 2025). De verticale balk ("Core Software Engineering") is je fundament. De horizontale balk bovenaan ("GenAI Usage") is een aanvulling die je later leert.
+Dit T-shaped model uit Google's onderzoek visualiseert wat studenten nodig hebben (Kam, 2025). De verticale balk ("Core Software Engineering") is je fundament. De horizontale balk bovenaan ("GenAI Usage") is een aanvulling die je later leert.
 
 Als student moet je eerst de verticale balk opbouwen voordat je de horizontale balk kunt dragen. Zonder die basis zak je door.
 
@@ -245,7 +250,7 @@ De paradox die we eerder zagen blijft staan: AI maakt programmeren toegankelijke
 
 Dit drieluik sluit af met een oproep: pas ICT-onderwijs aan zodat studenten AI effectief én verantwoord leren gebruiken. Begin met bewustwording (blog 1/3), bouw oordeelsvorming op met een taxonomie (blog 2/3), en neem beslissingen over toetsvormen en leertrajecten (deze blog).
 
-UNESCO IESALC (2023) adviseert in haar quick start guide om AI-gebruik in het hoger onderwijs expliciet te kaderen en didactisch te begeleiden. Deze blog operationaliseert dat voor ICT: eerst fundament, dan AI, met passende toetsvormen.
+Unesco instituut voor educatie (IESALC) (2023) adviseert in haar quick start guide om AI-gebruik in het hoger onderwijs expliciet te kaderen en didactisch te begeleiden. Deze blog operationaliseert dat voor ICT: eerst fundament, dan AI, met passende toetsvormen.
 
 **Lees ook:**
 
@@ -281,4 +286,4 @@ In de Besluitvormingsfase van het BOB-model worden vier vragen beantwoord:
 - HBO-i. (2018). *ICT Research Methods — Methods Pack for Research in ICT*. Geraadpleegd op 21 januari 2026 van https://ictresearchmethods.nl/
 - Kam, M., Miller, C., Wang, M., Tidwell, A., Lee, I. A., Malyn-Smith, J., Perez, B., Tiwari, V., Kenitzer, J., Macvean, A., & Barrar, E. (23 juni 2025). *What do professional software developers need to know to succeed in an age of Artificial Intelligence?* arXiv. Geraadpleegd op 13 januari 2026 van https://arxiv.org/abs/2506.00202
 - Schop, G. J. (z.d.). *BOB-model*. Managementmodellensite. Geraadpleegd op 20 januari 2026 van https://managementmodellensite.nl/bob-model/
-- UNESCO IESALC. (2023). *ChatGPT and Artificial Intelligence in Higher Education: Quick Start Guide* (Report no. ED/HE/IESALC/IP/2023/12). Geraadpleegd op 13 januari 2026 van https://unesdoc.unesco.org/ark:/48223/pf0000394935
+- Unesco instituut voor educatie (IESALC). (2023). *ChatGPT and Artificial Intelligence in Higher Education: Quick Start Guide*. Geraadpleegd op 13 januari 2026 van https://unesdoc.unesco.org/ark:/48223/pf0000394935
