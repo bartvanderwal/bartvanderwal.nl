@@ -250,7 +250,7 @@ Kortom: voor studenten/beginners is de volgorde cruciaal. Eerst zelf leren, dan 
 
 In software development hebben we technieken ontwikkeld om code controleerbaar te houden — lang voordat AI code ging genereren. Deze "Old Skool" technieken worden nu onmisbaar als vangnet voor door AI gegenereerde of te genereren code:
 
-**a) Getypeerde talen gebruiken.** Een compiler vangt fouten af voordat de code draait. TypeScript in plaats van JavaScript, C# in plaats van Python voor kritieke systemen.
+**a) Gecompileerde talen gebruiken.** Een compiler vangt fouten af voordat de code draait. TypeScript in plaats van JavaScript, C# in plaats van Python voor kritieke systemen.
 
 **b) Specifieke types maken.** Object-georiënteerde (OO) of getypeerde functionele talen kun je je eigen datatypes maken (of eigenlijk meer: samenstellen uit de basistypes). Gegevenstypes om je domein te modelleren, data format voor communicatie. Bij OO koppel (idealiter) je aan dataformat zelfs direct methoden (aanroepbare functies) die dan de enige zijn deze data mogen aanpassen (encapsulatie). Hoe specifieker je types (en hoe meer encapsulatie), hoe minder ruimte voor fouten.
 
@@ -258,14 +258,24 @@ In software development hebben we technieken ontwikkeld om code controleerbaar t
 
 **d) Linters voor conventies.** Automatische controle op codeerstijl en patronen. Een linter is een "Old Skool" vorm van AI: deterministisch, voorspelbaar, en onvermoeibaar (tokens raken niet op ;).
 
-**e) En vast nog veel meer.** *Immutable data* in functipnele talen zal de kenner als tegenhanger voor OO's encapsulatie bij wellicht meteen aan gedacht hebben (zie [Figuur 3](#fig3-feathers) met een bekende quote over OO vs. FP en begrijpelijkheid van Michael Feathers, een van de grondleggers van de [Agile/XP community](https://agilealliance.org/glossary/xp/))). Maar ook code reviews, static analysis, integration tests, contract testing... Dit is geen uitputtende lijst — er is geen kwadrant of checklist die compleetheid garandeert. Het algemende punt is: hoe meer constraints je hebt, hoe minder je handmatig hoeft te controleren, hoe meer context je geeft voor de AI om het juiste te doen. In ieder geval uiteindelijk...
+**e) En vast nog veel meer.** Code reviews, static analysis, integration tests, contract testing, logging frameworks, gradual typing... Dit is geen uitputtende lijst — er is geen kwadrant of checklist die compleetheid garandeert. Het algemene punt is: hoe meer constraints je hebt, hoe minder je handmatig hoeft te controleren.
+
+Opmerking over het patroon "(e) En vast nog veel meer": dit is een bewuste retorische truc, niet onwillekeurige incompleteness. Net zoals je in code altijd een `else` clause toevoegt (niet nóg een `else if`), of een `default` optie hebt bij een `switch` statement diee veel code linters afdwingen.
+
+### 4.5 OO encapsulatie versus functionele immutability
+
+Eén klassieke tegenstelling verdient aparte aandacht: Bij punt b) Object-Oriented data types komt *encapsulatie*, maar bij e) hadden we *immutable data* in functionele talen. kunnen noemen *Immutable data* — gegevens die je eenmaal aanmaakt maar niet wijzigt — is het functionele antwoord op "hoe maak je code controleerbaar?"
+
+Michael Feathers (een van de grondleggers van [Agile/XP](https://agilealliance.org/glossary/xp/)) vat dit kernachtig samen in [Figuur 3](#fig3-feathers): OO zegt "maak je data lokaal/privaat, pas het aan via methoden" (encapsulatie = controle over wijzigingen). Functioneel programmeren zegt "maak je data onveranderbaar, dus geen wijzigingen mogelijk" (immutability).
+
+Beide strategieën dienen hetzelfde doel: **minimizing moving parts** — minder plekken waar fouten kunnen ontstaan. OO doet het door wijzigingen centraal te maken; FP door ze uit te sluiten.
 
 ![Michael Feathers over OO vs FP en begrijpelijkheid](image.png)
 *Figuur 3:* OO en FP geven andere manieren om code begrijpelijk te maken (Feathers, z.d.). {#fig3-feathers}
 
-De paradox: deze "Old Skool" technieken worden juist waardevoller in het AI-tijdperk. Ze vormen het vangnet dat het mogelijk maakt om AI-productiviteit te benutten zonder de controle te verliezen.
+Voor AI-gegenereerde code is dit cruciaal: hoe meer je de ruimte voor "moving parts" inperkt, hoe gerichtere output je van de AI kunt verwachten, en hoe minder handmatig reviewwerk je hebt.
 
-De paradox: deze "Old Skool" technieken worden juist waardevoller in het AI-tijdperk. Ze vormen het vangnet dat het mogelijk maakt om AI-productiviteit te benutten zonder de controle te verliezen.
+De paradox: deze "Old Skool" technieken — types, encapsulatie, immutability, tests — worden juist waardevoller in het AI-tijdperk. Ze vormen het vangnet dat het mogelijk maakt om AI-productiviteit te benutten zonder de controle te verliezen.
 
 ## 5. Exploratieve modus: Wanneer experts als beginners leren
 
