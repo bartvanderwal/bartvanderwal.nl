@@ -2,7 +2,7 @@
 
 Persoonlijke blog van Bart van der Wal, gebouwd met Jekyll en het Adam Blog 2.0 thema met een aantal aanpassingen.
 
-Lees deze blog op de live website voor idee van dzee aanpassingen: 
+Lees [deze blog op de live website bargvanderwal.nl](htps://bartvanderwal.nl). Dit zijn de aanpassingen: 
 
 ## Lokaal draaien
 
