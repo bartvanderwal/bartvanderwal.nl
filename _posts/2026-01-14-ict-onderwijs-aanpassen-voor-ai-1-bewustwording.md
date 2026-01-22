@@ -207,7 +207,7 @@ Ervaren ontwikkelaars zien in één oogopslag of gegenereerde code klopt. Zij he
 
 Studenten missen deze detector volledig. Het AI-model antwoordt met vertrouwen — maar dat betekent niet dat het klopt.
 
-![Flowchart: Wanneer is het veilig om ChatGPT te gebruiken?](/assets/img/prompt-engineering/chat-gpt-comic-2.jpg)
+![Flowchart: Wanneer is het veilig om ChatGPT te gebruiken?](/assets/img/prompt-engineering/chatgpt-comic-safety.jpg)
 *Figuur 3*: Flowchart: Wanneer is het veilig om ChatGPT te gebruiken?
 
 Aleksandr Tiulkanov maakte in 2023 al deze flowchart (Figuur 3), die op social veelal als humor/meme werd gedeeld. Maar eigenlijk laat dit heel effectief het kernprobleem zien. De beslissende vraag: **"Do you have expertise to verify that the output is accurate?"** Voor studenten is het antwoord meestal "NO" — wat leidt naar "Unsafe to use ChatGPT".
