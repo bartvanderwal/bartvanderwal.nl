@@ -83,19 +83,21 @@
           </li>
         </ul>
       </nav>
-      <div class="logo">
-        <div class="logo-name">
-          <span class="logo-name-main">Bart van der Wal</span><span class="logo-name-sub"> – Persoonlijke website</span>
-        </div>
-        <div class="logo-credo">
-          <em>"Wie schrijft, die blijft!"</em>
-        </div>
+      <div class="logo-container">
+        <a href="{{ relativebase }}" class="logo">
+          <div class="logo-name">
+            <span class="logo-name-main">Bart van der Wal</span><span class="logo-name-sub">Persoonlijke website</span>
+          </div>
+          <div class="logo-credo">
+            <em>"Wie schrijft, die blijft!"</em>
+          </div>
+        </a>
         <div class="logo-tagline">
-          <a href="{{ relativebase }}tags.html#software-engineering">Software Engineering</a> |
-          <a href="{{ relativebase }}tags.html#full-stack">Full Stack</a> |
-          <a href="{{ relativebase }}tags.html#ddd">Domain Driven Design</a> |
-          <a href="{{ relativebase }}tags.html#swimrun">SwimRun</a> |
-          <a href="{{ relativebase }}tags.html#mamil">MAMIL</a>
+          <a href="{{ relativebase }}tags/#software-engineering">Software Engineering</a> |
+          <a href="{{ relativebase }}tags/#full-stack">Full Stack</a> |
+          <a href="{{ relativebase }}tags/#ddd">Domain Driven Design</a> |
+          <a href="{{ relativebase }}tags/#swimrun">SwimRun</a> |
+          <a href="{{ relativebase }}tags/#mamil">MAMIL</a>
         </div>
       </div>
       <span class="site-version" title="Site versie">v{{ site.version }}</span>
