@@ -12,7 +12,7 @@ published: true
 revisions:
   - date: 2026-01-21
     type: Gewijzigd
-    note: "Sectienummers, leeswijzers en structuur toegevoegd. Sectie 3.2 en 3.4 samengevoegd. Mini-leeswijzers bij secties 2-3, nummers gecorrigeerdm sectie 5 ingevoegd."
+    note: "Sectienummers, leeswijzers en structuur toegevoegd. Sectie 3.2 en 3.4 samengevoegd. Mini-leeswijzers bij secties 2-3, nummers gecorrigeerd, sectie 5 ingevoegd."
   - date: 2026-01-21
     type: Gewijzigd
     note: "Citatienormalisatie (Kam et al.→Kam); back-links naar blog 1 en 2 toegevoegd; trilogy-interconnectie voltooid"

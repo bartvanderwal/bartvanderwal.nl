@@ -14,7 +14,7 @@ canonical_url: "https://aim-cnp.github.io/pwac/workshops/integratie"
 
 Deze post behandelt Continuous Integration (CI) en CI/CD pipelines, met focus op Git branching strategieën en GitHub Actions implementatie voor full-stack applicaties.
 
-![DevOps Infinity Loop](/assets/images/ci-workshop/devops-infinity-loop.png)
+![DevOps Infinity Loop](/assets/img/posts/ci-workshop/devops-infinity-loop.png)
 
 ## Kernvereisten
 
@@ -38,7 +38,7 @@ Martin Fowler beschrijft CI als: *"team members merge changes into codebase toge
 
 Het Netflix principe stelt: *"Do more painful things more often!"* - frequente integratie vermindert frictie.
 
-![If it hurts, do it more often](/assets/images/ci-workshop/if-it-hurts.png)
+![If it hurts, do it more often](/assets/img/posts/ci-workshop/if-it-hurts.png)
 
 ## GitHub Actions Pipeline Setup
 
@@ -93,23 +93,26 @@ steps:
 
 ## Test Piramide
 
-![Test Piramide](/assets/images/ci-workshop/test-piramide.png)
+![Test Piramide](/assets/img/posts/ci-workshop/test-piramide.png)
 
 Van basis naar top:
+
 1. **Unit Tests** (grootste volume)
 2. **Integration Tests**
 3. **Component Tests**
 4. **End-to-End Tests** (kleinste volume)
 
 ### Maven Test Commands
+
 - **`mvn test`**: Draait alleen unit tests (Surefire)
 - **`mvn verify`**: Draait unit tests + integration tests (Failsafe)
 
 ## Git Workflow Strategieën
 
-![GitHub Flow](/assets/images/ci-workshop/github-flow.png)
+![GitHub Flow](/assets/img/posts/ci-workshop/github-flow.png)
 
 ### GitHub Flow (Aanbevolen)
+
 1. Creëer SHORT-lived feature branch van main
 2. Commit en push regelmatig
 3. Open pull request

@@ -1,17 +1,17 @@
 ---
 layout: post
 title: "Testing the LLM"
-subtitle: "Een pumstibockle voor Claude AI, en spelunking, flibbertigitting en andere onzin van... Maar ook een serieuze"
+subtitle: "Een pumstibockle voor Claude AI — en serieuze tests"
 date: 2026-01-14
 lang: nl
-tags: [ai, testing, humor]
+tags: [ai, testing, humor, dada, zelfbewustzijn, claude, flibbertigitting, spelunking, processing]
 img: posts/testing-the-ai-flibbertigitting-screenshot.png
 draft: false
 ---
 
 Wat gebeurt er als je een AI opeens een compleet onzin commando geeft?
 
-Werkend met CoPilot, ChatGPT en zeker ook Claude in de IDE, voelt vaak alsof je met een mens chat. Met 'iemand' die heel snel je commando's opvolgt en die heel veel weet. En waarvan je wel in je achterhoofd probeert te hiouden (moet houden) dat die soms opeens iets raars kan doen. Maar de meeste tijd doet deze het prima, en instructies via de chat geven, weliswaar met hele stukken tekst erin, begint toch een stuk makkelijker te voelen dan zelf bestanden te openen. En 'hij' spreekt ook heel goed je 'developers jargon' — en alle moeilijke woorden en super niche termen. Als ik zeg dat 'ignoreert' een anglicisme is, begrijpt Claude meteen wat ik bedoel en corrigeert zijn eigen schrijffout (naar 'negeert'). Claude heeft niet aan een half woord genoeg, maar begrijpt wel alle moeilijk woorden. Maar eigenlijk is het een '[stochastic parrot](https://en.wikipedia.org/wiki/Stochastic_parrot)'...
+Werkend met CoPilot, ChatGPT en zeker ook Claude in de IDE, voelt vaak alsof je met een mens chat. Met 'iemand' die heel snel je commando's opvolgt en die heel veel weet. En waarvan je wel in je achterhoofd probeert te houden (moet houden) dat die soms opeens iets raars kan doen. Maar de meeste tijd doet deze het prima, en instructies via de chat geven, weliswaar met hele stukken tekst erin, begint toch een stuk makkelijker te voelen dan zelf bestanden te openen. En 'hij' spreekt ook heel goed je 'developers jargon' — en alle moeilijke woorden en super niche termen. Als ik zeg dat 'ignoreert' een anglicisme is, begrijpt Claude meteen wat ik bedoel en corrigeert zijn eigen schrijffout (naar 'negeert'). Claude heeft niet aan een half woord genoeg, maar begrijpt wel alle moeilijk woorden. Maar eigenlijk is het een '[stochastic parrot](https://en.wikipedia.org/wiki/Stochastic_parrot)'...
 
 In deze blog beschrijf ik een experiment met Claude: wat gebeurt er wanneer je AI onzin geeft? Voor lezers die nog niet met agentic AI hebben gewerkt, misschien herkenbaar voor wie het wel doet, en wellicht inspiratie om zelf te experimenteren. Het doel is inzicht in hoe LLMs echt werken — en vooral: hoe ze zich *gedragen*.
 

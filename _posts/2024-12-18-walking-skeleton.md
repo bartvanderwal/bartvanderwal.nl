@@ -5,7 +5,7 @@ subtitle: "End-to-End Validatie in softwareontwikkeling"
 date: 2024-12-18
 date_started: 2024-12-18
 lang: nl
-tags: [software, agile, onderwijs]
+tags: [software, agile, onderwijs, full-stack]
 img: posts/walking-skeleton-vs-mvp.png
 canonical_url: "https://aim-ene.github.io/pexe/docs/Projectresultaat/WalkingSkeleton"
 ---
@@ -28,7 +28,7 @@ De aanpak voorkomt verspilde moeite aan implementaties die later fundamentele wi
 
 ## Walking Skeleton vs. MVP
 
-![Walking Skeleton vs MVP](/assets/images/walking-skeleton/walking-skeleton-vs-mvp.png)
+![Walking Skeleton vs MVP](/assets/img/walking-skeleton/walking-skeleton-vs-mvp.png)
 
 Deze concepten dienen verschillende doelen:
 

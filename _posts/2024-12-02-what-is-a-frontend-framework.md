@@ -12,7 +12,7 @@ canonical_url: "https://www.quora.com/What-is-a-front-end-framework-And-does-the
 
 *Originally posted on [Quora](https://www.quora.com/What-is-a-front-end-framework-And-does-the-definition-apply-to-Bootstrap-or-Angular)*
 
-![What is a Frontend Framework](what-is-a-frontend-framework.png)
+![What is a Frontend Framework](/assets/img/posts/what-is-a-frontend-framework.png)
 
 A front-end framework (note the hyphen in front-end) is a framework for the front-end :). This applies to both Bootstrap and Angular, though a bit more to the latter. But that's probably not enough to answer the question, so let's define the terms in more detail.
 

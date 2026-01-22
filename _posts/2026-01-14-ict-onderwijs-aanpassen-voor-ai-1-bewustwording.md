@@ -31,7 +31,7 @@ In plaats van direct een beslissing te nemen, nemen we de tijd om eerst te begri
 
 Want **do the right things**' is belangrijker dan '**doing things right**' (en je totale einddoel is natuurlijk: **Do the right things right**, als ICT-er, maar dat terzijde).
 
-Deze serie bouwt voort op mijn eerdere blog ["AI Coding Sucks"](/ai-coding-sucks/). Daar beschreef ik de issues met Large Language Models die momenteel spelen binnen de developers community. Wat we binnen ICT onderwijs het 'werkveld' noemen. In dit drieluik kijk ik meer naar specifiek in het ICT onderwijs: Developers die het nog moeten leren. Nou moet je als sofgtware engineer altijd al bij blijven in een snel ontwikkelende wereld. Maar onze studenten moeten de basics nog leren. Maar niat alleen programmeer basics, ook andere zaken als domein verkennen, leren testen. De hoofdvraag is: hoe passen we ICT-onderwijs aan zodat studenten AI effectief én verantwoord leren gebruiken?
+Deze serie bouwt voort op mijn eerdere blog ["AI Coding Sucks"](/ai-coding-sucks/). Daar beschreef ik de issues met Large Language Models die momenteel spelen binnen de developers community. Wat we binnen ICT onderwijs het 'werkveld' noemen. In dit drieluik kijk ik meer naar specifiek in het ICT onderwijs: Developers die het nog moeten leren. Nou moet je als software engineer altijd al bij blijven in een snel ontwikkelende wereld. Maar onze studenten moeten de basics nog leren. Maar niet alleen programmeer basics, ook andere zaken als domein verkennen, leren testen. De hoofdvraag is: hoe passen we ICT-onderwijs aan zodat studenten AI effectief én verantwoord leren gebruiken?
 
 De structuur van deze blog: Sectie 1 geeft een korte startopmerking en bias-disclosure. Secties 2-4 leggen de interactiemodi uit (Conversational, Inline, Agentic). Secties 5-6 gaan over teaching practices en implicaties voor onderwijs. Sectie 7 behandelt het kernprobleem voor studenten: hoe verifieer je AI-output? (het expertise-verificatieprobleem via Tiulkanov). Sectie 8 sluit af met perspectief op de volgende blogs in het drieluik.
 
@@ -45,9 +45,9 @@ Tegelijk: Eind december 2025 bleek dat zelfs Salesforce hun verwachtingen over g
 
 Marc Benioff, CEO, erkende dat ze 4000 software engineers te snel hebben ontslagen omdat hun prognoses over wat AI zou kunnen doen te optimistisch waren. Dit suggereert dat software engineers nog steeds nodig zijn — en dat AI-vaardigheden leren geen luxe is, maar cruciaal.
 
-Over openheid: ik publiceer deze beschouwing bewust op mijn persoonlijke blog in plaats van op LinkedIn. Het is een betere plek om werk-in-uitvoering te delen en veilig AI‑tools te gebruiken. Word‑documenten op SharePoint zijn voor mij, als developer, geen prettig of medium (en Copilot in Word is niet beschikbaar; maar goed ook). "Open source all the things!" All the things? Nee, niet all. Maar iIk deel inzichten graag met andere hogescholen.
+Over openheid: ik publiceer deze beschouwing bewust op mijn persoonlijke blog in plaats van op LinkedIn. Het is een betere plek om werk-in-uitvoering te delen en veilig AI‑tools te gebruiken. Word‑documenten op SharePoint zijn voor mij, als developer, geen prettig of medium (en Copilot in Word is niet beschikbaar; maar goed ook). "Open source all the things!" All the things? Nee, niet all. Maar ik deel inzichten graag met andere hogescholen.
 
-Uiteindelijk wordt ik ook betaald als docent met gemeenschaps geld; en in de geest van [Aaron Schwartz](https://nl.wikipedia.org/wiki/Aaron_Swartz); The Internet's own boy, wil ik dit niet voormezel houden
+Uiteindelijk wordt ik ook betaald als docent met gemeenschaps geld; en in de geest van [Aaron Schwartz](https://nl.wikipedia.org/wiki/Aaron_Swartz); The Internet's own boy, wil ik dit niet voor mezelf houden
 > "Information is power, but like all power there are those who want to keep it for themselves"
 
 Met de revisie van ons functiehuis is mijn functie ook 'Docent Onderzoeker' geworden. Maar het 'onderzoeker' stuk laat qua urenruimte nog wat op zich wachten, gezien vele te geven lessen en onderwijsontwikkeling; dus ik neem graag een voorschot daarop. Er staan geen vertrouwelijke of geheime zaken in; hooguit persoonlijke noten over mijzelf. Maar wellicht heb ik ook een bias, of onvolledige blik. Dus vind je dat ik te veel disclose, laat het me weten — dan kies ik een ander medium of pas ik het aan. #embraceChange
@@ -162,7 +162,7 @@ De twee dimensies (input scope, output scope) bepalen samen waar een tool op het
 | **Inline** | Huidig bestand + nabij | Context rondom cursor van gebruiker | GitHub Copilot, VS Code Copilot |
 | **Agentic** | Hele repo + context | Volledige project | Claude Code, Cursor, IDE agents |
 
-**Opmerking over naamgeving:** In de Inline rij staat "cursor van gebruiker" — dit verwijst naar de *tekstcursor* (waar je typt), niet naar de AI-tool Cursor. Die tool staat in de Agentic rij. De 'cursor gebruiker' is iets anders dan een 'Cursor gebruiker' als je begrijpt wat ik bedoel. Programmeurs zijn al gewend aan dat hoofdletter gebruik uitmaakt in betekenis/correctheid. VerOok GitHub Copilot heeft sinds 2025 agentic features (Copilot Workspace), dus de grenzen vervagen.
+**Opmerking over naamgeving:** In de Inline rij staat "cursor van gebruiker" — dit verwijst naar de *tekstcursor* (waar je typt), niet naar de AI-tool Cursor. Die tool staat in de Agentic rij. De 'cursor gebruiker' is iets anders dan een 'Cursor gebruiker' als je begrijpt wat ik bedoel. Programmeurs zijn al gewend aan dat hoofdletter gebruik uitmaakt in betekenis/correctheid. Ook GitHub Copilot heeft sinds 2025 agentic features (Copilot Workspace), dus de grenzen vervagen.
 
 Deze categorisering helpt developers (en docenten en studenten) begrijpen dat er verschillende soorten AI-tools zijn. De UI en workflow van deze tools is weer iets anders dan hoe een developer AI precies *gebruikt* — daarover gaat de volgende blog.
 
@@ -207,7 +207,7 @@ Ervaren ontwikkelaars zien in één oogopslag of gegenereerde code klopt. Zij he
 
 Studenten missen deze detector volledig. Het AI-model antwoordt met vertrouwen — maar dat betekent niet dat het klopt.
 
-![Is it safe to use ChatGPT for your task?](/assets/img/prompt-engineering/chat-gpt-comic-2.JPG)
+![Is it safe to use ChatGPT for your task?](/assets/img/prompt-engineering/chat-gpt-comic-2.jpg)
 *Figuur 3:* Flowchart: Wanneer is het veilig om ChatGPT te gebruiken?
 
 Aleksandr Tiulkanov maakte in 2023 al deze flowchart (Figuur 3), die op social veelal als humor/meme werd gedeeld. Maar eigenlijk laat dit heel effectief het kernprobleem zien. De beslissende vraag: **"Do you have expertise to verify that the output is accurate?"** Voor studenten is het antwoord meestal "NO" — wat leidt naar "Unsafe to use ChatGPT".
@@ -226,7 +226,7 @@ Bewustwording is de eerste stap. De volgende stap is oordeelsvorming: leren onde
 
 <details>
 
-<summary markdown="span">Samenvatting als antwoorden op BOB-vragen 'Bewustwording'
+<summary markdown="span">Samenvatting: Antwoorden op BOB-vragen 'Bewustwording'
 </summary>
 
 ![BOB-model: van probleem naar besluit via Beeldvorming, Oordeelsvorming en Besluitvorming](/assets/img/posts/bob-model-funnel.png)

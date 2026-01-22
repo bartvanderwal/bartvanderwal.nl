@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Can a .NET framework be created from scratch?"
+title: "Recreating .NET from scratch?"
 subtitle: "Exploring the feasibility of rebuilding .NET"
 date: 2024-12-01
 date_started: 2024-12-01

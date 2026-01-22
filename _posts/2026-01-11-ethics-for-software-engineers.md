@@ -52,7 +52,7 @@ Twee websites:
 
 ### Deel 2: Ethische basisprincipes
 
-**Kernconcepten en praktijkgevallen:**
+#### Kernconcepten en praktijkgevallen
 
 In deel twee behandelen we vier sleutelconcepten, elk met werkelijke casussen en samenwerkingsvormen die studenten laten voelen hoe ethiek in echte situaties speelt.
 
@@ -61,9 +61,9 @@ In deel twee behandelen we vier sleutelconcepten, elk met werkelijke casussen en
 Elk design is een set keuzes. Een app die belooft "je helpen tijd in te sparen" kan ook ontworpen zijn om je langer vast te houden. Een algoritme dat "eerlijk" selecteert kan systematische bias bevatten. Technologie is altijd politiek en ethisch geladen.
 
 <details>
-<summary><strong>Casussen en werkvormen uitklappen</strong></summary>
+<summary markdown="span">Casussen en werkvormen uitklappen</summary>
 
-*Casus: Recruitment AI discrimineert*
+### *Casus*: Recruitment AI discrimineert
 
 Amazon bouwde een tool om CV's automatisch te screenen. De AI was getraind op historische CV's van werknemers — bijna allemaal mannelijk (tech-dominantie). Resultaat: vrouwen werden systematisch afgewezen door een algoritme dat niemand "bewust" discrimineerde. Het systeem "werkte" — het weigerde CV's sneller af. Maar het versterkte bestaande bias. Amazon heeft het later stopgezet. (Reuters, 2018)
 
@@ -89,9 +89,9 @@ Steen stelt de *Legal-Ethical Matrix*: wat legaal is, is niet per se ethisch. En
 | **Illegaal** | Whistleblowers (Snowden) | Duidelijk fout |
 
 <details>
-<summary><strong>Casussen en werkvormen uitklappen</strong></summary>
+<summary markdown="span"><strong>Casussen en werkvormen uitklappen</strong></summary>
 
-*Casus: LinkedIn en je emailcontacten*
+## Casus: LinkedIn en je emailcontacten
 
 LinkedIn stelde gebruikers om hun emailpaswoord in te voeren. Daarmee konden ze automatisch al je contacten importeren — en hen uitnodigen. Legaal? Ja, in de terms of service. Ethisch? Nee — gebruikers gaven onbewust hun hele contactenboek weg. LinkedIn gaf later toe dat dit "een fout was in onze design" (LinkedIn, 2012). Maar wie was schuldig? De engineers? Het product team? De CEO? Allen?
 
@@ -117,7 +117,7 @@ Cory Doctorow beschrijft dit patroon:
 4. **Platform sterft** (iedereen verliest vertrouwen)
 
 <details>
-<summary><strong>Casussen en werkvormen uitklappen</strong></summary>
+<summary markdown="span"><strong>Casussen en werkvormen uitklappen</strong></summary>
 
 *Casus: Twitter → X*
 
@@ -143,7 +143,7 @@ Groepjes kiezen een bekend platform (Instagram, Discord, Spotify, GitHub). Taak:
 De ACM: "Big tech gebruikt dark patterns om consumenten naar opties te sturen die nadelig zijn voor hun privacy". Dit zijn geen bugs. Het zijn features. Opzettelijk.
 
 <details>
-<summary><strong>Casussen en werkvormen uitklappen</strong></summary>
+<summary markdown="span">Casussen en werkvormen uitklappen</summary>
 
 *Casus: Facebook Messenger — download required*
 
@@ -260,7 +260,7 @@ De EU AI Act, GDPR, Digital Services Act — dit zijn regelgeving die ethiek "fo
 - **Capture**: Soms "vangen" grote bedrijven de regelgeving. Ze zeggen: "Dit gaat niet werken. Vertrouw ons en we regelen het zelf." Inspecties worden zwak. Boetes zijn peanuts.
 
 <details>
-<summary><strong>Casussen en werkvormen uitklappen</strong></summary>
+<summary markdnwon="span"><strong>Casussen en werkvormen uitklappen</strong></summary>
 
 *Werksituatie: Je bent architect bij een tech bedrijf*
 

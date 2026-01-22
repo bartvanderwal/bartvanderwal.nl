@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Show & Tell Showcase tijdens je meeloopstage"
+title: "Show & Tell bij je meeloopstage"
 subtitle: "Hoe presenteer je je stagewerk effectief?"
 date: 2026-01-12
 lang: nl

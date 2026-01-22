@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Which language is good to make a website?"
+title: "Which language to build a website?"
 subtitle: "HTML is the only language you need"
 date: 2024-12-01
 date_started: 2024-12-01

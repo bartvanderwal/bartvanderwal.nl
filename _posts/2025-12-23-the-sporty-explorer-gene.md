@@ -14,7 +14,7 @@ draft: true
 
 ## Het boek
 
-![alt text](sporty-explorer-gene/hond-bijt-mamil.png)
+![alt text](/assets/img/sporty-explorer-gene/hond-bijt-mamil.png)
 
 Met veel plezier en interesse las ik enkele jaren geleden het boek "Endure" van een zekere Alex Hutchinson. Echt een boek voor duursport nerds zoals ik. Vele onderwerpen passeerden, maar gemene draad ws 'the curiously elastice limits of human performance', zoals de ondertitel ervan luidde. 
 
@@ -71,7 +71,9 @@ De *homo triatleticus*:
 
 ## De MAMIL
 
-Middle Aged Man In Lycra. Vaak belachelijk gemaakt, maar eigenlijk: iemand die weigert op te geven. Die ondanks werk, gezin en verantwoordelijkheden nog steeds die oerdrang volgt.
+Een MAMMIL is een *Middle Aged Man In Lycra*. Soms belachelijk gemaakt, maar ik gebruik het graag als geuzennaam eigenlijk: iemand die weigert op te geven. Die ondanks werk, gezin en verantwoordelijkheden nog steeds die oerdrang volgt.
+
+Ik ken de term uit de Slimmer Presteren podcast, een Nederlandse podcast die wetenschap en sport, vooral duursport combineert. Wellicht een aanrader: [check it out op slimmerpodcast.nl!! (302 redirect, wat eigenlijk HTTP 301 zou moeten zijn 🤓)](https://slimmer-presteren-podcast.nl/).
 
 De MAMIL als moderne uitdrukking van The Explorer's Gene?
 

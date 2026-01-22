@@ -12,7 +12,7 @@ draft: true
 
 In dit artikel verkennen we prompt engineering: de kunst van het effectief communiceren met AI-taalmodellen.
 
-![3HOOG comic over ChatGPT](/assets/images/prompt-engineering/chat-gpt-3hoog-comic.jpg)
+![3HOOG comic over ChatGPT](/assets/img/prompt-engineering/chat-gpt-3hoog-comic.jpg)
 
 *Figuur 1:* 3HOOG: ChatGPT strip.
 
@@ -22,7 +22,7 @@ HAN ICT benadrukt toegepast onderzoek als fundamenteel voor professionele ontwik
 
 ChatGPT demonstreert schrijfvaardigheid (scoort 7-8), maar heeft significante beperkingen. Het functioneert als "creatieve technologie" met enorme kennis, maar produceert soms vol vertrouwen incorrecte informatie - een fenomeen dat ook wel "hallucination" wordt genoemd.
 
-![ChatGPT als bullshitter](/assets/images/prompt-engineering/chat-gpt-the-bullshitter.jpg)
+![ChatGPT als bullshitter](/assets/img/prompt-engineering/chat-gpt-the-bullshitter.jpg)
 
 *Figuur 2:* ChatGPT als bullshitter.
 
@@ -30,18 +30,19 @@ ChatGPT demonstreert schrijfvaardigheid (scoort 7-8), maar heeft significante be
 
 Effectief prompt gebruik vereist strategische formulering. "Eén prompt is geen prompt" - iteratieve verfijning is belangrijk.
 
-![XKCD AI Methodology](/assets/images/prompt-engineering/xkdc-ai_methodology.png)
+![XKCD AI Methodology](/assets/img/prompt-engineering/xkdc-ai_methodology.png)
 
 *Figuur 3:* XKCD: AI Methodology.
 
 Belangrijke aandachtspunten:
+
 - **Hallucinatie preventie**: Instrueer ChatGPT om onzekerheid te erkennen in plaats van informatie te fabriceren
 - **Technisch schrijven**: Vermijd overmatige bijvoeglijke naamwoorden die promotioneel klinken
 - **Toon management**: Voorkom ongerechtvaardigd enthousiasme dat geloofwaardigheid ondermijnt
 
 Problematische zinnen die ChatGPT vaak genereert zoals "essentiële tool" en "absoluut onmisbaar" missen objectiviteit totdat onderzoek zulke claims valideert.
 
-![ChatGPT safety](/assets/images/prompt-engineering/chat-gpt-comic-2.JPG)
+![ChatGPT safety](/assets/img/prompt-engineering/chat-gpt-comic-2.jpg)
 
 *Figuur 4:* ChatGPT safety strip.
 
@@ -50,6 +51,7 @@ Problematische zinnen die ChatGPT vaak genereert zoals "essentiële tool" en "ab
 Onderzoeksmethoden bieden kwaliteitscriteria maar zijn geen afvinklijstjes. Verificatie blijft essentieel - ChatGPT mag niet als enige autoriteit vertrouwd worden.
 
 ChatGPT is nuttig voor:
+
 - Introducties met proper signposting
 - Conclusies (zonder nieuwe informatie)
 - Management samenvattingen
@@ -61,7 +63,7 @@ Alle outputs vereisen kritische review op accuraatheid, volledigheid en helderhe
 
 AI biedt significant potentieel maar presenteert echte risico's. Blanco verbod is contraproductief; ethische argumenten ondersteunen verantwoorde AI integratie.
 
-![De toekomst van AI](/assets/images/prompt-engineering/ai-the-future.PNG)
+![De toekomst van AI](/assets/img/prompt-engineering/ai-the-future.png)
 
 *Figuur 5:* Cartoon over de toekomst van AI.
 
