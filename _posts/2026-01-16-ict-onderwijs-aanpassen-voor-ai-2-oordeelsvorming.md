@@ -5,7 +5,7 @@ subtitle: "Oordeelsvorming: Taxonomie van AI-gebruik - wie heeft de regie?"
 date_started: 2026-01-12
 date: 2026-01-20
 lang: nl
-tags: [ai, llm, onderwijs, taxonomie, oordeelsvorming, software engineering]
+tags: [ai, llm, onderwijs, taxonomie, oordeelsvorming, software-engineering]
 img: posts/types-van-ai-gebruik-overzicht.png
 draft: true
 published: true

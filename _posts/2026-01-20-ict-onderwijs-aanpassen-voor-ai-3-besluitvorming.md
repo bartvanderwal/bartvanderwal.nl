@@ -5,7 +5,7 @@ subtitle: "Besluitvorming: AI als leermiddel in plaats van als butler"
 date_started: 2026-01-12
 date: 2026-01-20
 lang: nl
-tags: [ai, llm, onderwijs, leren, toetsing, besluitvorming, software engineering]
+tags: [ai, llm, onderwijs, leren, toetsing, besluitvorming, software-engineering]
 img: posts/google-t-shaped-ai-enhanced-developer.png
 draft: true
 published: true

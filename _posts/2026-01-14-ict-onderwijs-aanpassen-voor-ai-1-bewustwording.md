@@ -5,7 +5,7 @@ subtitle: "Bewustwording: De evolutie van AI-interactiemodi"
 date_started: 2026-01-14
 date: 2026-01-14
 lang: nl
-tags: [ai, llm, onderwijs, interactie, bewustwording, software engineering]
+tags: [ai, llm, onderwijs, interactie, bewustwording, software-engineering]
 img: posts/ai-interaction-modes.png
 revisions:
   - date: 2026-01-21

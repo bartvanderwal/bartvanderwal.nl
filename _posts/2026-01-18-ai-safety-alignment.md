@@ -7,7 +7,7 @@ date: 2026-01-18
 lang: nl
 draft: true
 tags: [ai, safety, alignment, ethiek, onderwijs]
-image: /assets/img/posts/ai-rights-framework.png
+img: posts/skynet-self-aware.png
 ---
 
 Een AI-onderzoeker legt uit waar hij zich mee bezighoudt:
