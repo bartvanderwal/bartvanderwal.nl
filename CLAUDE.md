@@ -10,13 +10,13 @@ Personal blog and website for Bart van der Wal, built with Jekyll and hosted on 
 
 ```bash
 bundle install                              # Install dependencies
-./serve.sh                                  # Run local dev server at http://localhost:4000
-./serve.sh check                            # Build & check for broken internal links
+./serve                                     # Run local dev server at http://localhost:4000
+./serve check                               # Build & check for broken internal links
 ```
 
-**Note**: Use `./serve.sh` instead of `bundle exec jekyll serve` directly - the shell script contains environment setup for Homebrew Ruby.
+**Note**: Use `./serve` instead of `bundle exec jekyll serve` directly - the shell script contains environment setup for Homebrew Ruby.
 
-**Link Validation**: Use `./serve.sh check` to validate internal links before pushing (via html-proofer, disables external link checking). See README.md for details.
+**Link Validation**: Use `./serve check` to validate internal links before pushing (via html-proofer, disables external link checking). See README.md for details.
 
 ## Deployment
 
@@ -188,7 +188,7 @@ Voorbeelden:
 
 **Voorbeelden thematische commits:**
 
-1. **"Voeg sitemap generatie toe"**: wijzigt `_config.yml`, `_plugins/`, `serve.sh`, `README.md` — alles omdat het om sitemap gaat
+1. **"Voeg sitemap generatie toe"**: wijzigt `_config.yml`, `_plugins/`, `serve`, `README.md` — alles omdat het om sitemap gaat
 2. **"Update jQuery versie in dependencies"**: wijzigt `package.json`, `Gemfile`, `Gemfile.lock`, `_includes/javascripts.html` — alles omdat het om dezelfde upgrade gaat
 3. **"Herstructureer blog 1 secties"**: wijzigt `_posts/2026-01-14-...md`, eventueel `_includes/toc.html` — alles omdat het om blog 1's structuur gaat
 4. **"Fix markdownlint warnings in old posts"**: wijzigt `_posts/2024-12-*`, `_posts/2025-12-*` — alles style/linting, geen content
@@ -200,7 +200,11 @@ Kijk naar de WAAROM/intentie achter wijzigingen:
 - Wijzigingen met **dezelfde intentie** (bijv. upgraden, style-fixes, content-toevoeging) → 1 commit
 - Wijzigingen met **verschillende intenties** (bijv. nieuw blog + config-fix + dependency-upgrade) → meerdere commits
 
+**Het WAAROM is essentieel**: Niet alleen voor het groeperen van wijzigingen, maar ook voor de commit message zelf. Een goede commit message legt uit WAAROM de wijziging nodig was, niet alleen WAT er veranderd is.
+
 ### Commit message format
+
+**Taal**: Commit messages in het **Nederlands** (consistent met rest van de codebase).
 
 **Golden rule**: Subject line max **50 karakters** (Chris Beams). Daarna optioneel lege regel + body. Maar laat de body liever leeg, als daar veel bullets komen, kun je de commit ook opsplitsen in meerdere kleine commits.
 
@@ -208,28 +212,41 @@ Kijk naar de WAAROM/intentie achter wijzigingen:
 Korte titel (max 50 chars, imperatief mood)
 
 Optioneel langere uitleg met WAAROM context.
-- Bullet points voor deels wijzigingen
-- Duidelijk maken welke bestanden waarom wijzigen
+- Bullet points voor specifieke wijzigingen
+- Leg uit WAAROM deze wijziging nodig was
 ```
 
 **Waarom 50 chars?** Korte titles zijn beter leesbaar in `git log --oneline`, GitHub PR summaries, en commit history tools.
 
-Voorbeeld:
+**Voorbeelden met WAAROM:**
 
+**❌ Slecht** (alleen WAT):
 ```text
-Add header branding with credo
-
-Added 'Wie schrijft, die blijft!' credo to header with
-personal name/subtitle and GitHub fork link. Updated CSS
-for logo styling (font sizes, letter-spacing, ALLCAPS removal).
+Fix image paths in posts
 ```
 
-**SLECHTS onderwerpregel?** Dat mag! Als het één duidelijke wijziging is. Body is optioneel.
+**✅ Goed** (met WAAROM):
+```text
+Fix afbeelding paths, plaatjes weer zichtbaar
+
+Posts gebruikten verkeerde pad structuur, waardoor
+afbeeldingen niet geladen werden. Gestandaardiseerd
+naar /assets/img/posts/ voor alle blog posts.
+```
+
+**✅ Ook goed** (kort WAAROM in onderwerpregel):
+
+```text
+Fix broken image links in blog posts
+```
+
+**SLECHTS onderwerpregel?** Dat mag! Als het één duidelijke wijziging is met duidelijk WAAROM. Body is optioneel.
 
 ## Git File Operations
 
 - **Gebruik `git mv` in plaats van `mv`voor bestanden die al in Git repo ge-add zijn eerder**: Bestandsnamen aanpassen of verplaatsen altijd via `git mv` zodat de versiehistorie behouden blijft
 - **Gebruik `git rm` in plaats van `rm` voor bestanden die al in Git repo ge-commit zijn**: Bestanden verwijderen altijd via `git rm` zodat Git de verwijdering trackt
+- **NOOIT `git add -A` gebruiken, tenzij hoge nood**: Stage files expliciet per logische commit groep met `git add <files>` voor samenhangende commits met goede messages
 
 ## Important Reminders
 
