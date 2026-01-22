@@ -15,6 +15,7 @@ canonical_url: "https://aim-cnp.github.io/pwac/workshops/integratie"
 Deze post behandelt Continuous Integration (CI) en CI/CD pipelines, met focus op Git branching strategieën en GitHub Actions implementatie voor full-stack applicaties.
 
 ![DevOps Infinity Loop](/assets/img/posts/ci-workshop/devops-infinity-loop.png)
+*Figuur 1*: DevOps Infinity Loop.
 
 ## Kernvereisten
 
@@ -39,6 +40,7 @@ Martin Fowler beschrijft CI als: *"team members merge changes into codebase toge
 Het Netflix principe stelt: *"Do more painful things more often!"* - frequente integratie vermindert frictie.
 
 ![If it hurts, do it more often](/assets/img/posts/ci-workshop/if-it-hurts.png)
+*Figuur 2*: If it hurts, do it more often.
 
 ## GitHub Actions Pipeline Setup
 
@@ -94,6 +96,7 @@ steps:
 ## Test Piramide
 
 ![Test Piramide](/assets/img/posts/ci-workshop/test-piramide.png)
+*Figuur 3*: Test Piramide.
 
 Van basis naar top:
 
@@ -110,6 +113,7 @@ Van basis naar top:
 ## Git Workflow Strategieën
 
 ![GitHub Flow](/assets/img/posts/ci-workshop/github-flow.png)
+*Figuur 4*: GitHub Flow.
 
 ### GitHub Flow (Aanbevolen)
 

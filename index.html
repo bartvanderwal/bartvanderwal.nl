@@ -5,7 +5,7 @@ layout: home-page
 
 <!-- SOFA/Draft posts section (hidden by default, sorted by date_started) -->
 <div id="sofa-section" class="sofa-section" style="display: none;">
-  <h2 class="section-title">SOFA Mode: Start Often, Fail Always <a href="{{ relativebase }}hoe-deze-blog-begon/#sofa-mode-start-often-fail-always" class="sofa-info" title="Wat is SOFA Mode?">?</a></h2>
+  <h2 class="section-title">SOFA Mode: Start Often, Fail Always <a href="{{ relativebase }}hoe-deze-blog-begon/#5-sofa-mode-start-often-fail-always" class="sofa-info" title="Wat is SOFA Mode?">?</a></h2>
   <ol class="post-card-box clearfix">
     {% assign drafts = site.posts | where: "draft", true | sort: "date_started" | reverse %}
     {% for post in drafts %}

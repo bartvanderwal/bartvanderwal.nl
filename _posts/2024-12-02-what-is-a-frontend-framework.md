@@ -12,9 +12,7 @@ canonical_url: "https://www.quora.com/What-is-a-front-end-framework-And-does-the
 
 *Originally posted on [Quora](https://www.quora.com/What-is-a-front-end-framework-And-does-the-definition-apply-to-Bootstrap-or-Angular)*
 
-![What is a Frontend Framework](/assets/img/posts/what-is-a-frontend-framework.png)
-
-A front-end framework (note the hyphen in front-end) is a framework for the front-end :). This applies to both Bootstrap and Angular, though a bit more to the latter. But that's probably not enough to answer the question, so let's define the terms in more detail.
+A front-end framework (note the hyphen (`-`) in front-end) is a framework for the front-end :). This applies to both Bootstrap and Angular, though a bit more to the latter. But that's probably not enough to answer the question, so let's define the terms in more detail.
 
 First front-end generally refers to a *web* front-end. A web front-end is simply a webpage or bunch of pages together. Perhaps also a single page application (or series thereof 'pockets of SPA') which took over in many websites after the use of AJAX became commonplace. I won't go into AJAX, but should also note that a front-end could also extend to an app, both native or hybrid. At least as long as the app has a UI, and also works as the client in a client-server architecture (e.g. the app gets data, or pulls data from a backend like most mobile apps do). But I'll assume web frontend in the rest of my stories.
 

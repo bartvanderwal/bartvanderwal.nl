@@ -203,9 +203,9 @@ Kies één systeem en blijf daarbij. Niet in één document [1] naast (Fowler, 2
 
 ### Voetnoten
 
-Voetnoten zijn voor academische boeken en juridische teksten, niet voor technische documentatie in APA-stijl.[^1] Houd referenties dus in de lopende tekst.
+Voetnoten zijn voor academische boeken en juridische teksten, niet voor technische documentatie in APA-stijl. Houd referenties dus in de lopende tekst.
 
-[^1]: "APA maakt geen gebruik van voet- of eindnoten voor bronvermelding. Het is wel toegestaan voor een korte toelichting op de tekst." (HAN-bibliotheek, z.d.). Let op de ironie: dit is precies zo'n korte toelichting waarvoor voetnoten wél toegestaan zijn. In dit geval dus ook met een bronvermelding IN de voetnoot, in plaats van de 'voetnoot ALS bronvermelding gebruiken' wat een veelvoorkomende fout/misvatting is bij studenten/schrijvers.
+Let op de ironie: APA raadt voet- of eindnoten voor bronvermelding af; alleen korte toelichtingen kunnen via voetnoten. Gebruik dus lopende tekst voor bronnen, niet een voetnoot als bronvermelding.
 
 ### Scribbr-valkuil
 
@@ -307,7 +307,8 @@ Binnen de AIM-opleiding aan de HAN hanteren we een controlekaart voor technische
 
 Maar onthoud: het afvinken van deze checklist is niet het doel. Het doel is het schrijven van een overtuigend, onderbouwd document dat je professionele competentie toont.
 
-![Bronvermelding in ICT](/assets/img/posts/apa-bronvermelding-in-ict.png)
+![Controlelijst voor professionele bronvermelding](/assets/img/posts/apa-bronvermelding-in-ict.png)
+*Figuur 1*: Controlelijst voor professionele bronvermelding
 
 ## Tot slot
 

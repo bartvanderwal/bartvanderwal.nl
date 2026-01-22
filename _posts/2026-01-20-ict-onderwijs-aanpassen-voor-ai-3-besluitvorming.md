@@ -40,12 +40,12 @@ Dit vraagt om andere toetsvormen — zie sectie 3 voor de concrete aanpak met mo
 
 ## 2. Waarschuwing voor studenten: De expertise-valkuil
 
-Als je nog bezig bent met leren programmeren, is de taxonomie niet alleen een beschrijving van werkwijzen — het is een waarschuwing. Type 1, 2 en 3 vereisen allemaal dat je de AI-output kunt beoordelen. En daar zit het probleem: **studenten hebben nog niet de expertise om AI-hallucinaties te herkennen**. Voor een diepere uitwerking van dit punt met Tiulkanov's flowchart: zie [blog 1/3, sectie 9](/ict-onderwijs-aanpassen-voor-ai-1-bewustwording/#9-de-expertise-verificatieprobleem-tiulkanovs-flowchart).
+Als je nog bezig bent met leren programmeren, is de taxonomie niet alleen een beschrijving van werkwijzen — het is een waarschuwing. Type 1, 2 en 3 vereisen allemaal dat je de AI-output kunt beoordelen. En daar zit het probleem: **studenten hebben nog niet de expertise om AI-hallucinaties te herkennen**. Voor een diepere uitwerking van dit punt met Tiulkanov's flowchart: zie [blog 1, sectie 7](/ict-onderwijs-aanpassen-voor-ai-1-bewustwording/#7-het-expertise-verificatieprobleem-tiulkanovs-flowchart).
 
 Subsecties 2.1-2.5 beschrijven het verificatieprobleem, waarom je zonder AI moet beginnen, geven een multi-criteria evaluatie van AI-types, leggen de verificatie-inspanning paradox uit, en verklaren waarom codekwaliteit geen criterium is.
 
-![SDLC endless cycle (Kam, 2025)](/assets/img/posts/google-sdlc-endless-cycle.png)
-*Figuur 1:* Software Development lifecycle/loop: Plan → Design → Code → Test → Deploy → Operations → Feedback (Kam, 2025)
+![Software Development lifecycle/loop: Plan → Design → Code → Test → Deploy → Operations → Feedback](/assets/img/posts/google-sdlc-endless-cycle.png)
+*Figuur 1*: Software Development lifecycle/loop: Plan → Design → Code → Test → Deploy → Operations → Feedback (Kam, 2025)
 
 ### 2.1 Het verificatieprobleem
 
@@ -68,8 +68,8 @@ Mijn advies voor studenten: **begin met Type 4a (Old Skool)** totdat je de basis
 
 Pas als je deze concepten beheerst, kun je veilig naar Type 4c (Learned from AI) of Type 1-3 (AI genereert code). Maar realiseer: **je bent verantwoordelijk voor code die je niet volledig begrijpt**.
 
-![Google's T-shaped model voor AI-enhanced developers](/assets/img/posts/google-t-shaped-ai-enhanced-developer.png)
-*Figuur 1:* T-shaped AI-enhanced developer skills (Kam, 2025).
+![T-shaped AI-enhanced developer skills](/assets/img/posts/google-t-shaped-ai-enhanced-developer.png)
+*Figuur 1*: T-shaped AI-enhanced developer skills (Kam, 2025).
 
 Dit T-shaped model uit Google's onderzoek visualiseert wat studenten nodig hebben (Kam, 2025). De verticale balk ("Core Software Engineering") is je fundament. De horizontale balk bovenaan ("GenAI Usage") is een aanvulling die je later leert.
 
@@ -232,7 +232,7 @@ De toetsvormen uit sectie 3 zijn ontworpen om dit te toetsen. Bij het criteriumg
 De titel van deze blog spreekt van "AI als leermiddel in plaats van butler". Dat woord is bewust gekozen. Een butler doet wat je zegt zonder dat je hoeft na te denken. Dat is precies wat Type 3 (AI in the Lead / Vibe Coding) is: de AI doet het werk, jij accepteert, niemand leert iets.
 
 ![AI-assisted gitaar leren](/assets/img/posts/guitar-ai-assisted-learning.png)
-*Figuur 2:* AI-assisted gitaar leren met feedback als leermiddel.*
+*Figuur 2*: AI-assisted gitaar leren met feedback als leermiddel.
 
 **AI als leermiddel** betekent iets anders:
 
@@ -265,8 +265,8 @@ Unesco instituut voor educatie (IESALC) (2023) adviseert in haar quick start gui
 <summary markdown="span">Samenvatting als antwoorden op BOB-vragen 'Besluitvorming'
 </summary>
 
-![BOB-model: van probleem naar besluit via Beeldvorming, Oordeelsvorming en Besluitvorming](/assets/img/posts/bob-model-funnel.png)
-*Figuur 3:* BOB-model als trechter van probleem naar besluit (Schop, z.d.).
+![BOB-model als trechter van probleem naar besluit](/assets/img/posts/bob-model-funnel.png)
+*Figuur 3*: BOB-model als trechter van probleem naar besluit (Schop, z.d.).
 
 In de Besluitvormingsfase van het BOB-model worden vier vragen beantwoord:
 

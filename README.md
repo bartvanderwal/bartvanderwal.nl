@@ -82,6 +82,22 @@ Checking internal links and images...
 3. **Title too long**: Blog post titel te lang (ca. 30-40 karaktersl zodat het op 1 regel past op desktop view; zie: `_plugins/title_length_checker.rb`
 4. **Subtitle too long**: Subtitel te lang (ca. 60-70 karakters); zodat het op 1 regel past op desktop view; zie: `_plugins/subtitle_length_checker.rb`
 
+### Testen van Ruby-validatiescripts (Jekyll plugins)
+
+Voor de Ruby-plugins (titel-, subtitel- en caption-checks) staan BDD-tests met Cucumber + RSpec assertions:
+
+```bash
+# Alle feature tests
+bundle exec cucumber
+
+# Specifiek
+bundle exec cucumber features/captions.feature
+```
+
+Meer achtergrond over de stack: [Difference between RSpec, Capybara, and Cucumber](https://www.codewithjason.com/difference-rspec-capybara-cucumber/).
+
+Alternatieven: MiniTest is de standaard in Ruby, maar RSpec is de facto voor BDD-matchers; Cucumber gebruik je voor Given/When/Then feature files.
+
 ### Troubleshooting: Cache issues
 
 Als htmlproofer nog oude fouten rapporteert ondanks dat je ze hebt gefixed in de `.md` bestanden, kan de Jekyll cache stale zijn. Verwijder de build output en rebuild schoon:

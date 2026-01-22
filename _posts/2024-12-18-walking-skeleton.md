@@ -29,16 +29,19 @@ De aanpak voorkomt verspilde moeite aan implementaties die later fundamentele wi
 ## Walking Skeleton vs. MVP
 
 ![Walking Skeleton vs MVP](/assets/img/walking-skeleton/walking-skeleton-vs-mvp.png)
+*Figuur 1*: Walking Skeleton vs MVP.
 
 Deze concepten dienen verschillende doelen:
 
 **Walking Skeleton:**
+
 - Technisch proof of concept
 - Valideert systeemcomponent integratie
 - Minimale feature set maar architectureel compleet
 - Gebouwd voor interne validatie, niet klantgebruik
 
 **MVP (Minimum Viable Product):**
+
 - Business-gedreven aanpak
 - Levert genoeg features voor early adopters
 - Verzamelt gebruikersfeedback

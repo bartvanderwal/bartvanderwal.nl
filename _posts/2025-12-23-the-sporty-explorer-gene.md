@@ -14,7 +14,8 @@ draft: true
 
 ## Het boek
 
-![alt text](/assets/img/sporty-explorer-gene/hond-bijt-mamil.png)
+![De sporty explorer in actie: hond versus MAMIL](/assets/img/sporty-explorer-gene/hond-bijt-mamil.png)
+*Figuur 1*: De sporty explorer in actie: hond versus MAMIL
 
 Met veel plezier en interesse las ik enkele jaren geleden het boek "Endure" van een zekere Alex Hutchinson. Echt een boek voor duursport nerds zoals ik. Vele onderwerpen passeerden, maar gemene draad ws 'the curiously elastice limits of human performance', zoals de ondertitel ervan luidde. 
 

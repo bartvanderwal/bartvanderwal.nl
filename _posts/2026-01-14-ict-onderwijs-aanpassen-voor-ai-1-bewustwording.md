@@ -83,8 +83,8 @@ Dit onderscheid ontstond mede naar aanleiding van een gesprek met een collega di
 
 Recent onderzoek van Treude & Gerosa (2025) presenteert een uitgebreide taxonomie van 11 developer-AI interactietypes, waaronder auto-complete code suggestions, command-driven actions, conversational assistance, en comment-guided prompts.
 
-![Concentrische cirkels van AI-interactiemodi](/assets/img/posts/ai-interaction-modes-concentric.png)
-*Figuur 1:* Het groeiend bereik van input (context) en output (scope) bij AI-interacties
+![Het groeiend bereik van input (context) en output (scope) bij AI-interacties](/assets/img/posts/ai-interaction-modes-concentric.png)
+*Figuur 1*: Het groeiend bereik van input (context) en output (scope) bij AI-interacties
 
 Voor de huidige praktijk vereenvoudig ik dit op aangeven van collega tot deze **drie primaire interaction modes**. Deze vormen eigenlijk twee gerelateerde dimensies — niet drie onafhankelijke — en vormen dus eerder concentrische cirkels dan een orthogonale matrix (zie Figuur 1):
 
@@ -152,7 +152,7 @@ De twee dimensies (input scope, output scope) bepalen samen waar een tool op het
 ### 4.4 De drie types in perspectief
 
 ![Overzicht van de drie AI-interactiemodi](/assets/img/posts/ai-interaction-modes.png)
-*Figuur 2:* Overzicht van de drie AI-interactiemodi.
+*Figuur 2*: Overzicht van de drie AI-interactiemodi.
 
 **Samenvatting:**
 
@@ -207,8 +207,8 @@ Ervaren ontwikkelaars zien in één oogopslag of gegenereerde code klopt. Zij he
 
 Studenten missen deze detector volledig. Het AI-model antwoordt met vertrouwen — maar dat betekent niet dat het klopt.
 
-![Is it safe to use ChatGPT for your task?](/assets/img/prompt-engineering/chat-gpt-comic-2.jpg)
-*Figuur 3:* Flowchart: Wanneer is het veilig om ChatGPT te gebruiken?
+![Flowchart: Wanneer is het veilig om ChatGPT te gebruiken?](/assets/img/prompt-engineering/chat-gpt-comic-2.jpg)
+*Figuur 3*: Flowchart: Wanneer is het veilig om ChatGPT te gebruiken?
 
 Aleksandr Tiulkanov maakte in 2023 al deze flowchart (Figuur 3), die op social veelal als humor/meme werd gedeeld. Maar eigenlijk laat dit heel effectief het kernprobleem zien. De beslissende vraag: **"Do you have expertise to verify that the output is accurate?"** Voor studenten is het antwoord meestal "NO" — wat leidt naar "Unsafe to use ChatGPT".
 
@@ -229,8 +229,8 @@ Bewustwording is de eerste stap. De volgende stap is oordeelsvorming: leren onde
 <summary markdown="span">Samenvatting: Antwoorden op BOB-vragen 'Bewustwording'
 </summary>
 
-![BOB-model: van probleem naar besluit via Beeldvorming, Oordeelsvorming en Besluitvorming](/assets/img/posts/bob-model-funnel.png)
-*Figuur 4:* BOB-model als trechter (Schop, z.d.).
+![BOB-model als trechter (Schop, z.d.).](/assets/img/posts/bob-model-funnel.png)
+*Figuur 4*: BOB-model als trechter (Schop, z.d.).
 
 | Vraag | Beantwoording in deze blog |
 | ----- | -------------------------- |

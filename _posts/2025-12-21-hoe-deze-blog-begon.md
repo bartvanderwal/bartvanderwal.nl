@@ -67,8 +67,8 @@ Ik stel een alternatieve interpretatie voor: **Start Often, Fail Always**. Niet 
 
 ### 5.1 Perfectie is een illusie
 
-![Agile Manifesto screenshot: "Responding to change over following a plan"](/assets/img/posts/agile-manifesto-embrace-change.png)
-*Agile manifesto: Value responding to change over following a plan, dus 'Embrace change'*
+![Agile manifesto: Value responding to change over following a plan, dus 'Embrace change'](/assets/img/posts/agile-manifesto-embrace-change.png)
+*Figuur 1*: Agile manifesto: Value responding to change over following a plan, dus 'Embrace change'
 
 Een extreem voorbeeld: zelfs Newton had het niet helemaal correct. Neil deGrasse Tyson zegt over de slimste persoon ooit: ["Isaac Newton - nothing, nobody comes close"](https://www.youtube.com/watch?v=xKwlp1Ap9XA). En: "Great scientists are marked not by their answers, but by how great their questions are." En toch falen Newtons bewegingswetten op microscopisch niveau - daar nam quantum mechanica het over. Was Newton "fout"? Nee. Zijn wetten zijn *goed genoeg* voor 99,9% van de toepassingen. Ze zijn "klaar genoeg om te releasen."
 

@@ -14,6 +14,7 @@ GEM
     base64 (0.3.0)
     benchmark (0.5.0)
     bigdecimal (4.0.1)
+    builder (3.3.0)
     colorator (1.1.0)
     concurrent-ruby (1.3.6)
     console (1.34.2)
@@ -21,6 +22,32 @@ GEM
       fiber-local (~> 1.1)
       json
     csv (3.3.5)
+    cucumber (10.2.0)
+      base64 (~> 0.2)
+      builder (~> 3.2)
+      cucumber-ci-environment (> 9, < 12)
+      cucumber-core (> 15, < 17)
+      cucumber-cucumber-expressions (> 17, < 20)
+      cucumber-html-formatter (> 21, < 23)
+      diff-lcs (~> 1.5)
+      logger (~> 1.6)
+      mini_mime (~> 1.1)
+      multi_test (~> 1.1)
+      sys-uname (~> 1.3)
+    cucumber-ci-environment (11.0.0)
+    cucumber-core (16.1.1)
+      cucumber-gherkin (> 36, < 40)
+      cucumber-messages (> 31, < 33)
+      cucumber-tag-expressions (> 6, < 9)
+    cucumber-cucumber-expressions (18.1.0)
+      bigdecimal
+    cucumber-gherkin (38.0.0)
+      cucumber-messages (>= 31, < 33)
+    cucumber-html-formatter (22.3.0)
+      cucumber-messages (> 23, < 33)
+    cucumber-messages (32.0.0)
+    cucumber-tag-expressions (8.1.0)
+    diff-lcs (1.6.2)
     em-websocket (0.5.3)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
@@ -126,9 +153,13 @@ GEM
     listen (3.9.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
+    logger (1.7.0)
+    memoist3 (1.0.0)
     mercenary (0.4.0)
     metrics (0.15.0)
+    mini_mime (1.1.5)
     mini_portile2 (2.8.9)
+    multi_test (1.1.0)
     nokogiri (1.19.0)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
@@ -165,6 +196,19 @@ GEM
       ffi (~> 1.0)
     rexml (3.4.4)
     rouge (4.6.1)
+    rspec (3.13.2)
+      rspec-core (~> 3.13.0)
+      rspec-expectations (~> 3.13.0)
+      rspec-mocks (~> 3.13.0)
+    rspec-core (3.13.6)
+      rspec-support (~> 3.13.0)
+    rspec-expectations (3.13.5)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.13.0)
+    rspec-mocks (3.13.7)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.13.0)
+    rspec-support (3.13.6)
     ruby-rc4 (0.1.5)
     safe_yaml (1.0.5)
     sass-embedded (1.97.1)
@@ -198,6 +242,9 @@ GEM
       google-protobuf (~> 4.31)
     sass-embedded (1.97.1-x86_64-linux-musl)
       google-protobuf (~> 4.31)
+    sys-uname (1.4.1)
+      ffi (~> 1.1)
+      memoist3 (~> 1.0.0)
     terminal-table (3.0.2)
       unicode-display_width (>= 1.1.1, < 3)
     traces (0.18.2)
@@ -231,6 +278,7 @@ PLATFORMS
   x86_64-linux-musl
 
 DEPENDENCIES
+  cucumber
   html-proofer
   jekyll
   jekyll-feed
@@ -238,6 +286,7 @@ DEPENDENCIES
   jekyll-reading-time
   jekyll-redirect-from
   jekyll-sitemap
+  rspec
   webrick
 
 CHECKSUMS
@@ -248,10 +297,20 @@ CHECKSUMS
   base64 (0.3.0) sha256=27337aeabad6ffae05c265c450490628ef3ebd4b67be58257393227588f5a97b
   benchmark (0.5.0) sha256=465df122341aedcb81a2a24b4d3bd19b6c67c1530713fd533f3ff034e419236c
   bigdecimal (4.0.1) sha256=8b07d3d065a9f921c80ceaea7c9d4ae596697295b584c296fe599dd0ad01c4a7
+  builder (3.3.0) sha256=497918d2f9dca528fdca4b88d84e4ef4387256d984b8154e9d5d3fe5a9c8835f
   colorator (1.1.0) sha256=e2f85daf57af47d740db2a32191d1bdfb0f6503a0dfbc8327d0c9154d5ddfc38
   concurrent-ruby (1.3.6) sha256=6b56837e1e7e5292f9864f34b69c5a2cbc75c0cf5338f1ce9903d10fa762d5ab
   console (1.34.2) sha256=1c036abf606ccec83f9dc28f0c31710fe5936ffe7ba5d235ae2865590a482d58
   csv (3.3.5) sha256=6e5134ac3383ef728b7f02725d9872934f523cb40b961479f69cf3afa6c8e73f
+  cucumber (10.2.0) sha256=fdedbd31ecf40858b60f04853f2aa15c44f5c30bbac29c6a227fa1e7005a8158
+  cucumber-ci-environment (11.0.0) sha256=0df79a9e1d0b015b3d9def680f989200d96fef206f4d19ccf86a338c4f71d1e2
+  cucumber-core (16.1.1) sha256=d3aaa80a1ee2865f63f1a21ef496129f675af9099993b9af9608c4ef8ae26b89
+  cucumber-cucumber-expressions (18.1.0) sha256=181c64ef7596e7d61d33fb723929a63f06426e9724d78ec3a5c1c3c242208ce9
+  cucumber-gherkin (38.0.0) sha256=3e5846badf646eaec482b07067520e4494f370a0cfa5474d63522ca2ace800c4
+  cucumber-html-formatter (22.3.0) sha256=f9768ed05588dbd73a5f3824c2cc648bd86b00206e6972d743af8051281d0729
+  cucumber-messages (32.0.0) sha256=eb64fa67c9499ab40126823046be6d6f63c2d1444d6ba61434f305d25a11722c
+  cucumber-tag-expressions (8.1.0) sha256=9bd8c4b6654f8e5bf2a9c99329b6f32136a75e50cd39d4cfb3927d0fa9f52e21
+  diff-lcs (1.6.2) sha256=9ae0d2cba7d4df3075fe8cd8602a8604993efc0dfa934cff568969efb1909962
   em-websocket (0.5.3) sha256=f56a92bde4e6cb879256d58ee31f124181f68f8887bd14d53d5d9a292758c6a8
   ethon (0.15.0) sha256=0809805a035bc10f54162ca99f15ded49e428e0488bcfe1c08c821e18261a74d
   eventmachine (1.2.7) sha256=994016e42aa041477ba9cff45cbe50de2047f25dd418eba003e84f0d16560972
@@ -297,9 +356,13 @@ CHECKSUMS
   kramdown-parser-gfm (1.1.0) sha256=fb39745516427d2988543bf01fc4cf0ab1149476382393e0e9c48592f6581729
   liquid (4.0.4) sha256=4fcfebb1a045e47918388dbb7a0925e7c3893e58d2bd6c3b3c73ec17a2d8fdb3
   listen (3.9.0) sha256=db9e4424e0e5834480385197c139cb6b0ae0ef28cc13310cfd1ca78377d59c67
+  logger (1.7.0) sha256=196edec7cc44b66cfb40f9755ce11b392f21f7967696af15d274dde7edff0203
+  memoist3 (1.0.0) sha256=686e42402cf150a362050c23143dc57b0ef88f8c344943ff8b7845792b50d56f
   mercenary (0.4.0) sha256=b25a1e4a59adca88665e08e24acf0af30da5b5d859f7d8f38fba52c28f405138
   metrics (0.15.0) sha256=61ded5bac95118e995b1bc9ed4a5f19bc9814928a312a85b200abbdac9039072
+  mini_mime (1.1.5) sha256=8681b7e2e4215f2a159f9400b5816d85e9d8c6c6b491e96a12797e798f8bccef
   mini_portile2 (2.8.9) sha256=0cd7c7f824e010c072e33f68bc02d85a00aeb6fce05bb4819c03dfd3c140c289
+  multi_test (1.1.0) sha256=e9e550cdd863fb72becfe344aefdcd4cbd26ebf307847f4a6c039a4082324d10
   nokogiri (1.19.0) sha256=e304d21865f62518e04f2bf59f93bd3a97ca7b07e7f03952946d8e1c05f45695
   nokogiri (1.19.0-aarch64-linux-gnu) sha256=11a97ecc3c0e7e5edcf395720b10860ef493b768f6aa80c539573530bc933767
   nokogiri (1.19.0-aarch64-linux-musl) sha256=eb70507f5e01bc23dad9b8dbec2b36ad0e61d227b42d292835020ff754fb7ba9
@@ -319,6 +382,11 @@ CHECKSUMS
   rb-inotify (0.11.1) sha256=a0a700441239b0ff18eb65e3866236cd78613d6b9f78fea1f9ac47a85e47be6e
   rexml (3.4.4) sha256=19e0a2c3425dfbf2d4fc1189747bdb2f849b6c5e74180401b15734bc97b5d142
   rouge (4.6.1) sha256=5075346d5797d6864be93f7adc75a16047a7dbfa572c63c502419ffa582c77de
+  rspec (3.13.2) sha256=206284a08ad798e61f86d7ca3e376718d52c0bc944626b2349266f239f820587
+  rspec-core (3.13.6) sha256=a8823c6411667b60a8bca135364351dda34cd55e44ff94c4be4633b37d828b2d
+  rspec-expectations (3.13.5) sha256=33a4d3a1d95060aea4c94e9f237030a8f9eae5615e9bd85718fe3a09e4b58836
+  rspec-mocks (3.13.7) sha256=0979034e64b1d7a838aaaddf12bf065ea4dc40ef3d4c39f01f93ae2c66c62b1c
+  rspec-support (3.13.6) sha256=2e8de3702427eab064c9352fe74488cc12a1bfae887ad8b91cba480ec9f8afb2
   ruby-rc4 (0.1.5) sha256=00cc40a39d20b53f5459e7ea006a92cf584e9bc275e2a6f7aa1515510e896c03
   safe_yaml (1.0.5) sha256=a6ac2d64b7eb027bdeeca1851fe7e7af0d668e133e8a88066a0c6f7087d9f848
   sass-embedded (1.97.1) sha256=112ee8895854e7a8ea985937f7458f649fed8df255ed61e189f8a4b185e768d9
@@ -336,6 +404,7 @@ CHECKSUMS
   sass-embedded (1.97.1-x86_64-linux-android) sha256=d3283323c0a5e2a46d7891748f09ad5446fe840ae69a305379e9a99c4c079cff
   sass-embedded (1.97.1-x86_64-linux-gnu) sha256=9a294bb0acb1a539ed19f0e511098a9740b4aab4389e169585e8da1337fbd8b4
   sass-embedded (1.97.1-x86_64-linux-musl) sha256=c383026b7a70d52b0ef4be73c45cc1399fc65f95e851b0fc9265c8d89f151556
+  sys-uname (1.4.1) sha256=ed2278ec670ee8af5eb5420d3a98e22188051f6241180db7c779993db2739a16
   terminal-table (3.0.2) sha256=f951b6af5f3e00203fb290a669e0a85c5dd5b051b3b023392ccfd67ba5abae91
   traces (0.18.2) sha256=80f1649cb4daace1d7174b81f3b3b7427af0b93047759ba349960cb8f315e214
   ttfunk (1.7.0) sha256=2370ba484b1891c70bdcafd3448cfd82a32dd794802d81d720a64c15d3ef2a96

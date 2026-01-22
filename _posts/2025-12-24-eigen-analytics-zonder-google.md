@@ -14,7 +14,8 @@ revisions:
     note: "Sectie over naamgeving uitgebreid"
 ---
 
-![ChatGPT- Plaatje Eigen Analytics](/assets/img/posts/ChatGPT-plaatje-eigen-analytics.png)
+![AI-gegenereerde illustratie van eigen analytics](/assets/img/posts/ChatGPT-plaatje-eigen-analytics.png)
+*Figuur 1*: AI-gegenereerde illustratie van eigen analytics
 
 "Wie schrijft die blijft," zeg ik steeds vaker. Ik blog omdat ik graag schrijf over onderwerpen die me interesseren, niet om pageviews te optimaliseren. Maar toen ik deze site opzette, wilde ik toch enige vorm van analytics. Niet zozeer om te weten welke artikelen aanslaan, maar om te leren hoe je analytics privacyvriendelijk kunt implementeren.
 
@@ -47,6 +48,7 @@ Dit open sourcen door grote techbedrijven is een onderbelicht aspect in de discu
 Maar dit laat onverlet dat diezelfde bedrijven op andere vlakken keihard concurreren, en dat hun gedrag leidt tot wat Cory Doctorow [*enshittification*](https://en.wikipedia.org/wiki/Enshittification) noemt. In zijn recente boek *Enshittification: Why Everything Suddenly Got Worse and What to Do About It* (Doctorow, 2025) beschrijft hij het patroon: platforms beginnen met waarde leveren aan gebruikers, verschuiven vervolgens naar zakelijke klanten, en trekken uiteindelijk alle waarde naar zichzelf toe. CEO's en bedrijfsleiding stellen groei op korte termijn boven gezond gedrag op lange termijn. De belangen van gebruikers komen niet vooraan.
 
 [![Cory Doctorow at CF 25: How Enshittification Conquered the 21st Century and How We Can Overthrow It](/assets/img/posts/cory-doctorow-enshittification-cloudfest-2025.png)](https://www.youtube.com/watch?v=_Ai-fC-2Bpo)
+*Figuur*: Cory Doctorow presenteert enshittification op CloudFest 2025
 
 Deels is dat ook onze eigen schuld. Gebruikers zijn zelden bereid te betalen voor diensten, en verkiezen liever het product te zijn dan het product te kopen. Over alternatieven als micropayments wellicht een andere keer meer. Voor nu volstaat de constatering dat "gratis" zelden gratis is, en dat de kosten vaak pas later zichtbaar worden.
 
@@ -141,7 +143,8 @@ Een bijkomend voordeel van Nginx is dat je direct rate limiting kunt inschakelen
 
 Uiteindelijk koos ik toch voor Umami vanwege de mooiere interface en de mogelijkheid om statistieken publiek te delen. Je kunt mijn statistieken bekijken op de [statistieken pagina](/stats/).
 
-![Umami dashboard voor bartvanderwal.nl](/assets/img/posts/umami-dashboard.png)
+![Umami analytics dashboard in werking](/assets/img/posts/umami-dashboard.png)
+*Figuur 3*: Umami analytics dashboard in werking
 
 ## Conclusie
 

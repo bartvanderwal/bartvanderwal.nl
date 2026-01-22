@@ -6,7 +6,7 @@ In het vervolg op de interview serie hebben de vorige geïnterviewden (inclusief
 
 ![BYU organisatoren Alfred (rechts) en Niels (midden) bij hun deelname aan Isles of Scilly SwimRun met organisator Wez Swain](byu-organisatoren-scilly.jpg)
 
-*Figuur 1:* Alfred en Niels bij Isles of Scilly SwimRun.
+*Figuur 1*: Alfred en Niels bij Isles of Scilly SwimRun.
 
 ## Hoe zijn jullie in swimrun gerold?
 
@@ -54,7 +54,7 @@ Alternatief: iemand als Wez Swain (Scilly60-organisator) of Andreas Sachs (MySwi
 
 ![Foto van Scilly60 organisator Wez Swain](wez-swain-scilly60.jpg)
 
-*Figuur 2:* Wez Swain, organisator van Scilly60.
+*Figuur 2*: Wez Swain, organisator van Scilly60.
 
 ## Tot slot
 
@@ -66,7 +66,7 @@ Ze hebben ambitie en diepe wens om meer hiermee te doen. De uitdaging zit in "ha
 
 ![Twiske SwimRunners groepsfoto](twiske-swimrunners-groep.jpg)
 
-*Figuur 3:* Twiske SwimRunners groepsfoto.
+*Figuur 3*: Twiske SwimRunners groepsfoto.
 
 Niels en Alfred nodigen alle swimrunners (en niet-swimrunners) uit voor de koudste swimrun van Nederland op 4 januari, georganiseerd door het Twiske in Landsmeer. Zie hun Facebook of Raf Ariëns' oproep in de SwimRun Huiskamer WhatsApp/Signal groep (https://swimrun.group voor info/lidmaatschap).
 

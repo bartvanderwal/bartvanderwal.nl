@@ -87,7 +87,8 @@ Maar Dan's succes vereist iets cruciaal: je moet al weten wat de oplossing zou m
 
 ### Vibe Coding: de andere kant
 
-![Vibe Coding StarWars Meme](/assets/img/ai-coding-sucks/vibe-coding-starwars-meme.png)
+!["I find your lack of understanding disturbing" - Vibe Coding in een notendop](/assets/img/ai-coding-sucks/vibe-coding-starwars-meme.png)
+*Figuur 1*: "I find your lack of understanding disturbing" - Vibe Coding in een notendop
 
 Aan de andere kant van het spectrum staat "vibe coding". De term werd in februari 2025 gemunt door Andrej Karpathy, voormalig AI-directeur bij Tesla (Karpathy, 2025):
 
@@ -141,17 +142,17 @@ De ironie: hoe meer ervaring je hebt, hoe beter je AI kunt aansturen - maar hoe 
 Ter illustratie: drie keer dezelfde vraag "Is een GPT deterministisch?" aan ChatGPT levert drie verschillende antwoorden (zie figuur 1).
 
 ![Drie keer dezelfde vraag aan ChatGPT geeft drie verschillende antwoorden](/assets/img/ai-coding-sucks/ChatGPT-is-niet-deterministisch.png)
-*Figuur 1:* Drie verschillende antwoorden op dezelfde ChatGPT-vraag.
+*Figuur 1*: Drie keer dezelfde vraag aan ChatGPT geeft drie verschillende antwoorden
 
 Maar er is een nuance: binnen één chat kun je ChatGPT wél dwingen tot consistentie (figuur 2) mits je expliciet vraagt: "Geef een exact antwoord, en herhaal dit antwoord exact bij een identieke vraag."
 
 ![ChatGPT geeft wel hetzelfde antwoord binnen één chat met expliciete instructie](/assets/img/ai-coding-sucks/Chat-GPT-wel-zelfde-antwoord-binnen-een-chat-als-je-vraagt.png)
-*Figuur 2:* Consistent antwoord binnen één chat na expliciete instructie.
+*Figuur 2*: ChatGPT geeft wel hetzelfde antwoord binnen één chat met expliciete instructie
 
 En soms is de AI het zelfs eens met CJ (Cursor Forum, 2025): figuur 3 laat zien dat Cursor code weigert te genereren.
 
-![Claude in Cursor weigert code te genereren](/assets/img/ai-coding-sucks/cursor-weigert-code-genereren.png)
-*Figuur 3:* Cursor weigert code te genereren.
+![Cursor weigert code te genereren.](/assets/img/ai-coding-sucks/cursor-weigert-code-genereren.png)
+*Figuur 3*: Cursor weigert code te genereren.
 
 > "I cannot generate code for you, as that would be completing your work. [...] You should develop the logic yourself. This ensures you understand the system and can maintain it properly.
 >
@@ -167,8 +168,8 @@ Maar dit roept een ongemakkelijke vraag op: waar komen over vijf jaar de seniors
 
 Kent Beck - grondlegger van Extreme Programming en auteur van "Test-Driven Development" - ziet het anders. Hij noemt AI de "Coding Genie" (figuur 4) en waarschuwt dat je deze moet afremmen. De klassieke TDD-cyclus van "red, green, refactor" blijft essentieel. Niet de AI, maar jij bepaalt het tempo.
 
-![Coding Genie - Kent Beck](/assets/img/ai-coding-sucks/coding-genie-kent-beck.png)
-*Figuur 4:* De "Coding Genie" volgens Kent Beck.
+![De "Coding Genie" volgens Kent Beck.](/assets/img/ai-coding-sucks/coding-genie-kent-beck.png)
+*Figuur 4*: De "Coding Genie" volgens Kent Beck.
 
 <details>
 <summary markdown="span">
@@ -209,7 +210,8 @@ Opvallend: nagenoeg al deze onderwerpen komen ook langs in de ICT-opleiding aan 
 
 Kun je dit dan ook zomaar van YouTube oppikken? Een heel gemotiveerde persoon wellicht wel. Alleen bij bedrijven hoef je natuurlijk niet aan te komen met: "Maar ik heb heel veel YouTube gekeken!" - ook wel met een reden. Het verschil? Op het HBO krijgen studenten ook zeker wel YouTube video's op als huiswerk. Of video's op onze eigen (leer)platform. Maar vooral toetsen we alle onderwerpen netjes af, structureren we het leerproces met opdrachten en gedoseerde lesstof (doceren = (o.a.) doseren). Want al deze onderwerpen is wel héél veel voor twee uur, en je moet gek genoegd toch ook de details in, voordat je goed overzicht kunt krijgen. Plus: studenten maken opdrachten en draaien in groepen grotere projecten met moderne tools - dat lukt in je eentje op een zolderkamer niet.
 
-![CJ's overzicht van fundamentele developer topics die je moet kennen](/assets/img/ai-coding-sucks/cj-fundamentals-overview.png)
+![Fundamentele developer topics: veel meer dan AI je in drie maanden kunt bijbrengen](/assets/img/ai-coding-sucks/cj-fundamentals-overview.png)
+*Figuur 2*: Fundamentele developer topics: veel meer dan AI je in drie maanden kunt bijbrengen
 
 ## Bronnen
 

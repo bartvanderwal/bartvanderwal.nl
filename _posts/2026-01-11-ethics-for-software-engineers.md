@@ -12,7 +12,16 @@ img: posts/boek-ethics-for-people-who-work-in-tech.png
 
 Dit is een uitwerking van een idee voor de opzet van een keuzevak Ethiek binnen het HBO-ICT. De structuur is gebaseerd op het boek "Ethics for People Who Work in Tech" van Marc Steen (2022). Het vak sluit aan bij de keuzevakbeschrijving die toegepaste ethiek centraal stelt: praktische besluitvorming, niet abstracte filosofie.
 
-De cursusstructuur volgt de drie delen van het boek, maar het boek zelf is niet per se verplicht - zie mijn overwegingen daarover [onderaan deze post](#het-boek-verplicht-of-niet).
+De cursusstructuur volgt de drie delen van het boek, maar het boek zelf is niet per se verplicht - zie mijn overwegingen daarover [onderaan deze post](/ethics-for-software-engineers/#het-boek-verplicht-of-niet).
+
+## Versiegeschiedenis
+
+| Datum | Versie | Wijziging |
+| ----- | ------ | --------- |
+| 2026-01-11 | 1.0 | Eerste uitwerking van vakopzet |
+| 2026-01-20 | 1.1 | Details/summary blokken gefixed; Optionele casussen toegevoegd **(WIP: nog valideren)** |
+
+*Opmerking: In eerdere versies speelde AI (prompt engineering als voorbeeld) te prominent in de lead. Dat is nu genuanceerd.*
 
 ## Waarom dit vak?
 
@@ -61,7 +70,9 @@ In deel twee behandelen we vier sleutelconcepten, elk met werkelijke casussen en
 Elk design is een set keuzes. Een app die belooft "je helpen tijd in te sparen" kan ook ontworpen zijn om je langer vast te houden. Een algoritme dat "eerlijk" selecteert kan systematische bias bevatten. Technologie is altijd politiek en ethisch geladen.
 
 <details>
-<summary markdown="span">Casussen en werkvormen uitklappen</summary>
+<summary markdown="span">
+       Casussen en werkvormen uitklappen
+</summary>
 
 ### *Casus*: Recruitment AI discrimineert
 
@@ -89,7 +100,10 @@ Steen stelt de *Legal-Ethical Matrix*: wat legaal is, is niet per se ethisch. En
 | **Illegaal** | Whistleblowers (Snowden) | Duidelijk fout |
 
 <details>
-<summary markdown="span"><strong>Casussen en werkvormen uitklappen</strong></summary>
+
+<summary markdown="span">
+Casussen en werkvormen uitklappen
+</summary>
 
 ## Casus: LinkedIn en je emailcontacten
 
@@ -117,7 +131,9 @@ Cory Doctorow beschrijft dit patroon:
 4. **Platform sterft** (iedereen verliest vertrouwen)
 
 <details>
-<summary markdown="span"><strong>Casussen en werkvormen uitklappen</strong></summary>
+<summary markdown="span">
+Casussen en werkvormen uitklappen
+</summary>
 
 *Casus: Twitter → X*
 
@@ -143,7 +159,9 @@ Groepjes kiezen een bekend platform (Instagram, Discord, Spotify, GitHub). Taak:
 De ACM: "Big tech gebruikt dark patterns om consumenten naar opties te sturen die nadelig zijn voor hun privacy". Dit zijn geen bugs. Het zijn features. Opzettelijk.
 
 <details>
-<summary markdown="span">Casussen en werkvormen uitklappen</summary>
+<summary markdown="span">
+Casussen en werkvormen uitklappen
+</summary>
 
 *Casus: Facebook Messenger — download required*
 
@@ -260,7 +278,10 @@ De EU AI Act, GDPR, Digital Services Act — dit zijn regelgeving die ethiek "fo
 - **Capture**: Soms "vangen" grote bedrijven de regelgeving. Ze zeggen: "Dit gaat niet werken. Vertrouw ons en we regelen het zelf." Inspecties worden zwak. Boetes zijn peanuts.
 
 <details>
-<summary markdnwon="span"><strong>Casussen en werkvormen uitklappen</strong></summary>
+
+<summary markdown="span">
+Casussen en werkvormen uitklappen
+</summary>
 
 *Werksituatie: Je bent architect bij een tech bedrijf*
 
@@ -290,7 +311,7 @@ Pijlen: wie beïnvloedt wie? Wie wint, wie verliest?
 
 </details>
 
-```
+```text
 REGULATORS (Links)          BEDRIJVEN (Midden)          MAATSCHAPPIJ (Rechts)
 ┌────────────────┐          ┌────────────────┐          ┌──────────────────┐
 │ US Congress    │◄─────────│  ByteDance     │          │  Gen Z users     │
@@ -309,6 +330,7 @@ data-deling met China"    dit kan niet" en lobbyen
 ```
 
 **Analyse:**
+
 - **Regulators**: Willen ban of strikte controle (geopolitieke druk vanuit VS tegen China)
 - **ByteDance**: Lobbiet gigantisch tegen ban. Ze hebben te veel inkomsten.
 - **Users**: Willen de app houden. Ze petitioneren, protesteren.
@@ -316,6 +338,7 @@ data-deling met China"    dit kan niet" en lobbyen
 - **Maatschappij**: Verdeeld. Sommigen: "Privé gevaar!" Anderen: "Mijn jongeren zijn erdoor verslaagd!"
 
 **Wat kan een engineer hier doen?**
+
 - Je werkt voor ByteDance — je zou kunnen zeggen: "Deze datadeling gaan we stoppen, privacy-first."
 - Je werkt voor een VS-bedrijf — je kunt zeggen: "Dit gaat niet om technologie, maar om geopolitiek."
 - Je bent activist — je organiseert gebruikers, niet tegen TikTok maar voor betere regelgeving.
@@ -402,9 +425,9 @@ De Absurd Trolley Problems site vraagt om cookie-toestemming. Je kunt de site oo
 
 **Discussievraag:** Wat is "legitimate interest" eigenlijk? Waarom mogen deze vinkjes default aan staan, terwijl marketing-cookies dat niet mogen? Is dat eerlijk?
 
-*(Antwoord: "Legitimate interest" is een AVG-grondslag waarbij bedrijven claimen een gerechtvaardigd belang te hebben. Het verschil met marketing is dat het "noodzakelijk" zou zijn voor de dienst. Of dat klopt, is precies het soort vraag dat we in dit vak stellen.)*
+Antwoord: "Legitimate interest" is een AVG-grondslag waarbij bedrijven claimen een gerechtvaardigd belang te hebben. Het verschil met marketing is dat het "noodzakelijk" zou zijn voor de dienst. Of dat klopt, is precies het soort vraag dat we in dit vak stellen.)
 
-## Het boek: verplicht of niet?
+## Het boek verplicht of niet
 
 Een vraag waar ik nog mee worstel: moeten studenten het boek zelf aanschaffen?
 

@@ -13,8 +13,7 @@ draft: true
 In dit artikel verkennen we prompt engineering: de kunst van het effectief communiceren met AI-taalmodellen.
 
 ![3HOOG comic over ChatGPT](/assets/img/prompt-engineering/chat-gpt-3hoog-comic.jpg)
-
-*Figuur 1:* 3HOOG: ChatGPT strip.
+*Figuur 1*: 3HOOG comic over ChatGPT
 
 ## Over onderzoek en Prompt Engineering
 
@@ -23,16 +22,14 @@ HAN ICT benadrukt toegepast onderzoek als fundamenteel voor professionele ontwik
 ChatGPT demonstreert schrijfvaardigheid (scoort 7-8), maar heeft significante beperkingen. Het functioneert als "creatieve technologie" met enorme kennis, maar produceert soms vol vertrouwen incorrecte informatie - een fenomeen dat ook wel "hallucination" wordt genoemd.
 
 ![ChatGPT als bullshitter](/assets/img/prompt-engineering/chat-gpt-the-bullshitter.jpg)
-
-*Figuur 2:* ChatGPT als bullshitter.
+*Figuur 2*: ChatGPT als bullshitter
 
 ## Prompt Engineering
 
 Effectief prompt gebruik vereist strategische formulering. "Eén prompt is geen prompt" - iteratieve verfijning is belangrijk.
 
-![XKCD AI Methodology](/assets/img/prompt-engineering/xkdc-ai_methodology.png)
-
-*Figuur 3:* XKCD: AI Methodology.
+![XKCD: AI Methodology](/assets/img/prompt-engineering/xkdc-ai_methodology.png)
+*Figuur 3*: XKCD: AI Methodology
 
 Belangrijke aandachtspunten:
 
@@ -43,8 +40,7 @@ Belangrijke aandachtspunten:
 Problematische zinnen die ChatGPT vaak genereert zoals "essentiële tool" en "absoluut onmisbaar" missen objectiviteit totdat onderzoek zulke claims valideert.
 
 ![ChatGPT safety](/assets/img/prompt-engineering/chat-gpt-comic-2.jpg)
-
-*Figuur 4:* ChatGPT safety strip.
+*Figuur 4*: ChatGPT safety strip
 
 ## Onderzoeksmethoden
 
@@ -64,8 +60,7 @@ Alle outputs vereisen kritische review op accuraatheid, volledigheid en helderhe
 AI biedt significant potentieel maar presenteert echte risico's. Blanco verbod is contraproductief; ethische argumenten ondersteunen verantwoorde AI integratie.
 
 ![De toekomst van AI](/assets/img/prompt-engineering/ai-the-future.png)
-
-*Figuur 5:* Cartoon over de toekomst van AI.
+*Figuur 5*: Cartoon over de toekomst van AI
 
 ---
 

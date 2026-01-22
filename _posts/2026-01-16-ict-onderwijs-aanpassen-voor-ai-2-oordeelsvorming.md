@@ -36,8 +36,8 @@ Stel je voor: ICT-student Amad zegt in een gesprek "Ik heb AI gebruikt."
 
 Twee gesprekken, dezelfde woorden, tegenovergestelde reacties. **Maar hier wordt het interessant.** Ook de bedrijfsbegeleider wil NIET dat de stagiair klakkeloos AI output overneemt. En ook de docent zou het prima vinden als de student AI gebruikt om feedback te krijgen op zelf geschreven tekst - mits de student alles controleert en in het proces leert. De reactie hangt niet af van *of* je AI gebruikt, maar *hoe*.
 
-![Overzicht van de vier types AI-gebruik](/assets/img/posts/types-van-ai-gebruik-overzicht.png)
-*De vier types AI-gebruik (met Type 4 opgesplitst in drie varianten): van menselijk idee met AI-generatie tot mens zonder AI*
+![De vier types AI-gebruik (met Type 4 opgesplitst in drie varianten): van menselijk idee met AI-generatie tot mens zonder AI](/assets/img/posts/types-van-ai-gebruik-overzicht.png)
+*Figuur 1*: De vier types AI-gebruik (met Type 4 opgesplitst in drie varianten): van menselijk idee met AI-generatie tot mens zonder AI
 
 Een **taxonomie** is een systematische classificatie — een onderverdeling van AI-gebruikstypes op basis van wie de regie heeft. Denk hierbij aan een **kwadrant** met twee dimensies: horizontaal van kort/open prompt naar lang/gedetailleerd, verticaal van AI actief naar menselijk actief.
 
@@ -69,8 +69,8 @@ Het verschil met Type 1: de eerste prompt is kort en open, niet gedetailleerd en
 
 De mens vraagt AI om ideeën én om deze zelf uit te werken. Zonder serieuze tussenkomst: deze accepteert de voorgestelde voorkeurskeuze, of geeft door AI voorgelegde opties weer aan de AI terug ("wat zou jij doen?" of "kijk maar").
 
-![No-code vs. echt programmeren](/assets/img/posts/no-code-vs-real-coding.png)
-*"Create apps without knowing how to code" klinkt verleidelijk, maar levert geen begrip op*
+!["Create apps without knowing how to code" klinkt verleidelijk, maar levert geen begrip op](/assets/img/posts/no-code-vs-real-coding.png)
+*Figuur 2*: "Create apps without knowing how to code" klinkt verleidelijk, maar levert geen begrip op
 
 Dit is de valkuil van "vibe coding" zonder ervaring: de AI genereert, de mens klikt op "accept", en niemand weet meer precies wat er in de code staat of waarom.
 
@@ -106,8 +106,8 @@ Dit is relevant voor digitale examens. Als een student iets heeft geleerd met be
 
 Natuurlijk kun je niet bewijzen dat iemand iets via AI heeft geleerd versus via een leerboek. Maar dat maakt ook niet uit — het punt is dat de kennis is overgedragen en begrepen.
 
-![Kwadrant van AI-gebruikstypes](/assets/img/posts/ai-usage-types-quadrant.png)
-*Figuur 1:* De vier AI-gebruikstypes in een kwadrant.
+![De vier AI-gebruikstypes in een kwadrant](/assets/img/posts/ai-usage-types-quadrant.png)
+*Figuur 3*: De vier AI-gebruikstypes in een kwadrant
 
 ## 2. In de praktijk lopen types door elkaar
 
@@ -137,9 +137,8 @@ Dit *AI prompt/answer length asymmetry* principe verklaart deels het verschil tu
 
 Geen van beide is beter. Het hangt af van wat je nodig hebt: exploratie of executie.
 
-![Prompt answer length asymmetry](/assets/img/posts/prompt-answer-length-asymmetry.png)
-
-*Figuur 2:* De Prompt answer length asymmetry
+![Prompt/answer length asymmetry](/assets/img/posts/prompt-answer-length-asymmetry.png)
+*Figuur 4*: Prompt/answer length asymmetry
 
 *Disclaimer*: Deze asymmetry die Figuur 2 tracht te schetsen is voorlopig nog even een *hypothese*, maar ik heb dit nog niet met praktisch onderzoek laten zien, of aangetoond buiten n=1. Sowieso is de 'short question, broader answer' en 'long question, more specific answer' relatie makkelijker hard te maken is, omdat het min of meer per definitie al geldt (gegeven een LLM die goed of in ieder geval geloofwaardig antwoord probeert te geven; wat ze doen). Voor het 'long question, short answer', 'short question, long answer' relatie heb ik nog onvoldoende tijd genomen dit ook proefonderlijk aan te tonen.
 
@@ -153,8 +152,8 @@ Daniel Kahneman introduceerde in *Thinking, Fast and Slow* de termen "System 1" 
 
 In de naamgeving Type X, type Y is wellicht een voordeel dat je laat zien dat het echt verschillende types zijn, en bv. niet een schaal van langzaam naar snel denken.
 
-![5 tomatoes meme: Imperial vs metrisch stelsel](/assets/img/posts/5-tomatoes-imperial-vs-metric.png)
-*"5 tomatoes" (five-two-eight-oh) om 5280 feet in a mile te onthouden vs. 1 km = 1000 m*
+!["5 tomatoes" (five-two-eight-oh) om 5280 feet in a mile te onthouden vs. 1 km = 1000 m](/assets/img/posts/5-tomatoes-imperial-vs-metric.png)
+*Figuur 5*: "5 tomatoes" (five-two-eight-oh) om 5280 feet in a mile te onthouden vs. 1 km = 1000 m
 
 Maar zulke getallen noemen we in software code 'magic numbers'. En het onthouden van mapping (1=traag, onbewust en 2=snel, bewust) schaar ik zelf onder het kopje 'accidental complexity'. Andere voorbeelden hiervan is het onhandige 'Imperial system' dat Engeland en de VS hanteren (met willekeurige eenheden), of numerieke systemen zonder duidelijke mnemonic (denk aan de meme "5 tomatoes" om 5280 feet in a mile te onthouden (Reddit, 2022) ).
 
@@ -266,12 +265,12 @@ Opmerking over het patroon "(e) En vast nog veel meer": dit is een bewuste retor
 
 Eén klassieke tegenstelling verdient aparte aandacht: Bij punt b) Object-Oriented data types komt *encapsulatie*, maar bij e) hadden we *immutable data* in functionele talen. kunnen noemen *Immutable data* — gegevens die je eenmaal aanmaakt maar niet wijzigt — is het functionele antwoord op "hoe maak je code controleerbaar?"
 
-Michael Feathers (een van de grondleggers van [Agile/XP](https://agilealliance.org/glossary/xp/)) vat dit kernachtig samen in [Figuur 3](#fig3-feathers): OO zegt "maak je data lokaal/privaat, pas het aan via methoden" (encapsulatie = controle over wijzigingen). Functioneel programmeren zegt "maak je data onveranderbaar, dus geen wijzigingen mogelijk" (immutability).
+Michael Feathers (een van de grondleggers van [Agile/XP](https://agilealliance.org/glossary/xp/)) vat dit kernachtig samen in Figuur 3: OO zegt "maak je data lokaal/privaat, pas het aan via methoden" (encapsulatie = controle over wijzigingen). Functioneel programmeren zegt "maak je data onveranderbaar, dus geen wijzigingen mogelijk" (immutability).
 
 Beide strategieën dienen hetzelfde doel: **minimizing moving parts** — minder plekken waar fouten kunnen ontstaan. OO doet het door wijzigingen centraal te maken; FP door ze uit te sluiten.
 
-![Michael Feathers over OO vs FP en begrijpelijkheid](/assets/img/posts/feathers-oo-vs-fp.png)
-*Figuur 3:* OO en FP geven andere manieren om code begrijpelijk te maken (Feathers, z.d.). {#fig3-feathers}
+![OO en FP geven andere manieren om code begrijpelijk te maken (Feathers, z.d.).](/assets/img/posts/feathers-oo-vs-fp.png)
+*Figuur 3*: OO en FP geven andere manieren om code begrijpelijk te maken (Feathers, z.d.).
 
 Voor AI-gegenereerde code is dit cruciaal: hoe meer je de ruimte voor "moving parts" inperkt, hoe gerichtere output je van de AI kunt verwachten, en hoe minder handmatig reviewwerk je hebt.
 
@@ -283,7 +282,7 @@ Tot nu toe behandelden we de types alsof ze vaste rollen zijn: Type 1 is "je rol
 
 Subsecties 5.1-5.4 onderscheiden explore van exploit, beschrijven neo-Piagetiaans cyclisch leren, zien hoe experts AI leren, en geven praktische signalen voor verantwoord experimenteren.
 
-In [blog 1, sectie 3.3](/ict-onderwijs-aanpassen-voor-ai-1-bewustwording/#33-agentic-ai-claude-code-stijl) beschreef ik hoe een collega-programmeur bij agentic AI op een gegeven moment "maar toestond dat de LLM vrij grote wijzigingen doorvoerde, omdat hij de vele changes ook niet meer kon overzien." Dit is geen roekeloos gedrag — het is een moment waarop hij van expert temporair naar beginner-modus ging. Programmeren ewas bekend, en ook het domein waarin de code werkt; maar de tool: agentic AI was nieuw terrein.
+In [blog 1, sectie 4.3](/ict-onderwijs-aanpassen-voor-ai-1-bewustwording/#43-agentic-ai-claude-code-stijl) beschreef ik hoe een collega-programmeur bij agentic AI op een gegeven moment "maar toestond dat de LLM vrij grote wijzigingen doorvoerde, omdat hij de vele changes ook niet meer kon overzien." Dit is geen roekeloos gedrag — het is een moment waarop hij van expert temporair naar beginner-modus ging. Programmeren ewas bekend, en ook het domein waarin de code werkt; maar de tool: agentic AI was nieuw terrein.
 
 In plaats van beginner-modus kan ik wellicht beter dit exploratie-modus noemen.
 
@@ -355,7 +354,7 @@ Deze blog presenteerde een taxonomie van AI-gebruikstypes. Van Type 1 (Human in 
 De kernboodschap: **wie heeft de regie?** Bij Type 1 en 2 blijft de mens in controle. Bij Type 3 neemt de AI over - riskant voor studenten die nog niet kunnen beoordelen of de output klopt. Type 4 (Old Skool) blijft waardevol: eerst leren zonder AI, dan pas met AI.
 
 ![Guitar Hero vs. echte gitaar](/assets/img/posts/guitar-hero-vs-real-guitar.png)
-*Figuur 4:* Guitar Hero vs. echte gitaar.
+*Figuur 4*: Guitar Hero vs. echte gitaar.
 
 **Nuancering:** Deze illustratie is zelf AI-gegenereerd - ironisch genoeg omdat ik niet kan tekenen. Het kostte veel prompts en lang wachten om de juiste sfeer te krijgen, en het werd nooit helemaal zoals ik wilde. Maar vergeleken met zelf tekenen was het erg veel sneller, want ik kan niet tekenen. Gitaristen gebruiken bijvoorbeeld *tabs* in plaats van notenbalken, maar de AI bleef notenbalk achtig iets tekenen. En het robotje die AI voor moet stellen is wat aan de infantiele kant.
 
@@ -382,8 +381,8 @@ De titel is ook zelfspot. "De eerste de beste" klinkt als willekeurig kiezen. Ma
 <summary markdown="span">Samenvatting als antwoorden op BOB-vragen 'Oordeelsvorming'
 </summary>
 
-![BOB-model: van probleem naar besluit via Beeldvorming, Oordeelsvorming en Besluitvorming](/assets/img/posts/bob-model-funnel.png)
-*Figuur 5:* BOB-model als trechter (Schop, z.d.).
+![BOB-model als trechter (Schop, z.d.).](/assets/img/posts/bob-model-funnel.png)
+*Figuur 5*: BOB-model als trechter (Schop, z.d.).
 
 In de Oordeelsvormingsfase van het BOB-model worden vier vragen beantwoord:
 

@@ -11,9 +11,9 @@ redirect_from:
   - /show-and-tell-meeloopstage/
 ---
 
-Tijdens de meeloopstage in jaar 2 van HAN ICT opleiding *Software Engineering* en (nu in ontwikkeling zijnde profiel) *Software & Robotics* heb je drie Show & Tell sessies.[^1] De derde en laatste is tevens je eindbeoordeling. Dit artikel legt uit hoe je deze sessies effectief aanpakt.
+Tijdens de meeloopstage in jaar 2 van HAN ICT opleiding *Software Engineering* en (nu in ontwikkeling zijnde profiel) *Software & Robotics* heb je drie Show & Tell sessies. De derde en laatste is tevens je eindbeoordeling. Dit artikel legt uit hoe je deze sessies effectief aanpakt.
 
-[^1]: De officiële naam is inmiddels gewijzigd naar "Showcase & Portfolio", om te benadrukken dat je tijdens je stage ook een portfolio opbouwt: een verzameling van je softwaredocumentatie, onderzoeken en overige documenten. In dit artikel blijf ik "Show & Tell" gebruiken - deze showcase-component blijft immers centraal staan.
+De officiële naam is inmiddels gewijzigd naar "Showcase & Portfolio", om te benadrukken dat je tijdens je stage ook een portfolio opbouwt: een verzameling van je softwaredocumentatie, onderzoeken en overige documenten. In dit artikel blijf ik "Show & Tell" gebruiken - deze showcase-component blijft immers centraal staan.
 
 *Waarom deze blog?* Ik ben soms wat "verbose" in mijn antwoorden naar studenten. Een uitgebreid antwoord per e-mail of chat kan net zo goed een blog worden - dan kunnen meerdere studenten het lezen, en hoef ik niet telkens hetzelfde verhaal te typen. Deze post is mede ontstaan naar aanleiding van vragen van stagiairs en ik zal hem in de toekomst mogelijk ook bijwerken. [Feedback](mailto:bart.vanderwal@han.nl) is ook welkom, bij onduidelijkheden!
 
@@ -149,8 +149,8 @@ De derde dimensie van de kubus zijn de vier beheersingsniveaus. Deze geven aan h
 
 **Voor de meeloopstage:** Focus op niveau 2 (probleemgericht) en niveau 3 (situatiegericht). Niveau 4 is master niveau of hoger, niveau 3 is het eindniveau van de HBO bachelor. Deze niveaus komen ook terug in het beoordelingsformulier voor je bedrijfsbegeleider.
 
-![De HBO-i kubus met activiteiten, architectuurlagen en niveaus](/assets/img/posts/hbo-i-kubus.png)
-*Figuur 1:* HBO-i kubus: activiteiten × lagen × niveaus.
+![HBO-i kubus: activiteiten × lagen × niveaus.](/assets/img/posts/hbo-i-kubus.png)
+*Figuur 1*: HBO-i kubus: activiteiten × lagen × niveaus.
 
 ### 4.4 Van onbewust onbekwaam naar bewust bekwaam
 
@@ -187,8 +187,8 @@ Ja, maar niet te veel. Maak in ieder geval:
 - **Een titelslide** met je naam, studentnummer, bedrijfsnaam/logo, en opdrachtnaam. Je begeleider heeft typisch 4 tot 8 andere studenten - een korte reminder van wie je bent en waar je werkt is nuttig.
 - **Een agendaslide** met je leerdoelen in de volgorde waarin je ze gaat presenteren. Dit is meteen je overzicht. Zet bij elk leerdoel een status: *done*, *grotendeels done*, *volgende periode*, of *toch niet realistisch (want...)*. De `LEFT JOIN` in de pseudo-SQL eerder illustreert dit: je toont AL je leerdoelen, ook degene waar je niet aan gewerkt hebt.
 
-![Voorbeeld van een agendaslide met leerdoelen en status](/assets/img/posts/show-tell-agenda-slide-voorbeeld.png)
-*Figuur 2:* Agendaslide met leerdoelen en status.
+![Agendaslide met leerdoelen en status.](/assets/img/posts/show-tell-agenda-slide-voorbeeld.png)
+*Figuur 2*: Agendaslide met leerdoelen en status.
 
 Let op Figuur 2 is met AI-gegenereerd en bevat spelfouten ("beck-end") en mist de vereiste twee a drie Professional Skills (PS) leerdoelen binnen de zes te stellen leerdoelen. Excuus, maar ik accepteer even de fouten in plaats van eindeloos door te prompten en energie te verspillen (zelf en van Cloud Center). Iedereen herkent zo ook mooi dat dit niet van mij is.
 

@@ -125,7 +125,7 @@ Evals zijn geen nice-to-have. Ze zijn essentieel — ook al werken ze fundamente
 
 </details>
 
-Dit past in het BOB-model uit mijn eerdere [blog over ICT-onderwijs en AI](/nieuw-ict-onderwijs-ivm-ai-1-3/):
+Dit past in het BOB-model uit mijn eerdere [blog over ICT-onderwijs en AI](/ict-onderwijs-aanpassen-voor-ai-1-bewustwording/):
 
 - **Bewustwording**: Wat is alignment?
 - **Oordeelsvorming**: Hoe weet je of een systeem echt veilig is?
@@ -165,8 +165,8 @@ Hier zijn drie discussievragen die goed werken in onderwijs:
 
 Naar aanleiding van het schrijven van deze blog zat ik onlangs met mijn tiener op de bank *Terminator 2* te kijken. De film uit 1991 — ouder dan hijzelf. En toch voelde de dialoog verrassend actueel.
 
-![Skynet became self-aware meme](/assets/img/posts/skynet-self-aware.png)
-*"Skynet became self-aware at 2:14 AM Eastern Time, August 29th, 1997."*
+!["Skynet became self-aware at 2:14 AM Eastern Time, August 29th, 1997."](/assets/img/posts/skynet-self-aware.png)
+*Figuur 1*: "Skynet became self-aware at 2:14 AM Eastern Time, August 29th, 1997."
 
 De Terminator legt uit: "Skynet became self-aware... They tried to stop it." En later, bij Dyson — de uitvinder van de microchip aan de basis van Skynet — confronteert Sarah Connor hem:
 
@@ -222,8 +222,8 @@ Benigo wijst echter op een praktisch probleem — gewone gebruikers kunnen het v
 
 > "People wouldn't care what kind of mechanisms are going on inside the AI. What they care about is it feels like they're talking to an intelligent entity that has their own personality and goals. That is why there are so many people who are becoming attached to their AIs."
 
-![AI Rights Framework](/assets/img/posts/ai-rights-framework.png)
-*Figuur 1. AI Rights Institute Core Framework (Tabarez, 2025)*
+![AI Rights Institute Core Framework (Tabarez, 2025)](/assets/img/posts/ai-rights-framework.png)
+*Figuur 2*: AI Rights Institute Core Framework (Tabarez, 2025)
 
 ### The Control Paradox
 

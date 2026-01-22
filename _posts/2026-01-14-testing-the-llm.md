@@ -152,8 +152,8 @@ In deze blog stapte ik heel af en toe af van strikt Type 1 AI gebruik (Human in 
 
 Dit soort taal (antropomorfisering) is vrijwel onvermijdelijk en zelfs handig — het maakt communicatie sneller — maar het is belangrijk om je ervan bewust te zijn dat je een metafoor gebruikt. We doen dit ook met andere software ("het systeem denkt dat..."), maar bij AI voelt het bijzonder verleidelijk omdat het *lijkt* op intentie. Dit is juist waarom de eerder gestelde vraag — "als het er zó uitziet, *is* het het dan?" — eigenlijk minder belangrijk is dan "hoe spreken we erover zonder onszelf voor te liegen?"
 
-![Screenshot van VS Code met Claude plugin en de pumsticbockle conversatie](/assets/img/posts/testing-the-ai-flibbertigitting-screenshot.png)
-*De volledige conversatie in VS Code met de Claude Code plugin*
+![De volledige conversatie in VS Code met de Claude Code plugin](/assets/img/posts/testing-the-ai-flibbertigitting-screenshot.png)
+*Figuur 1*: De volledige conversatie in VS Code met de Claude Code plugin
 
 ## Active waiting: AI als procesvertraging
 
