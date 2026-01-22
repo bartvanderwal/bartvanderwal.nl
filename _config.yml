@@ -99,7 +99,7 @@ plugins:
   - jekyll-redirect-from
 
 include: [_pages]
-exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock", "package-lock.json", "assets/*.pdf"]
+exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock", "package-lock.json", "assets/*.pdf", "README.md", "CLAUDE.md", "*.sh", "playwright.config.js", "tests", "docs"]
 
 # Defaults for posts and pages
 defaults:

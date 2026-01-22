@@ -194,6 +194,15 @@
           clone.querySelectorAll(sel).forEach(function(el) { el.remove(); });
         });
 
+        // Expand all <details> elements for PDF (so content is visible)
+        clone.querySelectorAll('details').forEach(function(details) {
+          details.setAttribute('open', 'open');
+          details.style.cssText = 'margin:15px 0;color:#000;background:transparent;';
+        });
+        clone.querySelectorAll('summary').forEach(function(summary) {
+          summary.style.cssText = 'font-weight:bold;color:#000;background:transparent;margin-bottom:10px;';
+        });
+
         // Style images for PDF
         clone.querySelectorAll('img').forEach(function(img) {
           img.style.cssText = 'max-width:100%;height:auto;display:block;margin:15px auto;';

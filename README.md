@@ -52,15 +52,50 @@ bundle exec jekyll serve
 
 De site draait dan op `http://localhost:4000`.
 
-### Link validatie
+### Link validatie en Image checking
 
-Valideer interne links voordat je pusht:
+Valideer interne links en afbeeldingen voordat je pusht:
 
 ```bash
 ./serve check
 ```
 
-Dit bouwt de site en checkt alle interne links voor broken references (negeert externe URLs).
+Dit bouwt de site en draait [htmlproofer](https://github.com/gjtorikian/html-proofer) welke checkt op:
+
+- **Broken internal links**: Links naar niet-bestaande pagina's
+- **Missing images**: ./sAfbeeldingsverwijzingen die niet bestaan
+- **Invalid HTML**: Verkeerde HTML structuur
+- **Externe links**: Waarschuwingen voor kapotte externe URLs (optioneel uit te zetten)
+
+**Output voorbeeld:**
+```
+Building site...
+Checking internal links and images...
+... (checks running) ...
+✓ HTML-Proofer checks passed!
+```
+
+**Veelvoorkomende problemen:**
+
+1. **Missing image**: `/assets/images/...` → moet `/assets/img/...` zijn
+2. **Broken link**: Link verwijst naar niet-bestaande post
+3. **Title too long**: Blog post titel te lang (ca. 30-40 karaktersl zodat het op 1 regel past op desktop view; zie: `_plugins/title_length_checker.rb`
+4. **Subtitle too long**: Subtitel te lang (ca. 60-70 karakters); zodat het op 1 regel past op desktop view; zie: `_plugins/subtitle_length_checker.rb`
+
+### Troubleshooting: Cache issues
+
+Als htmlproofer nog oude fouten rapporteert ondanks dat je ze hebt gefixed in de `.md` bestanden, kan de Jekyll cache stale zijn. Verwijder de build output en rebuild schoon:
+
+```bash
+rm -rf _site .jekyll-cache && bundle exec jekyll build
+```
+
+Dit gebeurt automatisch wanneer je `./serve check` draait, maar kan handmatig nodig zijn als je tussen sessies cache issues hebt.
+
+### Htmlproofer opties
+
+- `--disable-external`: Controleert externe URLs niet (sneller)
+- `--checks Links,Images`: Forceer zowel link- als image-checks (ook als defaults ooit wijzigen)
 
 ## Deployment
 
@@ -181,7 +216,9 @@ Voor inklapbare stukken tekst gebruiken we native HTML `details` met een `summar
 
 ```html
 <details>
-  <summary markdown="span"><strong>BOB-vragen voor …</strong></summary>
+  <summary markdown="span">
+    BOB-vragen voor …
+  </summary>
 
   <!-- Inhoud hier in Markdown -->
   | Vraag | Antwoord |

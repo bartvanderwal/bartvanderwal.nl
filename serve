@@ -4,15 +4,21 @@ export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 export GEM_HOME="$HOME/.gem/ruby/3.4.0"
 export PATH="$GEM_HOME/bin:$PATH"
 
-# Check if 'check' argument is passed to validate links
-if [ "$1" == "check" ]; then
+# Check if 'check' or 'checks' argument is passed to validate links and images
+if [ "$1" == "check" ] || [ "$1" == "checks" ]; then
   # Build site first
   echo "Building site..."
   bundle exec jekyll build
   
-  # Then validate internal links (disable external link checking)
-  echo "Checking internal links..."
-  bundle exec htmlproofer ./_site --disable-external
+  # Then validate internal links and images (disable external link checking)
+  echo "Checking internal links and images..."
+  # Checks:
+  # - Links: interne links (extern blijft uitgeschakeld)
+  # - Images: ontbrekende/onjuiste paden
+  # Opmerking: HTMLProofer heeft geen aparte 'HTML' check; standaardchecks zijn Links/Images/Scripts.
+  bundle exec htmlproofer ./_site \
+    --disable-external \
+    --checks "Images,Links"
   exit $?
 fi
 
