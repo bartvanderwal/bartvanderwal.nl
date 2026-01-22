@@ -7,6 +7,7 @@ date_started: 2024-12-21
 lang: nl
 tags: [personal, blog, meta]
 img: posts/boek-ethics-for-people-who-work-in-tech.png
+draft: false
 revisions:
   - date: 2025-12-27
     type: Uitgebreid

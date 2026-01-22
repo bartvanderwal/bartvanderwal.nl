@@ -7,6 +7,7 @@ date_started: 2024-12-01
 lang: en
 tags: [dotnet, software, quora]
 canonical_url: "https://www.quora.com/Can-a-NET-framework-be-created-from-scratch"
+draft: false
 ---
 
 *Originally posted on [Quora](https://www.quora.com/Can-a-NET-framework-be-created-from-scratch)*

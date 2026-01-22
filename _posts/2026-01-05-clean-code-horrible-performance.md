@@ -5,6 +5,7 @@ subtitle: "Context, didactiek en generalisatie"
 date: 2026-01-05
 lang: nl
 tags: [clean-code, polymorfisme, performance, onderwijs]
+draft: false
 ---
 
 ## Inleiding

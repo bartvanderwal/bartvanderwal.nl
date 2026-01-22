@@ -7,6 +7,7 @@ date: 2026-01-14
 lang: nl
 tags: [ai, llm, onderwijs, interactie, bewustwording, software-engineering]
 img: posts/ai-interaction-modes.png
+draft: false
 revisions:
   - date: 2026-01-21
     type: Gewijzigd

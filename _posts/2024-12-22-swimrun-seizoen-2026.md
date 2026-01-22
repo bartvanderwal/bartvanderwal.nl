@@ -7,6 +7,7 @@ date_started: 2024-12-22
 lang: nl
 tags: [swimrun, duursport, planning]
 img: posts/swimrun-seizoen-2026.png
+draft: false
 
 ---
 

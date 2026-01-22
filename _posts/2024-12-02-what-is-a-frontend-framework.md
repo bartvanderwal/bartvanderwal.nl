@@ -8,6 +8,7 @@ lang: en
 tags: [frontend, webdev, quora]
 img: posts/what-is-a-frontend-framework.png
 canonical_url: "https://www.quora.com/What-is-a-front-end-framework-And-does-the-definition-apply-to-Bootstrap-or-Angular"
+draft: false
 ---
 
 *Originally posted on [Quora](https://www.quora.com/What-is-a-front-end-framework-And-does-the-definition-apply-to-Bootstrap-or-Angular)*

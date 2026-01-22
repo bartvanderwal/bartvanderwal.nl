@@ -7,6 +7,7 @@ date_started: 2025-12-22
 lang: nl
 tags: [technisch-schrijven, onderwijs, apa]
 img: posts/apa-bronvermelding-in-ict.png
+draft: false
 ---
 
 Als je de HAN-documentatie over bronvermelding leest, gaat het al snel over plagiaat. De APA-handleiding stelt: "Teksten en ideeën van anderen mogen niet zomaar in een eigen document overgenomen worden. Bronvermelding is verplicht" (SURF, 2021, p. 9). Logisch vanuit academisch perspectief: je moet kunnen aantonen dat je andermans ideeën niet als de jouwe presenteert.

@@ -72,7 +72,7 @@ Maar alles vereist kritische review. Vooral moet je checken:
 - Of geen hoofdlijnen missen
 - Of ChatGPT niet "wollig" is gaan schrijven zonder waarde toe te voegen
 
-![3HOOG comic over ChatGPT](/assets/img/prompt-engineering/chat-gpt-3hoog-comic.jpg)
+![3HOOG: ChatGPT](/assets/img/prompt-engineering/chat-gpt-3hoog-comic.jpg)
 *Figuur 3*: 3HOOG: ChatGPT (Driessen, 2023)
 
 Opmerking: conclusies mogen geen *nieuwe* informatie bevatten (Scribbr, 2022). Dit is een klassieker dat veel studenten missen.

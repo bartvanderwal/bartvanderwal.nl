@@ -8,6 +8,7 @@ lang: nl
 tags: [devops, ci, software]
 img: posts/devops-infinity-loop.png
 canonical_url: "https://aim-cnp.github.io/pwac/workshops/integratie"
+draft: false
 ---
 
 *Origineel gepubliceerd op [PWAC](https://aim-cnp.github.io/pwac/workshops/integratie)*

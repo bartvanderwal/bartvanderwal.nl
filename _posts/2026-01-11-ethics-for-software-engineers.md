@@ -5,7 +5,7 @@ subtitle: "Opzet voor een 5 ECTS keuzevak"
 date: 2026-01-11
 date_started: 2026-01-11
 lang: nl
-draft: true
+draft: false
 tags: [ethiek, onderwijs, software-engineering]
 img: posts/boek-ethics-for-people-who-work-in-tech.png
 ---
@@ -19,9 +19,7 @@ De cursusstructuur volgt de drie delen van het boek, maar het boek zelf is niet 
 | Datum | Versie | Wijziging |
 | ----- | ------ | --------- |
 | 2026-01-11 | 1.0 | Eerste uitwerking van vakopzet |
-| 2026-01-20 | 1.1 | Details/summary blokken gefixed; Optionele casussen toegevoegd **(WIP: nog valideren)** |
-
-*Opmerking: In eerdere versies speelde AI (prompt engineering als voorbeeld) te prominent in de lead. Dat is nu genuanceerd.*
+| 2026-01-20 | 1.1 | Details/summary blokken gefixed; Optionele casussen toegevoegd **(WIP: nog valideren, voorlopig nog niet live, potentiele AI Slop!)** |
 
 ## Waarom dit vak?
 

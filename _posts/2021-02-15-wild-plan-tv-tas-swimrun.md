@@ -6,6 +6,7 @@ date: 2021-02-15
 date_started: 2021-02-15
 lang: nl
 tags: [swimrun, duursport]
+draft: false
 ---
 
 *Dit stuk schreef ik in 2021 en verscheen voor het eerst in 20215 ook op mijn sport/SwimRun blog samen met mijn SwimRun buddy Sander Berk [From 0 till Ö till Ö](https://from0tillotillo.substack.com/p/o-3-de-tvtas-swimrun)*

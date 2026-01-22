@@ -8,6 +8,7 @@ lang: nl
 tags: [software, agile, onderwijs, full-stack]
 img: posts/walking-skeleton-vs-mvp.png
 canonical_url: "https://aim-ene.github.io/pexe/docs/Projectresultaat/WalkingSkeleton"
+draft: false
 ---
 
 *Origineel gepubliceerd op [PEXE](https://aim-ene.github.io/pexe/docs/Projectresultaat/WalkingSkeleton)*

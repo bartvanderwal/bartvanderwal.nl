@@ -8,6 +8,7 @@ started_note: "Naar aanleiding van CJ's video"
 lang: nl
 tags: [ai, programmeren, tooling, onderwijs]
 img: posts/ai-coding-sucks/ai-coding-sucks-header.png
+draft: false
 revisions:
   - date: 2024-12-26
     type: Uitgebreid
