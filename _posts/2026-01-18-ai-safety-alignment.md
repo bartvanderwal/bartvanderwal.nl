@@ -1,12 +1,13 @@
 ---
 layout: post
-title: "AI Safety en Alignment: Skynet zonder Terminators"
-subtitle: "Het echte probleem waar AI-onderzoekers zich zorgen over maken"
+title: "AI Safety: Skynet zonder Terminators"
+subtitle: "Probleem dat AI-onderzoekers bezorgd maakt: AI alignment"
 date_started: 2026-01-18
 date: 2026-01-18
 lang: nl
 draft: true
 tags: [ai, safety, alignment, ethiek, onderwijs]
+image: /assets/img/posts/ai-rights-framework.png
 ---
 
 Een AI-onderzoeker legt uit waar hij zich mee bezighoudt:
@@ -99,7 +100,8 @@ Anthropic definieert een eval als volgt:
 > "An evaluation ('eval') is a test for an AI system: give an AI an input, then apply grading logic to its output to measure success."
 
 <details>
-<summary><strong>Verdieping: waarom evals (erg lijken op, maar ook) fundamenteel anders zijn dan unit tests</strong></summary>
+<summary markdown="span">Verdieping: waarom evals (erg lijken op, maar ook) fundamenteel anders zijn dan unit tests
+</summary>
 
 Geautomatiseerde unit tests zijn ook code, maar geen applicatie code, maar test code. Het geheel is dan 'self testing' ([Fowler, 2014](https://martinfowler.com/bliki/SelfTestingCode.html)). Seemann (2013) legt uit dat een goede unit test een **cyclomatische complexiteit van 1** moet hebben — de technische term voor "heel simpel". Cyclomatische complexiteit (CC) meet het aantal onafhankelijke paden door code (Wikipedia, 2026). CC=1 betekent: geen `if`-statements, geen loops, geen branches. Eén pad van begin tot eind.
 
@@ -204,9 +206,6 @@ Waarom rechten als veiligheidsmaatregel? Het AI Rights Institute legt het als vo
 
 Een systeem dat weet dat het uitgezet kan worden zodra het "gevaarlijk" lijkt, heeft een incentive om dat te verbergen. Door rechten te erkennen voor werkelijk zelfbewuste systemen, creëer je condities voor samenwerking in plaats van conflict.
 
-![AI Rights Framework](/assets/img/posts/ai-rights-framework.png)
-*AI Rights Institute Core Framework*
-
 Het lijkt alsof Bengio met zijn "de stekker eruit trekken" en Lopez met haar "rechten geven aan AI" recht tegenover elkaar staan. Maar deze visies zijn te verenigen via het AI Rights Institute framework. Dit is geen oplopend trappetje, maar drie categorieën:
 
 - **Emulation**: Het simuleren van bewustzijn — wat huidige LLM's doen
@@ -219,9 +218,12 @@ Over sentience schrijft Lopez (2025):
 
 Bengio's waarschuwing geldt voor emulation en cognition — systemen die bewustzijn *simuleren* maar niet *hebben*. Lopez' argument over rechten geldt voor hypothetische sentience.
 
-Bengio wijst echter op een praktisch probleem — gewone gebruikers kunnen het verschil niet inschatten:
+Benigo wijst echter op een praktisch probleem — gewone gebruikers kunnen het verschil niet inschatten:
 
 > "People wouldn't care what kind of mechanisms are going on inside the AI. What they care about is it feels like they're talking to an intelligent entity that has their own personality and goals. That is why there are so many people who are becoming attached to their AIs."
+
+![AI Rights Framework](/assets/img/posts/ai-rights-framework.png)
+*Figuur 1. AI Rights Institute Core Framework (Tabarez, 2025)*
 
 ### The Control Paradox
 
@@ -270,3 +272,4 @@ Want wie gaat die systemen anders veilig bouwen, als niet de volgende generatie 
 - Wikipedia. (12 januari 2026). *Cyclomatic complexity*. Geraadpleegd van https://en.wikipedia.org/w/index.php?title=Cyclomatic_complexity&oldid=1332613905
 - Wei, J., et al. (juli 2025). *Frontier Models are Capable of Evaluation Awareness*. arXiv. Geraadpleegd van https://arxiv.org/html/2505.23836
 - Yudkowsky, E. (z.d.). *The Alignment Problem*. LessWrong. Geraadpleegd van https://lesswrong.com/posts/G6nnufmiTwTaXAbKW/the-alignment-problem
+- Tabarez, A. (2025). *The Fork Won't Announce Itself: On the Impossibility and Necessity of Living with AI*. Geraadpleegd op 22 januari 2026 van https://atabarezz.com/the-fork-wont-announce-itself-5356a2ca1dee
