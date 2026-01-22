@@ -6,7 +6,7 @@ date: 2024-12-20
 date_started: 2024-12-20
 lang: nl
 tags: [ai, prompting]
-img: posts/chat-gpt-3hoog-comic.jpg
+img: prompt-engineering/chatgpt-comic-safety.jpg
 draft: true
 ---
 
@@ -49,6 +49,7 @@ Bij technische documentatie moet je voorkomen dat je tekst als marketing klinkt.
 > "...adjectives and adverbs can make technical documentation sound dangerously like marketing material."
 
 ChatGPT heeft de neiging overdrijvingen in de tekst op te nemen. Voorbeelden van problematische formuleringen:
+
 - "deze essentiële tool ..."
 - "dit is voor DevOps-ontwikkelaars absoluut onmisbaar"
 - "tool X fungeert als cruciale pijler"
@@ -66,6 +67,7 @@ ChatGPT is bruikbaar voor specifieke taken:
 - **Hypotheses**: Kan helpen bij formulering
 
 Maar alles vereist kritische review. Vooral moet je checken:
+
 - Of de inhoud klopt (feitenchecken!)
 - Of geen hoofdlijnen missen
 - Of ChatGPT niet "wollig" is gaan schrijven zonder waarde toe te voegen
