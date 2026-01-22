@@ -1,10 +1,10 @@
 {% include calculate_relative_base.html %}
 <nav class="post-nav" aria-label="Post navigatie">
   <div class="post-nav-inner">
-    {% if page.previous.url %}
-      {% capture prev_url %}{{ relativebase }}{{ page.previous.url }}{% endcapture %}
+    {% if page.previous_published.url %}
+      {% capture prev_url %}{{ relativebase }}{{ page.previous_published.url }}{% endcapture %}
       {% assign prev_url = prev_url | replace: "//", "/" %}
-      <a href="{{ prev_url }}" class="post-nav-link post-nav-prev" title="{{ page.previous.title }}">
+      <a href="{{ prev_url }}" class="post-nav-link post-nav-prev" title="{{ page.previous_published.title }}">
         <i class="fa fa-chevron-left" aria-hidden="true"></i>
         <span class="post-nav-label">Vorige</span>
       </a>
@@ -16,10 +16,10 @@
       <i class="fa fa-th" aria-hidden="true"></i>
     </a>
 
-    {% if page.next.url %}
-      {% capture next_url %}{{ relativebase }}{{ page.next.url }}{% endcapture %}
+    {% if page.next_published.url %}
+      {% capture next_url %}{{ relativebase }}{{ page.next_published.url }}{% endcapture %}
       {% assign next_url = next_url | replace: "//", "/" %}
-      <a href="{{ next_url }}" class="post-nav-link post-nav-next" title="{{ page.next.title }}">
+      <a href="{{ next_url }}" class="post-nav-link post-nav-next" title="{{ page.next_published.title }}">
         <span class="post-nav-label">Volgende</span>
         <i class="fa fa-chevron-right" aria-hidden="true"></i>
       </a>
