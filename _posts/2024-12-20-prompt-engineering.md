@@ -39,7 +39,7 @@ Belangrijke aandachtspunten:
 
 Problematische zinnen die ChatGPT vaak genereert zoals "essentiële tool" en "absoluut onmisbaar" missen objectiviteit totdat onderzoek zulke claims valideert.
 
-![ChatGPT safety](/assets/img/prompt-engineering/chat-gpt-comic-2.jpg)
+![ChatGPT safety](/assets/img/prompt-engineering/chatgpt-comic-safety.jpg)
 *Figuur 4*: ChatGPT safety strip
 
 ## Onderzoeksmethoden
@@ -59,7 +59,7 @@ Alle outputs vereisen kritische review op accuraatheid, volledigheid en helderhe
 
 AI biedt significant potentieel maar presenteert echte risico's. Blanco verbod is contraproductief; ethische argumenten ondersteunen verantwoorde AI integratie.
 
-![De toekomst van AI](/assets/img/prompt-engineering/ai-the-future.png)
+![De toekomst van AI](/assets/img/prompt-engineering/ai-future.png)
 *Figuur 5*: Cartoon over de toekomst van AI
 
 ---
