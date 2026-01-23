@@ -8,32 +8,36 @@ if defined?(Jekyll)
       priority :low
 
       def generate(site)
-        # Get all posts and filter by draft status
-        # Note: site.posts.docs includes all docs (not filtered by draft)
+        # Get all posts
         all_posts = site.posts.docs
 
-        # Filter to only published posts (where draft is false or not set)
+        # Filter to only published posts (where draft is false)
         published_posts = all_posts.reject { |post| post.data['draft'] == true }
 
         Jekyll.logger.info "Draft Navigation: Found #{all_posts.length} total posts, #{published_posts.length} published"
 
-        # For each published post, set next_published and previous_published
-        published_posts.each_with_index do |post, index|
-          title = post.data['title'] || 'Unknown'
-          draft_status = post.data['draft'] ? 'DRAFT' : 'PUBLISHED'
+        # For EACH post (both published and draft), set navigation to published posts only
+        all_posts.each do |current_post|
+          # Find index of current post in published posts list
+          current_index = published_posts.index(current_post)
           
-          # Set previous published post
-          if index > 0
-            post.data['previous_published'] = published_posts[index - 1]
+          if current_index.nil?
+            # This is a draft post, no navigation
+            current_post.data['previous_published'] = nil
+            current_post.data['next_published'] = nil
           else
-            post.data['previous_published'] = nil
-          end
+            # This is a published post, set navigation
+            if current_index > 0
+              current_post.data['previous_published'] = published_posts[current_index - 1]
+            else
+              current_post.data['previous_published'] = nil
+            end
 
-          # Set next published post
-          if index < published_posts.length - 1
-            post.data['next_published'] = published_posts[index + 1]
-          else
-            post.data['next_published'] = nil
+            if current_index < published_posts.length - 1
+              current_post.data['next_published'] = published_posts[current_index + 1]
+            else
+              current_post.data['next_published'] = nil
+            end
           end
         end
       end
