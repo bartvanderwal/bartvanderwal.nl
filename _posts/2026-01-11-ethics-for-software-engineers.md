@@ -5,7 +5,7 @@ subtitle: "Opzet voor een 5 ECTS keuzevak"
 date: 2026-01-11
 date_started: 2026-01-11
 lang: nl
-draft: false
+draft: true
 tags: [ethiek, onderwijs, software-engineering]
 img: posts/boek-ethics-for-people-who-work-in-tech.png
 ---

@@ -1,10 +1,15 @@
+{% assign has_history = false %}
 {% if page.date_started or page.revisions %}
-<details class="version-history">
+  {% assign has_history = true %}
+{% endif %}
+
+<details class="version-history" {% unless has_history %}disabled{% endunless %}>
   <summary>
     <span class="version-caret">▶</span>
     <span class="version-toggle">Versiegeschiedenis</span>
     {% if page.draft %}<span class="draft-status">DRAFT</span>{% endif %}
   </summary>
+  {% if has_history %}
   <table class="version-table">
     <thead>
       <tr>
@@ -40,5 +45,5 @@
       {% endif %}
     </tbody>
   </table>
+  {% endif %}
 </details>
-{% endif %}
