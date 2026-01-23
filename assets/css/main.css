@@ -1061,15 +1061,18 @@ svg.menu-icon-house {
 }
 .post-meta-actions {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 0.75rem;
+  flex-wrap: nowrap;
 }
 
 /* = = = = = = = = = = Version Table  = = = = = = = = = = */
 .version-history {
   margin: 0;
+  padding: 0;
   font-family: var(--font2), sans-serif;
   font-size: 0.75rem;
+  transition: padding 0.3s ease;
 }
 .version-history summary {
   display: inline-block;
@@ -1117,6 +1120,9 @@ svg.menu-icon-house {
 .version-history[open] .version-caret {
   transform: rotate(90deg);
 }
+.version-history[open] {
+  padding: 22px 0 22px 0;
+}
 .version-toggle {
   text-decoration: none;
 }
@@ -1133,6 +1139,12 @@ svg.menu-icon-house {
   margin-top: 0.75rem;
   border-collapse: collapse;
   font-size: 0.8rem;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+.version-history[open] .version-table {
+  opacity: 1;
 }
 .version-table th,
 .version-table td {
