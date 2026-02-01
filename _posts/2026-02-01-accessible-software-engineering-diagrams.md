@@ -39,7 +39,7 @@ De broncode bevat alle informatie die in het diagram zit. We moeten het alleen o
 
 Hier een voorbeeld van een eenvoudig klassendiagram. De PlantUML broncode:
 
-```plantuml
+```plantuml!
 @startuml
 !theme plain
 class Student {
@@ -100,7 +100,7 @@ De plugin staat op npm en GitHub: [github.com/bartvanderwal/remark-kroki-a11y](h
 
 De remark-kroki-a11y plugin is gebouwd voor Docusaurus (remark/unified ecosystem). Voor Jekyll zijn er drie mogelijke aanpakken:
 
-```plantuml
+```plantuml!
 @startuml
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
 
@@ -149,6 +149,16 @@ Het volledige voorbeeld staat in de plugin documentatie: [Roodkapje als UML diag
 Dit project heeft een meta-aspect: we bouwen een toegankelijkheids-plugin voor diagrammen, en gebruiken diezelfde diagrammen om de plugin te documenteren. De documentatiesite is tegelijk testsite.
 
 Als de diagrammen niet toegankelijk zijn, faalt de plugin. Als ze wel toegankelijk zijn, bewijst de documentatie zichzelf.
+
+## Tot slot
+
+De huidige plugin genereert natuurlijke-taalbeschrijvingen *naast* het diagram. Maar ik denk dat we de beschrijvingen nog dieper moeten embedden: in de SVG zelf (SVG + Scalable Vector Graphics, een bestandsformaat waar geen eindeloze rijen pixels in staan zoals in .png/bitmap, maar oneindige schalende/scherpblijvende vectors, dus lijnen en bochten en vormen e.d.)
+
+Screenreaders lezen nu vaak alle lijntjes en vormen op — niet nuttig. SVG ondersteunt echter `<title>`, `<desc>`, en ARIA-attributen per element. Een klasse krijgt dan `aria-label="Klasse Student"`, een relatie `aria-label="Student volgt Vak (0..* naar 1..*)"`. Met `aria-flowto` kun je zelfs navigatie tussen elementen mogelijk maken: "ga naar de volgende relatie" of "toon de attributen van deze klasse".
+
+In HTML pagina's embed je dit met ARIA-labels (ARIA staat voor Accessible Rich Internet Applications). SVG ondersteunt dezelfde attributen. Het idee: de diagram-renderer (PlantUML, Mermaid, Kroki) verrijkt de SVG met semantische informatie. Niet alleen een visuele representatie, maar een navigeerbare structuur.
+
+Wellicht kunnen we het project ASSET noemen: Accessible SVG Source Enhancement Tool.
 
 ## Bronnen
 
