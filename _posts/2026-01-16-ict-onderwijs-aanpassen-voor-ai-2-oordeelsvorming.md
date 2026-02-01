@@ -7,8 +7,7 @@ date: 2026-01-20
 lang: nl
 tags: [ai, llm, onderwijs, taxonomie, oordeelsvorming, software-engineering]
 img: posts/types-van-ai-gebruik-overzicht.png
-draft: true
-published: true
+draft: false
 revisions:
   - date: 2026-01-21
     type: Gewijzigd
@@ -215,6 +214,8 @@ Naast de bovenstaande namen zijn er ook alternatieve benamingen die de werkwijze
 
 Deze term komt uit het artikel [*Specification-Driven Development with GenAI Tools*](https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html) op Martin Fowler's website (Harrer & Ford, 2024). Interessant genoeg is dit artikel uit oktober 2024 — midden in de AI-hype — en benadrukt het het belang van specificaties schrijven voordat je code genereert.
 
+Dit idee krijgt inmiddels concrete tooling. [Kiro](https://kiro.dev/) (2025) is een "agentic IDE" die spec-driven development als kernprincipe hanteert. In plaats van direct te coderen op basis van vage prompts, genereert Kiro eerst gestructureerde requirements (in EARS-notatie), dan architectuurvoorstellen, en pas daarna implementatietaken — elk gekoppeld aan specifieke requirements. Het is het tegenovergestelde van vibe coding: expliciete documentatie vóór code.
+
 Dit roept een interessante spanning op: Spec-Driven Development lijkt terug te gaan naar meer upfront design, terwijl de agile beweging decennialang heeft benadrukt dat Big Design Up Front (BDUF) problematisch is. Simon Brown's presentatie [*The Lost Art of Software Design*](https://static.simonbrown.je/the-lost-art-of-software-design.pdf) (2022) legt de nuance uit: het probleem was nooit design zelf, maar *te veel* design van tevoren. Zijn mantra: **"Just Enough Up-Front Design"** — genoeg om richting te geven, niet zoveel dat je flexibiliteit verliest.
 
 Met AI wordt deze balans anders. Een goede prompt vereist design-denken: wat wil je precies? Welke constraints? Welke edge cases? Dit is upfront design, maar in een andere vorm — je ontwerpt de specificatie, niet meteen de implementatie.
@@ -405,6 +406,7 @@ In de Oordeelsvormingsfase van het BOB-model worden vier vragen beantwoord:
 - Chi, M. T. H. (2009). *Active-Constructive-Interactive: A Conceptual Framework for Differentiating Learning Activities*. Topics in Cognitive Science, 1(1), 73-105. Geraadpleegd op 21 januari 2026 van https://onlinelibrary.wiley.com/doi/10.1111/j.1756-8765.2008.01005.x
 - Guo, X., et al. (2024). *Student motivation and substitutive GenAI use*. Journal of EdTech Studies. Geraadpleegd op 21 januari 2026.
 - Harrer, S., & Ford, N. (oktober 2024). *Specification-Driven Development with GenAI Tools*. Martin Fowler. Geraadpleegd op 13 januari 2026 van https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html
+- Hashicorp. (2025). *Kiro: Agentic IDE for Spec-Driven Development*. Geraadpleegd van https://kiro.dev/
 - Hutchinson, A. (2021). *The Explorer's Gene: Why Some of Us Wander and Others Stay Home*. Simon & Schuster. Geraadpleegd op 21 januari 2026.
 - Kahneman, D. (2011). *Thinking, Fast and Slow*. Farrar, Straus and Giroux. Geraadpleegd op 10 januari 2026 van https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow
 - Leon, M. (2023). *Exploratory behavior and AI tools in learning*. Learning Sciences Review. Geraadpleegd op 21 januari 2026.
