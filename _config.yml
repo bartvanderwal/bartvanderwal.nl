@@ -97,6 +97,25 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-redirect-from
+  - jekyll-spaceship
+
+# Jekyll Spaceship configuration
+jekyll-spaceship:
+  processors:
+    - table-processor
+    - plantuml-processor
+    - mermaid-processor
+    - emoji-processor
+  plantuml-processor:
+    mode: default  # default | pre | post
+    css:
+      class: plantuml
+    src: https://www.plantuml.com/plantuml/svg/
+  mermaid-processor:
+    mode: default
+    css:
+      class: mermaid
+    src: https://mermaid.ink/svg/
 
 include: [_pages]
 exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock", "package-lock.json", "assets/*.pdf", "README.md", "CLAUDE.md", "*.sh", "playwright.config.js", "tests", "docs", "features", "Gemfile", "Gemfile.lock"]
