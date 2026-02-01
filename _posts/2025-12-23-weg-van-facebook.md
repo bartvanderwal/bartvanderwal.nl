@@ -6,6 +6,7 @@ date: 2025-12-23
 date_started: 2025-12-23
 lang: nl
 tags: [privacy, social-media, big-tech]
+img: posts/weg-van-facebook.png
 draft: true
 ---
 
@@ -14,6 +15,8 @@ Een jaar geleden besloot ik te stoppen met Facebook. De eerste poging strandde: 
 Nu, een jaar later, heb ik gewoon doorgeklikt. Met behulp van een online tutorial - want Facebook heeft de verwijder-optie diep weggestopt, zeker sinds ze alles hebben gekoppeld aan Instagram en andere Meta-platforms.
 
 ## De enshittification van sociale media
+
+![Cover van Cory Doctorow's boek The Internet Con](/assets/img/posts/doctorow-internet-con.png)
 
 Cory Doctorow introduceerde in 2023 het begrip *enshittification* om te beschrijven hoe platforms systematisch verslechteren:
 
@@ -54,6 +57,8 @@ De afgelopen maanden ben ik grotendeels overgestapt naar Signal. Geen algoritmes
 Maar hier stuit ik op het *network effect* - dezelfde kracht die Facebook zo machtig maakte. Niet iedereen wil overstappen. Groepschats met familie, sportclubs, werkcontacten - ze zitten vast in WhatsApp. En dus kan ik er niet helemaal van af.
 
 Dit is misschien wel het meest frustrerende aspect van het hele big tech ecosysteem. Je kunt als individu beslissen te vertrekken, maar je sociale netwerk houdt je gegijzeld.
+
+![Weg van Facebook - grote versie](/assets/img/posts/weg-van-facebook.png)
 
 ## Wat nu?
 
