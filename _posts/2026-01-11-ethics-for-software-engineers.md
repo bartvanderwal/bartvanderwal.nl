@@ -12,7 +12,7 @@ img: posts/boek-ethics-for-people-who-work-in-tech.png
 
 Dit is een uitwerking van een idee voor de opzet van een keuzevak Ethiek binnen het HBO-ICT. De structuur is gebaseerd op het boek "Ethics for People Who Work in Tech" van Marc Steen (2022). Het vak sluit aan bij de keuzevakbeschrijving die toegepaste ethiek centraal stelt: praktische besluitvorming, niet abstracte filosofie.
 
-De cursusstructuur volgt de drie delen van het boek, maar het boek zelf is niet per se verplicht - zie mijn overwegingen daarover [onderaan deze post](/ethics-for-software-engineers/#het-boek-verplicht-of-niet).
+De cursusstructuur volgt de drie delen van het boek, maar het boek zelf is niet per se verplicht - zie mijn overwegingen daarover onderaan deze post in de sectie "Het boek verplicht of niet".
 
 ## Versiegeschiedenis
 

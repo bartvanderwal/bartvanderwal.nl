@@ -8,6 +8,10 @@ lang: nl
 draft: true
 tags: [ai, safety, alignment, ethiek, onderwijs]
 img: posts/skynet-self-aware.png
+revisions:
+  - date: 2026-01-26
+    version: "1.1"
+    note: "Dennett's 'multiple drafts model' en 'user-illusion' toegevoegd als filosofische onderbouwing bij discussie over AI-bewustzijn"
 ---
 
 Een AI-onderzoeker legt uit waar hij zich mee bezighoudt:
@@ -222,6 +226,14 @@ Benigo wijst echter op een praktisch probleem — gewone gebruikers kunnen het v
 
 > "People wouldn't care what kind of mechanisms are going on inside the AI. What they care about is it feels like they're talking to an intelligent entity that has their own personality and goals. That is why there are so many people who are becoming attached to their AIs."
 
+Dit raakt aan een diepere filosofische vraag: *maakt* het onderscheid tussen "echt" en "gesimuleerd" bewustzijn eigenlijk wel uit? De filosoof Daniel Dennett betoogde in *Consciousness Explained* (1991) dat menselijk bewustzijn zelf ook veel beperkter is dan we denken — een "user-illusion", vergelijkbaar met de iconen op je computerscherm die weinig te maken hebben met de onderliggende circuits.
+
+Dennett's "multiple drafts model" stelt dat er in ons brein geen centraal "Cartesiaans theater" is waar bewustzijn plaatsvindt. In plaats daarvan zijn er meerdere parallelle processen die elk hun eigen "draft" van de werkelijkheid construeren. Wat we ervaren als één coherent bewustzijn is het resultaat van deze competitie — niet één waarheid, maar de winnende interpretatie op dat moment.
+
+Dit is verrassend relevant voor AI. Als menselijk bewustzijn al een emergent fenomeen is van meerdere concurrerende processen, dan is de huidige aanpak van AI — waarbij gespecialiseerde systemen samenwerken via protocollen als MCP (Model Context Protocol) — wellicht niet zo anders. LLM's zijn niet "the end all" oplossing. De toekomst ligt waarschijnlijk in heterogene architecturen: combinaties van taalmodellen, redeneermodules, en gespecialiseerde tools die samen een breder intelligent systeem vormen.
+
+Het "if it walks like a duck" principe — of *fake it till you make it* — krijgt hier een filosofische onderbouwing. Als we niet eens zeker weten wat menselijk bewustzijn *is*, hoe kunnen we dan met zekerheid zeggen dat AI het *niet* heeft? Dennett zou wellicht stellen: het onderscheid is minder scherp dan we denken. Zowel indrukwekkend als angstaanjagend.
+
 ![AI Rights Institute Core Framework (Tabarez, 2025)](/assets/img/posts/ai-rights-framework.png)
 *Figuur 2*: AI Rights Institute Core Framework (Tabarez, 2025)
 
@@ -262,6 +274,8 @@ Want wie gaat die systemen anders veilig bouwen, als niet de volgende generatie 
 - Fowler, Martin (1-5-2015), *Self testing code* Geraadpleegd op https://martinfowler.com/bliki/SelfTestingCode.html
 - Lopez, P.A. (2025). *AI Rights as a Safety Measure*. AI Rights Institute. Geraadpleegd van https://airights.net/core-framework
 - Bostrom, N. (2014). *Superintelligence: Paths, Dangers, Strategies*. Oxford University Press.
+- Dennett, D.C. (1991). *Consciousness Explained*. Little, Brown and Company.
+- Horgan, J. (22 april 2024). *An Epitaph for Daniel Dennett, Philosopher of Consciousness*. Scientific American. Geraadpleegd van https://scientificamerican.com/article/an-epitaph-for-daniel-dennett-philosopher-of-consciousness/
 - Mazeika, D., Bolukbasi, T., Steinhardt, J., & Andersson, D. (20 januari 2024). *Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training*. arXiv. Geraadpleegd op 18 januari 2026 van https://arxiv.org/abs/2401.05566
 - The Guardian. (30 december 2025). *AI pioneer warns against giving technology rights: 'We need to be able to pull the plug'*. Geraadpleegd van https://theguardian.com/technology/2025/dec/30/ai-pull-plug-pioneer-technology-rights
 - Krakovna, V. (21 april 2020). *Specification gaming: the flip side of AI ingenuity*. DeepMind. Geraadpleegd van https://deepmind.google/blog/specification-gaming-the-flip-side-of-ai-ingenuity/
