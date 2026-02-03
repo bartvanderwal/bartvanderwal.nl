@@ -8,6 +8,10 @@ lang: nl
 tags: [technisch-schrijven, onderwijs, apa]
 img: posts/apa-bronvermelding-in-ict.png
 draft: false
+revisions:
+  - date: 2026-02-03
+    type: Gewijzigd
+    note: "Sectie over Design Science verduidelijkt; typos gecorrigeerd"
 ---
 
 Als je de HAN-documentatie over bronvermelding leest, gaat het al snel over plagiaat. De APA-handleiding stelt: "Teksten en ideeën van anderen mogen niet zomaar in een eigen document overgenomen worden. Bronvermelding is verplicht" (SURF, 2021, p. 9). Logisch vanuit academisch perspectief: je moet kunnen aantonen dat je andermans ideeën niet als de jouwe presenteert.
@@ -16,7 +20,7 @@ Maar voor ICT-studenten voelt die focus op plagiaat vaak vreemd. Waarom zou je i
 
 ## Ideas are cheap
 
-In de ICT is sowieso originaliteit meestal NIET het doel. Ideeen zijn makkelijk, het gaat om een goed product engineeren op basis van dit idee. George R.R. Martin, de auteur van Game of Thrones, verwoordt het treffend in een Rolling Stone interview:
+In de ICT is originaliteit sowieso meestal NIET het doel. Ideeën zijn makkelijk, het gaat om een goed product engineeren op basis van dit idee. George R.R. Martin, de auteur van Game of Thrones, verwoordt het treffend in een Rolling Stone interview:
 
 > "Ideas are cheap. I have more ideas now than I could ever write up. To my mind, it's the execution that is all-important. I'm proud of my work, but I don't know if I'd ever claim it's enormously original." (Martin, 2014)
 
@@ -24,11 +28,17 @@ Dit geldt minstens zo sterk in de ICT. Het draait niet om wie het eerste een ide
 
 Dit staat haaks op de academische traditie waar APA vandaan komt. De American Psychological Association ontwikkelde het referentiesysteem voor onderzoekers die voortbouwen op elkaars theorieën. Daar is intellectueel eigendom van ideeën wél belangrijk. Maar **ICT is geen psychologie**.
 
-*Edit 8-1-'26: Deze stelling riep bij een lezer (zelf psycholoog) de nodige vragen op. Ter verduidelijking: ik geef les aan de HAN University of Applied Sciences — toegepaste wetenschap dus. Hoewel onderzoek hier belangrijk is, ligt de focus op toepassing: Design Science, onderzoek om iets te ontwerpen of verbeteren, met resultaten die binnen vijf jaar bruikbaar zijn, ook voor MKB-bedrijven zonder eigen R&D-afdeling.*
+## Waarom originaliteit van ideeen niet het doel is?
 
-*Daarbij: ICT zelf is geen wetenschap — dat is Computer Science of Informatica. In de informatica heb je wel grote theorieën, maar die zijn vrij wiskundig: de onvolledigheidsstelling van Gödel, Turing-volledigheid, NP-volledigheid, complexiteitsanalyse, bewijs uit volledige inductie. Op het HBO-ICT besteden we hier eigenlijk geen tijd aan. Voor wie dit populair-wetenschappelijk wil teruglezen: Rob Conery & Scott Hanselman's* The Impostor's Handbook *(Conery, 2020) is een aanrader.*
+*Edit 8-1-'26: De stelling dat originaliteit** NIET het doel is riep bij een lezer van mijn blog (zelf psycholoog) toch wel de nodige vragen op.*
 
-*Software Development is bovendien een secundair vakgebied: wij als ontwikkelaars krijgen altijd de opdracht om andermans probleem op te lossen. We dienen andere domeinen. Psychologie bijvoorbeeld — denk aan software voor cognitieve experimenten of statistische analyse van beslissingsgedrag. Of HR-systemen, financiële administratie, identity management. In plaats van zelf origineel zijn, moeten we juist heel goed worden in het leren kennen van andere domeinen. Daar zijn meta-technieken voor, zoals User Story Mapping (Patton, 2014), maar die hoeven onze studenten niet te bedenken — ze gaan software schrijven.*
+Ter verduidelijking: ik geef les aan de HAN University of Applied Sciences — toegepaste wetenschap dus. Hoewel onderzoek hier belangrijk is, geen applied science, zonder science, ligt de focus op toepassing: Design Science, onderzoek om iets te ontwerpen of verbeteren, met resultaten die binnen vijf jaar bruikbaar zijn, ook voor MKB-bedrijven zonder eigen R&D-afdeling.
+
+> "Herbert Simon distinguished the natural sciences, concerned with explaining how things are, from design sciences which are concerned with how things ought to be..." — [Wikipedia: Design Science](https://en.wikipedia.org/wiki/Design_science_(methodology)
+
+Daarbij: ICT zelf is geen wetenschap — dat is *Computer Science* of *Informatica*. In de informatica heb je wel grote theorieën, maar die zijn vrij wiskundig: de onvolledigheidsstelling van Gödel, Turing-volledigheid, NP-volledigheid, complexiteitsanalyse, bewijs uit volledige inductie. Op het HBO-ICT besteden we hier eigenlijk geen tijd aan. Voor wie dit populair-wetenschappelijk wil teruglezen: Rob Conery & Scott Hanselman's* The Impostor's Handbook* (Conery, 2020) is een aanrader!
+
+Software Development is bovendien een secundair vakgebied: wij als ontwikkelaars krijgen altijd de opdracht om andermans probleem op te lossen. We dienen andere domeinen. Psychologie bijvoorbeeld — denk aan software voor cognitieve experimenten of statistische analyse van beslissingsgedrag. Of HR-systemen, financiële administratie, identity management. In plaats van zelf origineel zijn, moeten we juist heel goed worden in het leren kennen van andere domeinen. Daar zijn meta-technieken voor, zoals User Story Mapping (Patton, 2014), maar die hoeven onze studenten niet te bedenken — ze gaan software schrijven.
 
 ## Waarom bronvermelding in ICT anders werkt
 
@@ -43,11 +53,11 @@ De tweede variant toont dat je je huiswerk hebt gedaan. Dat je weet wat de indus
 
 ## Geloofwaardigheid opbouwen
 
-In de praktijk lezen verschillende mensen je documenten: ontwikkelaars, architecten, product owners, en soms ook klanten of managers zonder technische achtergrond. Bronvermelding helpt op drie manieren:
+In de praktijk lezen verschillende mensen je documenten: ontwikkelaars, architecten, product owners, en soms ook klanten of managers zonder technische achtergrond. Bronvermelding helpt op drie manieren verschillende doelgroepen/lezers:
 
 1. **Technische lezers** kunnen bronnen raadplegen voor verdieping
 2. **Niet-technische lezers** zien dat claims onderbouwd zijn
-3. **Jezelf** dwing je tot verificatie van beweringen
+3. **Jezelf** dwing je tot verificatie van je beweringen en ideeën
 
 ### Technische lezers
 
@@ -59,7 +69,7 @@ Verwijzingen naar gevestigde bronnen, bekende bedrijven als Google of autoriteit
 
 ### Jezelf
 
-Je kunt niet zomaar beweren dat "iedereen tegenwoordig containerization gebruikt" zonder dat te onderbouwen. Die discipline verbetert de kwaliteit van je werk.
+Je kunt niet zomaar beweren dat "iedereen tegenwoordig containerization gebruikt" zonder dat te onderbouwen. Die discipline verbetert de kwaliteit van je werk. En — even los van het voorbeeld over containerization — sta er ook voor open dat je bronnen vindt die iets heel anders zeggen. En die misschien nog gelijk hebben ook. Velen zullen het negeren en lekker doordenken wat ze dachten, maar dat is het pad naar een 'expert beginner' zijn (en blijven) en zoals [Erik Dietrich (2023) in zijn blog](https://daedtech.com/how-developers-stop-learning-rise-of-the-expert-beginner/) hierover uitlegt is dit een doodlopende weg.
 
 ## Praktische richtlijnen
 
@@ -103,7 +113,7 @@ De keuze voor *slop* is veelzeggend. Geen angstaanjagend woord over existentiël
 
 De opkomst van *slop* maakt goede bronvermelding juist *belangrijker*. Het is het verschil tussen:
 
-- **Slop**: AI gegenereerde tekst zonder verificatie, vol met hallucinaties en vage beweringen
+- **Slop**: AI-gegenereerde tekst zonder verificatie, vol met hallucinaties en vage beweringen
 - **Kwaliteitswerk**: Onderbouwde analyse met verifieerbare bronnen
 
 Als je bronnen noemt die daadwerkelijk bestaan en die je daadwerkelijk hebt gelezen, bewijs je dat je geen *slop* produceert. Je toont dat er een mens achter het werk zit die kritisch heeft nagedacht.
@@ -210,7 +220,7 @@ Let op de ironie: APA raadt voet- of eindnoten voor bronvermelding af; alleen ko
 
 ### Scribbr-valkuil
 
-APA Tools als Scribbr genereren soms referenties met de *titel* tussen haakjes in plaats van auteur en jaar. Dit is fout. Je krijgt dan iets als "(What is React?, z.d.)" in plaats van "React (z.d.)".
+APA-tools als Scribbr genereren soms referenties met de *titel* tussen haakjes in plaats van auteur en jaar. Dit is fout. Je krijgt dan iets als "(What is React?, z.d.)" in plaats van "React (z.d.)".
 
 ### Haakjes als zinsonderdeel
 
@@ -263,7 +273,7 @@ De Correspondent, het Nederlandse journalistieke platform, heeft een interessant
 
 Waarom? Inline hyperlinks nodigen uit tot klikken. De lezer wordt constant uit de tekst getrokken. Bij elke blauwe link denkt de lezer: "Moet ik hier nu op klikken? Mis ik iets als ik doorlees?"
 
-Tegelijkertijd is het in digitale documenten handig als de lezer direct kan doorklikken naar een bron. Je hebt hier drie opties - kies wat past bij je document en doelgroep:
+Tegelijkertijd is het in digitale documenten handig als de lezer direct kan doorklikken naar een bron. Je hebt hier drie opties — kies wat past bij je document en doelgroep:
 
 1. **Platte tekst**: Gewoon "Fowler (2014)" zonder link. De lezer scrollt naar de bronnenlijst. Minste afleiding, beste leeservaring.
 
@@ -332,3 +342,4 @@ Dat is geen administratieve last. Dat is vakmanschap.
 - Scribbr. (z.d.). *Waar plaats je de bronvermelding in de tekst?*. Geraadpleegd op 22 december 2025, van https://scribbr.nl/veel-gestelde-vragen/plaatsing-verwijzing-in-tekst
 - SURF. (2021). *De APA-richtlijnen uitgelegd: Een praktische handleiding voor bronvermelding in het hoger onderwijs* (3e editie). Geraadpleegd op 22 december 2025, van https://www.auteursrechten.nl/wp-content/uploads/2023/03/De-APA-richtlijnen-uitgelegd-3e-editie.pdf
 - Voltaire. (1772). *La Bégueule*. Conte moral.
+- Dietrich, E. (30-9-2023) *How Developers Stop Learning: Rise of the Expert Beginner* Geraadpleegd op 3 februari 2026 van https://daedtech.com/how-developers-stop-learning-rise-of-the-expert-beginner/
