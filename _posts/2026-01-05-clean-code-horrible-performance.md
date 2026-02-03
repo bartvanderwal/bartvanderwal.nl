@@ -2,10 +2,15 @@
 layout: post
 title: "Clean Code, Horrible Performance"
 subtitle: "Context, didactiek en generalisatie"
+date_started: 2026-01-05
 date: 2026-01-05
 lang: nl
 tags: [clean-code, polymorfisme, performance, onderwijs]
 draft: false
+revisions:
+  - date: 2026-02-03
+    type: Gewijzigd
+    note: "Waarschuwing toegevoegd voor studenten die video als excuus gebruiken om principes niet te leren"
 ---
 
 ## Inleiding
@@ -145,7 +150,11 @@ maar potentieel misleidend voor studenten.
 
 Voor studenten is de belangrijkste les niet dat polymorfisme "traag" is, maar dat ontwerpprincipes altijd **contextafhankelijk** zijn.
 
-Zij moeten eerst leren:
+**Een eerlijke waarschuwing:** sommige studenten die deze video tegenkomen, kennen de clean code principes nog helemaal niet. Ze zoeken — bewust of onbewust — naar een reden om polymorfisme, SOLID-principes of andere "ingewikkelde" concepten niet te hoeven leren. "Zie je wel, het is toch slecht voor performance!" Deze video is voor hen geen eye-opener, maar een excuus. Dat is precies het omgekeerde van wat Muratori bedoelt, en precies het omgekeerde van wat je als beginnend ontwikkelaar nodig hebt.
+
+Je kunt pas gefundeerd afwijken van een principe als je het eerst begrijpt. Zonder die basis is "ik gebruik geen polymorfisme vanwege performance" geen bewuste keuze, maar een rationalisatie van onkunde.
+
+Studenten moeten eerst leren:
 
 - waarom principes zoals polymorfisme, SRP en DRY bestaan,
 - welke problemen ze oplossen,
