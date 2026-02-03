@@ -61,7 +61,7 @@ Dit beschrijft een `Student` met attributen `naam` en `studentnummer`, en een re
 
 ## 3. remark-kroki-a11y: de plugin
 
-Een collega (Remco Veurink) kwam met een setup voor kleine customisatie van een Docusaurus plugin, `remark-kroki`, die we gebruiken om tijdens het opleveren van een nieuwe versie van de website alle diagrammen opnieuw te genereren. De plugin genereert naast het plaatje ook de originele code.
+Een collega kwam met een setup voor kleine customisatie van een Docusaurus plugin, `remark-kroki`, die we gebruiken om tijdens het opleveren van een nieuwe versie van de website alle diagrammen opnieuw te genereren. De plugin genereert naast het plaatje ook de originele code.
 
 Ik maakte er een uitklapbalkje van, zodat reguliere studenten niet al deze afleidende tekst krijgen — maar de code wel kunnen gebruiken om zelf te visualiseren met een online tool, en eventueel aanpassingen te maken. Toen bedacht ik me dat je het diagram ook als natuurlijke taal zou kunnen beschrijven. En toen was het weekend voorbij.
 
@@ -131,6 +131,9 @@ SHOW_LEGEND()
 ## 4. Roodkapje als UML: een introductie in diagrammen
 
 Om de plugin te demonstreren — en tegelijk UML te introduceren — gebruiken we een onverwacht domein: het sprookje van Roodkapje.
+
+![Roodkapje als UML klassendiagram - het sprookje gemodelleerd met klassen en relaties](/assets/img/posts/roodkapje-uml.png)
+*Figuur 2:* Roodkapje als UML klassendiagram. Een bekend verhaal vertaald naar formele diagrammen als introductie voor niet-technici.
 
 Dit voorbeeld toont hoe je een verhaal in natuurlijke taal kunt vertalen naar formele diagrammen. Het is een prima introductie voor niet-technici of beginnende technici.
 
