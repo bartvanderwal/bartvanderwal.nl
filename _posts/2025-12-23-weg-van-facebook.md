@@ -17,6 +17,7 @@ Nu, een jaar later, heb ik gewoon doorgeklikt. Met behulp van een online tutoria
 ## De enshittification van sociale media
 
 ![Cover van Cory Doctorow's boek The Internet Con](/assets/img/posts/doctorow-internet-con.png)
+*Figuur 1:* Cover van Cory Doctorow's boek The Internet Con.
 
 Cory Doctorow introduceerde in 2023 het begrip *enshittification* om te beschrijven hoe platforms systematisch verslechteren:
 
@@ -59,6 +60,7 @@ Maar hier stuit ik op het *network effect* - dezelfde kracht die Facebook zo mac
 Dit is misschien wel het meest frustrerende aspect van het hele big tech ecosysteem. Je kunt als individu beslissen te vertrekken, maar je sociale netwerk houdt je gegijzeld.
 
 ![Weg van Facebook - grote versie](/assets/img/posts/weg-van-facebook.png)
+*Figuur 2:* De uitgang van Facebook vinden door de dark patterns heen.
 
 ## Wat nu?
 
