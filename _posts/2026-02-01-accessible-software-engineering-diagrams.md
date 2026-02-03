@@ -7,6 +7,10 @@ date: 2026-02-01
 lang: nl
 draft: false
 img: posts/asset-accessible-diagrams.png
+revisions:
+  - date: 2026-02-03
+    type: Gewijzigd
+    note: "Roodkapje UML plaatje toegevoegd; Tot slot sectie over ASSET/SVG accessibility uitgebreid; PlantUML code blocks aangepast"
 ---
 
 *Ik heb gisteren mijn lange duurloop niet gedaan 😅. Ik zat weer veel te lang achter mijn beeldscherm 🥲. Een ideetje vanuit mijn werk liet me niet los. En programmeerwerk duurt vaak stuk langer dan je denkt. Nog even, nog even.. en zo zit je nog uren, de 80% moeite te steken in die laatste 20% werk. Want je moet toch op 100% komen. The reverse Pareto regel. Maar ik heb nu wel op NPM staan (npmjs.org): mijn 1e NodeJS in jaren open source module gepublished: remark-kroki-a11y Totaal zit ik nu op vier.*
@@ -37,9 +41,13 @@ Het Mermaid-project verwoordt dit mooi:
 
 De broncode bevat alle informatie die in het diagram zit. We moeten het alleen op de juiste manier presenteren.
 
-Hier een voorbeeld van een eenvoudig klassendiagram. De PlantUML broncode:
+Hier een voorbeeld van een eenvoudig klassendiagram:
 
-```plantuml!
+![UML klassendiagram met Student en Vak klassen, met een veel-op-veel relatie. Student heeft attributen naam en studentnummer, Vak heeft naam en studiepunten](/assets/img/posts/student-vak-uml.png)
+
+De PlantUML broncode:
+
+```plantuml
 @startuml
 !theme plain
 class Student {
@@ -72,9 +80,9 @@ De huidige 0.3 versie zet twee diagramtypes om naar natuurlijke taal: klassendia
 Dit concept van situationele beperking is belangrijk. Toegankelijkheid wordt vaak gezien als iets voor "mensen met een beperking", maar iedereen is wel eens situationeel beperkt. Je bent slechtziend als je zonder bril wakker wordt. Je bent slechthorend in een lawaaierige trein. En je bent "diagram-analfabeet" als je nog nooit UML hebt gezien.
 
 ![Permanente, tijdelijke en situationele beperkingen - inclusief een student die UML nog niet kent](/assets/img/posts/situational-limitations-uml.png)
-*Figuur 1:* Permanente, tijdelijke en situationele beperkingen. Gebaseerd op Chugaievska (2023), uitgebreid met een vierde voorbeeld: een student die UML nog niet kent.
+*Figuur 1:* Permanente, tijdelijke en situationele beperkingen. Bron: Chugaievska (2025).
 
-Door de natuurlijke-taalbeschrijving toe te voegen helpen we niet alleen blinde studenten, maar ook beginners die de diagramsyntax nog moeten leren. De beschrijving is een brug naar begrip.
+Figuur 1 is gebaseerd op het werk van Chugaievska over inclusief ontwerp, uitgebreid met een vierde voorbeeld: een student die UML nog niet kent. Door de natuurlijke-taalbeschrijving toe te voegen helpen we niet alleen blinde studenten, maar ook beginners die de diagramsyntax nog moeten leren. De beschrijving is een brug naar begrip.
 
 ### Wat de plugin doet
 
@@ -100,31 +108,11 @@ De plugin staat op npm en GitHub: [github.com/bartvanderwal/remark-kroki-a11y](h
 
 De remark-kroki-a11y plugin is gebouwd voor Docusaurus (remark/unified ecosystem). Voor Jekyll zijn er drie mogelijke aanpakken:
 
-```plantuml!
-@startuml
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+**Optie 1: Pre-build Script** - Node.js script roept remark-kroki-a11y aan vóór Jekyll build, met A11y cache in JSON.
 
-title Drie architectuur-alternatieven voor A11y in Jekyll
+**Optie 2: Shared Core** - Gedeelde npm package (a11y-diagram-core) met parsing logic, gebruikt door zowel remark plugin als Ruby gem via node.
 
-Container_Boundary(optie1, "Optie 1: Pre-build Script") {
-    Component(prebuild, "Pre-build Script", "Node.js", "Roept remark-kroki-a11y aan vóór Jekyll build")
-    Component(cache, "A11y Cache", "JSON", "Cached beschrijvingen per diagram")
-}
-
-Container_Boundary(optie2, "Optie 2: Shared Core") {
-    Component(core, "a11y-diagram-core", "npm package", "Gedeelde parsing logic")
-    Component(remark, "remark-kroki-a11y", "Remark plugin", "Gebruikt core")
-    Component(jekyll, "jekyll-diagram-a11y", "Ruby gem", "Gebruikt core via node")
-}
-
-Container_Boundary(optie3, "Optie 3: Client-side JS") {
-    Component(spaceship, "Jekyll Spaceship", "Ruby gem", "Rendert diagram als img")
-    Component(clientjs, "diagram-a11y.js", "JavaScript", "Decodeert URL, genereert beschrijving")
-}
-
-SHOW_LEGEND()
-@enduml
-```
+**Optie 3: Client-side JS** - Jekyll Spaceship rendert diagram als img, client-side JavaScript decodeert URL en genereert beschrijving.
 
 **Optie 1** hergebruikt de bestaande plugin maximaal. **Optie 2** vereist refactoring naar een gedeelde core. **Optie 3** dupliceert de logic in JavaScript maar werkt direct.
 
