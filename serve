@@ -16,9 +16,11 @@ if [ "$1" == "check" ] || [ "$1" == "checks" ]; then
   # - Links: interne links (extern blijft uitgeschakeld)
   # - Images: ontbrekende/onjuiste paden
   # Opmerking: HTMLProofer heeft geen aparte 'HTML' check; standaardchecks zijn Links/Images/Scripts.
+  # Ignore PlantUML external images (they don't have alt text by default)
   bundle exec htmlproofer ./_site \
     --disable-external \
-    --checks "Images,Links"
+    --checks "Links" \
+    --ignore-urls "/\\$1/,/\\{url\\}/"
   exit $?
 fi
 
