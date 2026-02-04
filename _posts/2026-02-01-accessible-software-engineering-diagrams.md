@@ -21,7 +21,7 @@ Programma code leent zich prima voor visueel beperkten, die hun screenreaders he
 
 Een collega bedacht zich dat de 'diagrams-as-code' aanpak die we hanteren ook een betere instap biedt om het toegankelijk te maken, dan de plaatjes die hier uit komen. We gebruiken diagram-as-code formaten zoals PlantUML en Mermaid vooral omdat de voorbeelddiagrammen bij onze opdrachten dan makkelijk onderhoudbaar zijn. We hoeven niet de plaatjes zelf aan te passen, maar gewoon de code erachter. Dit kunnen we in versiebeheer houden, samen met de setup van codeprojecten. In `git diff` zie je welke aanpassingen op welk moment gemaakt zijn. En alles komt zo online als eigen website (we gebruiken Docusaurus).
 
-In dit artikel beschrijf ik de plugin die we hiervoor gemaakt hebben. Sectie 1 legt het probleem uit. Sectie 2 beschrijft hoe diagrams-as-code een kans biedt. Sectie 3 introduceert de plugin, met het concept van situationele beperking en de roadmap voor verdere ontwikkeling. Sectie 4 illustreert het met een onverwacht voorbeeld: Roodkapje als UML.
+In dit artikel beschrijf ik de plugin die we hiervoor gemaakt hebben. Sectie 1 legt het probleem uit. Sectie 2 beschrijft hoe diagrams-as-code een kans biedt. Sectie 3 introduceert de plugin, met het concept van situationele beperking en de roadmap voor verdere ontwikkeling. Sectie 4 illustreert UML voor lezers die nog geen goed beeld hebben, met een onverwacht maar wel vertrouwd voorbeeld: Roodkapje als UML. Sectie 5 reflecteert op het meta-aspect van dit project.
 
 ## 1. Het probleem: visuele diagrammen in een tekstuele wereld
 
@@ -43,11 +43,7 @@ De broncode bevat alle informatie die in het diagram zit. We moeten het alleen o
 
 Hier een voorbeeld van een eenvoudig klassendiagram:
 
-![UML klassendiagram met Student en Vak klassen, met een veel-op-veel relatie. Student heeft attributen naam en studentnummer, Vak heeft naam en studiepunten](/assets/img/posts/student-vak-uml.png)
-
-De PlantUML broncode:
-
-```plantuml
+```plantuml!
 @startuml
 !theme plain
 class Student {
@@ -75,7 +71,7 @@ Ik maakte er een uitklapbalkje van, zodat reguliere studenten niet al deze aflei
 
 De huidige 0.3 versie zet twee diagramtypes om naar natuurlijke taal: klassendiagrammen en sequentiediagrammen (de twee meest gebruikte). Deze beschrijvingen zijn bedoeld voor screenreaders, maar zijn ook nuttig voor zienden die *situationeel beperkt* zijn — in de zin dat ze deze diagrammen nog niet goed kennen en dus zelf nog niet kunnen "oplezen". Beginnende studenten dus.
 
-### Situationele beperking
+### 3.1 Situationele beperking
 
 Dit concept van situationele beperking is belangrijk. Toegankelijkheid wordt vaak gezien als iets voor "mensen met een beperking", maar iedereen is wel eens situationeel beperkt. Je bent slechtziend als je zonder bril wakker wordt. Je bent slechthorend in een lawaaierige trein. En je bent "diagram-analfabeet" als je nog nooit UML hebt gezien.
 
@@ -84,14 +80,14 @@ Dit concept van situationele beperking is belangrijk. Toegankelijkheid wordt vaa
 
 Figuur 1 is gebaseerd op het werk van Chugaievska over inclusief ontwerp, uitgebreid met een vierde voorbeeld: een student die UML nog niet kent. Door de natuurlijke-taalbeschrijving toe te voegen helpen we niet alleen blinde studenten, maar ook beginners die de diagramsyntax nog moeten leren. De beschrijving is een brug naar begrip.
 
-### Wat de plugin doet
+### 3.2 Wat de plugin doet
 
 1. **Toont de broncode** — In een inklapbaar `<details>` element onder elk diagram
 2. **Genereert natuurlijke-taalbeschrijvingen** — Voor ondersteunde diagramtypes
 3. **Biedt tabs** — Gebruikers kiezen tussen broncode en beschrijving
 4. **Ondersteunt lokalisatie** — Nederlands en Engels
 
-### Wat er nog kan komen
+### 3.3 Wat er nog kan komen
 
 Het lectoraat Accessible Digital Tools and Engineering heeft interesse getoond om studenten te begeleiden bij verdere uitbreiding. Denk aan:
 
@@ -99,12 +95,15 @@ Het lectoraat Accessible Digital Tools and Engineering heeft interesse getoond o
 - Meer diagramtypes: pie charts, bar charts, activity diagrams (Mermaid ondersteunt er 14)
 - Meer talen — meer talen is ook meer toegankelijk
 - Op termijn: de a11y-code integreren in de oorspronkelijke diagram-as-code tools, in plaats van als aparte plugin
+- Port naar Brightspace — nu we in het onderwijs naar Brightspace overstappen, moeten we onze open source Docusaurus website verlaten. Een Brightspace-integratie zou de toegankelijke diagrammen ook daar beschikbaar maken
+
+Een andere richting is SVG-embedded accessibility: de beschrijvingen niet *naast* het diagram, maar *in* de SVG zelf. SVG ondersteunt `<title>`, `<desc>`, en ARIA-attributen per element. Een klasse krijgt dan `aria-label="Klasse Student"`, een relatie `aria-label="Student volgt Vak (0..* naar 1..*)"`. Met `aria-flowto` kun je zelfs navigatie tussen elementen mogelijk maken. Het idee: de diagram-renderer verrijkt de SVG met semantische informatie. Wellicht kunnen we dit project ASSET noemen: Accessible SVG Source Enhancement Tool.
 
 More Accessible Software Engineering for the world — mede dankzij de HAN.
 
 De plugin staat op npm en GitHub: [github.com/bartvanderwal/remark-kroki-a11y](https://github.com/bartvanderwal/remark-kroki-a11y).
 
-### Architectuur-alternatieven voor Jekyll
+### 3.4 Architectuur-alternatieven voor Jekyll
 
 De remark-kroki-a11y plugin is gebouwd voor Docusaurus (remark/unified ecosystem). Voor Jekyll zijn er drie mogelijke aanpakken:
 
@@ -129,27 +128,19 @@ Roodkapje is wellicht een gimmick, maar ook een manier om analyse en ontwerp toe
 
 Denk aan innovatie in de **energietransitie**: zelfrijdende auto's, robotisering van arbeid, de stikstof-transitie. Of de **zorg**: persoonsgebonden medicijnen, lifestyle-interventies tegen welvaartsziekten. Dit zijn thema's waar HAN ICT zich op richt — complexe domeinen waar software verschil maakt.
 
-### Vermijd "The One Diagram to rule them all"
+### 4.1 Vermijd "The One Diagram to rule them all"
 
 We splitsen het Roodkapje-verhaal op in drie delen om een "God Diagram" te voorkomen. Een God diagram is een anti-pattern, net als een 'God object' in code. Het opsplitsen beperkt cognitive load. Om toch overzicht te bieden maak je een apart diagram voor de onderlinge verbanden — vergelijkbaar met C4 zoomniveaus.
 
-Het volledige voorbeeld staat in de plugin documentatie: [Roodkapje als UML diagrammen](https://bartvanderwal.github.io/remark-kroki-a11y/examples/roodkapje-als-uml-diagrammen).
+Een volledig voorbeeld heb ik in de plugin documentatie gezet als 'gentle introduction to UML' (met wel een stoer Roodkapje plaatje erbij voor de clickbait factor ;): [Roodkapje als UML diagrammen](https://bartvanderwal.github.io/remark-kroki-a11y/examples/roodkapje-als-uml-diagrammen).
 
-## 5. Meta: eating our own dog food
+## 5. Meta: eating our own dogfood
+
+<img src="/assets/img/posts/roodkapje-uml-cute.png" alt="" width="400" style="float: right; margin-left: 1em;">
 
 Dit project heeft een meta-aspect: we bouwen een toegankelijkheids-plugin voor diagrammen, en gebruiken diezelfde diagrammen om de plugin te documenteren. De documentatiesite is tegelijk testsite.
 
 Als de diagrammen niet toegankelijk zijn, faalt de plugin. Als ze wel toegankelijk zijn, bewijst de documentatie zichzelf.
-
-## Tot slot
-
-De huidige plugin genereert natuurlijke-taalbeschrijvingen *naast* het diagram. Maar ik denk dat we de beschrijvingen nog dieper moeten embedden: in de SVG zelf (SVG + Scalable Vector Graphics, een bestandsformaat waar geen eindeloze rijen pixels in staan zoals in .png/bitmap, maar oneindige schalende/scherpblijvende vectors, dus lijnen en bochten en vormen e.d.)
-
-Screenreaders lezen nu vaak alle lijntjes en vormen op — niet nuttig. SVG ondersteunt echter `<title>`, `<desc>`, en ARIA-attributen per element. Een klasse krijgt dan `aria-label="Klasse Student"`, een relatie `aria-label="Student volgt Vak (0..* naar 1..*)"`. Met `aria-flowto` kun je zelfs navigatie tussen elementen mogelijk maken: "ga naar de volgende relatie" of "toon de attributen van deze klasse".
-
-In HTML pagina's embed je dit met ARIA-labels (ARIA staat voor Accessible Rich Internet Applications). SVG ondersteunt dezelfde attributen. Het idee: de diagram-renderer (PlantUML, Mermaid, Kroki) verrijkt de SVG met semantische informatie. Niet alleen een visuele representatie, maar een navigeerbare structuur.
-
-Wellicht kunnen we het project ASSET noemen: Accessible SVG Source Enhancement Tool.
 
 ## Bronnen
 
