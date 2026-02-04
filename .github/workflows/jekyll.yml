@@ -28,15 +28,10 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
-      - name: Build with Jekyll
-        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+      - name: Build and check with serve
+        run: BASEURL="${{ steps.pages.outputs.base_path }}" ./serve check
         env:
           JEKYLL_ENV: production
-      - name: Check internal links and images
-        run: |
-          bundle exec htmlproofer ./_site \
-            --disable-external \
-            --checks "Images,Links"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 

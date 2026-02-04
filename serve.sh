@@ -1,8 +1,10 @@
 #!/bin/bash
-# Use Homebrew Ruby instead of RVM
-export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
-export GEM_HOME="$HOME/.gem/ruby/3.4.0"
-export PATH="$GEM_HOME/bin:$PATH"
+# Use Homebrew Ruby instead of RVM (macOS only)
+if [ -d "/opt/homebrew/opt/ruby/bin" ]; then
+  export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+  export GEM_HOME="$HOME/.gem/ruby/3.4.0"
+  export PATH="$GEM_HOME/bin:$PATH"
+fi
 
 # Function to run checks
 run_checks() {
@@ -20,7 +22,11 @@ run_checks() {
 if [ "$1" == "check" ] || [ "$1" == "checks" ]; then
   # Build site first
   echo "Building site..."
-  bundle exec jekyll build
+  if [ -n "$BASEURL" ]; then
+    bundle exec jekyll build --baseurl "$BASEURL"
+  else
+    bundle exec jekyll build
+  fi
   
   # Then validate
   run_checks
@@ -29,7 +35,11 @@ fi
 
 # Default: run checks first, then start dev server if checks pass
 echo "Building site..."
-bundle exec jekyll build
+if [ -n "$BASEURL" ]; then
+  bundle exec jekyll build --baseurl "$BASEURL"
+else
+  bundle exec jekyll build
+fi
 
 if run_checks; then
   echo ""

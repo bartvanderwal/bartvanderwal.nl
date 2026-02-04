@@ -7,7 +7,7 @@
   "license": "MIT",
   "devDependencies": {
     "@playwright/test": "^1.40.0",
-    "pdf-parse": "^1.1.1"
+    "pdf-parse": "^1.1.1",
     "husky": "^9.1.7"
   },
   "scripts": {

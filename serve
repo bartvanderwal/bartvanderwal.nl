@@ -1,14 +1,20 @@
 #!/bin/bash
-# Use Homebrew Ruby instead of RVM
-export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
-export GEM_HOME="$HOME/.gem/ruby/3.4.0"
-export PATH="$GEM_HOME/bin:$PATH"
+# Use Homebrew Ruby instead of RVM (macOS only)
+if [ -d "/opt/homebrew/opt/ruby/bin" ]; then
+  export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+  export GEM_HOME="$HOME/.gem/ruby/3.4.0"
+  export PATH="$GEM_HOME/bin:$PATH"
+fi
 
 # Check if 'check' or 'checks' argument is passed to validate links and images
 if [ "$1" == "check" ] || [ "$1" == "checks" ]; then
   # Build site first
   echo "Building site..."
-  bundle exec jekyll build
+  if [ -n "$BASEURL" ]; then
+    bundle exec jekyll build --baseurl "$BASEURL"
+  else
+    bundle exec jekyll build
+  fi
   
   # Then validate internal links and images (disable external link checking)
   echo "Checking internal links and images..."
@@ -16,11 +22,9 @@ if [ "$1" == "check" ] || [ "$1" == "checks" ]; then
   # - Links: interne links (extern blijft uitgeschakeld)
   # - Images: ontbrekende/onjuiste paden
   # Opmerking: HTMLProofer heeft geen aparte 'HTML' check; standaardchecks zijn Links/Images/Scripts.
-  # Ignore PlantUML external images (they don't have alt text by default)
   bundle exec htmlproofer ./_site \
     --disable-external \
-    --checks "Links" \
-    --ignore-urls "/\\$1/,/\\{url\\}/"
+    --checks "Images,Links"
   exit $?
 fi
 

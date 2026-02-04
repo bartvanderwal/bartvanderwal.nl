@@ -43,7 +43,15 @@ De broncode bevat alle informatie die in het diagram zit. We moeten het alleen o
 
 Hier een voorbeeld van een eenvoudig klassendiagram:
 
-```plantuml!
+<figure>
+  <img src="https://www.plantuml.com/plantuml/svg/~h407374617274756d6c0a407374617274756d6c0a217468656d6520706c61696e0a636c6173732053747564656e74207b0a20202d6e61616d3a20537472696e670a20202d73747564656e746e756d6d65723a20696e740a20202b766f6c677456616b2876616b3a2056616b290a7d0a0a636c6173732056616b207b0a20202d6e61616d3a20537472696e670a20202d73747564696570756e74656e3a20696e740a7d0a0a53747564656e742022302e2e2a22202d2d2022312e2e2a222056616b203a20766f6c67740a40656e64756d6c0a40656e64756d6c" alt="Klassendiagram met Student en Vak en de relatie ‘volgt’" />
+  <figcaption>Een eenvoudig klassendiagram met de klassen Student en Vak en de relatie ‘volgt’.</figcaption>
+</figure>
+
+<details>
+<summary markdown="span">PlantUML broncode</summary>
+
+```plantuml
 @startuml
 !theme plain
 class Student {
@@ -61,6 +69,8 @@ Student "0..*" -- "1..*" Vak : volgt
 @enduml
 ```
 
+</details>
+
 Dit beschrijft een `Student` met attributen `naam` en `studentnummer`, en een relatie met `Vak`. Een screenreader kan deze tekst voorlezen — het visuele diagram niet. Dat is precies het punt: de broncode *is* de toegankelijke beschrijving.
 
 ## 3. remark-kroki-a11y: de plugin
@@ -76,7 +86,7 @@ De huidige 0.3 versie zet twee diagramtypes om naar natuurlijke taal: klassendia
 Dit concept van situationele beperking is belangrijk. Toegankelijkheid wordt vaak gezien als iets voor "mensen met een beperking", maar iedereen is wel eens situationeel beperkt. Je bent slechtziend als je zonder bril wakker wordt. Je bent slechthorend in een lawaaierige trein. En je bent "diagram-analfabeet" als je nog nooit UML hebt gezien.
 
 ![Permanente, tijdelijke en situationele beperkingen - inclusief een student die UML nog niet kent](/assets/img/posts/situational-limitations-uml.png)
-*Figuur 1:* Permanente, tijdelijke en situationele beperkingen. Bron: Chugaievska (2025).
+*Figuur 1*: Permanente, tijdelijke en situationele beperkingen. Bron: Chugaievska (2025).
 
 Figuur 1 is gebaseerd op het werk van Chugaievska over inclusief ontwerp, uitgebreid met een vierde voorbeeld: een student die UML nog niet kent. Door de natuurlijke-taalbeschrijving toe te voegen helpen we niet alleen blinde studenten, maar ook beginners die de diagramsyntax nog moeten leren. De beschrijving is een brug naar begrip.
 
@@ -120,7 +130,7 @@ De remark-kroki-a11y plugin is gebouwd voor Docusaurus (remark/unified ecosystem
 Om de plugin te demonstreren — en tegelijk UML te introduceren — gebruiken we een onverwacht domein: het sprookje van Roodkapje.
 
 ![Roodkapje als UML klassendiagram - het sprookje gemodelleerd met klassen en relaties](/assets/img/posts/roodkapje-uml.png)
-*Figuur 2:* Roodkapje als UML klassendiagram. Een bekend verhaal vertaald naar formele diagrammen als introductie voor niet-technici.
+*Figuur 2*: Roodkapje als UML klassendiagram. Een bekend verhaal vertaald naar formele diagrammen als introductie voor niet-technici.
 
 Dit voorbeeld toont hoe je een verhaal in natuurlijke taal kunt vertalen naar formele diagrammen. Het is een prima introductie voor niet-technici of beginnende technici.
 
