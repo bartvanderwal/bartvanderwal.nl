@@ -25,7 +25,7 @@ In dit geplande drieluik verken ik hoe ICT-onderwijs moet veranderen met de koms
 **Drieluik structuur:** Dit artikel volgt het BOB-model (Bewustwording, Oordeelsvorming, Besluitvorming) — een model voor grote verandertrajecten (Schop, z.d.).
 
 - **Blog 1/3 (Bewustwording)**: Opkomst AI en de evolutie van AI-interactiemodi (dit artikel)
-- **Blog 2/3 (Oordeelsvorming)**: Taxonomie van AI-gebruik: wie heeft de regie?
+- **[Blog 2/3 (Oordeelsvorming)](/ict-onderwijs-aanpassen-voor-ai-2-oordeelsvorming/)**: Taxonomie van AI-gebruik: wie heeft de regie?
 - **Blog 3/3 (Besluitvorming)**: AI als leermiddel, niet als butler
 
 In plaats van direct een beslissing te nemen, nemen we de tijd om eerst te begrijpen, dan te oordelen, en pas daarna te besluiten. Eenzelfde iets is overigens ook precies wat we studenten willen leren: niet meteen gaan coderen en een oplossing maken, maar eerst goed het probleem verkennen. Omdat je anders wellicht een oplossing voor een ander probleem maakt dan je opdrachtgever heeft. Of een probleem dat alleen in JOUW hoofd bestaat. You are not your user.
@@ -223,7 +223,7 @@ Nu we begrijpen hoe AI-interactiemodi zijn geëvolueerd en wat de trade-offs zij
 
 Bewustwording is de eerste stap. De volgende stap is oordeelsvorming: leren onderscheiden tussen verantwoord en onverantwoord AI-gebruik.
 
-**Volgt:** ICT-onderwijs aanpassen voor AI (2/3): Oordeelsvorming — Taxonomie van AI-gebruik: wie heeft de regie?
+**Volgt:** [ICT-onderwijs aanpassen voor AI (2/3): Oordeelsvorming — Taxonomie van AI-gebruik: wie heeft de regie?](/ict-onderwijs-aanpassen-voor-ai-2-oordeelsvorming/)
 
 <details>
 
