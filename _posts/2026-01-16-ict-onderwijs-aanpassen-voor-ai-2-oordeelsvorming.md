@@ -38,13 +38,13 @@ Twee gesprekken, dezelfde woorden, tegenovergestelde reacties. **Maar hier wordt
 ![De vier types AI-gebruik (met Type 4 opgesplitst in drie varianten): van menselijk idee met AI-generatie tot mens zonder AI](/assets/img/posts/types-van-ai-gebruik-overzicht.png)
 *Figuur 1*: De vier types AI-gebruik (met Type 4 opgesplitst in drie varianten): van menselijk idee met AI-generatie tot mens zonder AI
 
-Een **taxonomie** is een systematische classificatie — een onderverdeling van AI-gebruikstypes op basis van wie de regie heeft. Denk hierbij aan een **kwadrant** met twee dimensies: horizontaal van kort/open prompt naar lang/gedetailleerd, verticaal van AI actief naar menselijk actief.
+Een **taxonomie** is een systematische classificatie, waarbij je dingen kunt onderverdelen, typisch in een verdeling waarbij elk item maar in categorie hoort. In deze AI-gebruik taxonomie stel ik  onderverdeling van AI-gebruikstypes. Dit is een **kwadrant** met twee dimensies: wie verzint het idee mens of AI en wie is in de lead mens of AI.
 
 Deze blog begint met een beschrijving van de vier hoofdtypes en hun zeven varianten, waarbij ik de kwadranten één voor één langslopen. Vervolgens laat ik zien hoe deze types in de praktijk door elkaar lopen en niet strikt gescheiden zijn. Dan introduceer ik het concept van prompt/answer asymmetry: hoe de lengte van je vraag en het antwoord omgekeerd evenredig kunnen zijn. De naamgeving van deze types komt daarna aan bod, inclusief waarom betere namen dan "Type 1, 2, 3, 4" belangrijk zijn, en hoe constraints essentieel zijn voor verantwoord AI-gebruik. Tot slot bespreek ik de exploratieve modus: wanneer experts tijdelijk als beginners leren. Ik sluit af met een conclusie over Guitar Hero en leren, en een discussie over transparantie.
 
 ## 1. De vier AI-gebruikstypes
 
-We lopen de vier kwadranten langs, met twee assen: wie heeft het idee, en wie heeft de lead. Bij het vierde kwadrant blijkt onderverdeling nuttig.
+We lopen de vier kwadranten langs, met twee assen: wie heeft het idee, en wie heeft de lead? Bij het vierde kwadrant blijkt onderverdeling nuttig.
 
 ### 1.1 Type 1: Human in the Lead
 
