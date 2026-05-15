@@ -73,7 +73,7 @@ Toegankelijke code is vaak ook betere code. Door aandacht te besteden aan semant
 
 ### 4.1 Open Source Gedachte
 
-A11y Helper is volledig open source onder MIT licentie. De code staat op GitHub onder mijn organisatie: `github.com/bartvanderwal/a11y-helper`.
+A11y Helper is volledig open source onder MIT licentie. De code staat op GitHub onder mijn organisatie: [github.com/bartvanderwal/a11y-helper](https://github.com/bartvanderwal/a11y-helper).
 
 Iedereen kan de code bekijken, gebruiken, en aanpassen. Dit is bewust gekozen om maximale transparantie en samenwerking mogelijk te maken.
 
@@ -97,11 +97,11 @@ De community is welkom om via GitHub Discussions vragen te stellen of ideeën te
 
 Toegankelijkheid gaat ons allemaal aan. Of je nu een ervaren accessibility expert bent of net begint met webontwikkeling, jouw bijdrage maakt het verschil.
 
-Bekijk de repository op `github.com/bartvanderwal/a11y-helper`, probeer de plugin uit in je eigen project, en laat weten wat je ervan vindt. Samen kunnen we het web toegankelijker maken voor iedereen.
+Bekijk de repository op [github.com/bartvanderwal/a11y-helper](https://github.com/bartvanderwal/a11y-helper), probeer de plugin uit in je eigen project, en laat weten wat je ervan vindt. Samen kunnen we het web toegankelijker maken voor iedereen.
 
 Heb je vragen, ideeën, of wil je direct beginnen met bijdragen? Open een issue op GitHub of start een discussie. Ik kijk ernaar uit om samen te werken aan een toegankelijker internet.
 
 ## Bronnen
 
-- W3C. (2018). *Web Content Accessibility Guidelines (WCAG) 2.1*. Geraadpleegd van w3.org/WAI/WCAG21/quickref/
-- MDN Web Docs. (2024). *Accessibility*. Geraadpleegd van developer.mozilla.org/en-US/docs/Web/Accessibility
+- W3C. (2018). *Web Content Accessibility Guidelines (WCAG) 2.1*. Geraadpleegd van https://w3.org/WAI/WCAG21/quickref/
+- MDN Web Docs. (2024). *Accessibility*. Geraadpleegd van https://developer.mozilla.org/en-US/docs/Web/Accessibility
